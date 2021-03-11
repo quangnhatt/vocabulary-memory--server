@@ -1,3 +1,5 @@
+const HOST = "http://13.250.12.28:3001/"
+// HOST = "http://localhost:3001/"
 $(function () {
   function formatCurrency(num, decimals = 2, delimiter = ",") {
     let toFixedDecimals = decimals != 0 ? decimals : 2;
@@ -39,7 +41,7 @@ $(function () {
       scrollX: true,
       ajax: {
         type: "GET",
-        url: "http://localhost:3001/api/v1/analyst?board=" + board,
+        url: HOST + "api/v1/analyst?board=" + board,
         dataSrc: function (res) {
           return res;
         },
@@ -167,7 +169,7 @@ $(function () {
   function getStockInfo(stockCodes) {
     $.ajax({
       url:
-        "http://localhost:3001/api/v1/stock-info?stockCodes=" +
+        HOST + "api/v1/stock-info?stockCodes=" +
         stockCodes.join(),
       type: "GET",
       dataType: "json",
@@ -228,7 +230,7 @@ $(function () {
   }
 
   $.ajax({
-    url: "http://localhost:3001/api/v1/market-price",
+    url: HOST + "api/v1/market-price",
     type: "GET",
     dataType: "json", // added data type
     success: function (res) {
