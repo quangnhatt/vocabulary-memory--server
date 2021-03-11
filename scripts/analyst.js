@@ -18,6 +18,8 @@ $(function () {
   });
 
   $("#analyst-btn").click(function () {
+    $(this).prop('disabled', true);
+    $(this).text("Please wait, analyzing...")
     const board = $("#board").val();
     $("#analyst-table").DataTable({
       initComplete: function () {
@@ -43,6 +45,8 @@ $(function () {
         type: "GET",
         url: HOST + "api/v1/analyst?board=" + board,
         dataSrc: function (res) {
+          $("#analyst-btn").text("Analyze");
+          $("#analyst-btn").prop('disabled', false);
           return res;
         },
       },
