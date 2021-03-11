@@ -19,6 +19,7 @@ server.start(function () {
 server.on('request', function (req, res) {
   // req.path is the URL resource (file name) from server.rootPath
   // req.elapsedTime returns a string of the request's elapsed time
+  console.log('Request: ' + req.url);
 });
  
 server.on('symbolicLink', function (link, file) {
