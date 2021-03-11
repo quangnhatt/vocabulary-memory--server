@@ -121,35 +121,59 @@ class AnalystService {
   }
 
   getTotalVolumes(volumes) {
+    const volumesLastSession = volumes.slice(-1)[0];
+    volumes = volumes.slice(0, -1);
     const volumesLast7Sessions = volumes
       .slice(-7)
       .reduce((total, vol) => total + vol);
+    const averageVolumesLast7Sessions = (volumesLast7Sessions / 7).toFixed(0);
+
     const volumesLast14Sessions = volumes
       .slice(-14)
       .reduce((total, vol) => total + vol);
+    const averageVolumesLast14Sessions = (volumesLast14Sessions / 14).toFixed(
+      0
+    );
+
     const volumesLast30Sessions = volumes
       .slice(-30)
       .reduce((total, vol) => total + vol);
-    const volumesLast90Sessions = volumes
-      .slice(-90)
-      .reduce((total, vol) => total + vol);
-    const volumesLast120Sessions = volumes
-      .slice(-120)
-      .reduce((total, vol) => total + vol);
+    const averageVolumesLast30Sessions = (volumesLast30Sessions / 30).toFixed(
+      0
+    );
 
     return {
-      volumesLastSession: volumes.slice(-1)[0],
+      volumesLastSession,
       volumesLast7Sessions,
-      volumesLast14Sessions,
-      volumesLast30Sessions,
-      volumesLast90Sessions,
-      volumesLast120Sessions,
+      averageVolumesLast7Sessions,
+      averageVolumesLast14Sessions,
+      averageVolumesLast30Sessions,
     };
   }
 
-  async getStockList() {
+  compareWithLatestPrices(lastNumberOfDays, openPrices) {
+    const lastPrice = openPrices.slice(-1)[0];
+    openPrices = openPrices.slice(0, -1);
+    const comparedItem = openPrices.slice(lastNumberOfDays * -1)[0];
+    return (lastPrice / comparedItem).toFixed(2);
+  }
+
+  getNumberOfTrends(last7ClosePrices) {
+    let numberOfUptrend = 0;
+    let numberOfDowntrend = 0;
+    for (let i = 0; i < last7ClosePrices.length - 1; i++) {
+      let prevPrice = last7ClosePrices[i];
+      let currentPrice = last7ClosePrices[i + 1];
+      if ((currentPrice - prevPrice) / prevPrice > 0.04) numberOfUptrend++;
+      if ((prevPrice - currentPrice) / currentPrice > 0.04) numberOfDowntrend++;
+    }
+
+    return { numberOfUptrend, numberOfDowntrend };
+  }
+
+  async getStockList(board = 1) {
     const data = await fetch(
-      "https://finance.vietstock.vn/data/stocklist?catID=1",
+      "https://finance.vietstock.vn/data/stocklist?catID=" + board,
       {
         headers: {
           accept: "*/*",
@@ -204,8 +228,7 @@ class AnalystService {
     }).then((res) => {
       if (res.status == 200) return res.json();
     });
-
-    data.StockCode = stockCode;
+    if (data) data.StockCode = stockCode;
 
     return data;
   }

@@ -37,18 +37,21 @@ class StockController {
 
         }
         const markets = await Promise.all(promises);
-        const marketIndexs = markets.map(item => {
-            return {
+        let marketIndexs = [];
+        markets.map(item => {
+            if (!item) return;
+            marketIndexs.push({
                 lowestPrice: item[1][0].LowestPrice,
                 trend: item[1][0].ChangeColor,
                 date: convertDate(item[1][0].TradingDate),
                 stockCode: item[1][0].StockCode,
-            }
+            });
         })
         for (let index = 0; index < histories.length; index++) {
             let item = histories[index];
             const hose = marketIndexs.find(x => x.date == item.execDate && x.stockCode == 'VN-Index');
             const hnx = marketIndexs.find(x => x.date == item.execDate && x.stockCode == 'HNX-Index');
+            if (!hose || !hnx) continue;
             item.marketIndex = hose.lowestPrice + '(' + hose.trend + ')' + ' - ' +
                 hnx.lowestPrice + '(' + hnx.trend + ')';
 

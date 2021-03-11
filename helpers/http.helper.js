@@ -30,7 +30,7 @@ async function send(url, options, retry = 0) {
   options["headers"]["x-auth-token"] = await AuthService.getAuthToken();
 
   let res = await fetch(url, options).then((res) => {
-    if (res.status == 200) return res.json();
+    return res.json();
   });
   if (res && res.error && retry == 0) {
     await AuthService.getAuthToken(true);

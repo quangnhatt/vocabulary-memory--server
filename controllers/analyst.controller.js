@@ -5,10 +5,12 @@ class AnalystController {
   async doAnalyst(req, res, next) {
     let i = 0;
     try {
-      const stockCodes = await AnalystService.getStockList();
+      const board = req.query.board;
+      const stockCodes = await AnalystService.getStockList(board);
+      // const stockCodes = ["AAA", "VIG"];
       const today = new Date();
       const toDate = today.getTime();
-      const fromDate = HttpHelper.addMonths(-6).getTime();
+      const fromDate = HttpHelper.addMonths(-2).getTime();
 
       let promises = [];
       let codeHistories = [];
@@ -35,70 +37,39 @@ class AnalystController {
       let result = [];
       for (let index = 0; index < codeHistories.length; index++) {
         const item = codeHistories[index];
-        const upBullishEngulfing = AnalystService.getUpBullishEngulfing(
-          item.c,
-          item.o,
-          item.t
-        );
-        const upHammer = AnalystService.getUpHammer(
-          item.c,
-          item.o,
-          item.h,
-          item.l,
-          item.t
-        );
-        const upInvertedHammer = AnalystService.getUpInvertedHammer(
-          item.c,
-          item.o,
-          item.h,
-          item.l,
-          item.t
-        );
-        const upMorningStar = AnalystService.getUpMorningStar(
-          item.c,
-          item.o,
-          item.t
-        );
-
+        if (!item) continue;
         const volumes = AnalystService.getTotalVolumes(item.v);
-        const volumesAverageLastSessions = volumes.volumesLastSession;
-        const volumesAverageLast7Sessions = volumes.volumesLast7Sessions / 7;
-
+        const priceGrowthRateLast7Days = AnalystService.compareWithLatestPrices(
+          7,
+          item.o
+        );
+        const priceGrowthRateLast14Days = AnalystService.compareWithLatestPrices(
+          14,
+          item.o
+        );
+        const priceGrowthRateLast30Days = AnalystService.compareWithLatestPrices(
+          30,
+          item.o
+        );
+        const last7Trends = AnalystService.getNumberOfTrends(item.c.slice(-8));
+        const last2Trends = AnalystService.getNumberOfTrends(item.c.slice(-3));
         result.push({
           code: item.StockCode,
-          upBullishEngulfing: upBullishEngulfing,
-          upHammer: upHammer,
-          upInvertedHammer,
-          upMorningStar: upMorningStar,
           volumesLastSession: volumes.volumesLastSession,
-          volumesLast7Sessions: volumes.volumesLast7Sessions,
-          volumesLast14Sessions: volumes.volumesLast14Sessions,
-          volumesLast30Sessions: volumes.volumesLast30Sessions,
-          volumesLast90Sessions: volumes.volumesLast90Sessions,
-          volumesLast120Sessions: volumes.volumesLast120Sessions,
-          volumesLast1Per7Sessions: (
-            volumesAverageLastSessions /
-            ((volumes.volumesLast7Sessions - volumes.volumesLastSession) / 6)
-          ).toFixed(2),
-          volumesLast7Per14Sessions: (
-            volumesAverageLast7Sessions /
-            ((volumes.volumesLast14Sessions - volumes.volumesLast7Sessions) / 7)
-          ).toFixed(2),
-          volumesLast7Per30Sessions: (
-            volumesAverageLast7Sessions /
-            ((volumes.volumesLast30Sessions - volumes.volumesLast7Sessions) /
-              23)
-          ).toFixed(2),
-          volumesLast7Per90Sessions: (
-            volumesAverageLast7Sessions /
-            ((volumes.volumesLast90Sessions - volumes.volumesLast7Sessions) /
-              83)
-          ).toFixed(2),
-          volumesLast7Per120Sessions: (
-            volumesAverageLast7Sessions /
-            ((volumes.volumesLast120Sessions - volumes.volumesLast7Sessions) /
-              113)
-          ).toFixed(2),
+          volRateLast7Sessions: (volumes.volumesLastSession/ volumes.averageVolumesLast7Sessions).toFixed(2),
+          volRateLast14Sessions: (volumes.volumesLastSession/ volumes.averageVolumesLast14Sessions).toFixed(2),
+          volRateLast30Sessions: (volumes.volumesLastSession/ volumes.averageVolumesLast30Sessions).toFixed(2),
+          priceGrowthRateLast7Days,
+          priceGrowthRateLast14Days,
+          priceGrowthRateLast30Days,
+          lastPrice: item.o.slice(-1)[0],
+          last7Price: item.o.slice(-7)[0],
+          last14Price: item.o.slice(-14)[0],
+          last30Price: item.o.slice(-30)[0],
+          numberOfUptrend: last7Trends.numberOfUptrend,
+          numberOfDowntrend: last7Trends.numberOfDowntrend,
+          last2Uptrend: last2Trends.numberOfUptrend,
+          last2Downtrend: last2Trends.numberOfDowntrend
         });
       }
       return res.json(result);
