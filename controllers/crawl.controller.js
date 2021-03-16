@@ -32,8 +32,29 @@ class CrawlController {
   }
 
   async doCrawlDetail(req, res, next) {
-    const stockList = require("../data/stockList.json");
-    console.log(stockList);
+    let stockList = require("../data/stockList.json");
+    for (const key in stockList) {
+      let stock = stockList[key];
+      const data = await CrawlService.getStockDetail(stock.StockCode);
+      stock.BVPS = data.BVPS;
+      stock.Beta = data.Beta;
+      stock.Dividend = data.Dividend;
+      stock.EPS = data.EPS;
+      stock.FEPS = data.FEPS;
+      stock.MarketCapital = data.MarketCapital;
+      stock.PB = data.PB;
+      stock.PE = data.PE;
+    }
+
+    fs.writeFileSync(
+      "data/stockDetailList.json",
+      JSON.stringify(stockList),
+      "utf8",
+      function () {
+        console.log("DONE");
+      }
+    );
+
     return res.json(200);
   }
 }

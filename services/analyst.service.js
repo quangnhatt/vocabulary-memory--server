@@ -171,35 +171,12 @@ class AnalystService {
     return { numberOfUptrend, numberOfDowntrend };
   }
 
-  async getStockList(board = 1) {
-    const data = await fetch(
-      "https://finance.vietstock.vn/data/stocklist?catID=" + board,
-      {
-        headers: {
-          accept: "*/*",
-          "accept-language": "en-US,en;q=0.9",
-          "cache-control": "no-cache",
-          pragma: "no-cache",
-          "sec-fetch-dest": "empty",
-          "sec-fetch-mode": "cors",
-          "sec-fetch-site": "same-origin",
-          "x-requested-with": "XMLHttpRequest",
-        },
-        referrerPolicy: "no-referrer-when-downgrade",
-        body: null,
-        method: "GET",
-        mode: "cors",
-      }
-    ).then((res) => {
-      if (res.status == 200) return res.json();
-    });
-    let stockCodes = [];
-    for (let index = 0; index < data.length; index++) {
-      const item = data[index];
-      if (item.StockCode.length != 3) continue;
-      if (stockCodes.indexOf(item.StockCode) == -1)
-        stockCodes.push(item.StockCode);
-    }
+  async getStockList(catID = 1) {
+    const exchange = getExchange(catID);
+    const stockList = require("../data/stockList.json");
+    const stockCodes = stockList
+      .filter((x) => x.Exchange == exchange)
+      .map((x) => x.StockCode);
     return stockCodes;
   }
 
@@ -236,14 +213,6 @@ class AnalystService {
 
 module.exports = new AnalystService();
 
-function getTotalVolumeLast3Months(volumes) {}
-
-function getTotalVolumeLast6Months(volumes) {}
-
-function getTotalVolumeLast1Months(volumes) {}
-
-function getTotalVolumeLast2Weeks(volumes) {}
-
 function isGreenCandle(closePrice, openPrice) {
   return closePrice > openPrice;
 }
@@ -258,4 +227,20 @@ function isAllRedCandles(closePrices, openPrices) {
     }
   }
   return isValid;
+}
+
+function getExchange(catID) {
+  let exchange = "HOSE";
+  switch (catID) {
+    case 1:
+      exchange = "HOSE";
+      break;
+    case 2:
+      exchange = "HNX";
+      break;
+    case 3:
+      exchange = "UPCoM";
+      break;
+  }
+  return exchange;
 }
