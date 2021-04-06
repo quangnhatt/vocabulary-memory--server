@@ -9,6 +9,10 @@ exports.load = (app) => {
     app.get('/api/v1/market-price-by-date', StockController.getMarketPriceByDate);
     app.get('/api/v1/stock-info', StockController.getStockInfo);
     app.get('/api/v1/analyst', AnalystController.doAnalyst);
+    app.get('/api/v2/analyst', AnalystController.doAnalystWithFinancialReport);
     app.get('/api/v1/crawl', CrawlController.doCrawl);
     app.get('/api/v1/crawl/detail', CrawlController.doCrawlDetail);
+    app.post('/api/v2/analyst/custom', AnalystController.doAnalystWithCustomFilter);
+    app.get('/api/v1/industries', StockController.getIndustries);
+    app.get('/api/v1/top-histories', AnalystController.getStrangerStock);
 };

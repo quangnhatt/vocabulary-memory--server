@@ -164,20 +164,96 @@
               <div class="row">
                 <div class="col s12 m12 l12">
                   <div
-                    id="button-trigger2"
-                    class="card card card-default scrollspy"
+                    class="card card card-default scrollspy overflow-visible"
                   >
                     <div class="card-content">
                       <h4 class="card-title">Histories</h4>
                       <div class="row">
                         <div class="col s12">
-                          <div class="col s4">
-                            <select id="board">
-                              <option value="1">HOSE</option>
-                              <option value="2">HNX</option>
-                              <option value="3">Upcom</option>
-                            </select>
+                          <div class="col s12">
+                            <div class="col s2">
+                              <select id="board">
+                                <option value="1">HOSE</option>
+                                <option value="2">HNX</option>
+                                <option value="5">Upcom</option>
+                                <option value="">All</option>
+                              </select>
+                            </div>
+                            <div class="col s4">
+                              <select id="industry">
+                                <option value="">All</option>
+                              </select>
+                            </div>
+                            <div class="col s1">
+                              <input
+                                type="number"
+                                placeholder="PE max"
+                                id="pe"
+                              />
+                            </div>
+                            <div class="col s2">
+                              <input
+                                type="number"
+                                placeholder="EPS min"
+                                id="eps"
+                              />
+                            </div>
                           </div>
+
+                          <div class="col s12">
+                            <div class="col s2">
+                              <input
+                                type="number"
+                                placeholder="# Days"
+                                id="days"
+                              />
+                            </div>
+                            <div class="col s2">
+                              <input
+                                type="number"
+                                placeholder="Volume min"
+                                id="volumeMin"
+                              />
+                            </div>
+                            <div class="col s2">
+                              <input
+                                type="number"
+                                placeholder="Volume max"
+                                id="volumeMax"
+                              />
+                            </div>
+                            <div class="col s2">
+                              <input
+                                type="number"
+                                placeholder="Close Price min"
+                                id="closePriceMin"
+                              />
+                            </div>
+                            <div class="col s2">
+                              <input
+                                type="number"
+                                placeholder="Close Price max"
+                                id="closePriceMax"
+                              />
+                            </div>
+                          </div>
+                          <div class="col s12">
+                            <div class="col s2">
+                              <input
+                                type="number"
+                                placeholder="Close Price rate min (%)"
+                                id="closePriceRateMin"
+                              />
+                            </div>
+                            <div class="col s2">
+                              <input
+                                type="number"
+                                placeholder="Close Price rate max (%)"
+                                id="closePriceRateMax"
+                              />
+                            </div>
+                          </div>
+
                           <div class="col s3">
                             <button
                               class="waves-effect waves-light btn"
@@ -192,40 +268,32 @@
                             <thead>
                               <tr>
                                 <th>Code</th>
-                                <th># 7up</th>
-                                <th># 7down</th>
-                                <th># 2up</th>
-                                <th># 2down</th>
-                                <th>VOL: Today</th>
-                                <th>VOL: 1/7</th>
-                                <th>VOL: 1/14</th>
-                                <th>GR: 1/7</th>
-                                <th>GR: 1/14</th>
                                 <th>-0d Price</th>
-                                <th>-7d Price</th>
-                                <th>-14d Price</th>
+                                <th>-(x)d Price</th>
+                                <th>GR: 1/(x)</th>
+                                <th>VOL Break</th>
+                                <th>VOL: 1</th>
+                                <th>VOL: 1/(x)</th>
+                                <th># Ups</th>
+                                <th># Downs</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
-                                <td colspan="13">Click 'Analyze'...</td>
+                                <td colspan="16">Click 'Analyze'...</td>
                               </tr>
                             </tbody>
                             <tfoot>
                               <tr>
                                 <th>Code</th>
-                                <th># 7up</th>
-                                <th># 7down</th>
-                                <th># 2up</th>
-                                <th># 2down</th>
-                                <th>VOL: Today</th>
-                                <th>VOL: 1/7</th>
-                                <th>VOL: 1/14</th>
-                                <th>GR: 1/7</th>
-                                <th>GR: 1/14</th>
                                 <th>-0d Price</th>
-                                <th>-7d Price</th>
-                                <th>-14d Price</th>
+                                <th>-(x)d Price</th>
+                                <th>GR: 1/(x)</th>
+                                <th>VOL Break</th>
+                                <th>VOL: 1</th>
+                                <th>VOL: 1/(x)</th>
+                                <th># Ups</th>
+                                <th># Downs</th>
                               </tr>
                             </tfoot>
                           </table>

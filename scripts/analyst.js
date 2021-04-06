@@ -1,6 +1,27 @@
-const HOST = "http://13.250.12.28:3001/"
-// HOST = "http://localhost:3001/"
+// const HOST = "http://13.250.12.28:3001/"
+const HOST = "http://localhost:3001/";
+
+$(document).change(function () {});
 $(function () {
+  $.ajax({
+    url: HOST + "api/v1/industries",
+    type: "GET",
+    dataType: "json",
+    success: function (res) {
+      console.log(res);
+      for (let index = 0; index < res.length; index++) {
+        const industry = res[index];
+        $("#industry").append(
+          $("<option>", {
+            value: industry.ID,
+            text: industry.Name,
+          })
+        );
+      }
+
+      $("#industry").formSelect();
+    },
+  });
   function formatCurrency(num, decimals = 2, delimiter = ",") {
     let toFixedDecimals = decimals != 0 ? decimals : 2;
     let newNum = (+num)
@@ -18,9 +39,44 @@ $(function () {
   });
 
   $("#analyst-btn").click(function () {
-    $(this).prop('disabled', true);
-    $(this).text("Please wait, analyzing...")
-    const board = $("#board").val();
+    $(this).prop("disabled", true);
+    $(this).text("Please wait, analyzing...");
+    const catID = $("#board").val();
+    const industryID = $("#industry").val();
+    const peMax = $("#pe").val();
+    const epsMin = $("#eps").val();
+    const volumeMin = $("#volumeMin").val();
+    const volumeMax = $("#volumeMax").val();
+    const closePriceMin = $("#closePriceMin").val();
+    const closePriceMax = $("#closePriceMax").val();
+    const closePriceRateMin = $("#closePriceRateMin").val();
+    const closePriceRateMax = $("#closePriceRateMax").val();
+    const days = $("#days").val();
+    const analystURL =
+      HOST +
+      "api/v1/analyst?catID=" +
+      catID +
+      "&industryID=" +
+      industryID +
+      "&peMax=" +
+      peMax +
+      "&epsMin=" +
+      epsMin +
+      "&volumeMin=" +
+      volumeMin +
+      "&volumeMax=" +
+      volumeMax +
+      "&closePriceMin=" +
+      closePriceMin +
+      "&closePriceMax=" +
+      closePriceMax +
+      "&days=" +
+      days +
+      "&closePriceRateMin=" +
+      closePriceRateMin +
+      "&closePriceRateMax=" +
+      closePriceRateMax;
+
     $("#analyst-table").DataTable({
       initComplete: function () {
         // Apply the search
@@ -43,10 +99,10 @@ $(function () {
       scrollX: true,
       ajax: {
         type: "GET",
-        url: HOST + "api/v1/analyst?board=" + board,
+        url: analystURL,
         dataSrc: function (res) {
           $("#analyst-btn").text("Analyze");
-          $("#analyst-btn").prop('disabled', false);
+          $("#analyst-btn").prop("disabled", false);
           return res;
         },
       },
@@ -71,56 +127,42 @@ $(function () {
           },
         },
         {
-          title: "# 7up",
-          data: "numberOfUptrend",
-        },
-        {
-          title: "# 7down",
-          data: "numberOfDowntrend",
-        },
-        {
-          title: "# 2up",
-          data: "last2Uptrend",
-        },
-        {
-          title: "# 2down",
-          data: "last2Downtrend",
-        },
-        {
-          title: "VOL: Today",
-          data: "volumesLastSession",
-          render: function (data) {
-            return formatCurrency(data);
-          },
-        },
-        {
-          title: "VOL: 1/7",
-          data: "volRateLast7Sessions",
-          type: "num",
-        },
-        {
-          title: "VOL: 1/14",
-          data: "volRateLast14Sessions",
-        },
-        {
-          title: "GR: 1/7",
-          data: "priceGrowthRateLast7Days",
-        },
-        {
-          title: "GR: 1/14",
-          data: "priceGrowthRateLast14Days",
-        },
-        {
           title: "-0d Price",
           data: "lastPrice",
         },
         {
-          title: "-7d Price",
-          data: "last7Price",
+          title: "-(x)d Price",
+          data: "lastXPrice",
         },
         {
-          title: "-14d Price",
-          data: "last14Price",
+          title: "GR: 1/(x)",
+          data: "rateClosePriceLast1andX",
+        },
+        {
+          title: "VOL Break",
+          data: "isAccumulatedStock",
+          render: function (data) {
+            if (data) return "Yes";
+            return "No";
+          },
+        },
+        {
+          title: "VOL: 1",
+          data: "lastVolume",
+          type: "num",
+        },
+        {
+          title: "VOL: 1/(x)",
+          data: "rateVolLast1andX",
+          type: "num",
+        },
+        {
+          title: "# Ups",
+          data: "numberOfUps",
+        },
+        {
+          title: "# Downs",
+          data: "numberOfDowns",
         },
       ],
       // columnDefs: [
@@ -172,9 +214,7 @@ $(function () {
 
   function getStockInfo(stockCodes) {
     $.ajax({
-      url:
-        HOST + "api/v1/stock-info?stockCodes=" +
-        stockCodes.join(),
+      url: HOST + "api/v1/stock-info?stockCodes=" + stockCodes.join(),
       type: "GET",
       dataType: "json",
       success: function (res) {
