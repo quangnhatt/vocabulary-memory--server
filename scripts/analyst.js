@@ -159,10 +159,28 @@ $(function () {
         {
           title: "# Ups",
           data: "numberOfUps",
+          type: "num",
         },
         {
           title: "# Downs",
           data: "numberOfDowns",
+          type: "num",
+        },
+        {
+          title: "Sell re.",
+          data: "outstandingSell",
+          render: function (data) {
+            if (data === 0) return "-";
+            return data;
+          },
+        },
+        {
+          title: "Buy re.",
+          data: "outstandingBuy",
+          render: function (data) {
+            if (data === 0) return "-";
+            return data;
+          },
         },
       ],
       // columnDefs: [

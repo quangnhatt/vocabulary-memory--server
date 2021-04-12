@@ -4,13 +4,14 @@ const fs = require("fs");
 class AnalystService {
   getTotalVolumes(volumes, numberOfDays = 1) {
     const lastVolume = volumes.slice(-1)[0];
-    const volumesWithoutLastVolume = volumes
-      .slice(0, -1)
-      .slice(-(+numberOfDays + 1));
+    const volumesWithoutLastVolume =
+      numberOfDays != 0
+        ? volumes.slice(-(numberOfDays + 1)).slice(0, -1)
+        : [lastVolume];
     const totalLastXVolumes = volumesWithoutLastVolume.reduce(
       (total, vol) => total + vol
     );
-    const averageLastXVolumes = (totalLastXVolumes / +numberOfDays).toFixed(0);
+    const averageLastXVolumes = (totalLastXVolumes / (numberOfDays+1)).toFixed(0);
 
     const rateLastXVolumes = (lastVolume / averageLastXVolumes).toFixed(2);
 
@@ -96,7 +97,15 @@ class AnalystService {
       );
       const compareDate = new Date(toDate * 1000);
       const compareHours = compareDate.getHours();
-      const compareTime = compareDate.setHours(0, 0, 0, 0);
+      const compareTime =
+        compareHours <= 8
+          ? new Date(compareDate.setDate(compareDate.getDate() - 1)).setHours(
+              0,
+              0,
+              0,
+              0
+            )
+          : compareDate.setHours(0, 0, 0, 0);
       if (lastTime == compareTime && (compareHours >= 15 || compareHours <= 8))
         return STOCK_DATA;
     }

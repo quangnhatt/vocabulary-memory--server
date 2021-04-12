@@ -1,7 +1,7 @@
 const AnalystService = require("../services/analyst.service");
 const HttpHelper = require("../helpers/http.helper");
 const _ = require("lodash");
-const fs = require("fs");
+
 class AnalystController {
   async doAnalyst(req, res, next) {
     try {
@@ -13,7 +13,7 @@ class AnalystController {
       const volumeMax = req.query.volumeMax;
       const closePriceMin = req.query.closePriceMin;
       const closePriceMax = req.query.closePriceMax;
-      const days = +req.query.days;
+      const days = req.query.days == "" ? 1 : +req.query.days;
       const closePriceRateMin = +req.query.closePriceRateMin;
       const closePriceRateMax = +req.query.closePriceRateMax;
       let codeHistories = await getCodeHistories(
@@ -22,11 +22,13 @@ class AnalystController {
         peMax,
         epsMin
       );
+
+      const STOCK_DATA = require("../data/stockDetailList.json");
       let result = [];
       for (let index = 0; index < codeHistories.length; index++) {
         const item = codeHistories[index];
         if (!item) continue;
-        if (!days || days == 0) {
+        if (days == 0) {
           if (volumeMin && item.v.slice(-1)[0] < +volumeMin) continue;
           if (volumeMax && item.v.slice(-1)[0] > +volumeMax) continue;
           if (closePriceMin && item.c.slice(-1)[0] < +closePriceMin) continue;
@@ -43,7 +45,10 @@ class AnalystController {
           // rate
           if (closePriceRateMin || closePriceRateMax) {
             const firstPrice = lastClosePrices[0];
-            const lastPrice = days > lastClosePrices.length ? lastClosePrices.slice(-1)[0] : lastClosePrices[days];
+            const lastPrice =
+              days > lastClosePrices.length
+                ? lastClosePrices.slice(-1)[0]
+                : lastClosePrices[days];
             const priceRate = ((lastPrice - firstPrice) / firstPrice) * 100;
             if (closePriceRateMin && priceRate < +closePriceRateMin) continue;
             if (closePriceRateMax && priceRate > +closePriceRateMax) continue;
@@ -66,16 +71,21 @@ class AnalystController {
           );
           const isAccumulatedStock = AnalystService.getBreakPoint(item.v);
           const trend = AnalystService.getNumberOfTrends(item.c, item.o);
+          const stockInfo = STOCK_DATA.find(
+            (x) => x.StockCode == item.StockCode
+          );
           result.push({
             code: item.StockCode,
             lastVolume: volumesAnalyst.lastVolume,
             rateVolLast1andX: volumesAnalyst.rateLastXVolumes,
             rateClosePriceLast1andX,
             lastPrice: item.c.slice(-1)[0],
-            lastXPrice: item.c.slice(days && days != 0 ? -(days + 1) : -7)[0],
+            lastXPrice: item.c.slice(-(days + 1))[0],
             isAccumulatedStock: isAccumulatedStock,
             numberOfUps: trend.numberOfUps,
             numberOfDowns: trend.numberOfDowns,
+            outstandingBuy: stockInfo.OutstandingBuy ? stockInfo.OutstandingBuy : 0,
+            outstandingSell: stockInfo.OutstandingSell ? stockInfo.OutstandingSell : 0,
           });
         } catch (ex) {
           console.log(item.StockCode + " -  " + ex);
@@ -201,8 +211,10 @@ async function getCodeHistories(catID, industryID, peMax, epsMin) {
   let promises = [];
   let codeHistories = [];
   let data = [];
+  let cnt = 0;
   // stockCodes.length
   for (let index = 0; index < stockCodes.length; index++) {
+    cnt++;
     const stockCode = stockCodes[index];
     const cachedStockHistory = AnalystService.getCachedStockHistories(
       stockCode,
@@ -215,11 +227,16 @@ async function getCodeHistories(catID, industryID, peMax, epsMin) {
       promises.push(
         AnalystService.getStockHistories(stockCode, fromDate, toDate)
       );
-      data = await Promise.all(promises);
-      codeHistories = codeHistories.concat(data);
+      if (cnt % 20 == 0 || cnt == stockCodes.length) {
+        data = await Promise.all(promises);
+        codeHistories = codeHistories.concat(data);
+        console.log("DONE " + cnt);
+        promises = [];
+        sleep(2000);
+      }
     }
   }
- 
+
   let error = codeHistories.filter((x) => x == undefined).length;
   console.log("ERROR " + error);
   return codeHistories;

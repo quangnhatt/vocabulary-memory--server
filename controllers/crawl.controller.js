@@ -16,7 +16,7 @@ class CrawlController {
           );
         }
       }
-      console.log(stockList);
+
       fs.writeFileSync(
         "data/stockList.json",
         JSON.stringify(stockList),
@@ -25,6 +25,9 @@ class CrawlController {
           console.log("DONE");
         }
       );
+
+      await getTradingInfo();
+
       return res.json(200);
     } catch (ex) {
       console.log(ex);
@@ -32,39 +35,45 @@ class CrawlController {
   }
 
   async doCrawlDetail(req, res, next) {
-    let stockList = require("../data/stockList.json");
-    const skippedStockCodes = ["NSC", "ABT", "VFG"];
-    let cnt = 0;
-    // stockList = [{StockCode: "NSC"}]
-    for (const key in stockList) {
-      let stock = stockList[key];
-      if (skippedStockCodes.indexOf(stock.StockCode) > -1) continue;
-      console.log("START " + stock.StockCode);
-      const data = await CrawlService.getStockDetail(stock.StockCode);
-      if (!data) continue;
-      stock.BVPS = data.BVPS;
-      stock.Beta = data.Beta;
-      stock.Dividend = data.Dividend;
-      stock.EPS = data.EPS;
-      stock.FEPS = data.FEPS;
-      stock.MarketCapital = data.MarketCapital;
-      stock.PB = data.PB;
-      stock.PE = data.PE;
-      cnt++;
-      console.log("DONE " + cnt + " - " + stock.StockCode);
-    }
-
-    fs.writeFileSync(
-      "data/stockDetailList.json",
-      JSON.stringify(stockList),
-      "utf8",
-      function () {
-        console.log("DONE");
-      }
-    );
+    await getTradingInfo();
 
     return res.json(200);
   }
 }
 
 module.exports = new CrawlController();
+
+async function getTradingInfo() {
+  let stockList = require("../data/stockList.json");
+  const skippedStockCodes = ["NSC", "ABT", "VFG", "LAF"];
+  let cnt = 0;
+  // stockList = [{StockCode: "NSC"}]
+  for (const key in stockList) {
+    let stock = stockList[key];
+    if (skippedStockCodes.indexOf(stock.StockCode) > -1) continue;
+    console.log("START " + stock.StockCode);
+    const data = await CrawlService.getStockDetail(stock.StockCode);
+    if (!data) continue;
+    stock.BVPS = data.BVPS;
+    stock.Beta = data.Beta;
+    stock.Dividend = data.Dividend;
+    stock.EPS = data.EPS;
+    stock.FEPS = data.FEPS;
+    stock.MarketCapital = data.MarketCapital;
+    stock.PB = data.PB;
+    stock.PE = data.PE;
+    stock.OutstandingBuy = data.OutstandingBuy;
+    stock.OutstandingSell = data.OutstandingSell;
+    cnt++;
+    console.log("DONE " + cnt + " - " + stock.StockCode);
+  }
+
+  fs.writeFileSync(
+    "data/stockDetailList.json",
+    JSON.stringify(stockList),
+    "utf8",
+    function () {
+      console.log("DONE");
+    }
+  );
+}
