@@ -52,8 +52,6 @@ class StockController {
       let quantity = 0;
 
       _.reverse(reversedDetails).map((detail) => {
-        if (detail.symbol == "TIG")
-          detail.symbol == "TIG"
         if (detail.execType == "NS") {
           nsAmount += detail.execAmount;
           quantity -= detail.execQuantity;
