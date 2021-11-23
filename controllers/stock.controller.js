@@ -1,5 +1,6 @@
 const StockService = require("../services/stock.service");
-
+const moment = require("moment");
+const _ = require("lodash");
 class StockController {
   async getMyAssets(req, res, next) {
     const assets = await StockService.getMyAssets();
@@ -34,44 +35,52 @@ class StockController {
   async getHistories(req, res, next) {
     let data = await StockService.getHistories();
     let histories = data.histories;
-    let promises = [];
-    for (let index = 0; index < data.dates.length; index++) {
-      const date = data.dates[index];
-      promises.push(StockService.getMarketPriceByDate(date, "HOSE"));
-      promises.push(StockService.getMarketPriceByDate(date, "HNX"));
-    }
-    const markets = await Promise.all(promises);
-    let marketIndexs = [];
-    markets.map((item) => {
-      if (!item) return;
-      marketIndexs.push({
-        lowestPrice: item[1][0].LowestPrice,
-        trend: item[1][0].ChangeColor,
-        date: convertDate(item[1][0].TradingDate),
-        stockCode: item[1][0].StockCode,
+    let groupped = _.chain(histories)
+      .groupBy("symbol")
+      .map((value, key) => ({ symbol: key, details: value }))
+      .value();
+
+    let totalProfit = 0;
+    for (let index = 0; index < groupped.length; index++) {
+      let item = groupped[index];
+      let reversedDetails = item.details;
+      if (reversedDetails.length == 0) continue;
+      let profit = 0;
+      let nbAmount = 0;
+      let nsAmount = 0;
+      let averagePrice = 0;
+      let quantity = 0;
+
+      _.reverse(reversedDetails).map((detail) => {
+        if (detail.symbol == "TIG")
+          detail.symbol == "TIG"
+        if (detail.execType == "NS") {
+          nsAmount += detail.execAmount;
+          quantity -= detail.execQuantity;
+
+          //
+          profit += +(((detail.execPrice - averagePrice) * detail.execQuantity).toFixed(0));
+
+          //
+          nbAmount -= (detail.execQuantity * averagePrice);
+        }
+        if (detail.execType == "NB") {
+          nbAmount += detail.execAmount;
+          quantity += detail.execQuantity;
+
+          averagePrice = +((nbAmount / quantity).toFixed(3));
+        }
+        
       });
-    });
-    for (let index = 0; index < histories.length; index++) {
-      let item = histories[index];
-      const hose = marketIndexs.find(
-        (x) => x.date == item.execDate && x.stockCode == "VN-Index"
-      );
-      const hnx = marketIndexs.find(
-        (x) => x.date == item.execDate && x.stockCode == "HNX-Index"
-      );
-      if (!hose || !hnx) continue;
-      item.marketIndex =
-        hose.lowestPrice +
-        "(" +
-        hose.trend +
-        ")" +
-        " - " +
-        hnx.lowestPrice +
-        "(" +
-        hnx.trend +
-        ")";
+      item.profit = profit;
+      totalProfit += item.profit;
     }
-    return res.json(histories);
+  
+    return res.json({
+      totalProfit: totalProfit,
+      histories: histories,
+      grouppedHistories: groupped
+    });
   }
 
   async getMarketPrice(req, res, next) {

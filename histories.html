@@ -40,6 +40,11 @@
     <link
       rel="stylesheet"
       type="text/css"
+      href="app-assets/vendors/flag-icon/css/flag-icon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
       href="app-assets/vendors/data-tables/css/jquery.dataTables.min.css"
     />
     <link
@@ -121,7 +126,13 @@
           ><i class="navigation-header-icon material-icons">more_horiz</i>
         </li>
         <li class="active bold">
-          <a class="waves-effect waves-cyan active" href="analyst.html"
+          <a class="waves-effect waves-cyan active" href="stocks.html"
+            ><i class="material-icons">grid_on</i
+            ><span class="menu-title" data-i18n="">Stocks</span></a
+          >
+        </li>
+        <li>
+          <a class="waves-effect waves-cyan" href="analyst.html"
             ><i class="material-icons">grid_on</i
             ><span class="menu-title" data-i18n="">Analyst</span></a
           >
@@ -160,148 +171,61 @@
         <div class="col s12">
           <div class="container">
             <div class="section section-data-tables">
+              <div class="card">
+                <div class="card-content">
+                  <p class="caption mb-0">
+                    Tables are a nice way to organize a lot of data. We provide
+                    a few utility classes to help you style your table as easily
+                    as possible. In addition, to improve mobile experience, all
+                    tables on mobile-screen widths are centered automatically.
+                  </p>
+                </div>
+              </div>
+
               <!-- DataTables Row grouping -->
               <div class="row">
                 <div class="col s12 m12 l12">
                   <div
-                    class="card card card-default scrollspy overflow-visible"
+                    id="button-trigger2"
+                    class="card card card-default scrollspy"
                   >
                     <div class="card-content">
                       <h4 class="card-title">Histories</h4>
                       <div class="row">
                         <div class="col s12">
-                          <div class="col s12">
-                            <div class="col s2">
-                              <select id="board">
-                                <option value="1">HOSE</option>
-                                <option value="2">HNX</option>
-                                <option value="5">Upcom</option>
-                                <option value="">All</option>
-                              </select>
-                            </div>
-                            <div class="col s4">
-                              <select id="industry">
-                                <option value="">All</option>
-                              </select>
-                            </div>
-                            <div class="col s1">
-                              <input
-                                type="number"
-                                placeholder="PE max"
-                                id="pe"
-                              />
-                            </div>
-                            <div class="col s2">
-                              <input
-                                type="number"
-                                placeholder="EPS min"
-                                id="eps"
-                              />
-                            </div>
-                          </div>
-
-                          <div class="col s12">
-                            <div class="col s2">
-                              <input
-                                type="number"
-                                placeholder="# Days"
-                                id="days"
-                              />
-                            </div>
-                            <div class="col s2">
-                              <input
-                                type="number"
-                                placeholder="Volume min"
-                                id="volumeMin"
-                              />
-                            </div>
-                            <div class="col s2">
-                              <input
-                                type="number"
-                                placeholder="Volume max"
-                                id="volumeMax"
-                              />
-                            </div>
-                            <div class="col s2">
-                              <input
-                                type="number"
-                                placeholder="Close Price min"
-                                id="closePriceMin"
-                              />
-                            </div>
-                            <div class="col s2">
-                              <input
-                                type="number"
-                                placeholder="Close Price max"
-                                id="closePriceMax"
-                              />
-                            </div>
-                          </div>
-                          <div class="col s12">
-                            <div class="col s2">
-                              <input
-                                type="number"
-                                placeholder="Close Price rate min (%)"
-                                id="closePriceRateMin"
-                              />
-                            </div>
-                            <div class="col s2">
-                              <input
-                                type="number"
-                                placeholder="Close Price rate max (%)"
-                                id="closePriceRateMax"
-                              />
-                            </div>
-                          </div>
-
-                          <div class="col s3">
-                            <button
-                              class="waves-effect waves-light btn"
-                              id="analyst-btn"
-                            >
-                              Analyze
-                            </button>
-                          </div>
+                          <strong>PROFIT </strong
+                            ><span style="color: blue" class="total-profit">0</span>
+                            &emsp; 
+                          <strong>VN-INDEX </strong
+                          ><span class="current-vn-index">0</span>
+                          <i
+                            ><span class="current-vn-index-change">(0)</span></i
+                          >
+                          &emsp; <strong>HNX-INDEX </strong
+                          ><span class="current-hnx-index">0</span>
+                          <i><span class="current-hnx-index-change">0</span></i>
                         </div>
                         <div class="col s12">
-                          <table id="analyst-table" class="display">
+                          <table id="my-histories-table" class="display">
                             <thead>
                               <tr>
                                 <th>Code</th>
-                                <th>-0d Price</th>
-                                <th>-(x)d Price</th>
-                                <th>GR: 1/(x)</th>
-                                <th>VOL Break</th>
-                                <th>VOL: 1</th>
-                                <th>VOL: 1/(x)</th>
-                                <th># Ups</th>
-                                <th># Downs</th>
-                                <th>Up rate</th>
-                                <th>RSI</th>
-                                <th>Sell re.</th>
-                                <th>Buy re.</th>
+                                <th>Exec Date</th>
+                                <th>Exec Type</th>
+                                <th>Exec Quantity</th>
+                                <th>Exec Price</th>
+                                <th>Exec Amount</th>
                               </tr>
                             </thead>
-                            <tbody>
-                              <tr>
-                                <td colspan="11">Click 'Analyze'...</td>
-                              </tr>
-                            </tbody>
+                            <tbody></tbody>
                             <tfoot>
                               <tr>
                                 <th>Code</th>
-                                <th>-0d Price</th>
-                                <th>-(x)d Price</th>
-                                <th>GR: 1/(x)</th>
-                                <th>VOL Break</th>
-                                <th>VOL: 1</th>
-                                <th>VOL: 1/(x)</th>
-                                <th># Ups</th>
-                                <th># Downs</th>
-                                <th>Up rate</th>
-                                <th>RSI</th>
-                                <th>Sell re.</th>
-                                <th>Buy re.</th>
+                                <th>Exec Date</th>
+                                <th>Exec Type</th>
+                                <th>Exec Quantity</th>
+                                <th>Exec Price</th>
+                                <th>Exec Amount</th>
                               </tr>
                             </tfoot>
                           </table>
@@ -318,6 +242,30 @@
     </div>
     <!-- END: Page Main-->
 
+    <!-- BEGIN: Footer-->
+
+    <footer
+      class="page-footer footer footer-static footer-dark gradient-45deg-indigo-purple gradient-shadow navbar-border navbar-shadow"
+    >
+      <div class="footer-copyright">
+        <div class="container">
+          <span
+            >&copy; 2019
+            <a
+              href="http://themeforest.net/user/pixinvent/portfolio?ref=pixinvent"
+              target="_blank"
+              >PIXINVENT</a
+            >
+            All rights reserved.</span
+          ><span class="right hide-on-small-only"
+            >Design and Developed by
+            <a href="https://pixinvent.com/">PIXINVENT</a></span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- END: Footer-->
     <!-- BEGIN VENDOR JS-->
     <script src="app-assets/js/vendors.min.js" type="text/javascript"></script>
     <!-- BEGIN VENDOR JS-->
@@ -343,7 +291,7 @@
     ></script>
     <!-- END THEME  JS-->
     <!-- BEGIN PAGE LEVEL JS-->
-    <script src="scripts/analyst.js" type="text/javascript"></script>
+    <script src="scripts/histories.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS-->
   </body>
 </html>

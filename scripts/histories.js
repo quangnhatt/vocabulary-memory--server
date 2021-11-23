@@ -10,96 +10,6 @@ $(function () {
     return newNum;
   }
 
-
-  $('#my-stock-table').DataTable({
-    responsive: true,
-    ajax: {
-      type: "GET",
-      beforeSend: function (request) {
-        // request.setRequestHeader("token-id", token);
-      },
-      url: "http://localhost:3002/api/v1/assets",
-      dataSrc: function (res) {
-        let return_data = new Array();
-        if (!res || res.length == 0) return return_data;
-        let data = res;
-        for (var i = 0; i < data.length; i++) {
-          let costPrice = (data[i].costPrice / 1000).toFixed(3);
-          let currentPrice = (data[i].currentPrice / 1000).toFixed(3);
-          let interest = ((currentPrice - costPrice) / costPrice * 100).toFixed(2);
-          let interestAmount = (data[i].quantity * (currentPrice - costPrice)).toFixed(3);
-          return_data.push({
-            'code': data[i].symbol,
-            'quantity': data[i].quantity,
-            'costPrice': costPrice,
-            'currentPrice': currentPrice,
-            'interest': interest + '%',
-            'interestAmount': interestAmount
-          })
-        }
-        return return_data;
-      }
-    },
-    columns: [{
-        'title': 'Code',
-        'data': 'code'
-      },
-      {
-        'title': 'Quantity',
-        'data': 'quantity'
-      },
-      {
-        'title': 'Cost Price',
-        'data': 'costPrice'
-      },
-      {
-        'title': 'Current Price',
-        'data': 'currentPrice'
-      },
-      {
-        'title': 'Interest',
-        'data': 'interest'
-      },
-      {
-        'title': 'Interest Amount',
-        'data': 'interestAmount'
-      }
-    ],
-    'rowCallback': function (row, data, index) {
-      if (+data['interestAmount'] < 0) {
-        $(row).find('td:eq(4)').css('color', 'red');
-        $(row).find('td:eq(5)').css('color', 'red');
-      } else if (+data['interestAmount'] > 0) {
-        $(row).find('td:eq(4)').css('color', 'blue');
-        $(row).find('td:eq(5)').css('color', 'blue');
-      }
-    },
-    "footerCallback": function (row, data, start, end, display) {
-      var api = this.api(),
-        data;
-      let costTotal = 0;
-      let currentTotal = 0;
-      let interestTotal = 0;
-      for (let i = 0; i < data.length; i++) {
-        costTotal += data[i].quantity * (+data[i].costPrice);
-        currentTotal += data[i].quantity * (+data[i].currentPrice);
-        interestTotal += (+data[i].interestAmount);
-      }
-
-      // Update footer
-      $(api.column(2).footer()).html(
-        '<strong>' + formatCurrency(costTotal.toFixed(3), 3, '.') + '</strong>'
-      );
-      $(api.column(3).footer()).html(
-        '<strong>' + formatCurrency(currentTotal.toFixed(3), 3, '.') + '</strong>'
-      );
-      $(api.column(5).footer()).html(
-        '<strong>' + formatCurrency(interestTotal.toFixed(3), 3, '.') + '</strong>'
-      );
-    }
-
-  });
-
   let grouppedHistories;
   $('#my-histories-table').DataTable({
     "responsive": true,
@@ -190,7 +100,7 @@ $(function () {
           if (stockCodes.indexOf(data[index].symbol) == -1)
             stockCodes.push(data[index].symbol)
         }
-        getStockInfo(stockCodes);
+        //getStockInfo(stockCodes);
       }
 
     }
@@ -227,18 +137,18 @@ $(function () {
     });
   }
 
-  $.ajax({
-    url: "http://localhost:3002/api/v1/market-price",
-    type: 'GET',
-    dataType: 'json', // added data type
-    success: function (res) {
-      let hose = res.find(x => x.Code == 'VNIndex');
-      $('.current-vn-index').text(hose.Price).css('color', hose.Color);
-      $('.current-vn-index-change').text('(' + hose.Change + ')').css('color', hose.Color);
-      let hnx = res.find(x => x.Code == 'HNXINDEX');
-      $('.current-hnx-index').text(hnx.Price).css('color', hnx.Color);
-      $('.current-hnx-index-change').text('(' + hnx.Change + ')').css('color', hnx.Color);
-    }
-  });
+  // $.ajax({
+  //   url: "http://localhost:3002/api/v1/market-price",
+  //   type: 'GET',
+  //   dataType: 'json', // added data type
+  //   success: function (res) {
+  //     let hose = res.find(x => x.Code == 'VNIndex');
+  //     $('.current-vn-index').text(hose.Price).css('color', hose.Color);
+  //     $('.current-vn-index-change').text('(' + hose.Change + ')').css('color', hose.Color);
+  //     let hnx = res.find(x => x.Code == 'HNXINDEX');
+  //     $('.current-hnx-index').text(hnx.Price).css('color', hnx.Color);
+  //     $('.current-hnx-index-change').text('(' + hnx.Change + ')').css('color', hnx.Color);
+  //   }
+  // });
 
 })

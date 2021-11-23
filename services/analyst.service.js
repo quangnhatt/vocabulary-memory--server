@@ -1,6 +1,6 @@
 const fetch = require("node-fetch");
-const STOCK_DATA = require("../data/stockDetailList.json");
-const fs = require("fs");
+const ta = require('ta.js');
+const EXCHANGES = ["UPCoM", "HOSE", "HNX"];
 class AnalystService {
   getTotalVolumes(volumes, numberOfDays = 1) {
     const lastVolume = volumes.slice(-1)[0];
@@ -26,6 +26,19 @@ class AnalystService {
     prices = prices.slice(0, -1);
     const comparedItem = prices.slice(+numberOfDays * -1)[0];
     return (((lastPrice - comparedItem) / comparedItem) * 100).toFixed(2);
+  }
+
+  getUpRatePrice(closePrices, openPrices) {
+    const maxClosePrice = Math.max.apply(Math, closePrices);
+    const maxOpenPrice = Math.max.apply(Math, openPrices);
+    const lastPrice = closePrices.slice(-1)[0]
+    const maxPrice = maxClosePrice > maxOpenPrice ? maxClosePrice : maxOpenPrice; 
+    return (((lastPrice - maxPrice) / maxPrice) * 100).toFixed(2);
+  }
+
+  async getRSI(prices){
+    const rsi = await ta.rsi(prices, 14);
+    return rsi;
   }
 
   getNumberOfTrends(closePrices, openPrices) {
@@ -58,24 +71,27 @@ class AnalystService {
         break;
       }
     }
-    return isBreakPoint;
+    return breakIndex;
   }
 
   getStockList(catID = "", industryID = "", peMax = "", epsMin = "") {
     const exchange = getExchange(catID);
+    const STOCK_DATA = require("../data/stockList.json");
     const stockCodes = STOCK_DATA.filter(
       (x) =>
-        (!exchange || x.Exchange == exchange) &&
-        x.StockCode.length == 3 &&
+        ((!exchange && EXCHANGES.indexOf(x.Exchange) > -1) || x.Exchange == exchange) &&
+        x.Code.length == 3 &&
         (!industryID || x.IndustryID == industryID) &&
         (!epsMin || x.EPS >= +epsMin) &&
         (!peMax || x.PE <= +peMax)
-    ).map((x) => x.StockCode);
+    ).map((x) => x.Code);
     return stockCodes;
   }
 
   async getStockDetailList(catID = 1, industryID) {
     const exchange = getExchange(catID);
+
+    const STOCK_DATA = require("../data/stockDetailList.json");
     const stockCodes = STOCK_DATA.filter(
       (x) =>
         x.Exchange == exchange &&
@@ -83,75 +99,6 @@ class AnalystService {
         (!industryID || x.IndustryID == industryID)
     );
     return stockCodes;
-  }
-
-  getCachedStockHistories(stockCode, fromDate, toDate) {
-    const filePath = "data/stocks/" + stockCode + ".json";
-    if (fs.existsSync(filePath)) {
-      const STOCK_DATA = require("../" + filePath);
-      const lastTime = new Date(STOCK_DATA["LastUpdatedTime"] * 1000).setHours(
-        0,
-        0,
-        0,
-        0
-      );
-      const compareDate = new Date(toDate * 1000);
-      const compareHours = compareDate.getHours();
-      const compareTime =
-        compareHours <= 8
-          ? new Date(compareDate.setDate(compareDate.getDate() - 1)).setHours(
-              0,
-              0,
-              0,
-              0
-            )
-          : compareDate.setHours(0, 0, 0, 0);
-      if (lastTime == compareTime && (compareHours >= 15 || compareHours <= 8))
-        return STOCK_DATA;
-    }
-    return null;
-  }
-
-  async getStockHistories(stockCode, fromDate, toDate) {
-    const filePath = "data/stocks/" + stockCode + ".json";
-    let data = await fetch(
-      "https://api.vietstock.vn/ta/history?symbol=" +
-        stockCode +
-        "&resolution=D&from=" +
-        fromDate +
-        "&to=" +
-        toDate,
-      {
-        headers: {
-          accept: "*/*",
-          "accept-language": "en-US,en;q=0.9",
-          "content-type": "text/plain",
-          "sec-ch-ua":
-            '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
-          "sec-ch-ua-mobile": "?0",
-          "sec-fetch-dest": "empty",
-          "sec-fetch-mode": "cors",
-          "sec-fetch-site": "same-site",
-        },
-        referrer: "https://stockchart.vietstock.vn/",
-        referrerPolicy: "strict-origin-when-cross-origin",
-        body: null,
-        method: "GET",
-        mode: "cors",
-      }
-    ).then((res) => {
-      if (res.status == 200) return res.json();
-    });
-
-    data = JSON.parse(data);
-    data.StockCode = stockCode;
-    // update local files
-    data.LastUpdatedTime = toDate;
-    fs.writeFileSync(filePath, JSON.stringify(data), "utf8", function () {
-      console.log("DONE");
-    });
-
-    return data;
   }
 
   async getStockdealDetailByTime(stockCode, timeType = "1Y") {
@@ -228,11 +175,11 @@ class AnalystService {
 
 module.exports = new AnalystService();
 
-function isBreakVolume(value, arrToCompare, ratio = 3) {
+function isBreakVolume(value, arrToCompare, ratio = 5) {
   let isBreakPoint = true;
   for (const key in arrToCompare) {
     const valToCompare = arrToCompare[key];
-    if (value > valToCompare / ratio || valToCompare < 20000) {
+    if (value > valToCompare / ratio) {
       isBreakPoint = false;
       break;
     }

@@ -2,8 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const dotenv = require('dotenv');
 const http = require('http');
-const authController = require('../controllers/auth.controller');
-const stockController = require('../controllers/stock.controller');
 
 // load process env
 const projectPath = path.resolve('.');
@@ -15,7 +13,7 @@ if (fs.existsSync(path.resolve(projectPath, '../configs/.env'))) {
 
 const app = require('../app.js');
 
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3002;
 
 (async () => {
     try {

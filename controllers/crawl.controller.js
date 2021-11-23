@@ -1,30 +1,20 @@
 const CrawlService = require("../services/crawl.service");
 const fs = require("fs");
+const HttpHelper = require("../helpers/http.helper");
 
 class CrawlController {
   async doCrawl(req, res, next) {
     try {
-      const industries = require("../data/industries.json");
-      const industryIDs = industries.map((x) => x.ID);
-      const catIDs = [1, 2, 5]; //HOSE, HNX, UPCoM
-      let stockList = [];
-      for (const i in catIDs) {
-        const catID = catIDs[i];
-        for (const key in industryIDs) {
-          stockList = stockList.concat(
-            await CrawlService.getStockList(catID, industryIDs[key])
-          );
-        }
-      }
+      // let stockList = await CrawlService.getStockList()
 
-      fs.writeFileSync(
-        "data/stockList.json",
-        JSON.stringify(stockList),
-        "utf8",
-        function () {
-          console.log("DONE");
-        }
-      );
+      // fs.writeFileSync(
+      //   "data/stockList.json",
+      //   JSON.stringify(stockList),
+      //   "utf8",
+      //   function () {
+      //     console.log("DONE");
+      //   }
+      // );
 
       await getTradingInfo();
 
@@ -35,7 +25,27 @@ class CrawlController {
   }
 
   async doCrawlDetail(req, res, next) {
-    await getTradingInfo();
+    let stockList = require("../data/stockList.json");
+    const toDate = Math.round(
+      HttpHelper.addDays(0).getTime() / 1000
+    );
+    const fromDate = Math.round(HttpHelper.addMonths(-3).getTime() / 1000);
+    const skippedStockCodes = [];
+    const validExchange = ["UPCoM", "HOSE", "HNX"];
+    for (let i = 0; i < stockList.length; i++) {
+      let stock = stockList[i];
+      if (
+        !stock ||
+        !stock.Code ||
+        stock.Code.length != 3 ||
+        validExchange.indexOf(stock.Exchange) == -1 ||
+        skippedStockCodes.indexOf(stock.Code) > -1
+      )
+        continue;
+      console.log("START " + i + " " + stock.Code);
+      await CrawlService.getStockHistories(stock.Code, fromDate, toDate);
+      console.log("COMPLETED " + i + " " + stock.Code);
+    }
 
     return res.json(200);
   }
@@ -45,15 +55,44 @@ module.exports = new CrawlController();
 
 async function getTradingInfo() {
   let stockList = require("../data/stockList.json");
-  const skippedStockCodes = ["NSC", "ABT", "VFG", "LAF"];
-  let cnt = 0;
-  // stockList = [{StockCode: "NSC"}]
-  for (const key in stockList) {
-    let stock = stockList[key];
-    if (skippedStockCodes.indexOf(stock.StockCode) > -1) continue;
-    console.log("START " + stock.StockCode);
-    const data = await CrawlService.getStockDetail(stock.StockCode);
-    if (!data) continue;
+  const skippedStockCodes = [
+    "AAC",
+    "AIA",
+    "ALC",
+    "ALS",
+    "AON",
+    "ATC",
+    "AVA",
+    "BAF",
+    "BAV",
+    "BBL",
+    "BDS",
+    "BJC",
+    "BNC",
+    "BTJ",
+    "BTL",
+    "BVA",
+    "BVC",
+  ];
+  // stockList = [{Code: "AAC"}]
+  const validExchange = ["UPCoM", "HOSE", "HNX"];
+  for (let i = 0; i < stockList.length; i++) {
+    let stock = stockList[i];
+    if (
+      !stock ||
+      !stock.Code ||
+      stock.Code.length != 3 ||
+      validExchange.indexOf(stock.Exchange) == -1 ||
+      skippedStockCodes.indexOf(stock.Code) > -1
+    )
+      continue;
+    console.log("START " + i + " " + stock.Code);
+    let timeout = setTimeout(function () {
+      console.log("WRITE FILE SYNC AT " + i);
+      writeFileSync(stockList);
+    }, 2000);
+    const data = await CrawlService.getStockDetail(stock.Code);
+    if (!data) return;
     stock.BVPS = data.BVPS;
     stock.Beta = data.Beta;
     stock.Dividend = data.Dividend;
@@ -64,12 +103,16 @@ async function getTradingInfo() {
     stock.PE = data.PE;
     stock.OutstandingBuy = data.OutstandingBuy;
     stock.OutstandingSell = data.OutstandingSell;
-    cnt++;
-    console.log("DONE " + cnt + " - " + stock.StockCode);
+    console.log("DONE " + i + " - " + stock.Code);
+    clearTimeout(timeout);
   }
+  console.log("WRITE FILE SYNC DONE");
+  writeFileSync(stockList);
+}
 
+function writeFileSync(stockList) {
   fs.writeFileSync(
-    "data/stockDetailList.json",
+    "data/stockList.json",
     JSON.stringify(stockList),
     "utf8",
     function () {

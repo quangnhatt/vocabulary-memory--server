@@ -52,6 +52,7 @@ class AuthService {
           if (res.status == 200) return res.text();
         })
         .then((res) => {
+          console.log(res)
           tokenID = res.split("=")[2];
           fs.writeFileSync(tokenIDPath, tokenID);
           return resolve(tokenID);

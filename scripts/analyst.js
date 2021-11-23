@@ -1,5 +1,5 @@
 // const HOST = "http://13.250.12.28:3001/"
-const HOST = "http://localhost:3001/";
+const HOST = "http://localhost:3002/";
 
 $(document).change(function () {});
 $(function () {
@@ -139,12 +139,9 @@ $(function () {
           data: "rateClosePriceLast1andX",
         },
         {
-          title: "VOL Break",
-          data: "isAccumulatedStock",
-          render: function (data) {
-            if (data) return "Yes";
-            return "No";
-          },
+          title: "Break",
+          data: "breakPoint",
+          type: "num",
         },
         {
           title: "VOL: 1",
@@ -164,6 +161,16 @@ $(function () {
         {
           title: "# Downs",
           data: "numberOfDowns",
+          type: "num",
+        },
+        {
+          title: "Up rate",
+          data: "upPriceRate",
+          type: "num",
+        },
+        {
+          title: "RSI ",
+          data: "latestRSI",
           type: "num",
         },
         {

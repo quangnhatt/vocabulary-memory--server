@@ -46,24 +46,42 @@ class StockService {
       method: "GET",
       mode: "cors",
     };
+
     let result = [];
     let dates = [];
     let data = await HttpHelper.fetch(url, options);
+    let tigs = [];
+    let hbs = [];
     for (let index = 0; index < data.length; index++) {
       const item = data[index];
-      if (!item.matchDetails) continue;
-      let newItem;
-      newItem = {
-        symbol: item.symbol,
-        execType: item.execType,
-        execDate: item.transactionDate,
-        execQuantity: item.matchQuantity,
-        execPrice: +item.matchAveragePrice,
-        execAmount: item.matchAmount,
-      };
-      if (dates.indexOf(item.transactionDate) == -1)
-        dates.push(item.transactionDate);
-      result.push(newItem);
+
+      // if (item.symbol  == "TIG")
+      //  { tigs.push(item);
+      //   continue;
+      //  }
+      //  if (item.symbol  == "HBS")
+      //  { hbs.push(item);
+      //   continue;
+      //  }
+      if (!item.histOrderReports) continue;
+      for (let i = 0; i < item.histOrderReports.length; i++){
+        let histItem = item.histOrderReports[i];
+        if (histItem && histItem.matchQuantity > 0){
+          let newItem;
+          newItem = {
+            symbol: histItem.symbol,
+            execType: histItem.execType,
+            execDate: histItem.transactionDate.substring(0, 10),
+            execQuantity: histItem.matchQuantity,
+            execPrice: +histItem.matchPrice,
+            execAmount: histItem.matchQuantity * (+histItem.matchPrice),
+          };
+          if (dates.indexOf(item.transactionDate.substring(0, 10)) == -1)
+            dates.push(item.transactionDate.substring(0, 10));
+          result.push(newItem);
+        }
+      }
+      
     }
     return {
       histories: result,
@@ -119,7 +137,7 @@ class StockService {
     return data;
   }
 
-  async getMarketPriceByDate(date, floor) {
+  async getMarketPriceByDate(fromDate, toDate, floor) {
     let catID = 1;
     let stockID = -19;
     if (floor == "HNX") {
@@ -127,27 +145,34 @@ class StockService {
       stockID = -18;
     }
 
+    
+
     const data = await fetch(
-      "https://finance.vietstock.vn/data/KQGDThongKeGiaStockPaging?page=1&pageSize=20&catID=" +
+      "https://finance.vietstock.vn/data/KQGDThongKeGiaStockPaging?page=1&pageSize=30&catID=" +
         catID +
         "&stockID=" +
         stockID +
         "&fromDate=" +
-        date +
+        fromDate +
         "&toDate=" +
-        date,
+        toDate,
       {
         headers: {
           accept: "*/*",
           "accept-language": "en-US,en;q=0.9",
-          "cache-control": "no-cache",
-          pragma: "no-cache",
+          "sec-ch-ua":
+            '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+          "sec-ch-ua-mobile": "?0",
           "sec-fetch-dest": "empty",
           "sec-fetch-mode": "cors",
           "sec-fetch-site": "same-origin",
           "x-requested-with": "XMLHttpRequest",
+          cookie:
+            "_ga=GA1.2.1637228069.1600916572; _ga=GA1.3.1637228069.1600916572; __gads=ID=3ad4a460750561d1:T=1600916574:S=ALNI_MaONFDGdXGULuBl-szXLEgvKBJyUA; language=vi-VN; vst_usr_lg_token=mZrp0hRqBEW7s0f/+/wVZA==; _gid=GA1.2.52334258.1618156736; _gid=GA1.3.52334258.1618156736; ASP.NET_SessionId=errfgvbb4tgrx2h3kzhfz4yc; __RequestVerificationToken=03tRlVv5xtmJryyyZBM-F9Q_CHFv1-jk8hHzR-NSgBTzWWijFzxjHfFllk5auZRuk3XAQyFelZr9Pg9x87wGNLyAts-Fn41x7UaiwTwkgPk1; isShowLogin=true; finance_viewedstock=ACM,APC,; ats_referrer_history=%5B%22vietstock.vn%22%2C%22finance.vietstock.vn%22%2C%22finance.vietstock.vn%22%2C%22finance.vietstock.vn%22%2C%22finance.vietstock.vn%22%2C%22finance.vietstock.vn%22%2C%22finance.vietstock.vn%22%2C%22finance.vietstock.vn%22%2C%22finance.vietstock.vn%22%2C%22finance.vietstock.vn%22%5D; _gat_UA-1460625-2=1",
         },
-        referrerPolicy: "no-referrer-when-downgrade",
+        referrer:
+          "https://finance.vietstock.vn/ket-qua-giao-dich?tab=thong-ke-gia&exchange=1&code=" + stockID,
+        referrerPolicy: "strict-origin-when-cross-origin",
         body: null,
         method: "GET",
         mode: "cors",

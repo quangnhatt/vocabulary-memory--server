@@ -1,5 +1,4 @@
 const AnalystService = require("../services/analyst.service");
-const HttpHelper = require("../helpers/http.helper");
 const _ = require("lodash");
 
 class AnalystController {
@@ -16,14 +15,16 @@ class AnalystController {
       const days = req.query.days == "" ? 1 : +req.query.days;
       const closePriceRateMin = +req.query.closePriceRateMin;
       const closePriceRateMax = +req.query.closePriceRateMax;
+      const includeToday = 1; // +req.query.includeToday;
       let codeHistories = await getCodeHistories(
         catID,
         industryID,
         peMax,
-        epsMin
+        epsMin,
+        includeToday
       );
 
-      const STOCK_DATA = require("../data/stockDetailList.json");
+      const STOCK_DATA = require("../data/stockList.json");
       let result = [];
       for (let index = 0; index < codeHistories.length; index++) {
         const item = codeHistories[index];
@@ -69,10 +70,12 @@ class AnalystController {
             item.c,
             days
           );
-          const isAccumulatedStock = AnalystService.getBreakPoint(item.v);
+          const breakPoint = AnalystService.getBreakPoint(item.v);
           const trend = AnalystService.getNumberOfTrends(item.c, item.o);
+          const upPriceRate = AnalystService.getUpRatePrice(item.o, item.c);
+          const rsi = await AnalystService.getRSI(item.c);
           const stockInfo = STOCK_DATA.find(
-            (x) => x.StockCode == item.StockCode
+            (x) => x.Code == item.StockCode
           );
           result.push({
             code: item.StockCode,
@@ -81,15 +84,16 @@ class AnalystController {
             rateClosePriceLast1andX,
             lastPrice: item.c.slice(-1)[0],
             lastXPrice: item.c.slice(-(days + 1))[0],
-            isAccumulatedStock: isAccumulatedStock,
+            breakPoint: breakPoint,
             numberOfUps: trend.numberOfUps,
             numberOfDowns: trend.numberOfDowns,
             outstandingBuy: stockInfo.OutstandingBuy ? stockInfo.OutstandingBuy : 0,
             outstandingSell: stockInfo.OutstandingSell ? stockInfo.OutstandingSell : 0,
+            upPriceRate: upPriceRate,
+            latestRSI: rsi && rsi.length > 0 ? (rsi[rsi.length - 1]).toFixed(0) : -1
           });
         } catch (ex) {
           console.log(item.StockCode + " -  " + ex);
-          result.push({});
         }
       }
       //
@@ -196,49 +200,22 @@ class AnalystController {
 
 module.exports = new AnalystController();
 
-async function getCodeHistories(catID, industryID, peMax, epsMin) {
+async function getCodeHistories(catID, industryID, peMax, epsMin, includeToday) {
   const stockCodes = AnalystService.getStockList(
     catID,
     industryID,
     peMax,
     epsMin
   );
-  // const stockCodes = ["SSB", "TCH"];
-  const today = new Date();
-  const toDate = Math.round(today.getTime() / 1000);
-  const fromDate = Math.round(HttpHelper.addMonths(-2).getTime() / 1000);
-
-  let promises = [];
   let codeHistories = [];
-  let data = [];
-  let cnt = 0;
   // stockCodes.length
   for (let index = 0; index < stockCodes.length; index++) {
-    cnt++;
     const stockCode = stockCodes[index];
-    const cachedStockHistory = AnalystService.getCachedStockHistories(
-      stockCode,
-      fromDate,
-      toDate
-    );
-    if (cachedStockHistory) {
-      codeHistories = codeHistories.concat(cachedStockHistory);
-    } else {
-      promises.push(
-        AnalystService.getStockHistories(stockCode, fromDate, toDate)
-      );
-      if (cnt % 20 == 0 || cnt == stockCodes.length) {
-        data = await Promise.all(promises);
-        codeHistories = codeHistories.concat(data);
-        console.log("DONE " + cnt);
-        promises = [];
-        sleep(2000);
-      }
-    }
+    const filePath = "data/stocks/" + stockCode + ".json";
+    const STOCK_DATA = require("../" + filePath);
+    codeHistories = codeHistories.concat(STOCK_DATA);
   }
 
-  let error = codeHistories.filter((x) => x == undefined).length;
-  console.log("ERROR " + error);
   return codeHistories;
 }
 
