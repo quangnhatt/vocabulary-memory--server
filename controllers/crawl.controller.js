@@ -26,9 +26,7 @@ class CrawlController {
 
   async doCrawlDetail(req, res, next) {
     let stockList = require("../data/stockList.json");
-    const toDate = Math.round(
-      HttpHelper.addDays(0).getTime() / 1000
-    );
+    const toDate = Math.round(HttpHelper.addDays(0).getTime() / 1000);
     const fromDate = Math.round(HttpHelper.addMonths(-3).getTime() / 1000);
     const skippedStockCodes = [];
     const validExchange = ["UPCoM", "HOSE", "HNX"];
@@ -48,6 +46,15 @@ class CrawlController {
     }
 
     return res.json(200);
+  }
+
+  async doCrawlNews(req, res, next) {
+    try {
+      const listPost = await CrawlService.crawlData();
+      return res.json(listPost);
+    } catch (ex) {
+      console.log(ex);
+    }
   }
 }
 

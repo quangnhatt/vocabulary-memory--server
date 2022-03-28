@@ -24,6 +24,25 @@ class StockService {
     return res;
   }
 
+  async getCashFlows() {
+    const url =
+      "https://reporting-service-api.vndirect.com.vn/bi/0001208904/cashStatement?sortable=true&fromDate=2020-01-04&toDate=2022-02-04&index=0&offset=10";
+    const options = {
+      headers: {
+        accept: "*/*",
+        "accept-language": "en-US,en;q=0.9",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-site",
+        Referer: "https://myaccount.vndirect.com.vn/",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+      },
+      body: null,
+      method: "OPTIONS",
+    };
+    let res = await HttpHelper.fetch(url, options);
+    return res;
+  }
   async getHistories() {
     var today = new Date().toISOString().slice(0, 10);
     let url =
@@ -64,9 +83,9 @@ class StockService {
       //   continue;
       //  }
       if (!item.histOrderReports) continue;
-      for (let i = 0; i < item.histOrderReports.length; i++){
+      for (let i = 0; i < item.histOrderReports.length; i++) {
         let histItem = item.histOrderReports[i];
-        if (histItem && histItem.matchQuantity > 0){
+        if (histItem && histItem.matchQuantity > 0) {
           let newItem;
           newItem = {
             symbol: histItem.symbol,
@@ -74,14 +93,13 @@ class StockService {
             execDate: histItem.transactionDate.substring(0, 10),
             execQuantity: histItem.matchQuantity,
             execPrice: +histItem.matchPrice,
-            execAmount: histItem.matchQuantity * (+histItem.matchPrice),
+            execAmount: histItem.matchQuantity * +histItem.matchPrice,
           };
           if (dates.indexOf(item.transactionDate.substring(0, 10)) == -1)
             dates.push(item.transactionDate.substring(0, 10));
           result.push(newItem);
         }
       }
-      
     }
     return {
       histories: result,
@@ -145,8 +163,6 @@ class StockService {
       stockID = -18;
     }
 
-    
-
     const data = await fetch(
       "https://finance.vietstock.vn/data/KQGDThongKeGiaStockPaging?page=1&pageSize=30&catID=" +
         catID +
@@ -171,7 +187,8 @@ class StockService {
             "_ga=GA1.2.1637228069.1600916572; _ga=GA1.3.1637228069.1600916572; __gads=ID=3ad4a460750561d1:T=1600916574:S=ALNI_MaONFDGdXGULuBl-szXLEgvKBJyUA; language=vi-VN; vst_usr_lg_token=mZrp0hRqBEW7s0f/+/wVZA==; _gid=GA1.2.52334258.1618156736; _gid=GA1.3.52334258.1618156736; ASP.NET_SessionId=errfgvbb4tgrx2h3kzhfz4yc; __RequestVerificationToken=03tRlVv5xtmJryyyZBM-F9Q_CHFv1-jk8hHzR-NSgBTzWWijFzxjHfFllk5auZRuk3XAQyFelZr9Pg9x87wGNLyAts-Fn41x7UaiwTwkgPk1; isShowLogin=true; finance_viewedstock=ACM,APC,; ats_referrer_history=%5B%22vietstock.vn%22%2C%22finance.vietstock.vn%22%2C%22finance.vietstock.vn%22%2C%22finance.vietstock.vn%22%2C%22finance.vietstock.vn%22%2C%22finance.vietstock.vn%22%2C%22finance.vietstock.vn%22%2C%22finance.vietstock.vn%22%2C%22finance.vietstock.vn%22%2C%22finance.vietstock.vn%22%5D; _gat_UA-1460625-2=1",
         },
         referrer:
-          "https://finance.vietstock.vn/ket-qua-giao-dich?tab=thong-ke-gia&exchange=1&code=" + stockID,
+          "https://finance.vietstock.vn/ket-qua-giao-dich?tab=thong-ke-gia&exchange=1&code=" +
+          stockID,
         referrerPolicy: "strict-origin-when-cross-origin",
         body: null,
         method: "GET",

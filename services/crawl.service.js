@@ -1,5 +1,7 @@
 const fetch = require("node-fetch");
 const fs = require("fs");
+const _ = require('lodash');
+const { extractData: extractDataVNExpress } = require('../helpers/vnexpress.helper');
 
 class CrawlService {
   async getStockList() {
@@ -149,5 +151,17 @@ class CrawlService {
 
     return data;
   }
+
+  async crawlData(){
+    const data = await extractDataVNExpress();
+    const listPost = _.chunk(data, 10);
+    // let postNews = [];
+    // for (const posts of listPost) {
+    //     const news = await newRepository.create(posts);
+    //     postNews = [...postNews, ...news];
+    // }
+
+    return listPost;
+}
 }
 module.exports = new CrawlService();
