@@ -1,5 +1,5 @@
-const { loadModulesInDir } = require('../helpers/load-modules');
+import { loadModulesInDir } from "../helpers/load-modules.js";
 
-exports.load = (app) => {
-    loadModulesInDir('apis', app);
-};
+export function loadAPIs(app) {
+    loadModulesInDir("apis", app);
+}

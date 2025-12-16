@@ -1,8 +1,9 @@
 {
-  "name": "stock",
+  "name": "word_memory_server",
   "version": "1.0.0",
   "description": "",
   "main": "cheat.js",
+  "type": "module",
   "dependencies": {
     "abort-controller": "^3.0.0",
     "axios": "^0.24.0",
@@ -10,14 +11,12 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "ioredis": "^5.8.2",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "node-abort-controller": "^3.0.1",
-    "node-fetch": "^2.6.1",
-    "static-server": "^2.2.1",
-    "ta.js": "^1.4.6"
+    "node-fetch": "^2.6.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node bin/index"

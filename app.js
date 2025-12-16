@@ -1,29 +1,19 @@
-const express = require('express');
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import { loadAPIs } from "./apis/index.js";   // ES Module import
+
+// Load environment variables
+dotenv.config();
+
 const app = express();
-const cors = require('cors');
-const bodyParser = require('body-parser');
-const apis = require('./apis');
 
-const headers = {
-    // 'allowedHeaders': ['Content-Type', 'Authorization'],
-    'origin': '*',
-    // 'methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    // 'preflightContinue': true
-};
+// Middleware
+app.use(cors());
+app.use(express.json());
 
-app.use(cors(headers));
-app.options('*', cors(headers));
-app.use(function (req, res, next) {
-    req.headers['if-none-match'] = 'no-match-for-this';
-    next();
-});
-app.use(bodyParser.json({ type: 'application/json', limit: process.env.REQUEST_LIMIT }));
-app.use(bodyParser.urlencoded({ extended: true }));
+// Load API routes
+loadAPIs(app);
 
-// load static file
-app.use('/public', express.static('public'));
-
-// load APIs
-apis.load(app);
-
-module.exports = app;
+// Export the app (ESM)
+export default app;
