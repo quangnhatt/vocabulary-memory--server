@@ -1,4 +1,5 @@
 import { pgPool } from "../db/postgres.js";
+import TagService from "./tag.service.js";
 
 class SyncService {
   async syncWords({ userId, lastSyncAt, changes }) {
@@ -7,8 +8,9 @@ class SyncService {
     try {
       await client.query("BEGIN");
 
-      // 1. APPLY CLIENT UPSERTS
+      // 1️⃣ APPLY UPSERT WORDS + TAGS
       for (const w of changes.upserts || []) {
+        // --- upsert word ---
         await client.query(
           `
           INSERT INTO words (
@@ -37,9 +39,33 @@ class SyncService {
             w.updatedAt,
           ]
         );
+
+        // --- clear old tags ---
+        await client.query(
+          `DELETE FROM word_tags WHERE word_id = $1`,
+          [w.remoteId]
+        );
+
+        // --- attach new tags ---
+        for (const tagName of w.tags || []) {
+          const tagId = await TagService.getOrCreateTag(
+            client,
+            userId,
+            tagName
+          );
+
+          await client.query(
+            `
+            INSERT INTO word_tags (word_id, tag_id)
+            VALUES ($1,$2)
+            ON CONFLICT DO NOTHING
+            `,
+            [w.remoteId, tagId]
+          );
+        }
       }
 
-      // 2. APPLY CLIENT DELETES (SOFT DELETE)
+      // 2️⃣ APPLY DELETES (SOFT DELETE)
       for (const id of changes.deletes || []) {
         await client.query(
           `
@@ -51,14 +77,22 @@ class SyncService {
         );
       }
 
-      // 3. FETCH SERVER CHANGES (LATEST FIRST)
+      // 3️⃣ FETCH SERVER CHANGES (LATEST FIRST, WITH TAGS)
       const serverRes = await client.query(
         `
-        SELECT *
-        FROM words
-        WHERE user_id = $1
-          AND updated_at > $2
-        ORDER BY updated_at DESC
+        SELECT
+          w.*,
+          COALESCE(
+            ARRAY_AGG(t.name) FILTER (WHERE t.name IS NOT NULL),
+            '{}'
+          ) AS tags
+        FROM words w
+        LEFT JOIN word_tags wt ON wt.word_id = w.id
+        LEFT JOIN tags t ON t.id = wt.tag_id
+        WHERE w.user_id = $1
+          AND w.updated_at > $2
+        GROUP BY w.id
+        ORDER BY w.updated_at DESC
         `,
         [userId, lastSyncAt]
       );

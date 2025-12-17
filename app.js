@@ -2,7 +2,6 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import { loadAPIs } from "./apis/index.js";   // ES Module import
-import { pgPool } from "./db/postgres.js"; // Initialize Postgres connection
 
 // Load environment variables
 dotenv.config();
