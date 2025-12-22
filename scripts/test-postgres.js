@@ -1,4 +1,4 @@
-import { pgPool } from "../db/postgres.js";
+import { pgPool } from "/index.js";
 
 async function test() {
   try {

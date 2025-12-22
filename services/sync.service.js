@@ -1,4 +1,4 @@
-import { pgPool } from "../db/postgres.js";
+import { pgPool } from "../db/index.js";
 import TagService from "./tag.service.js";
 
 class SyncService {
