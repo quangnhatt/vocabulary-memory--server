@@ -4,8 +4,4 @@ export function load(app) {
   app.get("/api/v1/translate", (req, res, next) =>
     TranslateController.doTranslate(req, res, next)
   );
-
-  app.get("/api/v1/ext/translate", (req, res, next) =>
-    TranslateController.doTranslate(req, res, next)
-  );
 }

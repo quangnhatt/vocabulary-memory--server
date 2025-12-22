@@ -3,6 +3,7 @@ import { verifyAuthToken } from '../utils/jwt.js';
 const PUBLIC_PATHS = [
   '/auth/google',
   '/ext/translate',
+  '/ext/sync/word',
 ];
 
 export function requireUser(req, res, next) {

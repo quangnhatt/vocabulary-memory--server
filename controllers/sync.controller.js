@@ -10,6 +10,20 @@ class SyncController {
 
     res.json(result);
   }
+
+  async saveWordByUserCode(req, res) {
+    try {
+      const result = await SyncService.saveWordByUserCode({
+        user_code: req.body.userCode,
+        term: req.body.term,
+        translation: req.body.translation,
+      });
+      res.json({ success: true, word: result });
+    } catch (e) {
+      console.error(e);
+      res.status(400).json({ error: e.message });
+    }
+  }
 }
 
 export default new SyncController();

@@ -1,4 +1,5 @@
 import { pgPool } from "../db/index.js";
+import { v4 as uuidv4 } from "uuid";
 
 class SyncService {
   async syncWords({ userId, lastSyncAt, items = [] }) {
@@ -279,6 +280,105 @@ class SyncService {
       [userId]
     );
   }
-}
 
+  normalizeTags(tags) {
+    if (!tags || !Array.isArray(tags)) return [];
+    const normalized = tags
+      .map((t) => t.trim().toLowerCase())
+      .filter((t) => t.length > 0);
+    return normalized.length > 0 ? normalized : [];
+  }
+
+  /**
+   * Save ONE word using user_code
+   */
+  async saveWordByUserCode(payload) {
+    const {
+      user_code,
+      term,
+      translation,
+      example,
+      tags,
+      source_lang = "en",
+      target_lang = "vi",
+    } = payload;
+
+    if (!user_code || !term || !translation) {
+      throw new Error("Missing required fields");
+    }
+
+    try {
+      await pgPool.query("BEGIN");
+
+      // Resolve user
+      const userRes = await pgPool.query(
+        `SELECT id FROM users WHERE user_code = $1`,
+        [user_code]
+      );
+
+      if (userRes.rowCount === 0) {
+        throw new Error("Invalid user code");
+      }
+
+      const userId = userRes.rows[0].id;
+
+      // Insert word
+      const wordId = uuidv4();
+      const now = new Date();
+      const nextReviewAt =  new Date(Date.now() + 60 * 60 * 1000);
+
+      await pgPool.query(
+        `
+      INSERT INTO words (
+        id,
+        user_id,
+        term,
+        translation,
+        example,
+        tags,
+        source_lang,
+        target_lang,
+        total_reviews,
+        interval_days,
+        next_review_at,
+        is_deleted,
+        created_at,
+        updated_at
+      )
+      VALUES (
+        $1,$2,$3,$4,$5,$6,
+        $7,$8,0,1,
+        $9,false,$10,$11
+      )
+      `,
+        [
+          wordId,
+          userId,
+          term,
+          translation,
+          example ?? null,
+          this.normalizeTags(tags),
+          source_lang,
+          target_lang,
+          nextReviewAt,
+          now,
+          now,
+        ]
+      );
+
+      // Update tags table
+      await this.upsertTags(userId, this.normalizeTags(tags));
+      await this.recalcTagUsage(userId);
+
+      await pgPool.query("COMMIT");
+
+      return { id: wordId, term, translation };
+    } catch (e) {
+      await pgPool.query("ROLLBACK");
+      throw e;
+    } finally {
+      // pgPool.release();
+    }
+  }
+}
 export default new SyncService();
