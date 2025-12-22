@@ -2,20 +2,20 @@ import { pgPool } from "../db/index.js";
 
 class TagService {
   // existing method
-  async getOrCreateTag(client, userId, name) {
-    const res = await client.query(
-      `
-      INSERT INTO tags (user_id, name, usage_count)
-      VALUES ($1, $2, 1)
-      ON CONFLICT (user_id, name)
-      DO UPDATE SET usage_count = tags.usage_count + 1
-      RETURNING id
-      `,
-      [userId, name.toLowerCase()]
-    );
+  // async getOrCreateTag(client, userId, name) {
+  //   const res = await client.query(
+  //     `
+  //     INSERT INTO tags (user_id, name, usage_count)
+  //     VALUES ($1, $2, 1)
+  //     ON CONFLICT (user_id, name)
+  //     DO UPDATE SET usage_count = tags.usage_count + 1
+  //     RETURNING id
+  //     `,
+  //     [userId, name.toLowerCase()]
+  //   );
 
-    return res.rows[0].id;
-  }
+  //   return res.rows[0].id;
+  // }
 
   // 🔥 NEW: tag suggestion
   async suggestTags(userId, query = "", limit = 10) {

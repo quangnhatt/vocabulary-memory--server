@@ -19,7 +19,7 @@ CREATE TABLE words (
   source_lang VARCHAR(10),
   target_lang VARCHAR(10),
   interval_days INT DEFAULT 1,
-  next_review TIMESTAMP,
+  next_review_at TIMESTAMP,
   updated_at TIMESTAMP DEFAULT NOW(),
   deleted_at TIMESTAMP,
   total_reviews INT DEFAULT 0,
@@ -27,10 +27,10 @@ CREATE TABLE words (
   tags TEXT[]
 );
 
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+-- CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
-ALTER TABLE words
-ALTER COLUMN id SET DEFAULT uuid_generate_v4();
+-- ALTER TABLE words
+-- ALTER COLUMN id SET DEFAULT uuid_generate_v4();
 
 CREATE INDEX idx_words_user_updated
 ON words (user_id, updated_at DESC);
@@ -39,7 +39,9 @@ CREATE TABLE IF NOT EXISTS tags (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   name TEXT NOT NULL UNIQUE,
   usage_count INT DEFAULT 0,
-  created_at TIMESTAMP NOT NULL DEFAULT now()
+  created_at TIMESTAMP NOT NULL DEFAULT now(),
+  updated_at TIMESTAMP DEFAULT NOW(),
+  user_id UUID REFERENCES users(id),
 );
 
 CREATE INDEX IF NOT EXISTS idx_tags_name
