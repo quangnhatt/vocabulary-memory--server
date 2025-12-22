@@ -321,11 +321,43 @@ class SyncService {
       }
 
       const userId = userRes.rows[0].id;
+      const existingRes = await pgPool.query(
+        `
+            SELECT *
+            FROM words
+            WHERE user_id = $1
+              AND lower(term) = lower($2)
+              AND is_deleted = false
+            LIMIT 1
+            `,
+        [userId, term]
+      );
+
+      if (existingRes.rowCount > 0) {
+      // Optional: update updated_at (touch)
+      await pgPool.query(
+        `
+        UPDATE words
+        SET updated_at = NOW()
+        WHERE id = $1
+        `,
+        [existingRes.rows[0].id]
+      );
+
+      await pgPool.query("COMMIT");
+
+      return {
+        id: existingRes.rows[0].id,
+        term: existingRes.rows[0].term,
+        translation: existingRes.rows[0].translation,
+        existed: true,
+      };
+    }
 
       // Insert word
       const wordId = uuidv4();
       const now = new Date();
-      const nextReviewAt =  new Date(Date.now() + 60 * 60 * 1000);
+      const nextReviewAt = new Date(Date.now() + 60 * 60 * 1000);
 
       await pgPool.query(
         `
