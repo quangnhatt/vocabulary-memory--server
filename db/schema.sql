@@ -13,7 +13,7 @@ CREATE TABLE users (
 CREATE TABLE words (
   id UUID PRIMARY KEY,
   user_id UUID REFERENCES users(id),
-  text TEXT NOT NULL,
+  term TEXT NOT NULL,
   translation TEXT NOT NULL,
   example TEXT,
   source_lang VARCHAR(10),
@@ -21,8 +21,16 @@ CREATE TABLE words (
   interval_days INT DEFAULT 1,
   next_review TIMESTAMP,
   updated_at TIMESTAMP DEFAULT NOW(),
-  deleted_at TIMESTAMP
+  deleted_at TIMESTAMP,
+  total_reviews INT DEFAULT 0,
+  created_at TIMESTAMP DEFAULT NOW(),
+  tags TEXT[]
 );
+
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+ALTER TABLE words
+ALTER COLUMN id SET DEFAULT uuid_generate_v4();
 
 CREATE INDEX idx_words_user_updated
 ON words (user_id, updated_at DESC);

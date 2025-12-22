@@ -1,113 +1,152 @@
 import { pgPool } from "../db/index.js";
-import TagService from "./tag.service.js";
 
 class SyncService {
-  async syncWords({ userId, lastSyncAt, changes }) {
-    const client = await pgPool.connect();
-
+  async syncWords({ userId, lastSyncAt, items = [] }) {
     try {
-      await client.query("BEGIN");
+      // ─────────────────────────────────────────────
+      // 1️⃣ Apply client → server changes
+      // ─────────────────────────────────────────────
+      for (const word of items) {
+        const {
+          id,
+          term,
+          translation,
+          example,
+          tags, // can be null
+          nextReviewAt,
+          sourceLang,
+          targetLang,
+          totalReviews,
+          intervalDays,
+          updatedAt,
+          isDeleted,
+        } = word;
 
-      // 1️⃣ APPLY UPSERT WORDS + TAGS
-      for (const w of changes.upserts || []) {
-        // --- upsert word ---
-        await client.query(
+        const existing = await pgPool.query(
           `
-          INSERT INTO words (
-            id, user_id, text, translation, example,
-            source_lang, target_lang, updated_at
-          )
-          VALUES ($1,$2,$3,$4,$5,$6,$7,$8)
-          ON CONFLICT (id)
-          DO UPDATE SET
-            text = EXCLUDED.text,
-            translation = EXCLUDED.translation,
-            example = EXCLUDED.example,
-            source_lang = EXCLUDED.source_lang,
-            target_lang = EXCLUDED.target_lang,
-            updated_at = EXCLUDED.updated_at
-          WHERE words.updated_at < EXCLUDED.updated_at
-          `,
-          [
-            w.remoteId,
-            userId,
-            w.text,
-            w.translation,
-            w.example,
-            w.sourceLang,
-            w.targetLang,
-            w.updatedAt,
-          ]
+      SELECT updated_at
+      FROM words
+      WHERE id = $1 AND user_id = $2
+      `,
+          [id, userId]
         );
 
-        // --- clear old tags ---
-        await client.query(
-          `DELETE FROM word_tags WHERE word_id = $1`,
-          [w.remoteId]
-        );
-
-        // --- attach new tags ---
-        for (const tagName of w.tags || []) {
-          const tagId = await TagService.getOrCreateTag(
-            client,
-            userId,
-            tagName
-          );
-
-          await client.query(
+        if (existing.rowCount === 0) {
+          // ───────── INSERT ─────────
+          await pgPool.query(
             `
-            INSERT INTO word_tags (word_id, tag_id)
-            VALUES ($1,$2)
-            ON CONFLICT DO NOTHING
-            `,
-            [w.remoteId, tagId]
+        INSERT INTO words (
+          id,
+          user_id,
+          term,
+          translation,
+          example,
+          tags,
+          next_review,
+          source_lang,
+          target_lang,
+          total_reviews,
+          interval_days,
+          is_deleted,
+          created_at,
+          updated_at
+        )
+        VALUES (
+          $1,$2,$3,$4,$5,
+          $6,$7,$8,
+          $9,$10,$11, $12,
+          NOW(),$13
+        )
+        `,
+            [
+              id,
+              userId,
+              term,
+              translation,
+              example,
+              tags ?? null, // ✅ nullable
+              nextReviewAt,
+              sourceLang ?? "en",
+              targetLang ?? "vi",
+              totalReviews ?? 0,
+              intervalDays ?? 1,
+              isDeleted ?? false,
+              updatedAt,
+            ]
           );
+        } else {
+          const serverUpdatedAt = existing.rows[0].updated_at;
+          if (new Date(updatedAt) > serverUpdatedAt) {
+            await pgPool.query(
+              `
+          UPDATE words
+          SET
+            term = $1,
+            translation = $2,
+            example = $3,
+            tags = $4,
+            next_review = $5,
+            source_lang = $6,
+            target_lang = $7,
+            total_reviews = $8,
+            interval_days = $9,
+            is_deleted = $10,
+            updated_at = $11
+          WHERE id = $12 AND user_id = $13
+          `,
+              [
+                term,
+                translation,
+                example,
+                tags ?? null, // ✅ nullable
+                nextReviewAt,
+                sourceLang ?? "en",
+                targetLang ?? "vi",
+                totalReviews ?? 0,
+                intervalDays ?? 1,
+                isDeleted ?? false,
+                updatedAt,
+                id,
+                userId,
+              ]
+            );
+          }
         }
       }
 
-      // 2️⃣ APPLY DELETES (SOFT DELETE)
-      for (const id of changes.deletes || []) {
-        await client.query(
-          `
-          UPDATE words
-          SET deleted_at = NOW(), updated_at = NOW()
-          WHERE id = $1 AND user_id = $2
-          `,
-          [id, userId]
-        );
-      }
-
-      // 3️⃣ FETCH SERVER CHANGES (LATEST FIRST, WITH TAGS)
-      const serverRes = await client.query(
+      // ─────────────────────────────────────────────
+      // 2️⃣ Fetch server → client changes
+      // ─────────────────────────────────────────────
+      const serverChanges = await pgPool.query(
         `
-        SELECT
-          w.*,
-          COALESCE(
-            ARRAY_AGG(t.name) FILTER (WHERE t.name IS NOT NULL),
-            '{}'
-          ) AS tags
-        FROM words w
-        LEFT JOIN word_tags wt ON wt.word_id = w.id
-        LEFT JOIN tags t ON t.id = wt.tag_id
-        WHERE w.user_id = $1
-          AND w.updated_at > $2
-        GROUP BY w.id
-        ORDER BY w.updated_at DESC
-        `,
-        [userId, lastSyncAt]
+    SELECT
+      id,
+      term,
+      translation,
+      example,
+      tags,
+      next_review AS "nextReviewAt",
+      source_lang AS "sourceLang",
+      target_lang AS "targetLang",
+      total_reviews AS "totalReviews",
+      interval_days AS "intervalDays",
+      updated_at AS "updatedAt"
+    FROM words
+    WHERE user_id = $1
+      AND updated_at > $2
+      AND is_deleted = false
+    ORDER BY updated_at ASC
+    `,
+        [userId, lastSyncAt ?? new Date(0)]
       );
 
-      await client.query("COMMIT");
-
       return {
-        serverChanges: serverRes.rows,
-        syncedAt: new Date().toISOString(),
+        serverTime: new Date().toISOString(),
+        items: serverChanges.rows,
       };
-    } catch (err) {
-      await client.query("ROLLBACK");
-      throw err;
-    } finally {
-      client.release();
+    } catch (error) {
+      console.error("Error in syncWords:", error);
+      throw error;
     }
   }
 }

@@ -5,7 +5,7 @@ class SyncController {
     const result = await SyncService.syncWords({
       userId: req.userId,
       lastSyncAt: req.body.lastSyncAt,
-      changes: req.body.changes,
+      items: req.body.items,
     });
 
     res.json(result);
