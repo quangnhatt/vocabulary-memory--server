@@ -17,6 +17,10 @@ class SyncController {
         user_code: req.body.userCode,
         term: req.body.term,
         translation: req.body.translation,
+        example: req.body.example,
+        tags: req.body.tags,
+        source_lang: req.body.sourceLang,
+        target_lang: req.body.targetLang,
       });
       res.json({ success: true, word: result });
     } catch (e) {
