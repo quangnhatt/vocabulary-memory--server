@@ -9,10 +9,23 @@ class CategoryController {
         return res.status(400).json({ error: "category_ids required" });
       }
 
-      const result = await SystemCategoryService.importCategories(req.userId, category_ids);
+      const result = await SystemCategoryService.importCategories(
+        req.userId,
+        category_ids
+      );
       res.json(result);
     } catch (e) {
       res.status(400).json({ error: e.message });
+    }
+  }
+
+  async listSystemCategories(req, res) {
+    try {
+      const categories = await SystemCategoryService.getSystemCategories();
+      res.json(categories);
+    } catch (e) {
+      console.error(e);
+      res.status(500).json({ error: "Failed to load categories" });
     }
   }
 }

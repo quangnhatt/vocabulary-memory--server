@@ -111,6 +111,24 @@ class SystemCategoryService {
     } finally {
     }
   }
+
+  async getSystemCategories() {
+    const { rows } = await pgPool.query(
+      `
+    SELECT
+      id,
+      name,
+      description,
+      source_lang,
+      target_lang
+    FROM system_categories
+    WHERE deleted_at IS NULL
+    ORDER BY name ASC
+    `
+    );
+
+    return rows;
+  }
 }
 
 export default new SystemCategoryService();
