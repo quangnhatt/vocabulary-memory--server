@@ -24,8 +24,62 @@ CREATE TABLE words (
   deleted_at TIMESTAMP,
   total_reviews INT DEFAULT 0,
   created_at TIMESTAMP DEFAULT NOW(),
-  tags TEXT[]
+  tags TEXT[],
+  imported_source TEXT,
 );
+
+CREATE TABLE system_categories (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+
+  name TEXT NOT NULL,
+  description TEXT,
+
+  source_lang TEXT NOT NULL,
+  target_lang TEXT NOT NULL,
+
+  deleted_at TIMESTAMPTZ,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+
+  UNIQUE (name, source_lang, target_lang)
+);
+
+CREATE TABLE system_vocabularies (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+
+  category_id UUID REFERENCES system_categories(id),
+  term TEXT NOT NULL,
+  translation TEXT NOT NULL,
+  example TEXT,
+
+  source_lang TEXT NOT NULL,
+  target_lang TEXT NOT NULL,
+
+  popular_score INTEGER NOT NULL DEFAULT 0,
+
+  deleted_at TIMESTAMPTZ,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX idx_sys_vocab_category_id
+ON system_vocabularies (category_id)
+WHERE deleted_at IS NULL;
+
+-- Search by term
+CREATE INDEX idx_sys_vocab_term
+ON system_vocabularies (lower(term))
+WHERE deleted_at IS NULL;
+
+-- Category browsing
+CREATE INDEX idx_sys_vocab_category
+ON system_vocabularies (category_name)
+WHERE deleted_at IS NULL;
+
+-- Popular vocab
+CREATE INDEX idx_sys_vocab_popular
+ON system_vocabularies (popular_score DESC)
+WHERE deleted_at IS NULL;
 
 -- CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
