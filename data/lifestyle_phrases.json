@@ -1,0 +1,31 @@
+[
+  { "term": "start the day right", "translation": "bắt đầu ngày mới đúng cách", "example": "I exercise to start the day right.", "difficulty": "easy" },
+  { "term": "take a break", "translation": "nghỉ giải lao", "example": "You should take a break.", "difficulty": "easy" },
+  { "term": "stay healthy", "translation": "giữ sức khỏe", "example": "Stay healthy and active.", "difficulty": "easy" },
+  { "term": "slow down", "translation": "chậm lại", "example": "You need to slow down.", "difficulty": "easy" },
+  { "term": "get enough sleep", "translation": "ngủ đủ giấc", "example": "Try to get enough sleep.", "difficulty": "easy" },
+
+  { "term": "build good habits", "translation": "xây dựng thói quen tốt", "example": "It takes time to build good habits.", "difficulty": "medium" },
+  { "term": "clear my mind", "translation": "làm đầu óc thư giãn", "example": "Walking helps clear my mind.", "difficulty": "medium" },
+  { "term": "push myself", "translation": "thúc đẩy bản thân", "example": "I push myself every day.", "difficulty": "medium" },
+  { "term": "find balance", "translation": "tìm sự cân bằng", "example": "I try to find balance.", "difficulty": "medium" },
+  { "term": "stay consistent", "translation": "duy trì đều đặn", "example": "Stay consistent with habits.", "difficulty": "medium" },
+
+  { "term": "take care of myself", "translation": "chăm sóc bản thân", "example": "I need to take care of myself.", "difficulty": "easy" },
+  { "term": "set boundaries", "translation": "đặt ranh giới", "example": "Set boundaries at work.", "difficulty": "medium" },
+  { "term": "manage stress", "translation": "quản lý căng thẳng", "example": "Exercise helps manage stress.", "difficulty": "medium" },
+  { "term": "stay mentally strong", "translation": "giữ tinh thần vững vàng", "example": "Stay mentally strong.", "difficulty": "hard" },
+  { "term": "prioritize health", "translation": "ưu tiên sức khỏe", "example": "I prioritize health.", "difficulty": "medium" },
+
+  { "term": "make time for myself", "translation": "dành thời gian cho bản thân", "example": "I make time for myself.", "difficulty": "easy" },
+  { "term": "listen to my body", "translation": "lắng nghe cơ thể", "example": "Listen to your body.", "difficulty": "medium" },
+  { "term": "stay motivated", "translation": "giữ động lực", "example": "Stay motivated every day.", "difficulty": "easy" },
+  { "term": "reset my routine", "translation": "điều chỉnh lại thói quen", "example": "I reset my routine monthly.", "difficulty": "medium" },
+  { "term": "avoid burnout", "translation": "tránh kiệt sức", "example": "Rest helps avoid burnout.", "difficulty": "medium" },
+
+  { "term": "focus on well-being", "translation": "tập trung vào sự an lành", "example": "Focus on well-being.", "difficulty": "hard" },
+  { "term": "practice mindfulness", "translation": "thực hành chánh niệm", "example": "Practice mindfulness daily.", "difficulty": "hard" },
+  { "term": "stay disciplined", "translation": "giữ kỷ luật", "example": "Stay disciplined.", "difficulty": "medium" },
+  { "term": "build resilience", "translation": "xây dựng sự bền bỉ", "example": "Hard times build resilience.", "difficulty": "hard" },
+  { "term": "live intentionally", "translation": "sống có chủ đích", "example": "Live intentionally.", "difficulty": "hard" }
+]

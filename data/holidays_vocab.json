@@ -1,0 +1,37 @@
+[
+  { "term": "holiday", "translation": "ngày lễ / kỳ nghỉ", "example": "The holiday starts tomorrow.", "difficulty": "easy" },
+  { "term": "vacation", "translation": "kỳ nghỉ", "example": "I’m on vacation.", "difficulty": "easy" },
+  { "term": "festival", "translation": "lễ hội", "example": "Tet is a big festival.", "difficulty": "easy" },
+  { "term": "celebration", "translation": "lễ kỷ niệm", "example": "Family celebration.", "difficulty": "easy" },
+  { "term": "tradition", "translation": "truyền thống", "example": "It’s a tradition.", "difficulty": "easy" },
+
+  { "term": "destination", "translation": "điểm đến", "example": "Japan is my destination.", "difficulty": "easy" },
+  { "term": "travel plan", "translation": "kế hoạch du lịch", "example": "I made a travel plan.", "difficulty": "easy" },
+  { "term": "reunion", "translation": "đoàn tụ", "example": "Family reunion matters.", "difficulty": "easy" },
+  { "term": "fireworks", "translation": "pháo hoa", "example": "Fireworks lit the sky.", "difficulty": "easy" },
+  { "term": "souvenir", "translation": "quà lưu niệm", "example": "I bought souvenirs.", "difficulty": "easy" },
+
+  { "term": "holiday season", "translation": "mùa lễ hội", "example": "The holiday season is busy.", "difficulty": "medium" },
+  { "term": "public holiday", "translation": "ngày nghỉ lễ", "example": "It’s a public holiday.", "difficulty": "medium" },
+  { "term": "family gathering", "translation": "họp mặt gia đình", "example": "Family gathering tonight.", "difficulty": "medium" },
+  { "term": "travel expense", "translation": "chi phí du lịch", "example": "Travel expenses increased.", "difficulty": "medium" },
+  { "term": "accommodation", "translation": "chỗ ở", "example": "Book accommodation early.", "difficulty": "medium" },
+
+  { "term": "peak season", "translation": "mùa cao điểm", "example": "It’s peak season.", "difficulty": "medium" },
+  { "term": "off-season", "translation": "mùa thấp điểm", "example": "Travel off-season.", "difficulty": "medium" },
+  { "term": "travel itinerary", "translation": "lịch trình du lịch", "example": "Check the itinerary.", "difficulty": "hard" },
+  { "term": "holiday spirit", "translation": "không khí ngày lễ", "example": "Feel the holiday spirit.", "difficulty": "medium" },
+  { "term": "traditional food", "translation": "món ăn truyền thống", "example": "Traditional food is prepared.", "difficulty": "easy" },
+
+  { "term": "long weekend", "translation": "kỳ nghỉ dài ngày", "example": "We have a long weekend.", "difficulty": "easy" },
+  { "term": "family tradition", "translation": "truyền thống gia đình", "example": "Family tradition continues.", "difficulty": "medium" },
+  { "term": "year-end holiday", "translation": "kỳ nghỉ cuối năm", "example": "Year-end holiday plans.", "difficulty": "medium" },
+  { "term": "travel rush", "translation": "cao điểm du lịch", "example": "Expect travel rush.", "difficulty": "medium" },
+  { "term": "cultural event", "translation": "sự kiện văn hóa", "example": "Cultural events attract tourists.", "difficulty": "medium" },
+
+  { "term": "holiday break", "translation": "kỳ nghỉ lễ", "example": "Enjoy the holiday break.", "difficulty": "easy" },
+  { "term": "travel memory", "translation": "kỷ niệm du lịch", "example": "Travel memories last long.", "difficulty": "medium" },
+  { "term": "family bonding", "translation": "gắn kết gia đình", "example": "Holidays strengthen bonding.", "difficulty": "medium" },
+  { "term": "holiday atmosphere", "translation": "không khí lễ hội", "example": "Holiday atmosphere is everywhere.", "difficulty": "medium" },
+  { "term": "travel experience", "translation": "trải nghiệm du lịch", "example": "Great travel experience.", "difficulty": "easy" }
+]

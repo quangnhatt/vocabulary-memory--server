@@ -1,0 +1,49 @@
+[
+  { "term": "weather", "translation": "thời tiết", "example": "The weather is nice today.", "difficulty": "easy" },
+  { "term": "traffic", "translation": "giao thông", "example": "Traffic was terrible this morning.", "difficulty": "easy" },
+  { "term": "weekend", "translation": "cuối tuần", "example": "How was your weekend?", "difficulty": "easy" },
+  { "term": "plan", "translation": "kế hoạch", "example": "Do you have any plans?", "difficulty": "easy" },
+  { "term": "schedule", "translation": "lịch trình", "example": "My schedule is full.", "difficulty": "easy" },
+
+  { "term": "mood", "translation": "tâm trạng", "example": "I’m in a good mood.", "difficulty": "easy" },
+  { "term": "conversation", "translation": "cuộc trò chuyện", "example": "We had a nice conversation.", "difficulty": "easy" },
+  { "term": "topic", "translation": "chủ đề", "example": "Let’s change the topic.", "difficulty": "easy" },
+  { "term": "silence", "translation": "sự im lặng", "example": "The silence felt awkward.", "difficulty": "medium" },
+  { "term": "atmosphere", "translation": "bầu không khí", "example": "The atmosphere was relaxed.", "difficulty": "medium" },
+
+  { "term": "casual chat", "translation": "trò chuyện xã giao", "example": "They had casual chat.", "difficulty": "medium" },
+  { "term": "small talk", "translation": "chuyện phiếm", "example": "Small talk breaks the ice.", "difficulty": "medium" },
+  { "term": "opinion", "translation": "ý kiến", "example": "What’s your opinion?", "difficulty": "easy" },
+  { "term": "reaction", "translation": "phản ứng", "example": "His reaction was calm.", "difficulty": "easy" },
+  { "term": "comment", "translation": "bình luận", "example": "She made a comment.", "difficulty": "easy" },
+
+  { "term": "daily life", "translation": "cuộc sống hằng ngày", "example": "We talked about daily life.", "difficulty": "easy" },
+  { "term": "free time", "translation": "thời gian rảnh", "example": "What do you do in free time?", "difficulty": "easy" },
+  { "term": "hobby", "translation": "sở thích", "example": "My hobby is swimming.", "difficulty": "easy" },
+  { "term": "routine", "translation": "thói quen", "example": "That’s my routine.", "difficulty": "easy" },
+  { "term": "interest", "translation": "mối quan tâm", "example": "We share interests.", "difficulty": "easy" },
+
+  { "term": "awkward moment", "translation": "khoảnh khắc ngượng ngùng", "example": "There was an awkward moment.", "difficulty": "medium" },
+  { "term": "light conversation", "translation": "cuộc trò chuyện nhẹ nhàng", "example": "Keep it light conversation.", "difficulty": "medium" },
+  { "term": "current event", "translation": "sự kiện hiện tại", "example": "They discussed current events.", "difficulty": "medium" },
+  { "term": "social skill", "translation": "kỹ năng xã hội", "example": "Small talk is a social skill.", "difficulty": "medium" },
+  { "term": "body language", "translation": "ngôn ngữ cơ thể", "example": "Body language matters.", "difficulty": "medium" },
+
+  { "term": "tone of voice", "translation": "giọng điệu", "example": "His tone of voice was friendly.", "difficulty": "medium" },
+  { "term": "conversation flow", "translation": "mạch trò chuyện", "example": "Conversation flow felt natural.", "difficulty": "hard" },
+  { "term": "social cue", "translation": "tín hiệu xã hội", "example": "He missed the social cue.", "difficulty": "hard" },
+  { "term": "rapport", "translation": "sự hòa hợp", "example": "They built rapport quickly.", "difficulty": "hard" },
+  { "term": "first impression", "translation": "ấn tượng ban đầu", "example": "First impression counts.", "difficulty": "medium" },
+
+  { "term": "casual setting", "translation": "bối cảnh thoải mái", "example": "It was a casual setting.", "difficulty": "medium" },
+  { "term": "friendly vibe", "translation": "không khí thân thiện", "example": "The place had a friendly vibe.", "difficulty": "medium" },
+  { "term": "conversation starter", "translation": "câu mở đầu trò chuyện", "example": "Weather is a conversation starter.", "difficulty": "medium" },
+  { "term": "polite response", "translation": "phản hồi lịch sự", "example": "Give a polite response.", "difficulty": "medium" },
+  { "term": "social confidence", "translation": "tự tin giao tiếp", "example": "Social confidence improves practice.", "difficulty": "hard" },
+
+  { "term": "daily update", "translation": "cập nhật hằng ngày", "example": "Give me a daily update.", "difficulty": "easy" },
+  { "term": "short chat", "translation": "trò chuyện ngắn", "example": "We had a short chat.", "difficulty": "easy" },
+  { "term": "friendly exchange", "translation": "trao đổi thân thiện", "example": "A friendly exchange happened.", "difficulty": "medium" },
+  { "term": "informal talk", "translation": "nói chuyện không trang trọng", "example": "Informal talk helps relax.", "difficulty": "medium" },
+  { "term": "natural conversation", "translation": "trò chuyện tự nhiên", "example": "They had natural conversation.", "difficulty": "medium" }
+]
