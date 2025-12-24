@@ -114,6 +114,27 @@ ON word_tags (word_id);
 CREATE INDEX IF NOT EXISTS idx_word_tags_tag
 ON word_tags (tag_id);
 
+CREATE TABLE review_actions (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_id UUID NOT NULL,
+  word_id UUID NOT NULL,
+
+  difficulty TEXT NOT NULL CHECK (
+    difficulty IN ('forget', 'good', 'easy')
+  ),
+
+  reviewed_at TIMESTAMPTZ NOT NULL,
+  turn_id TEXT NOT NULL,
+
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX idx_review_actions_user_time
+ON review_actions (user_id, reviewed_at);
+
+CREATE INDEX idx_review_actions_user_turn
+ON review_actions (user_id, turn_id);
+
 CREATE OR REPLACE FUNCTION set_updated_at()
 RETURNS TRIGGER AS $$
 BEGIN
