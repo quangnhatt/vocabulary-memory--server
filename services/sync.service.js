@@ -27,11 +27,13 @@ class SyncService {
       translation,
       example,
       tags,
+      state,
+      last_result AS "lastResult",
+      easy_streak as "easyStreak",
       next_review_at AS "nextReviewAt",
       source_lang AS "sourceLang",
       target_lang AS "targetLang",
       total_reviews AS "totalReviews",
-      interval_days AS "intervalDays",
       updated_at AS "updatedAt"
     FROM words
     WHERE user_id = $1
@@ -65,7 +67,6 @@ class SyncService {
       sourceLang,
       targetLang,
       totalReviews,
-      intervalDays,
       isDeleted,
       updatedAt,
     } = word;
@@ -75,12 +76,14 @@ class SyncService {
     INSERT INTO words (
       id, user_id, term, translation, example, tags,
       next_review_at, source_lang, target_lang,
-      total_reviews, interval_days, is_deleted, updated_at
+      total_reviews, is_deleted, updated_at,
+      state, last_result, easy_streak,
+      last_reviewed_at
     )
     VALUES (
       $1,$2,$3,$4,$5,$6,
       $7,$8,$9,
-      $10,$11,$12,$13
+      $10,$11,$12,$13, $14,$15, $16
     )
     ON CONFLICT (id)
     DO UPDATE SET
@@ -92,9 +95,12 @@ class SyncService {
       source_lang = EXCLUDED.source_lang,
       target_lang = EXCLUDED.target_lang,
       total_reviews = EXCLUDED.total_reviews,
-      interval_days = EXCLUDED.interval_days,
       is_deleted = EXCLUDED.is_deleted,
-      updated_at = EXCLUDED.updated_at
+      updated_at = EXCLUDED.updated_at,
+      state = EXCLUDED.state,
+      last_result = EXCLUDED.last_result,
+      easy_streak = EXCLUDED.easy_streak,
+      last_reviewed_at = EXCLUDED.last_reviewed_at
     `,
       [
         id,
@@ -107,9 +113,12 @@ class SyncService {
         sourceLang ?? "en",
         targetLang ?? "vi",
         totalReviews ?? 0,
-        intervalDays ?? 1,
         isDeleted ?? false,
         updatedAt,
+        word.state ?? "new",
+        word.lastResult ?? null,
+        word.easyStreak ?? 0,
+        word.lastReviewedAt ?? null,
       ]
     );
   }
@@ -270,7 +279,10 @@ class SyncService {
         source_lang,
         target_lang,
         total_reviews,
-        interval_days,
+        state,
+        last_result,
+        easy_streak,
+        last_reviewed_at,
         next_review_at,
         is_deleted,
         created_at,
@@ -278,8 +290,8 @@ class SyncService {
       )
       VALUES (
         $1,$2,$3,$4,$5,$6,
-        $7,$8,0,1,
-        $9,false,$10,$11
+        $7,$8,0,1,$9,$10,$11,$12,
+        $13,false,$14,$15
       )
       `,
         [
@@ -291,6 +303,10 @@ class SyncService {
           this.normalizeTags(tags),
           source_lang,
           target_lang,
+          "new",
+          null,
+          0,
+          null,
           nextReviewAt,
           now,
           now,

@@ -13,19 +13,29 @@ CREATE TABLE users (
 CREATE TABLE words (
   id UUID PRIMARY KEY,
   user_id UUID REFERENCES users(id),
+
   term TEXT NOT NULL,
   translation TEXT NOT NULL,
   example TEXT,
+
   source_lang VARCHAR(10),
   target_lang VARCHAR(10),
-  interval_days INT DEFAULT 1,
+
+  state VARCHAR(20),
+  last_result VARCHAR(10),
+  easy_streak INT,
+
+  interval_days INT, -- deprecated
   next_review_at TIMESTAMP,
-  updated_at TIMESTAMP DEFAULT NOW(),
-  deleted_at TIMESTAMP,
-  total_reviews INT DEFAULT 0,
-  created_at TIMESTAMP DEFAULT NOW(),
+  last_reviewed_at TIMESTAMP,
+
+  total_reviews INT,
   tags TEXT[],
   imported_source TEXT,
+
+  created_at TIMESTAMP,
+  updated_at TIMESTAMP,
+  deleted_at TIMESTAMP
 );
 
 CREATE TABLE system_categories (
