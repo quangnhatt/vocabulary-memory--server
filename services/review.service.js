@@ -37,7 +37,7 @@ class ReviewService {
       `
     SELECT
       word_id,
-      turn_id,
+      difficulty,
       reviewed_at::date AS day
     FROM review_actions
     WHERE user_id = $1
@@ -47,42 +47,48 @@ class ReviewService {
       [userId]
     );
 
-    // group by day → turn
-    const byDay = {};
-    for (const r of rows) {
-      if (!byDay[r.day]) byDay[r.day] = {};
-      if (!byDay[r.day][r.turn_id]) byDay[r.day][r.turn_id] = new Set();
+    // day -> difficulty -> Set(word_id)
+    const map = {};
 
-      byDay[r.day][r.turn_id].add(r.word_id);
+    for (const r of rows) {
+      if (!map[r.day]) {
+        map[r.day] = {
+          forget: new Set(),
+          good: new Set(),
+          easy: new Set(),
+        };
+      }
+
+      map[r.day][r.difficulty].add(r.word_id);
     }
 
-    const points = [];
+    const days = [];
+    let totalReviewed = 0;
 
-    for (const day of Object.keys(byDay).sort()) {
-      const turns = Object.values(byDay[day]).map((s) => s.size);
+    for (const day of Object.keys(map).sort()) {
+      const difficulties = {
+        forget: map[day].forget.size,
+        good: map[day].good.size,
+        easy: map[day].easy.size,
+      };
 
-      let last = null;
+      const dayTotal =
+        difficulties.forget + difficulties.good + difficulties.easy;
 
-      for (const count of turns) {
-        if (count >= 20) {
-          last = { date: day, words: count };
-          points.push(last);
-        } else {
-          if (last) {
-            last.words += count;
-          } else {
-            last = { date: day, words: count };
-            points.push(last);
-          }
-        }
-      }
+      totalReviewed += dayTotal;
+
+      days.push({
+        date: day,
+        difficulties,
+        total: dayTotal,
+      });
     }
 
     return {
-      points,
+      days,
       summary: {
-        total_reviewed: points.reduce((s, p) => s + p.words, 0),
-        active_days: Object.keys(byDay).length,
+        total_reviewed: totalReviewed,
+        active_days: days.length,
       },
     };
   }
