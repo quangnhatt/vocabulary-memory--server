@@ -5,6 +5,21 @@ CREATE TABLE users (
   firebase_uid TEXT UNIQUE NOT NULL,
   username TEXT,
   email TEXT UNIQUE,
+  confidence_score NUMERIC(6,2)
+  CHECK (confidence_score BETWEEN 0 AND 1000)
+  NOT NULL DEFAULT 0,
+  current_level TEXT NOT NULL
+    CHECK (current_level IN (
+      'explorer',
+      'builder',
+      'confident',
+      'fluent',
+      'near_native',
+      'native_like'
+    )),
+
+  total_quizzes INTEGER DEFAULT 0,
+  last_quiz_at TIMESTAMP,
   user_code CHAR(8) UNIQUE NOT NULL,
   created_at TIMESTAMP DEFAULT NOW()
 );
