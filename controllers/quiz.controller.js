@@ -15,11 +15,11 @@ class QuizController {
       answers
     );
 
-    const newCS = await ProgressService.updateProgress(
-      req.userId,
+    const newCS = await ProgressService.updateUserProgress({
+      userId: req.userId,
       quizRatio,
-      difficultyPressure
-    );
+      difficultyPressure,
+    });
 
     res.json({
       quizRatio,

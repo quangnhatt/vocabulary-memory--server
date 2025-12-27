@@ -21,7 +21,8 @@ CREATE TABLE users (
   total_quizzes INTEGER DEFAULT 0,
   last_quiz_at TIMESTAMP,
   user_code CHAR(8) UNIQUE NOT NULL,
-  created_at TIMESTAMP DEFAULT NOW()
+  created_at TIMESTAMP DEFAULT NOW(),
+  updated_at TIMESTAMP DEFAULT NOW()  
 );
 
 

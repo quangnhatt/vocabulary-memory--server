@@ -17,7 +17,7 @@ class ProgressService {
       [userId]
     );
 
-    const currentCS = rows[0].confidence_score;
+    const currentCS = +(rows[0].confidence_score);
 
     const delta = calculateDeltaCS({
       quizRatio,

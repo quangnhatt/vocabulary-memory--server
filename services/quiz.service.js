@@ -5,51 +5,74 @@ class QuizService {
   async startQuiz(userId) {
     const questions = await generateQuiz(userId);
 
+    // 1. Create quiz attempt
     const { rows } = await pgPool.query(
       `
-      INSERT INTO quiz_attempts (user_id, level_at_start)
-      VALUES ($1, 'unknown')
-      RETURNING id
-      `,
+    INSERT INTO quiz_attempts (user_id, level_at_start)
+    VALUES ($1, 'unknown')
+    RETURNING id
+    `,
       [userId]
     );
 
     const attemptId = rows[0].id;
 
-    // Snapshot questions (NO options column anymore)
+    // 2. Insert attempt questions
     for (const q of questions) {
       await pgPool.query(
         `
-        INSERT INTO quiz_attempt_questions
-          (attempt_id, question_id, prompt, popularity_score, dimension)
-        VALUES ($1, $2, $3, $4, $5)
-        `,
+      INSERT INTO quiz_attempt_questions
+        (attempt_id, question_id, prompt, popularity_score, dimension)
+      VALUES ($1, $2, $3, $4, $5)
+      `,
         [attemptId, q.id, q.prompt, q.popularity_score, q.dimension]
       );
     }
 
-    // Attach answers dynamically (not snapshotted)
-    const enriched = await Promise.all(
-      questions.map(async (q) => {
-        const { rows } = await pgPool.query(
+    // 3. Fetch attempt questions WITH IDs
+    const { rows: attemptQuestions } = await pgPool.query(
+      `
+    SELECT
+      id,
+      question_id,
+      prompt,
+      dimension
+    FROM quiz_attempt_questions
+    WHERE attempt_id = $1
+    ORDER BY id
+    `,
+      [attemptId]
+    );
+
+    // 4. Attach answers to each attempt question
+    const enrichedQuestions = await Promise.all(
+      attemptQuestions.map(async (aq) => {
+        const { rows: answers } = await pgPool.query(
           `
-          SELECT id, option_text
-          FROM quiz_answers
-          WHERE question_id = $1
-            AND status = 'active'
-          ORDER BY RANDOM()
-          `,
-          [q.id]
+        SELECT option_text
+        FROM quiz_answers
+        WHERE question_id = $1
+          AND status = 'active'
+        ORDER BY RANDOM()
+        `,
+          [aq.question_id]
         );
 
         return {
-          ...q,
-          answers: rows,
+          attemptQuestionId: aq.id,
+          prompt: aq.prompt,
+          dimension: aq.dimension,
+          answers: answers.map((a) => ({
+            text: a.option_text,
+          })),
         };
       })
     );
 
-    return { attemptId, questions: enriched };
+    return {
+      attemptId,
+      questions: enrichedQuestions,
+    };
   }
 
   async submitQuiz(attemptId, answers) {
@@ -90,7 +113,7 @@ class QuizService {
           ? 0.4
           : 0;
 
-      const difficulty = row.popularity_score;
+      const difficulty = +(row.popularity_score);
 
       earned += 10 * difficulty * weight;
       possible += 10 * difficulty;
@@ -115,7 +138,6 @@ class QuizService {
 }
 
 export default new QuizService();
-
 
 // ================================
 // Quiz generation (adaptive)
@@ -159,8 +181,7 @@ async function generateQuiz(userId, questionCount = 18) {
   const above = questions.filter((q) => q.zone === "above");
   const below = questions.filter((q) => q.zone === "below");
 
-  const pick = (arr, n) =>
-    arr.sort(() => 0.5 - Math.random()).slice(0, n);
+  const pick = (arr, n) => arr.sort(() => 0.5 - Math.random()).slice(0, n);
 
   return [
     ...pick(same, Math.floor(questionCount * 0.5)),
