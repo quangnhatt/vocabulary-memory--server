@@ -38,7 +38,7 @@ class ReviewService {
     SELECT
       word_id,
       difficulty,
-      reviewed_at::date AS day
+      to_char(reviewed_at, 'YYYY-MM-DD') AS day
     FROM review_actions
     WHERE user_id = $1
       AND reviewed_at >= NOW() - INTERVAL '${interval}'
