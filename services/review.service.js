@@ -31,64 +31,63 @@ class ReviewService {
   }
 
   async getReviewSummary(userId, range) {
-    const interval = range === "30d" ? "30 days" : "7 days";
+    const days = range === "30d" ? 30 : 7;
 
     const { rows } = await pgPool.query(
       `
+    WITH date_range AS (
+      SELECT
+        generate_series(
+          CURRENT_DATE - INTERVAL '${days - 1} days',
+          CURRENT_DATE,
+          INTERVAL '1 day'
+        )::date AS day
+    ),
+    reviews AS (
+      SELECT
+        DATE(reviewed_at) AS day,
+        difficulty,
+        COUNT(DISTINCT word_id) AS count
+      FROM review_actions
+      WHERE user_id = $1
+        AND reviewed_at >= CURRENT_DATE - INTERVAL '${days - 1} days'
+      GROUP BY DATE(reviewed_at), difficulty
+    )
     SELECT
-      word_id,
-      difficulty,
-      to_char(reviewed_at, 'YYYY-MM-DD') AS day
-    FROM review_actions
-    WHERE user_id = $1
-      AND reviewed_at >= NOW() - INTERVAL '${interval}'
-    ORDER BY reviewed_at ASC
+      to_char(d.day, 'YYYY-MM-DD') AS day,
+      COALESCE(SUM(CASE WHEN r.difficulty = 'forget' THEN r.count END), 0) AS forget,
+      COALESCE(SUM(CASE WHEN r.difficulty = 'good' THEN r.count END), 0) AS good,
+      COALESCE(SUM(CASE WHEN r.difficulty = 'easy' THEN r.count END), 0) AS easy
+    FROM date_range d
+    LEFT JOIN reviews r ON r.day = d.day
+    GROUP BY d.day
+    ORDER BY d.day ASC
     `,
       [userId]
     );
 
-    // day -> difficulty -> Set(word_id)
-    const map = {};
-
-    for (const r of rows) {
-      if (!map[r.day]) {
-        map[r.day] = {
-          forget: new Set(),
-          good: new Set(),
-          easy: new Set(),
-        };
-      }
-
-      map[r.day][r.difficulty].add(r.word_id);
-    }
-
-    const days = [];
     let totalReviewed = 0;
 
-    for (const day of Object.keys(map).sort()) {
-      const difficulties = {
-        forget: map[day].forget.size,
-        good: map[day].good.size,
-        easy: map[day].easy.size,
-      };
-
-      const dayTotal =
-        difficulties.forget + difficulties.good + difficulties.easy;
-
+    const resultDays = rows.map((r) => {
+      const dayTotal = +(r.forget) + +(r.good) + +(r.easy);
       totalReviewed += dayTotal;
 
-      days.push({
-        date: day,
-        difficulties,
+      return {
+        date: r.day,
+        difficulties: {
+          forget: Number(r.forget),
+          good: Number(r.good),
+          easy: Number(r.easy),
+        },
         total: dayTotal,
-      });
-    }
+      };
+    });
 
     return {
-      days,
+      days: resultDays,
       summary: {
         total_reviewed: totalReviewed,
-        active_days: days.length,
+        active_days: resultDays.filter((d) => d.total > 0).length,
       },
     };
   }
