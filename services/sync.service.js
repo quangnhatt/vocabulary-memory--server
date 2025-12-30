@@ -19,6 +19,17 @@ class SyncService {
 
       // Fetch server → client changes
       // ─────────────────────────────────────────────
+      // Force update or not
+      const { rows } = await pgPool.query(
+        `
+        SELECT forced_to_reload_vocabulary 
+        FROM users 
+        WHERE id = $1`,
+        [userId]
+      );
+
+      const forcedToReload = rows[0]?.forced_to_reload_vocabulary;
+      const syncCondition = forcedToReload ? "" : " AND updated_at > $2";
       const serverChanges = await pgPool.query(
         `
     SELECT
@@ -37,17 +48,18 @@ class SyncService {
       updated_at AS "updatedAt"
     FROM words
     WHERE user_id = $1
-      AND updated_at > $2
+      ${syncCondition}
       AND is_deleted = false
     ORDER BY updated_at ASC
     `,
-        [userId, lastSyncAt ?? new Date(0)]
+        forcedToReload ? [userId] : [userId, lastSyncAt ?? new Date(0)]
       );
 
       await pgPool.query("COMMIT");
       return {
         serverTime: new Date().toISOString(),
         items: serverChanges.rows,
+        forcedToReload: forcedToReload
       };
     } catch (error) {
       await pgPool.query("ROLLBACK");
@@ -236,9 +248,9 @@ class SyncService {
       );
 
       if (existingRes.rowCount > 0) {
-      // Optional: update updated_at (touch)
-      await pgPool.query(
-        `
+        // Optional: update updated_at (touch)
+        await pgPool.query(
+          `
         UPDATE words
         SET 
           updated_at = NOW(),
@@ -249,18 +261,25 @@ class SyncService {
           target_lang = $6
         WHERE id = $1
         `,
-        [existingRes.rows[0].id, translation, example ?? null, this.normalizeTags(tags), source_lang, target_lang]
-      );
+          [
+            existingRes.rows[0].id,
+            translation,
+            example ?? null,
+            this.normalizeTags(tags),
+            source_lang,
+            target_lang,
+          ]
+        );
 
-      await pgPool.query("COMMIT");
+        await pgPool.query("COMMIT");
 
-      return {
-        id: existingRes.rows[0].id,
-        term: existingRes.rows[0].term,
-        translation: existingRes.rows[0].translation,
-        existed: true,
-      };
-    }
+        return {
+          id: existingRes.rows[0].id,
+          term: existingRes.rows[0].term,
+          translation: existingRes.rows[0].translation,
+          existed: true,
+        };
+      }
 
       // Insert word
       const wordId = uuidv4();

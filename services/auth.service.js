@@ -6,6 +6,7 @@ export async function signInWithGoogle({
   firebaseUid,
   email,
   displayName,
+  avatarUrl
 }) {
   if (!firebaseUid) {
     throw new Error('firebaseUid is required');
@@ -27,11 +28,11 @@ export async function signInWithGoogle({
 
     const { rows } = await pgPool.query(
       `
-      INSERT INTO users (firebase_uid, username, email, user_code)
-      VALUES ($1, $2, $3, $4)
+      INSERT INTO users (firebase_uid, username, email, user_code, avatar_url)
+      VALUES ($1, $2, $3, $4, $5)
       RETURNING *
       `,
-      [firebaseUid, displayName, email, userCode]
+      [firebaseUid, displayName, email, userCode, avatarUrl]
     );
 
     user = rows[0];

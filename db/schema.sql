@@ -20,7 +20,13 @@ CREATE TABLE users (
 
   total_quizzes INTEGER DEFAULT 0,
   last_quiz_at TIMESTAMP,
+  accuracy NUMERIC(4,3) DEFAULT 0
+  CHECK (accuracy BETWEEN 0 AND 1),
+  current_streak INTEGER DEFAULT 0
+  CHECK (current_streak >= 0),
+  avatar_url TEXT,
   user_code CHAR(8) UNIQUE NOT NULL,
+  forced_to_reload_vocabulary BOOLEAN NOT DEFAULT FALSE;
   created_at TIMESTAMP DEFAULT NOW(),
   updated_at TIMESTAMP DEFAULT NOW()  
 );
