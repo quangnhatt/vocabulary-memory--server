@@ -39,13 +39,14 @@ class SyncService {
       example,
       tags,
       state,
-      last_result AS "lastResult",
-      easy_streak as "easyStreak",
-      next_review_at AS "nextReviewAt",
-      source_lang AS "sourceLang",
-      target_lang AS "targetLang",
-      total_reviews AS "totalReviews",
-      updated_at AS "updatedAt"
+      last_result,
+      easy_streak,
+      next_review_at,
+      source_lang,
+      target_lang,
+      total_reviews,
+      updated_at,
+      user_id
     FROM words
     WHERE user_id = $1
       ${syncCondition}
