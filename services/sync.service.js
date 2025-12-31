@@ -16,6 +16,7 @@ class SyncService {
       await this.upsertTags(userId, tags);
       await this.recalcTagUsage(userId);
       await this.cleanupUnusedTags(userId);
+      const userSettings = await this.updateLastSyncAt(userId, lastSyncAt ?? new Date());
 
       // Fetch server → client changes
       // ─────────────────────────────────────────────
@@ -60,12 +61,12 @@ class SyncService {
       return {
         serverTime: new Date().toISOString(),
         items: serverChanges.rows,
-        forcedToReload: forcedToReload
+        forcedToReload: forcedToReload,
+        lastSyncAt: userSettings.last_sync_at
       };
     } catch (error) {
       await pgPool.query("ROLLBACK");
       console.error("Error in syncWords:", error);
-      throw error;
     }
   }
 
@@ -127,7 +128,7 @@ class SyncService {
         targetLang ?? "vi",
         totalReviews ?? 0,
         isDeleted ?? false,
-        updatedAt,
+        updatedAt ?? new Date(),
         word.state ?? "new",
         word.lastResult ?? null,
         word.easyStreak ?? 0,
@@ -346,6 +347,20 @@ class SyncService {
     } finally {
       // pgPool.release();
     }
+  }
+
+  async updateLastSyncAt(userId, lastSyncAt) {
+    const { rows } = await pgPool.query(
+      `
+      UPDATE user_settings 
+      SET last_sync_at = $1
+      WHERE user_id = $2
+      RETURNING user_id, last_sync_at
+      `,
+      [lastSyncAt, userId]
+    );
+
+    return rows[0];
   }
 }
 export default new SyncService();

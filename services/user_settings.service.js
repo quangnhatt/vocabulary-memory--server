@@ -31,6 +31,20 @@ class UserSettingsService {
 
     return rows[0];
   }
+
+  async updateLastSyncAt(userId, { lastSyncAt }) {
+    const { rows } = await pgPool.query(
+      `
+      UPDATE user_settings 
+      SET last_sync_at = $1
+      WHERE user_id = $2
+      RETURNING user_id
+      `,
+      [lastSyncAt, userId]
+    );
+
+    return rows[0];
+  }
 }
 
 export default new UserSettingsService();

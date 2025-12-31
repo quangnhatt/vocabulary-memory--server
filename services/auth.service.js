@@ -36,6 +36,16 @@ export async function signInWithGoogle({
     );
 
     user = rows[0];
+
+    const data = await pgPool.query(
+      `
+      INSERT INTO user_settings (user_id)
+      VALUES ($1)
+      RETURNING *
+      `,
+      [user.id]
+    );
+
   }
 
   // 3. Generate auth token (IMPORTANT)
