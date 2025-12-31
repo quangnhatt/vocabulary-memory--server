@@ -1,11 +1,13 @@
+
 export const USER_LEVELS = [
-  "Explorer",
-  "Builder",
-  "Confident",
-  "Fluent",
-  "Near-Native",
-  "Native-like",
+  { key: 'Explorer', min: 0, max: 100 },
+  { key: 'Builder', min: 100, max: 300 },
+  { key: 'Confident', min: 300, max: 500 },
+  { key: 'Fluent', min: 500, max: 700 },
+  { key: 'Near-Native', min: 700, max: 900 },
+  { key: 'Native-like', min: 900, max: 1000 },
 ];
+
 
 export function resolveLevel(cs) {
   if (cs < 100) return "Explorer";
@@ -26,7 +28,7 @@ export function progressPercent(cs) {
 }
 
 export function nextLevel(level) {
-  const idx = USER_LEVELS.indexOf(level);
+  const idx = USER_LEVELS.findIndex(x => x.key === level);
   return USER_LEVELS[Math.min(idx + 1, USER_LEVELS.length - 1)];
 }
 

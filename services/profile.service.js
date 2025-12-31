@@ -38,6 +38,7 @@ class ProfileService {
     const cs = Number(user.confidence_score ?? 0);
 
     const level = resolveLevel(cs);
+    const nextMilestone = nextLevel(level);
 
     // 2. Build response
     return {
@@ -46,10 +47,10 @@ class ProfileService {
       avatarUrl: user.avatar_url,
       level,
       confidenceScore: cs,
-      progressPercent: Number(progressPercent(cs).toFixed(1)),
+      progressPercent: Number(progressPercent(cs).toFixed(2)),
       pointsToNextLevel: pointsToNextLevel(cs),
-      nextLevel: nextLevel(level),
-      lastLevel: USER_LEVELS.at(-1),
+      nextLevel: nextMilestone.key,
+      nextLevelScore: nextMilestone.min,
       stats: {
         totalQuizzes: +(user.total_quizzes) ?? 0,
         accuracy: +(user.accuracy) ?? 0,
