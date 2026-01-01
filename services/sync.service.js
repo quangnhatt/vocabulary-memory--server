@@ -16,7 +16,7 @@ class SyncService {
       await this.upsertTags(userId, tags);
       await this.recalcTagUsage(userId);
       await this.cleanupUnusedTags(userId);
-      const userSettings = await this.updateLastSyncAt(userId, lastSyncAt ?? new Date());
+      const userSettings = await this.updateLastSyncAt(userId, new Date());
 
       // Fetch server → client changes
       // ─────────────────────────────────────────────
@@ -62,7 +62,7 @@ class SyncService {
         serverTime: new Date().toISOString(),
         items: serverChanges.rows,
         forcedToReload: forcedToReload,
-        lastSyncAt: userSettings.last_sync_at
+        lastSyncAt: userSettings.last_sync_at,
       };
     } catch (error) {
       await pgPool.query("ROLLBACK");
