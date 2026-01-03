@@ -2,7 +2,7 @@
 import http from 'http';
 import app from '../app.js';
 
-const port = process.env.PORT || 3002;
+const port = process.env.PORT || 3000;
 
 (async () => {
     try {
