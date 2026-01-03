@@ -81,13 +81,21 @@ CREATE TABLE system_vocabularies (
 
   category_id UUID REFERENCES system_categories(id),
   term TEXT NOT NULL,
-  translation TEXT NOT NULL,
+  target_translation TEXT NOT NULL,
+  source_translation TEXT,
   example TEXT,
+  pos TEXT,
 
   source_lang TEXT NOT NULL,
   target_lang TEXT NOT NULL,
 
   popular_score INTEGER NOT NULL DEFAULT 0,
+
+  difficulty INTEGER,
+  collocations TEXT[],
+  synonyms TEXT[],
+  topics TEXT[],
+  skills TEXT[],
 
   deleted_at TIMESTAMPTZ,
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
