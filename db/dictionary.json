@@ -1,0 +1,74 @@
+{
+    "success": true,
+    "word": "portrait",
+    "entries": [
+        {
+            "type": "noun",
+            "meanings": [
+                {
+                    "meaning": "a painting, photograph, drawing, etc. of a person or, less commonly, of a group of people:",
+                    "examples": [
+                        {
+                            "phrase": null,
+                            "sentence": "She's commissioned an artist to paint her portrait/paint a portrait of her."
+                        },
+                        {
+                            "phrase": null,
+                            "sentence": "a portrait gallery"
+                        },
+                        {
+                            "phrase": null,
+                            "sentence": "a portrait painter"
+                        }
+                    ]
+                },
+                {
+                    "meaning": "A film or book that is a portrait of something describes or represents that thing in a detailed way:",
+                    "examples": [
+                        {
+                            "phrase": null,
+                            "sentence": "Her latest novel paints a very vivid portrait of the aristocracy in the 1920s."
+                        }
+                    ]
+                },
+                {
+                    "meaning": "A portrait computer document is to be printed with the shorter side of the paper at the top and bottom.",
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "type": "noun",
+            "meanings": [
+                {
+                    "meaning": "a painting, photograph, or drawing of a person",
+                    "examples": []
+                },
+                {
+                    "meaning": "A portrait is also a description or representation of something:",
+                    "examples": [
+                        {
+                            "phrase": null,
+                            "sentence": "The book paints a grim portrait of wartime suffering."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "adjective",
+            "meanings": [
+                {
+                    "meaning": "used to describe a computer document that is to be printed with the shorter side of the paper at the top and bottom:",
+                    "examples": [
+                        {
+                            "phrase": null,
+                            "sentence": "The design was intended to be distributed in printed form, so the pages are laid out for printing in A4 portrait format."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "source": "Cambridge Dictionary"
+}

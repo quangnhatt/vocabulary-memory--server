@@ -128,6 +128,75 @@ class TranslateService {
       langpair,
     };
   }
+
+  async fetchDictionaryFromDb(word) {
+    const { rows } = await pool.query(
+      `
+    SELECT
+      w.word,
+      e.part_of_speech,
+      m.id AS meaning_id,
+      m.meaning,
+      m.order_index AS meaning_order,
+      ex.phrase,
+      ex.sentence,
+      ex.order_index AS example_order
+    FROM dictionary_word w
+    JOIN dictionary_entry e ON e.word_id = w.id
+    JOIN dictionary_meaning m ON m.entry_id = e.id
+    LEFT JOIN dictionary_example ex ON ex.meaning_id = m.id
+    WHERE w.word = $1
+    ORDER BY
+      e.part_of_speech,
+      m.order_index,
+      ex.order_index
+    `,
+      [word]
+    );
+
+    if (!rows.length) return null;
+
+    /* ─────────────────────────────
+     Rebuild nested structure
+  ───────────────────────────── */
+    const entriesMap = new Map();
+
+    for (const r of rows) {
+      if (!entriesMap.has(r.part_of_speech)) {
+        entriesMap.set(r.part_of_speech, {
+          type: r.part_of_speech,
+          meanings: [],
+        });
+      }
+
+      const entry = entriesMap.get(r.part_of_speech);
+
+      let meaning = entry.meanings.find((m) => m.meaning === r.meaning);
+
+      if (!meaning) {
+        meaning = {
+          meaning: r.meaning,
+          examples: [],
+        };
+        entry.meanings.push(meaning);
+      }
+
+      if (r.sentence) {
+        meaning.examples.push({
+          phrase: r.phrase,
+          sentence: r.sentence,
+        });
+      }
+    }
+
+    return {
+      success: true,
+      word,
+      entries: Array.from(entriesMap.values()),
+      source: "Cambridge Dictionary",
+      fromCache: true,
+    };
+  }
 }
 
 export default new TranslateService();
