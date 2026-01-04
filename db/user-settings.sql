@@ -1,6 +1,7 @@
 CREATE TABLE user_settings (
   user_id UUID PRIMARY KEY,
   words_per_day INTEGER NOT NULL DEFAULT 20,
+  learning_speed INTEGER NOT NULL DEFAULT 1,
   last_sync_at TIMESTAMP,
   created_at TIMESTAMP NOT NULL DEFAULT NOW(),
   updated_at TIMESTAMP NOT NULL DEFAULT NOW(),

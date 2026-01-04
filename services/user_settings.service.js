@@ -6,7 +6,8 @@ class UserSettingsService {
       `
       SELECT
         user_id,
-        words_per_day
+        words_per_day,
+        learning_speed
       FROM user_settings
       WHERE user_id = $1
       `,
@@ -16,17 +17,18 @@ class UserSettingsService {
     return rows[0] || null;
   }
 
-  async upsert(userId, { wordsPerDay }) {
+  async upsert(userId, { wordsPerDay, learningSpeed }) {
     const { rows } = await pgPool.query(
       `
-      INSERT INTO user_settings (user_id, words_per_day)
-      VALUES ($1, $2)
+      INSERT INTO user_settings (user_id, words_per_day, learning_speed)
+      VALUES ($1, $2, $3)
       ON CONFLICT (user_id)
       DO UPDATE SET
-        words_per_day = EXCLUDED.words_per_day
-      RETURNING user_id, words_per_day
+        words_per_day = EXCLUDED.words_per_day,
+        learning_speed = EXCLUDED.learning_speed
+      RETURNING user_id, words_per_day, learning_speed
       `,
-      [userId, wordsPerDay]
+      [userId, wordsPerDay, learningSpeed]
     );
 
     return rows[0];
