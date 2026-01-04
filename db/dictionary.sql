@@ -1,4 +1,5 @@
 
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 CREATE TABLE dictionary_word (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   word TEXT NOT NULL UNIQUE,

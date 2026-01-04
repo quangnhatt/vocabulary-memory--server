@@ -74,9 +74,10 @@ export async function doCrawlWithPuppeteer(word) {
         })
         .filter(Boolean);
 
-         return { ipa, entries };
+      return { ipa, entries };
     });
 
+    console.log(result);
     if (!result.entries.length) {
       return {
         success: false,
@@ -84,7 +85,6 @@ export async function doCrawlWithPuppeteer(word) {
         error: "No definitions found",
       };
     }
-
     return {
       success: true,
       word,
@@ -93,6 +93,7 @@ export async function doCrawlWithPuppeteer(word) {
       source: "Cambridge Dictionary",
     };
   } catch (error) {
+    console.log(error);
     return {
       success: false,
       word,
