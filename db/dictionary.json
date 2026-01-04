@@ -1,6 +1,10 @@
 {
     "success": true,
     "word": "portrait",
+    "ipa": {
+        "uk": "ˌtræn.spɔːˈteɪ.ʃən",
+        "us": "ˌtræn.spɚˈteɪ.ʃən"
+    },
     "entries": [
         {
             "type": "noun",

@@ -6,7 +6,10 @@ class DictionaryService {
     const dic = await this.fetchDictionaryFromDb(word);
     if (dic != null) return dic;
     const crawlResult = await doCrawlWithPuppeteer(word);
-    await this.saveToDictionary(crawlResult);
+    if (crawlResult.success) {
+      await this.saveToDictionary(crawlResult);
+    }
+
     return crawlResult;
   }
   async fetchDictionaryFromDb(word) {
@@ -91,7 +94,7 @@ class DictionaryService {
         word,
         entries,
         source = "Cambridge Dictionary",
-        ipa
+        ipa,
       } = crawlResult;
 
       /* ─────────────────────────────
