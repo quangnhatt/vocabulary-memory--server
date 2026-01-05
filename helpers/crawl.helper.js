@@ -17,7 +17,7 @@ export async function doCrawlWithPuppeteer(word) {
         "--no-sandbox",
         "--disable-setuid-sandbox",
         "--disable-dev-shm-usage",
-        // "--disable-gpu",
+        "--disable-gpu",
         // "--no-zygote",
         // "--single-process",
       ],

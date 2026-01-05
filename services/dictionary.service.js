@@ -6,7 +6,7 @@ class DictionaryService {
     const dic = await this.fetchDictionaryFromDb(word);
     if (dic != null) return dic;
     // Temporarily 
-    return { success: false, error: "Generating words disabled" };
+    // return { success: false, error: "Generating words disabled" };
     const crawlResult = await doCrawlWithPuppeteer(word);
     if (crawlResult.success) {
       await this.saveToDictionary(crawlResult);
