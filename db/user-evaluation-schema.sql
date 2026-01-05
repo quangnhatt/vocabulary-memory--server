@@ -1,12 +1,9 @@
 CREATE TABLE quiz_questions (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   prompt TEXT NOT NULL,
-
-  -- How commonly known / natural this usage is
   popularity_score NUMERIC(3,2)
     CHECK (popularity_score BETWEEN 0.2 AND 1.0)
     NOT NULL,
-
   dimension TEXT NOT NULL
     CHECK (dimension IN (
       'word_choice',
@@ -15,10 +12,8 @@ CREATE TABLE quiz_questions (
       'sentence_flow',
       'edge_case'
     )),
-
   status TEXT DEFAULT 'active'
     CHECK (status IN ('active', 'review', 'disabled')),
-
   created_at TIMESTAMP DEFAULT NOW(),
   updated_at TIMESTAMP DEFAULT NOW()
 );
@@ -26,21 +21,15 @@ CREATE TABLE quiz_questions (
 
 CREATE TABLE quiz_answers (
   id SERIAL PRIMARY KEY,
-
   question_id UUID NOT NULL
     REFERENCES quiz_questions(id)
     ON DELETE CASCADE,
-
   option_text TEXT NOT NULL,
-
   answer_type TEXT NOT NULL
     CHECK (answer_type IN ('best', 'acceptable', 'ok', 'wrong')),
-
   explanation TEXT,
-
   status TEXT DEFAULT 'active'
     CHECK (status IN ('active', 'review', 'disabled')),
-
   created_at TIMESTAMP DEFAULT NOW(),
   updated_at TIMESTAMP DEFAULT NOW()
 );
@@ -48,63 +37,47 @@ CREATE TABLE quiz_answers (
 
 CREATE TABLE quiz_attempts (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-
   user_id UUID NOT NULL,
   level_at_start TEXT NOT NULL,
-
   quiz_ratio NUMERIC(4,3)
     CHECK (quiz_ratio BETWEEN 0 AND 1),
-
   difficulty_pressure NUMERIC(4,3),
-
   delta_cs NUMERIC(6,3),
-
   created_at TIMESTAMP DEFAULT NOW(),
   updated_at TIMESTAMP DEFAULT NOW()
 );
 
 CREATE TABLE quiz_attempt_questions (
   id SERIAL PRIMARY KEY,
-
   attempt_id UUID NOT NULL
     REFERENCES quiz_attempts(id)
     ON DELETE CASCADE,
-
   question_id UUID NOT NULL,
-
   prompt TEXT NOT NULL,
   popularity_score NUMERIC(3,2),
   dimension TEXT,
-
   created_at TIMESTAMP DEFAULT NOW(),
   updated_at TIMESTAMP DEFAULT NOW()
 );
 
 CREATE TABLE quiz_attempt_answers (
   id SERIAL PRIMARY KEY,
-
   attempt_question_id INTEGER NOT NULL
     REFERENCES quiz_attempt_questions(id)
     ON DELETE CASCADE,
-
   selected_option_key TEXT NOT NULL,
-
   answer_weight NUMERIC(3,2)
     CHECK (answer_weight BETWEEN 0 AND 1),
-
   created_at TIMESTAMP DEFAULT NOW(),
   updated_at TIMESTAMP DEFAULT NOW()
 );
 
 CREATE TABLE quiz_question_reports (
   id SERIAL PRIMARY KEY,
-
   question_id UUID NOT NULL
     REFERENCES quiz_questions(id)
     ON DELETE CASCADE,
-
   user_id UUID NOT NULL,
-
   report_type TEXT NOT NULL
     CHECK (report_type IN (
       'missing_answer',
@@ -112,12 +85,9 @@ CREATE TABLE quiz_question_reports (
       'unnatural_wording',
       'ambiguous'
     )),
-
   comment TEXT,
-
   status TEXT DEFAULT 'pending'
     CHECK (status IN ('pending', 'reviewed', 'resolved')),
-
   created_at TIMESTAMP DEFAULT NOW(),
   updated_at TIMESTAMP DEFAULT NOW()
 );

@@ -1,4 +1,4 @@
-CREATE EXTENSION IF NOT EXISTS "pgcrypto";
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 CREATE TABLE users (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
@@ -8,17 +8,8 @@ CREATE TABLE users (
   confidence_score NUMERIC(6,2)
   CHECK (confidence_score BETWEEN 0 AND 1000)
   NOT NULL DEFAULT 0,
-  current_level TEXT NOT NULL
-    CHECK (current_level IN (
-      'explorer',
-      'builder',
-      'confident',
-      'fluent',
-      'near_native',
-      'native_like'
-    )),
-
-  total_quizzes INTEGER DEFAULT 0,
+  current_level TEXT,
+  total_quizzes INTEGER NOT NULL DEFAULT 0,
   last_quiz_at TIMESTAMP,
   accuracy NUMERIC(4,3) DEFAULT 0
   CHECK (accuracy BETWEEN 0 AND 1),
@@ -26,77 +17,66 @@ CREATE TABLE users (
   CHECK (current_streak >= 0),
   avatar_url TEXT,
   user_code CHAR(8) UNIQUE NOT NULL,
-  forced_to_reload_vocabulary BOOLEAN NOT DEFAULT FALSE;
+  forced_to_reload_vocabulary BOOLEAN NOT NULL DEFAULT false,
   created_at TIMESTAMP DEFAULT NOW(),
   updated_at TIMESTAMP DEFAULT NOW()  
 );
 
 
+
 CREATE TABLE words (
   id UUID PRIMARY KEY,
   user_id UUID REFERENCES users(id),
-
   term TEXT NOT NULL,
   translation TEXT NOT NULL,
   example TEXT,
-
   source_lang VARCHAR(10),
   target_lang VARCHAR(10),
-
   state VARCHAR(20),
   last_result VARCHAR(10),
   easy_streak INT,
-
-  interval_days INT, -- deprecated
+  interval_days INT, 
   next_review_at TIMESTAMP,
   last_reviewed_at TIMESTAMP,
-
   total_reviews INT,
   tags TEXT[],
   imported_source TEXT,
-
-  created_at TIMESTAMP,
-  updated_at TIMESTAMP,
-  deleted_at TIMESTAMP
+  created_at TIMESTAMP DEFAULT NOW(),
+  updated_at TIMESTAMP DEFAULT NOW(),
+  deleted_at TIMESTAMP,
+  is_deleted BOOLEAN
 );
+
+
 
 CREATE TABLE system_categories (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-
   name TEXT NOT NULL,
   description TEXT,
-
   source_lang TEXT NOT NULL,
   target_lang TEXT NOT NULL,
-
   deleted_at TIMESTAMPTZ,
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-
   UNIQUE (name, source_lang, target_lang)
 );
 
 CREATE TABLE system_vocabularies (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-
   category_id UUID REFERENCES system_categories(id),
   term TEXT NOT NULL,
   target_translation TEXT NOT NULL,
   source_translation TEXT,
   example TEXT,
   pos TEXT,
-
   source_lang TEXT NOT NULL,
   target_lang TEXT NOT NULL,
-
   popular_score INTEGER NOT NULL DEFAULT 0,
-
   difficulty INTEGER,
   collocations TEXT[],
   synonyms TEXT[],
   topics TEXT[],
   skills TEXT[],
-
   deleted_at TIMESTAMPTZ,
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
@@ -109,11 +89,6 @@ WHERE deleted_at IS NULL;
 -- Search by term
 CREATE INDEX idx_sys_vocab_term
 ON system_vocabularies (lower(term))
-WHERE deleted_at IS NULL;
-
--- Category browsing
-CREATE INDEX idx_sys_vocab_category
-ON system_vocabularies (category_name)
 WHERE deleted_at IS NULL;
 
 -- Popular vocab
@@ -135,7 +110,7 @@ CREATE TABLE IF NOT EXISTS tags (
   usage_count INT DEFAULT 0,
   created_at TIMESTAMP NOT NULL DEFAULT now(),
   updated_at TIMESTAMP DEFAULT NOW(),
-  user_id UUID REFERENCES users(id),
+  user_id UUID REFERENCES users(id)
 );
 
 CREATE INDEX IF NOT EXISTS idx_tags_name
@@ -144,7 +119,6 @@ ON tags (name);
 CREATE TABLE IF NOT EXISTS word_tags (
   word_id UUID NOT NULL REFERENCES words(id) ON DELETE CASCADE,
   tag_id UUID NOT NULL REFERENCES tags(id) ON DELETE CASCADE,
-
   PRIMARY KEY (word_id, tag_id)
 );
 
@@ -158,14 +132,11 @@ CREATE TABLE review_actions (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   user_id UUID NOT NULL,
   word_id UUID NOT NULL,
-
   difficulty TEXT NOT NULL CHECK (
     difficulty IN ('forget', 'good', 'easy')
   ),
-
   reviewed_at TIMESTAMPTZ NOT NULL,
   turn_id TEXT NOT NULL,
-
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 

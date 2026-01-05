@@ -5,7 +5,6 @@ CREATE TABLE user_settings (
   last_sync_at TIMESTAMP,
   created_at TIMESTAMP NOT NULL DEFAULT NOW(),
   updated_at TIMESTAMP NOT NULL DEFAULT NOW(),
-
   CONSTRAINT words_per_day_range CHECK (words_per_day BETWEEN 1 AND 100)
 );
 

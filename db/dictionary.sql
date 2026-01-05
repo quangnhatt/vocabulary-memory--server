@@ -15,7 +15,6 @@ CREATE TABLE dictionary_entry (
   word_id UUID NOT NULL REFERENCES dictionary_word(id) ON DELETE CASCADE,
   part_of_speech VARCHAR(50) NOT NULL,
   created_at TIMESTAMP DEFAULT now(),
-
   UNIQUE (word_id, part_of_speech)
 );
 
@@ -43,9 +42,4 @@ CREATE INDEX idx_example_meaning_id ON dictionary_example(meaning_id);
 CREATE UNIQUE INDEX uniq_word_source
 ON dictionary_word (word, source);
 
-INSERT INTO dictionary_word (word)
-VALUES ($1)
-ON CONFLICT (word)
-DO UPDATE SET word = EXCLUDED.word
-RETURNING id;
 

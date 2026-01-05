@@ -5,6 +5,7 @@ export async function doCrawlWithPuppeteer(word) {
     return { success: false, error: "Word is required" };
   }
 
+  console.log("STARTING CRAWL " + word);
   const url = `https://dictionary.cambridge.org/dictionary/english/${encodeURIComponent(
     word
   )}`;
