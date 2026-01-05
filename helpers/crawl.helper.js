@@ -11,27 +11,27 @@ export async function doCrawlWithPuppeteer(word) {
   let browser;
 
   try {
-    // browser = await puppeteer.launch({
-    //   headless: "new",
-    //   args: [
-    //     "--no-sandbox",
-    //     "--disable-setuid-sandbox",
-    //     "--disable-dev-shm-usage",
-    //     "--disable-gpu",
-    //     "--no-zygote",
-    //     "--single-process",
-    //   ],
-    // });
-
     browser = await puppeteer.launch({
-      executablePath: "/usr/bin/google-chrome",
       headless: "new",
       args: [
         "--no-sandbox",
         "--disable-setuid-sandbox",
         "--disable-dev-shm-usage",
+        "--disable-gpu",
+        "--no-zygote",
+        "--single-process",
       ],
     });
+
+    // browser = await puppeteer.launch({
+    //   executablePath: "/usr/bin/google-chrome",
+    //   headless: "new",
+    //   args: [
+    //     "--no-sandbox",
+    //     "--disable-setuid-sandbox",
+    //     "--disable-dev-shm-usage",
+    //   ],
+    // });
 
     const page = await browser.newPage();
 
