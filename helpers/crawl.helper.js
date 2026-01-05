@@ -54,8 +54,24 @@ export async function doCrawlWithPuppeteer(word) {
       "Accept-Language": "en-US,en;q=0.9",
     });
 
-    await page.goto(url, { waitUntil: "networkidle2", timeout: 30000 });
-    await page.waitForSelector(".pr.dictionary", { timeout: 15000 });
+    // await page.goto(url, { waitUntil: "networkidle2", timeout: 30000 });
+    // await page.waitForSelector(".pr.dictionary", { timeout: 15000 });
+    await page.setDefaultNavigationTimeout(60000);
+    await page.setDefaultTimeout(30000);
+
+    await page.goto(url, {
+      waitUntil: "domcontentloaded",
+      timeout: 30000
+    });
+
+    await page.waitForSelector(".pr.dictionary", {
+      timeout: 30000,
+      visible: true,
+    });
+    const isBlocked = await page.$("body > pre, .captcha, #cf-wrapper");
+    if (isBlocked) {
+      throw new Error("Cambridge blocked or challenge page detected");
+    }
 
     const result = await page.evaluate(() => {
       const getIpa = (region) =>
