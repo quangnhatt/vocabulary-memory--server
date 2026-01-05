@@ -42,7 +42,7 @@ class ProfileService {
 
     // 2. Build response
     return {
-      id: user.id,
+      userId: user.id,
       username: user.username,
       avatarUrl: user.avatar_url,
       level,
