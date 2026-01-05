@@ -17,9 +17,9 @@ export async function doCrawlWithPuppeteer(word) {
         "--no-sandbox",
         "--disable-setuid-sandbox",
         "--disable-dev-shm-usage",
-        "--disable-gpu",
-        "--no-zygote",
-        "--single-process",
+        // "--disable-gpu",
+        // "--no-zygote",
+        // "--single-process",
       ],
     });
 
@@ -30,6 +30,17 @@ export async function doCrawlWithPuppeteer(word) {
     //     "--no-sandbox",
     //     "--disable-setuid-sandbox",
     //     "--disable-dev-shm-usage",
+    //   ],
+    // });
+
+    // browser = await puppeteer.launch({
+    //   executablePath: "/snap/bin/chromium", // 👈 system Chromium
+    //   headless: "new",
+    //   args: [
+    //     "--no-sandbox",
+    //     "--disable-setuid-sandbox",
+    //     "--disable-dev-shm-usage",
+    //     "--disable-gpu",
     //   ],
     // });
 
