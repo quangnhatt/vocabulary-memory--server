@@ -78,6 +78,7 @@ export async function doCrawlWithPuppeteer(word) {
     const notFound = await page.evaluate(() => {
       // Case 1: Redirected to spellcheck page
       if (window.location.pathname.includes("/spellcheck")) {
+        console.log("Spell check");
         return true;
       }
 
@@ -89,11 +90,13 @@ export async function doCrawlWithPuppeteer(word) {
         text.includes("no results found") ||
         text.includes("we couldn’t find")
       ) {
+        console.log("No result");
         return true;
       }
 
       // Case 3: No dictionary blocks at all
       const hasDictionary = document.querySelector(".pr.dictionary");
+      console.log("No dictionary blocks");
       return !hasDictionary;
     });
 
@@ -101,7 +104,7 @@ export async function doCrawlWithPuppeteer(word) {
       return {
         success: false,
         word,
-        error: "WORD_NOT_FOUND"
+        error: "WORD_NOT_FOUND",
       };
     }
 
