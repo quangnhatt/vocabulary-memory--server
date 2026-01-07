@@ -62,14 +62,54 @@ export async function doCrawlWithPuppeteer(word) {
 
     await page.goto(url, {
       waitUntil: "domcontentloaded",
-      timeout: 30000
+      timeout: 10000,
     });
 
+    //1. Detect block / challenge
+    let isBlocked = await page.$(
+      "body > pre, .captcha, #cf-wrapper, iframe[src*='captcha']"
+    );
+
+    if (isBlocked) {
+      throw new Error("Cambridge blocked or challenge page detected");
+    }
+
+    // 2. Detect 'word not found'
+    const notFound = await page.evaluate(() => {
+      // Case 1: Redirected to spellcheck page
+      if (window.location.pathname.includes("/spellcheck")) {
+        return true;
+      }
+
+      // Case 2: Explicit 'no result' message
+      const text = document.body.innerText.toLowerCase();
+
+      if (
+        text.includes("did you mean") ||
+        text.includes("no results found") ||
+        text.includes("we couldn’t find")
+      ) {
+        return true;
+      }
+
+      // Case 3: No dictionary blocks at all
+      const hasDictionary = document.querySelector(".pr.dictionary");
+      return !hasDictionary;
+    });
+
+    if (notFound) {
+      return {
+        success: false,
+        word,
+        error: "WORD_NOT_FOUND"
+      };
+    }
+
     await page.waitForSelector(".pr.dictionary", {
-      timeout: 30000,
+      timeout: 10000,
       visible: true,
     });
-    const isBlocked = await page.$("body > pre, .captcha, #cf-wrapper");
+    isBlocked = await page.$("body > pre, .captcha, #cf-wrapper");
     if (isBlocked) {
       throw new Error("Cambridge blocked or challenge page detected");
     }

@@ -65,6 +65,7 @@ CREATE TABLE system_vocabularies (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   category_id UUID REFERENCES system_categories(id),
   term TEXT NOT NULL,
+  ipa TEXT, -- new -- nullbable
   target_translation TEXT NOT NULL,
   source_translation TEXT,
   example TEXT,
@@ -110,8 +111,10 @@ CREATE TABLE IF NOT EXISTS tags (
   usage_count INT DEFAULT 0,
   created_at TIMESTAMP NOT NULL DEFAULT now(),
   updated_at TIMESTAMP DEFAULT NOW(),
-  user_id UUID REFERENCES users(id)
+  user_id UUID REFERENCES users(id),
+  UNIQUE (name, user_id)
 );
+
 
 CREATE INDEX IF NOT EXISTS idx_tags_name
 ON tags (name);
