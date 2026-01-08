@@ -1,0 +1,908 @@
+[
+  {
+    "term": "affect",
+    "ipa": "əˈfekt",
+    "target_translation": "ảnh hưởng",
+    "source_translation": "have an effect on; make a difference to",
+    "example": "the dampness began to affect my health",
+    "pos": "verb",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "influence",
+    "ipa": "ˈɪn.flu.əns",
+    "target_translation": "ảnh hưởng",
+    "source_translation": "the capacity to have an effect on the character, development, or behavior of someone or something, or the effect itself.",
+    "example": "the influence of television violence",
+    "pos": "verb",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "contribute",
+    "ipa": "kənˈtribyo͞ot",
+    "target_translation": "đóng góp",
+    "source_translation": "give (something, especially money) in order to help achieve or provide something.",
+    "example": "she contributed to a private pension",
+    "pos": "phrase",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "play a role in",
+    "ipa": null,
+    "target_translation": "đóng vai trò trong",
+    "source_translation": "to be a contributing factor or have an effect on a situation, event, or process, similar to how a character contributes to a play.",
+    "example": "The topic of play a role in is frequently discussed in IELTS speaking and writing tasks.",
+    "pos": "phrase",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "lead to something",
+    "ipa": "liːd",
+    "target_translation": "dẫn đến điều gì đó",
+    "source_translation": "if an action or event leads to something, it causes that thing to happen or exist",
+    "example": "Reducing speed limits should lead to fewer deaths on the roads.",
+    "pos": "phrasal verb",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "result in something",
+    "ipa": "rɪˈzʌlt",
+    "target_translation": "dẫn đến điều gì đó",
+    "source_translation": "to cause a particular situation to happen",
+    "example": "The fire resulted in damage to their property.",
+    "pos": "phrasal verb",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "provide",
+    "ipa": "prəˈvaɪd",
+    "target_translation": "cung cấp",
+    "source_translation": "to give someone something that they need",
+    "example": "This booklet provides useful information about local services.",
+    "pos": "verb",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "support",
+    "ipa": "səˈpɔːt",
+    "target_translation": "đồng ý, ủng hộ",
+    "source_translation": "to agree with and give encouragement to someone or something because you want him, her, or it to succeed",
+    "example": "The majority of people in the town strongly support the plans to build a new school.",
+    "pos": "verb",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "improve",
+    "ipa": "ɪmˈpruːv",
+    "target_translation": "cải thiện",
+    "source_translation": "to (cause something to) get better",
+    "example": "He did a lot to improve conditions for factory workers",
+    "pos": "verb",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "reduce",
+    "ipa": "rɪˈdʒuːs",
+    "target_translation": "giảm bớt",
+    "source_translation": "to become or to make something become smaller in size, amount, degree, importance, etc.",
+    "example": "Do nuclear weapons really reduce the risk of war?",
+    "pos": "verb",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "have an impact on",
+    "ipa": null,
+    "target_translation": "có ảnh hưởng đến",
+    "source_translation": "to have a powerful effect on a person or situation",
+    "example": "The anti-smoking campaign had quite an impact on young people.",
+    "pos": "collocation",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "make a decision",
+    "ipa": null,
+    "target_translation": "đưa ra quyết định",
+    "source_translation": "to make a choice about something, especially after thinking about several possibilities",
+    "example": "I'd strongly advise against making a sudden decision",
+    "pos": "collocation",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "face a challenge",
+    "ipa": null,
+    "target_translation": "đối mặt với thử thách",
+    "source_translation": "to have to deal with something that needs great mental or physical effort in order to be done successfully and therefore tests a person's ability",
+    "example": "She faces a challenge to unify the party after the disastrous election.",
+    "pos": "collocation",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+      "writing",
+      "speaking"
+    ]
+  },
+  {
+    "term": "solve problems",
+    "ipa": null,
+    "target_translation": "giải quyết vấn đề",
+    "source_translation": "",
+    "example": "I've been trying to solve this problem all week, but I still haven't cracked it.",
+    "pos": "collocation",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "gain experience",
+    "ipa": null,
+    "target_translation": "tích lũy kinh nghiệm",
+    "source_translation": "",
+    "example": "After you've gained some experience teaching abroad, you can come home and get a job.",
+    "pos": "collocation",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "take responsibility",
+    "ipa": null,
+    "target_translation": "chịu trách nhiệm",
+    "source_translation": "She takes her responsibilities as a nurse very seriously.",
+    "example": "something that it is your job or duty to deal with",
+    "pos": "collocation",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+      "writing",
+      "speaking"
+    ]
+  },
+  {
+    "term": "meet demands",
+    "ipa": null,
+    "target_translation": "từ vựng IELTS band 6.0–6.5",
+    "source_translation": "",
+    "example": "The topic of meet demands is frequently discussed in IELTS speaking and writing tasks.",
+    "pos": "collocation",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "raise awareness",
+    "ipa": null,
+    "target_translation": "nâng cao nhận thức",
+    "source_translation": "",
+    "example": "The guidelines are an important tool for raising awareness about current management thinking.",
+    "pos": "collocation",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "make an effort",
+    "ipa": null,
+    "target_translation": "nỗ lực",
+    "source_translation": "",
+    "example": "You can't expect to have any friends if you don't make the effort with people.",
+    "pos": "collocation",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "reach a conclusion",
+    "ipa": null,
+    "target_translation": "đi đến kết luận",
+    "source_translation": "to make a decision, agreement, etc. about something",
+    "example": "She reached the conclusion that there was no more she could do.",
+    "pos": "phrase",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "as a result of something",
+    "ipa": null,
+    "target_translation": "là kết quả của một cái gì đó",
+    "source_translation": "because of something",
+    "example": "Profits have declined as a result of the recent drop in sales.",
+    "pos": "phrase",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+      "writing",
+      "speaking"
+    ]
+  },
+  {
+    "term": "for example",
+    "ipa": null,
+    "target_translation": "ví dụ",
+    "source_translation": "used when giving an example of the type of thing you mean",
+    "example": "Offices can easily become more environmentally friendly by, for example, using recycled paper.",
+    "pos": "phrase",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "in addition (to)",
+    "ipa": null,
+    "target_translation": "ngoài ra (để)",
+    "source_translation": "as well (as)",
+    "example": "In addition to his apartment in Manhattan, he has a villa in Italy and a castle in Scotland.",
+    "pos": "phrase",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "however",
+    "ipa": null,
+    "target_translation": "tuy nhiên",
+    "source_translation": "despite whatever amount or degree",
+    "example": "However hungry I am, I never seem to be able to finish off a whole pizza.",
+    "pos": "adverb",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "therefore",
+    "ipa": null,
+    "target_translation": "vì vậy",
+    "source_translation": "for that reason",
+    "example": "We were unable to get funding and therefore had to abandon the project.",
+    "pos": "adverb",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "on the other hand",
+    "ipa": null,
+    "target_translation": "mặt khác",
+    "source_translation": "in a way that is different from the first thing you mentioned",
+    "example": "My husband likes classical music – I, on the other hand, like all kinds.",
+    "pos": "idiom",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "in contrast",
+    "ipa": null,
+    "target_translation": "trái lại",
+    "source_translation": "",
+    "example": "Their economy has expanded, while ours, by/in contrast, has declined.",
+    "pos": "phrase",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "as well as",
+    "ipa": null,
+    "target_translation": "cũng như",
+    "source_translation": "in addition (to)",
+    "example": "I want to visit Andrew as well as Martin.",
+    "pos": "phrase",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "in terms of",
+    "ipa": null,
+    "target_translation": "về mặt...",
+    "source_translation": "used to describe which particular area of a subject you are discussing",
+    "example": "In terms of money, I was better off in my last job.",
+    "pos": "phrase",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "to some extent",
+    "ipa": null,
+    "target_translation": "ở một mức độ nào đó",
+    "source_translation": "partly",
+    "example": "To some extent, she was responsible for the accident.",
+    "pos": "phrase",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "quality of life",
+    "ipa": null,
+    "target_translation": "chất lượng cuộc sống",
+    "source_translation": "the level of enjoyment, comfort, and health in someone's lif",
+    "example": "My quality of life has improved tremendously since I moved to the country.",
+    "pos": "phrase",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "job market",
+    "ipa": null,
+    "target_translation": "thị trường việc làm",
+    "source_translation": "the number of jobs that are available in a particular place or for a particular type of work",
+    "example": "It is hard for low-skilled workers to earn their way out of poverty in a tough job market that favors skilled and educated workers.",
+    "pos": "noun",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "education system",
+    "ipa": null,
+    "target_translation": "hệ thống giáo dục",
+    "source_translation": "",
+    "example": "So what is outstanding and different about the American education system compared to the Vietnamese education system?",
+    "pos": "phrase",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "public service",
+    "ipa": null,
+    "target_translation": "dịch vụ công cộng",
+    "source_translation": "a service provided by the government, such as hospitals, schools, or the police",
+    "example": "The prime minister wants to stop Italy's huge public debt growing, and to make its public services more efficient.",
+    "pos": "noun",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "standard of living/ living standard",
+    "ipa": null,
+    "target_translation": "mức sống",
+    "source_translation": "the amount of money and comfort people have in a particular society",
+    "example": "The standard of living in many developing countries is low.",
+    "pos": "noun",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "career prospects",
+    "ipa": null,
+    "target_translation": "triển vọng nghề nghiệp",
+    "source_translation": "the possibility of being successful in your working life",
+    "example": "I took this new job because I felt that the career prospects were much better.",
+    "pos": "noun",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "financial pressure",
+    "ipa": null,
+    "target_translation": "áp lực tài chính",
+    "source_translation": "",
+    "example": "The creation of such posts places extreme financial pressure on a school.",
+    "pos": "phrase",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "work-life balance",
+    "ipa": null,
+    "target_translation": "cân bằng công việc và cuộc sống",
+    "source_translation": "the amount of time you spend doing your job compared with the amount of time you spend with your family and doing things you enjoy",
+    "example": "It can be difficult to get the right work-life balance.",
+    "pos": "noun",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "environmental issues",
+    "ipa": null,
+    "target_translation": "vấn đề môi trường",
+    "source_translation": "",
+    "example": "This is the biggest environmental issues impacting our work.",
+    "pos": "phrase",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "economic growth",
+    "ipa": null,
+    "target_translation": "tăng trưởng kinh tế",
+    "source_translation": "an increase in the economy of a country or an area, especially of the value of goods and services the country or area produces",
+    "example": "We need to maintain low inflation and at the same time create an environment that is conducive to economic growth.",
+    "pos": "nounc",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "urban",
+    "ipa": "ˈɜː.bən",
+    "target_translation": "thuộc đô thị",
+    "source_translation": "of or in a city or town",
+    "example": "Many Americans were leaving the farm for the promise of urban life.",
+    "pos": "adjective",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "rural",
+    "ipa": "ˈrʊə.rəl",
+    "target_translation": "thuộc nông thôn",
+    "source_translation": "in, of, or like the countryside",
+    "example": "The area is still very rural and undeveloped.",
+    "pos": "adjective",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "online learning",
+    "ipa": null,
+    "target_translation": "học trực tuyến",
+    "source_translation": "online learning, or e-learning, delivers education via the internet",
+    "example": "Online learning, or e-learning, delivers education via the internet",
+    "pos": "noun",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "traditional education",
+    "ipa": null,
+    "target_translation": "giáo dục truyền thống",
+    "source_translation": "",
+    "example": "Traditional education, also known as back-to-basics, conventional education or customary education, is education following long-established customs that society has traditionally used in schools.",
+    "pos": "noun",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  },
+  {
+    "term": "healthcare system",
+    "ipa": null,
+    "target_translation": "hệ thống chăm sóc sức khỏe",
+    "source_translation": "",
+    "example": "A healthcare system is an organized collection of individuals and organizations that provide for the access, financing, and delivery of medical services to individuals.",
+    "pos": "noun",
+    "source_lang": "en",
+    "target_lang": "vi",
+    "popular_score": 50,
+    "difficulty": 6,
+    "collocations": [],
+    "synonyms": [],
+    "topics": [
+      "ielts",
+      "academic"
+    ],
+    "skills": [
+    ]
+  }
+]
