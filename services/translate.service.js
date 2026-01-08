@@ -1,6 +1,6 @@
 import axios from "axios";
 import { redis } from "../cache/redis.js";
-import { askGPT } from "./gpt.service.js";
+import { askGPT } from "../helpers/gpt.helper.js";
 
 const TTL = 60 * 60 * 24 * 30;
 

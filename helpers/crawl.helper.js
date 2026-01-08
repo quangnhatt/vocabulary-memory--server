@@ -1,4 +1,5 @@
 import puppeteer from "puppeteer";
+import CONSTANTS from "../common/constants.js";
 
 export async function doCrawlWithPuppeteer(word) {
   if (!word) {
@@ -178,7 +179,7 @@ export async function doCrawlWithPuppeteer(word) {
       word,
       ipa: result.ipa,
       entries: result.entries,
-      source: "Cambridge Dictionary",
+      source: CONSTANTS.DICTIONARY_SOURCES.CAMBRIDGE,
     };
   } catch (error) {
     console.log(error);
@@ -192,62 +193,123 @@ export async function doCrawlWithPuppeteer(word) {
   }
 }
 
-async function crawlCambridgeDictionaryWithAxios(word) {
-  if (!word) {
-    return {
-      success: false,
-      error: "Word is required",
-    };
+export async function doCrawlGoogleTranslateWithPuppeteer({
+  text,
+  sl = "en",
+  tl = "vi",
+}) {
+  if (!text) {
+    return { success: false, error: "Text is required" };
   }
 
-  const url = `https://dictionary.cambridge.org/dictionary/english/${encodeURIComponent(
-    word
-  )}`;
+  const url = `https://translate.google.com/details?sl=${sl}&tl=${tl}&text=${encodeURIComponent(
+    text
+  )}&op=translate`;
+
+  let browser;
 
   try {
-    const response = await axios.get(url, {
-      headers: {
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
-        "Accept-Language": "en-US,en;q=0.9",
+    browser = await puppeteer.launch({
+      headless: "new",
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    });
+
+    const page = await browser.newPage();
+
+    await page.setUserAgent(
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
+    );
+
+    await page.setExtraHTTPHeaders({
+      "Accept-Language": "en-US,en;q=0.9",
+    });
+
+    await page.goto(url, {
+      waitUntil: "domcontentloaded",
+      timeout: 15000,
+    });
+
+    //   Wait for translation result
+    await page.waitForFunction(
+      () => {
+        return document.body.innerText.length > 0;
       },
-    });
+      { timeout: 10000 }
+    );
 
-    const $ = cheerio.load(response.data);
+    const result = await page.evaluate(() => {
+      const bodyText = document.body.innerText;
 
-    const meanings = [];
-    const examples = [];
+      // 1️⃣ Main translation (top)
+      const translation =
+        document.querySelector("span[jsname='W297wb']")?.innerText ||
+        document.querySelector("[data-language-for-alternatives]")?.innerText ||
+        null;
 
-    // Meaning blocks
-    $(".def-block").each((_, el) => {
-      const meaning = $(el).find(".def").first().text().trim();
+      // 2️⃣ Meanings (dictionary section)
+      const meanings = [];
 
-      if (meaning) meanings.push(meaning);
+      document.querySelectorAll("section").forEach((section) => {
+        const pos = section.querySelector("h3")?.innerText;
+        if (!pos) return;
 
-      $(el)
-        .find(".examp")
-        .each((_, ex) => {
-          const example = $(ex).text().trim();
-          if (example) examples.push(example);
-        });
-    });
+        const defs = Array.from(section.querySelectorAll("li span"))
+          .map((el) => el.innerText)
+          .filter(Boolean);
 
-    if (meanings.length === 0) {
+        if (defs.length) {
+          meanings.push({ pos, meanings: defs });
+        }
+      });
+
+      // 3️⃣ Examples
+      const examples = [];
+
+      document.querySelectorAll("div").forEach((div) => {
+        const text = div.innerText;
+        if (text.includes("•") && text.split("•").length === 2) {
+          const [source, target] = text.split("•");
+          examples.push({
+            source: source.trim(),
+            target: target.trim(),
+          });
+        }
+      });
+
       return {
-        word,
-        error: "No definition found",
+        translation,
+        meanings,
+        examples,
+      };
+    });
+
+    if (!result.translation) {
+      return {
+        success: false,
+        text,
+        error: "TRANSLATION_NOT_FOUND",
+        source: "Google Translate",
       };
     }
 
     return {
-      word,
-      meanings,
-      examples,
-      source: "Cambridge Dictionary",
+      success: true,
+      source: "Google Translate",
+      from: sl,
+      to: tl,
+      text,
+      ...result,
     };
   } catch (error) {
     return {
       success: false,
+      text,
       error: error.message,
+      source: "Google Translate",
     };
+  } finally {
+    if (browser) await browser.close();
   }
 }
+
+

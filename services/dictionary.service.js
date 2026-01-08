@@ -1,18 +1,34 @@
 import { pgPool } from "../db/index.js";
+import CONSTANTS from "../common/constants.js";
 import { doCrawlWithPuppeteer } from "../helpers/crawl.helper.js";
+import { normalizeDictionary } from "../helpers/normalize_dictionary.helper.js";
+import { askGPT } from "../helpers/gpt.helper.js";
 
 class DictionaryService {
   async getDictionary(word) {
     const dic = await this.fetchDictionaryFromDb(word);
     if (dic != null) return dic;
-    // Temporarily 
+    // Temporarily
     // return { success: false, error: "Generating words disabled" };
-    const crawlResult = await doCrawlWithPuppeteer(word);
-    if (crawlResult.success) {
-      await this.saveToDictionary(crawlResult);
+    let result = await doCrawlWithPuppeteer(word);
+    if (!result.success) {
+      const gptResponse = await askGPT({
+        type: CONSTANTS.PROMPT_TYPES.DICTIONARY,
+        prompt: word,
+      });
+      if (gptResponse.success) {
+        result = normalizeDictionary({
+          word: word,
+          data: JSON.parse(gptResponse.text),
+          source: CONSTANTS.DICTIONARY_SOURCES.CHATGPT,
+        });
+      }
+    }
+    if (result.success) {
+      await this.saveToDictionary(result);
     }
 
-    return crawlResult;
+    return result;
   }
   async fetchDictionaryFromDb(word) {
     const { rows } = await pgPool.query(
@@ -21,6 +37,7 @@ class DictionaryService {
       w.word,
       w.ipa_uk,
       w.ipa_us,
+      w.source,
       e.part_of_speech,
       m.id AS meaning_id,
       m.meaning,
@@ -48,6 +65,7 @@ class DictionaryService {
   ───────────────────────────── */
     const ipa_uk = rows[0]["ipa_uk"];
     const ipa_us = rows[0]["ipa_us"];
+    const source = rows[0]["source"];
     const entriesMap = new Map();
 
     for (const r of rows) {
@@ -81,9 +99,9 @@ class DictionaryService {
     return {
       success: true,
       word,
+      source,
       ipa: { uk: ipa_uk, us: ipa_us },
       entries: Array.from(entriesMap.values()),
-      source: "Cambridge Dictionary",
       fromCache: true,
     };
   }
@@ -95,7 +113,7 @@ class DictionaryService {
       const {
         word,
         entries,
-        source = "Cambridge Dictionary",
+        source,
         ipa,
       } = crawlResult;
 
