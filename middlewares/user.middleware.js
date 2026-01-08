@@ -4,7 +4,7 @@ const PUBLIC_PATHS = [
   '/auth/google',
   '/ext/translate',
   '/ext/sync/word',
-  '/dictionary',
+  // '/dictionary',
 ];
 
 export function requireUser(req, res, next) {
