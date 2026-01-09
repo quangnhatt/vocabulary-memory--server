@@ -69,7 +69,7 @@ CREATE TABLE system_vocabularies (
   target_translation TEXT NOT NULL,
   source_translation TEXT,
   example TEXT,
-  pos TEXT,
+  pos TEXT, -- new -- nullbable
   source_lang TEXT NOT NULL,
   target_lang TEXT NOT NULL,
   popular_score INTEGER NOT NULL DEFAULT 0,

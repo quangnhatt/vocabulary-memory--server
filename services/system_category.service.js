@@ -116,18 +116,40 @@ class SystemCategoryService {
     const { rows } = await pgPool.query(
       `
     SELECT
-      id,
-      name,
-      description,
-      source_lang,
-      target_lang
-    FROM system_categories
-    WHERE deleted_at IS NULL
-    ORDER BY name ASC
+      c.id,
+      c.name,
+      c.source_lang,
+      c.target_lang,
+      c.description,
+      COUNT(DISTINCT v.id) AS total_vocabularies,
+      json_agg(
+        json_build_object(
+          'word', v.term,
+          'meaning', v.target_translation 
+        )
+      ) FILTER (WHERE v.id IS NOT NULL) AS vocabularies
+    FROM system_categories c
+    LEFT JOIN system_vocabularies v
+      ON c.id = v.category_id
+    GROUP BY c.id;
+
     `
     );
 
-    return rows;
+    const result = rows.map((c) => ({
+      id: c.id,
+      name: c.name,
+      source_lang: c.source_lang,
+      target_lang: c.target_lang,
+      description: c.description,
+      total_vocabularies: Number(c.total_vocabularies),
+      vocabularies: (c.vocabularies || []).slice(0, 10).map((v) => ({
+        word: v.word,
+        meaning: v.meaning,
+      })),
+    })).filter(x => x.vocabularies.length > 0);
+
+    return result;
   }
 }
 
