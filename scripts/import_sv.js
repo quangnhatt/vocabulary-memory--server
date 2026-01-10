@@ -9,8 +9,8 @@ const __dirname = path.dirname(__filename);
 // -------- CONFIG --------
 const SOURCE_LANG = "en";
 const TARGET_LANG = "vi";
-const CATEGORY_ID = "8dec92a2-3a47-4799-9885-b9c198b0710e"; //"b9f1d4fa-9ed7-416e-8b7c-e086a632a9ae"; // ⬅️ REQUIRED
-const JSON_FILE = path.join(__dirname, "../data/ielt_6_6-5.json");
+const CATEGORY_ID = "b9f1d4fa-9ed7-416e-8b7c-e086a632a9ae"; 
+const JSON_FILE = path.join(__dirname, "../data/work_career_general.json");
 
 
 // ------------------------
