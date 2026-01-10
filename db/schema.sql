@@ -35,7 +35,6 @@ CREATE TABLE words (
   state VARCHAR(20),
   last_result VARCHAR(10),
   easy_streak INT,
-  interval_days INT, 
   next_review_at TIMESTAMP,
   last_reviewed_at TIMESTAMP,
   total_reviews INT,
@@ -54,6 +53,8 @@ CREATE TABLE system_categories (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   name TEXT NOT NULL,
   description TEXT,
+  tags TEXT[], --new
+  usage_count INT NOT NULL DEFAULT 0, --new
   source_lang TEXT NOT NULL,
   target_lang TEXT NOT NULL,
   deleted_at TIMESTAMPTZ,

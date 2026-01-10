@@ -9,14 +9,15 @@ class SystemCategoryService {
       const { rows: vocabularies } = await pgPool.query(
         `
        SELECT
-    v.*,
-    c.name AS category_name
-  FROM system_vocabularies v
-  JOIN system_categories c ON v.category_id = c.id
-  WHERE v.category_id = ANY($1)
-    AND v.deleted_at IS NULL
-    AND c.deleted_at IS NULL
-  `,
+          v.*,
+          c.name AS category_name,
+          c.tags
+        FROM system_vocabularies v
+        JOIN system_categories c ON v.category_id = c.id
+        WHERE v.category_id = ANY($1)
+          AND v.deleted_at IS NULL
+          AND c.deleted_at IS NULL
+        `,
         [categoryIds]
       );
 
@@ -26,65 +27,25 @@ class SystemCategoryService {
       }
 
       let importedCount = 0;
-      const now = new Date();
-      const nextReviewAt = new Date(Date.now() + 60 * 60 * 1000);
+      const now = Date.now();
 
       for (const vocab of vocabularies) {
-        // Skip existing user words
-        const exists = await pgPool.query(
-          `
-        SELECT 1
-        FROM words
-        WHERE user_id = $1
-          AND lower(term) = lower($2)
-          AND is_deleted = false
-        LIMIT 1
-        `,
-          [userId, vocab.term]
-        );
-
-        if (exists.rowCount > 0) continue;
-
         // Insert into words
         await pgPool.query(
           `
         INSERT INTO words (
-          id,
-          user_id,
-          term,
-          translation,
-          example,
-          tags,
-          source_lang,
-          target_lang,
+          id, user_id, term, ipa, translation, example, tags, source_lang, target_lang,
           imported_source,
-          total_reviews,
-          interval_days,
-          next_review_at,
-          is_deleted,
-          created_at,
-          updated_at
+          total_reviews
         )
         VALUES (
-          $1,$2,$3,$4,$5,$6,$7,$8,
+          $1,$2,$3,$4,$5,$6,$7,$8,$9,
           'system',
-          0,1,
-          $9,
-          false,$10,$11
+          0
         )
         `,
           [
-            uuidv4(),
-            userId,
-            vocab.term,
-            vocab.translation,
-            vocab.example,
-            [vocab.category_name],
-            vocab.source_lang,
-            vocab.target_lang,
-            nextReviewAt,
-            now,
-            now,
+            uuidv4(), userId, vocab.term, vocab.ipa, vocab.target_translation, vocab.example, vocab.tags, vocab.source_lang, vocab.target_lang
           ]
         );
 
@@ -94,10 +55,10 @@ class SystemCategoryService {
       // Increase popularity
       await pgPool.query(
         `
-      UPDATE system_vocabularies
-      SET popular_score = popular_score + 1,
+      UPDATE system_categories
+      SET usage_count = usage_count + 1,
           updated_at = NOW()
-      WHERE category_id = ANY($1)
+      WHERE id = ANY($1)
       `,
         [categoryIds]
       );
@@ -107,6 +68,7 @@ class SystemCategoryService {
       return { imported: importedCount };
     } catch (e) {
       await pgPool.query("ROLLBACK");
+      console.log(e);
       throw e;
     } finally {
     }
@@ -136,18 +98,20 @@ class SystemCategoryService {
     `
     );
 
-    const result = rows.map((c) => ({
-      id: c.id,
-      name: c.name,
-      source_lang: c.source_lang,
-      target_lang: c.target_lang,
-      description: c.description,
-      total_vocabularies: Number(c.total_vocabularies),
-      vocabularies: (c.vocabularies || []).slice(0, 10).map((v) => ({
-        word: v.word,
-        meaning: v.meaning,
-      })),
-    })).filter(x => x.vocabularies.length > 0);
+    const result = rows
+      .map((c) => ({
+        id: c.id,
+        name: c.name,
+        source_lang: c.source_lang,
+        target_lang: c.target_lang,
+        description: c.description,
+        total_vocabularies: Number(c.total_vocabularies),
+        vocabularies: (c.vocabularies || []).slice(0, 10).map((v) => ({
+          word: v.word,
+          meaning: v.meaning,
+        })),
+      }))
+      .filter((x) => x.vocabularies.length > 0);
 
     return result;
   }

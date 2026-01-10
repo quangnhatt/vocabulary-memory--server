@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 // -------- CONFIG --------
 const SOURCE_LANG = "en";
 const TARGET_LANG = "vi";
-const CATEGORY_ID = "b9f1d4fa-9ed7-416e-8b7c-e086a632a9ae"; 
+const CATEGORY_ID = "d908496c-63e1-487a-b64a-05527bafcf18"; 
 const JSON_FILE = path.join(__dirname, "../data/work_career_general.json");
 
 
