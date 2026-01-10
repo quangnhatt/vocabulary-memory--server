@@ -36,6 +36,7 @@ class SyncService {
     SELECT
       id,
       term,
+      ipa,
       translation,
       example,
       tags,

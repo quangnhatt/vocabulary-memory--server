@@ -44,7 +44,8 @@ CREATE TABLE words (
   created_at TIMESTAMP DEFAULT NOW(),
   updated_at TIMESTAMP DEFAULT NOW(),
   deleted_at TIMESTAMP,
-  is_deleted BOOLEAN
+  is_deleted BOOLEAN,
+  ipa TEXT -- new
 );
 
 
