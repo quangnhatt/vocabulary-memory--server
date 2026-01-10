@@ -35,12 +35,12 @@ class SystemCategoryService {
           `
         INSERT INTO words (
           id, user_id, term, ipa, translation, example, tags, source_lang, target_lang,
-          imported_source,
+          state, imported_source,
           total_reviews
         )
         VALUES (
           $1,$2,$3,$4,$5,$6,$7,$8,$9,
-          'system',
+          'new', 'system',
           0
         )
         `,
