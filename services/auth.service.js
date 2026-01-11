@@ -1,20 +1,20 @@
-import { pgPool } from '../db/index.js';
-import { generateUniqueUserCode } from '../utils/userCode.js';
-import { signAuthToken } from '../utils/jwt.js';
+import { pgPool } from "../db/index.js";
+import { generateUniqueUserCode } from "../utils/userCode.js";
+import { signAuthToken } from "../utils/jwt.js";
 
 export async function signInWithGoogle({
   firebaseUid,
   email,
   displayName,
-  avatarUrl
+  avatarUrl,
 }) {
   if (!firebaseUid) {
-    throw new Error('firebaseUid is required');
+    throw new Error("firebaseUid is required");
   }
 
   // 1. Find existing user
   const existing = await pgPool.query(
-    'SELECT * FROM users WHERE firebase_uid = $1',
+    "SELECT * FROM users WHERE firebase_uid = $1",
     [firebaseUid]
   );
 
@@ -45,7 +45,6 @@ export async function signInWithGoogle({
       `,
       [user.id]
     );
-
   }
 
   // 3. Generate auth token (IMPORTANT)
@@ -57,4 +56,25 @@ export async function signInWithGoogle({
     user,
     token,
   };
+}
+
+export async function saveDeviceToken(userId, { token, platform }) {
+  try {
+    await pool.query(
+      `
+    INSERT INTO device_tokens (user_id, token, platform)
+    VALUES ($1, $2, $3)
+    ON CONFLICT (token)
+    DO UPDATE SET
+      user_id = EXCLUDED.user_id,
+      platform = EXCLUDED.platform
+    `,
+      [userId, token, platform]
+    );
+
+    return { success: true };
+  } catch (e) {
+    console.log(e);
+    return { success: false };
+  }
 }

@@ -7,4 +7,6 @@ export function load(app) {
   app.post("/api/v1/auth/google", (req, res, next) =>
     AuthController.googleSignIn(req, res, next)
   );
+
+   app.post("/api/v1/auth/device-token", AuthController.saveDeviceToken);
 }
