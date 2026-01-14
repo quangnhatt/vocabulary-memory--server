@@ -84,6 +84,7 @@ class SyncService {
       totalReviews,
       isDeleted,
       updatedAt,
+      ipa
     } = word;
 
     await pgPool.query(
@@ -93,12 +94,14 @@ class SyncService {
       next_review_at, source_lang, target_lang,
       total_reviews, is_deleted, updated_at,
       state, last_result, easy_streak,
-      last_reviewed_at
+      last_reviewed_at,
+      ipa
     )
     VALUES (
       $1,$2,$3,$4,$5,$6,
       $7,$8,$9,
-      $10,$11,$12,$13, $14,$15, $16
+      $10,$11,$12,$13, $14,$15, $16,
+      $17
     )
     ON CONFLICT (id)
     DO UPDATE SET
@@ -115,7 +118,8 @@ class SyncService {
       state = EXCLUDED.state,
       last_result = EXCLUDED.last_result,
       easy_streak = EXCLUDED.easy_streak,
-      last_reviewed_at = EXCLUDED.last_reviewed_at
+      last_reviewed_at = EXCLUDED.last_reviewed_at,
+      ipa = EXCLUDED.ipa
     `,
       [
         id,
@@ -134,6 +138,7 @@ class SyncService {
         word.lastResult ?? null,
         word.easyStreak ?? 0,
         word.lastReviewedAt ?? null,
+        ipa
       ]
     );
   }
@@ -218,6 +223,7 @@ class SyncService {
       tags,
       source_lang = "en",
       target_lang = "vi",
+      ipa
     } = payload;
 
     if (!user_code || !term || !translation) {
@@ -308,12 +314,13 @@ class SyncService {
         next_review_at,
         is_deleted,
         created_at,
-        updated_at
+        updated_at,
+        ipa
       )
       VALUES (
         $1,$2,$3,$4,$5,$6,
         $7,$8,0,1,$9,$10,$11,$12,
-        $13,false,$14,$15
+        $13,false,$14,$15, $16
       )
       `,
         [
@@ -332,6 +339,7 @@ class SyncService {
           nextReviewAt,
           now,
           now,
+          ipa
         ]
       );
 
