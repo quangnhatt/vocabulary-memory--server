@@ -4,7 +4,6 @@ class DictionaryController {
   async getDictionary(req, res) {
     const phrase = req.query.word || "";
     const result = await DictionaryService.getDictionary(phrase);
-    console.log(result);
     res.json(result);
   }
 }
