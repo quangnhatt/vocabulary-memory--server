@@ -44,6 +44,7 @@ class SyncService {
       last_result,
       easy_streak,
       next_review_at,
+      last_reviewed_at,
       source_lang,
       target_lang,
       total_reviews,

@@ -9,26 +9,30 @@ const __dirname = path.dirname(__filename);
 // -------- CONFIG -------
 
 const DATASETS = [
+  // {
+  //   category_id: "fd05cc32-76d8-4855-a9af-fd069319c546",
+  //   file_name: "daily_life_and_routine.json",
+  // },
+  // {
+  //   category_id: "b9893a89-24d7-4d5c-b985-c7671598228e",
+  //   file_name: "emotions_and_feelings.json",
+  // },
+  // {
+  //   category_id: "8198242e-54ba-40f7-a574-a3af5a17272f",
+  //   file_name: "environment.json",
+  // },
+  // {
+  //   category_id: "f4bfcc71-0ed9-4d93-af6d-8f602b49f642",
+  //   file_name: "ielts_writing_task_1.json",
+  // },
+  // {
+  //   category_id: "449cd936-0938-43ca-97d0-a9f273f83e40",
+  //   file_name: "relationships_and_social_life.json",
+  // },
   {
-    category_id: "fd05cc32-76d8-4855-a9af-fd069319c546",
-    file_name: "daily_life_and_routine.json",
-  },
-  {
-    category_id: "b9893a89-24d7-4d5c-b985-c7671598228e",
-    file_name: "emotions_and_feelings.json",
-  },
-  {
-    category_id: "8198242e-54ba-40f7-a574-a3af5a17272f",
-    file_name: "environment.json",
-  },
-  {
-    category_id: "f4bfcc71-0ed9-4d93-af6d-8f602b49f642",
-    file_name: "ielts_writing_task_1.json",
-  },
-  {
-    category_id: "449cd936-0938-43ca-97d0-a9f273f83e40",
-    file_name: "relationships_and_social_life.json",
-  },
+    category_id: "800f33da-8368-43c6-9135-84bba549e29c", //800f33da-8368-43c6-9135-84bba549e29c
+    file_name: "human_appearance_personality.json",
+  }
 ];
 
 // ------------------------
