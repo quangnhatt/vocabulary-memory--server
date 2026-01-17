@@ -15,8 +15,12 @@ class UserSettingsController {
 
   async updateUserSettings(req, res) {
     const userId = req.userId;
-    const { words_per_day, learning_speed, native_language_code, learning_language_code } =
-      req.body.settings;
+    const {
+      words_per_day,
+      learning_speed,
+      native_language_code,
+      learning_language_code,
+    } = req.body.settings;
     const updated = await UserSettingsService.upsert(userId, {
       wordsPerDay: words_per_day,
       learningSpeed: learning_speed,
