@@ -1,7 +1,7 @@
 import { pgPool } from "../db/index.js";
 import { v4 as uuidv4 } from "uuid";
 class SystemCategoryService {
-  async importCategories(userId, categoryIds) {
+  async importCategories(userId, categoryId) {
     try {
       await pgPool.query("BEGIN");
 
@@ -14,11 +14,11 @@ class SystemCategoryService {
           c.tags
         FROM system_vocabularies v
         JOIN system_categories c ON v.category_id = c.id
-        WHERE v.category_id = ANY($1)
+        WHERE v.category_id = $1
           AND v.deleted_at IS NULL
           AND c.deleted_at IS NULL
         `,
-        [categoryIds]
+        [categoryId]
       );
 
       if (vocabularies.length === 0) {
@@ -27,7 +27,6 @@ class SystemCategoryService {
       }
 
       let importedCount = 0;
-      const now = Date.now();
 
       for (const vocab of vocabularies) {
         // Insert into words
@@ -58,9 +57,9 @@ class SystemCategoryService {
       UPDATE system_categories
       SET usage_count = usage_count + 1,
           updated_at = NOW()
-      WHERE id = ANY($1)
+      WHERE id = $1
       `,
-        [categoryIds]
+        [categoryId]
       );
 
       await pgPool.query("COMMIT");

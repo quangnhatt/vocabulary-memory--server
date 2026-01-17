@@ -3,15 +3,15 @@ import SystemCategoryService from "../services/system_category.service.js";
 class CategoryController {
   async importVocabulariesByCategory(req, res) {
     try {
-      const { category_ids } = req.body;
+      const { category_id } = req.body;
 
-      if (!Array.isArray(category_ids) || category_ids.length === 0) {
-        return res.status(400).json({ error: "category_ids required" });
+      if (!category_id) {
+        return res.status(400).json({ error: "category_id required" });
       }
 
       const result = await SystemCategoryService.importCategories(
         req.userId,
-        category_ids
+        category_id
       );
       res.json(result);
     } catch (e) {
