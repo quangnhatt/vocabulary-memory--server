@@ -19,7 +19,7 @@ class UserSettingsService {
     return rows[0] || null;
   }
 
-  async upsert(userId, { wordsPerDay, learningSpeed }) {
+  async upsert(userId, { wordsPerDay, learningSpeed, nativeLang, learningLang }) {
     const { rows } = await pgPool.query(
       `
       INSERT INTO user_settings (user_id, words_per_day, learning_speed, native_lang, learning_lang)
@@ -32,7 +32,7 @@ class UserSettingsService {
         learning_lang = EXCLUDED.learning_lang
       RETURNING user_id, words_per_day, learning_speed, native_lang, learning_lang
       `,
-      [userId, wordsPerDay, learningSpeed]
+      [userId, wordsPerDay, learningSpeed, nativeLang, learningLang]
     );
 
     return rows[0];
