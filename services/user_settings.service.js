@@ -7,7 +7,7 @@ class UserSettingsService {
       SELECT
         user_id,
         words_per_day,
-        learning_speed
+        learning_speed,
         native_lang,
         learning_lang
       FROM user_settings
