@@ -15,5 +15,10 @@ export default Object.freeze({
   DICTIONARY_SOURCES: {
     CHATGPT: "chatgpt",
     CAMBRIDGE: "cambridge"
-  }
+  },
+
+  ACTIVITY_TYPES: {
+    IMPORT_CATEGORY: "import_category",
+    LEARN_VOCABULARY: "learn_vocabulary",
+  },
 });

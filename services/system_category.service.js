@@ -1,11 +1,28 @@
 import { pgPool } from "../db/index.js";
 import { v4 as uuidv4 } from "uuid";
+import CONSTANTS from "../common/constants.js";
 class SystemCategoryService {
   async importCategories(userId, categoryId) {
     try {
       await pgPool.query("BEGIN");
+      // Check if already imported
+      const { rows: existed } = await pgPool.query(
+        `
+        SELECT 1
+        FROM user_activities
+        WHERE user_id = $1
+          AND system_category_id = $2
+          AND activity_type = 'import_category'
+        LIMIT 1
+        `,
+        [userId, categoryId]
+      );
+      if (existed.length > 0) {
+        await pgPool.query("ROLLBACK");
+        return { success: false, imported: 0, message: "Category already imported" };
+      }
 
-      // 1️⃣ Load vocabularies in selected categories
+      // Load vocabularies in selected categories
       const { rows: vocabularies } = await pgPool.query(
         `
        SELECT
@@ -22,8 +39,8 @@ class SystemCategoryService {
       );
 
       if (vocabularies.length === 0) {
-        await pgPool.query("COMMIT");
-        return { imported: 0 };
+        await pgPool.query("ROLLBACK");
+        return { success: false, imported: 0, message: "No vocabularies found in category" };
       }
 
       let importedCount = 0;
@@ -44,12 +61,43 @@ class SystemCategoryService {
         )
         `,
           [
-            uuidv4(), userId, vocab.term, vocab.ipa, vocab.target_translation, vocab.example, vocab.tags, vocab.source_lang, vocab.target_lang
+            uuidv4(),
+            userId,
+            vocab.term,
+            vocab.ipa,
+            vocab.target_translation,
+            vocab.example,
+            vocab.tags,
+            vocab.source_lang,
+            vocab.target_lang,
           ]
         );
 
         importedCount++;
       }
+
+      // Log user activity (IMPORT ONCE GUARANTEE)
+      await pgPool.query(
+        `
+        INSERT INTO user_activities (
+          idd,
+          user_id,
+          activity_type,
+          system_category_id,
+          details
+        )
+        VALUES ($1, $2, $3, $4, $5)
+        `,
+        [
+          uuidv4(),
+          userId,
+          CONSTANTS.ACTIVITY_TYPES.IMPORT_CATEGORY,
+          categoryId,
+          {
+            imported_words: importedCount,
+          },
+        ]
+      );
 
       // Increase popularity
       await pgPool.query(
@@ -64,13 +112,11 @@ class SystemCategoryService {
 
       await pgPool.query("COMMIT");
 
-      return { imported: importedCount };
+      return { success: true, imported: importedCount };
     } catch (e) {
       await pgPool.query("ROLLBACK");
-      console.log(e);
-      throw e;
-    } finally {
-    }
+      return { success: false, imported: 0, message: e.message };
+    } 
   }
 
   async getSystemCategories() {
