@@ -1,7 +1,10 @@
 import puppeteer from "puppeteer";
 import CONSTANTS from "../common/constants.js";
 
-export async function doCrawlWithPuppeteer(word) {
+export async function doCrawlCambridgeWithPuppeteer(source_language, word) {
+  if (source_language !== "en") {
+    return { success: false, error: "Only English is supported" };
+  }
   if (!word) {
     return { success: false, error: "Word is required" };
   }
@@ -307,5 +310,3 @@ export async function doCrawlGoogleTranslateWithPuppeteer({
     if (browser) await browser.close();
   }
 }
-
-

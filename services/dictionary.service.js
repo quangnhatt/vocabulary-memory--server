@@ -1,20 +1,22 @@
 import { pgPool } from "../db/index.js";
 import CONSTANTS from "../common/constants.js";
-import { doCrawlWithPuppeteer } from "../helpers/crawl.helper.js";
+import { doCrawlCambridgeWithPuppeteer } from "../helpers/crawl.helper.js";
 import { normalizeDictionary } from "../helpers/normalize_dictionary.helper.js";
 import { askGPT } from "../helpers/gpt.helper.js";
 
 class DictionaryService {
-  async getDictionary(word) {
-    const dic = await this.fetchDictionaryFromDb(word);
+  async getDictionary(source_language, target_language, word) {
+    const dic = await this.fetchDictionaryFromDb(source_language, word);
     if (dic != null) return dic;
     // Temporarily
     // return { success: false, error: "Generating words disabled" };
-    let result = await doCrawlWithPuppeteer(word);
+    let result = await doCrawlCambridgeWithPuppeteer(source_language, word);
     if (!result.success) {
       const gptResponse = await askGPT({
         type: CONSTANTS.PROMPT_TYPES.DICTIONARY,
         prompt: word,
+        source_language: source_language,
+        target_language: target_language,
       });
       if (gptResponse.success) {
         result = normalizeDictionary({
@@ -30,7 +32,7 @@ class DictionaryService {
 
     return result;
   }
-  async fetchDictionaryFromDb(word) {
+  async fetchDictionaryFromDb(source_language, word) {
     const { rows } = await pgPool.query(
       `
     SELECT
@@ -49,13 +51,13 @@ class DictionaryService {
     JOIN dictionary_entry e ON e.word_id = w.id
     JOIN dictionary_meaning m ON m.entry_id = e.id
     LEFT JOIN dictionary_example ex ON ex.meaning_id = m.id
-    WHERE w.word = $1
+    WHERE w.word = $1 AND w.language = $2 
     ORDER BY
       e.part_of_speech,
       m.order_index,
       ex.order_index
     `,
-      [word]
+      [word, source_language]
     );
 
     if (!rows.length) return null;
@@ -110,12 +112,7 @@ class DictionaryService {
     try {
       await pgPool.query("BEGIN");
 
-      const {
-        word,
-        entries,
-        source,
-        ipa,
-      } = crawlResult;
+      const { word, entries, source, ipa } = crawlResult;
 
       /* ─────────────────────────────
        1. WORD

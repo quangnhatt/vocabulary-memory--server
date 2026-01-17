@@ -2,6 +2,7 @@ import { redis } from "../cache/redis.js";
 import crypto from "crypto";
 import CONSTANTS from "../common/constants.js";
 import OpenAI from "openai";
+import { mapLanguageCode } from "./language.helper.js";
 
 const GPT_TTL = 60 * 60 * 6; // 6 hours
 
@@ -9,20 +10,39 @@ const client = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-export async function askGPT({ type, prompt, model = "gpt-4.1-mini" }) {
-  if (!prompt || prompt.length > 500) return { success: false, message: "Prompt is required or has 500 characters at maximum." };
+export async function askGPT({
+  type,
+  prompt,
+  source_language,
+  target_language,
+  model = "gpt-4.1-mini",
+}) {
+  if (!prompt || prompt.length > 500)
+    return {
+      success: false,
+      message: "Prompt is required or has 500 characters at maximum.",
+    };
   if (type == CONSTANTS.PROMPT_TYPES.DICTIONARY) {
-    prompt = buildDictionaryPrompt({phrase: prompt});
+    prompt = buildDictionaryPrompt({
+      phrase: prompt,
+      source_language,
+      target_language,
+    });
   } else {
-    prompt = buildNormalPrompt({message: prompt});
+    prompt = buildNormalPrompt({ message: prompt });
   }
 
   // 1. Check cache
-  const key = buildCacheKey({ model, type, prompt });
+  const key = buildCacheKey({ model, type, prompt, source_language, target_language });
   const cached = await redis.get(key);
 
   if (cached) {
-    return { success: true, cached: true, text: cached, source: CONSTANTS.DICTIONARY_SOURCES.CHATGPT };
+    return {
+      success: true,
+      cached: true,
+      text: cached,
+      source: CONSTANTS.DICTIONARY_SOURCES.CHATGPT,
+    };
   }
 
   try {
@@ -39,22 +59,35 @@ export async function askGPT({ type, prompt, model = "gpt-4.1-mini" }) {
     await redis.set(key, content, "EX", GPT_TTL);
 
     //
-    return { success: true, cached: false, text: content, source: CONSTANTS.DICTIONARY_SOURCES.CHATGPT };
+    return {
+      success: true,
+      cached: false,
+      text: content,
+      source: CONSTANTS.DICTIONARY_SOURCES.CHATGPT,
+    };
   } catch (err) {
     console.error("Get GPT failed:", err.message);
     return { success: false, message: err.message };
   }
 }
 
-function buildDictionaryPrompt({ phrase }) {
+function buildDictionaryPrompt({
+  source_language = "en",
+  target_language = "vi",
+  phrase,
+}) {
+  source_language = mapLanguageCode(source_language);
+  target_language = mapLanguageCode(target_language);
   return `
-You are an English dictionary assistant.
-Task: Generate 1 natural English example sentence using this phrase:
+You are an ${source_language}-to-${target_language} dictionary assistant.
+Generate data using this phrase:
           "${phrase}"
           Rules:
-          - Simple, neutral English
+          - JSON format only
+          - Translation in ${target_language}
+          - Example in simple, neutral ${source_language}
           - No explanation
-          - JSON only
+          
 Format:
 { "ipa": "", "translation": "", "pos": "", "example": "..." }
 `.trim();
@@ -77,11 +110,19 @@ function normalizePrompt(input) {
     .replace(/[.!?]+$/g, ""); // remove trailing punctuation
 }
 
-function buildCacheKey({ model, type, prompt }) {
+function buildCacheKey({
+  model,
+  type,
+  prompt,
+  target_language,
+  source_language,
+}) {
   const normalizedKey = normalizePrompt(prompt);
 
   return crypto
     .createHash("sha256")
-    .update(`gpt:${model}:${type}:${normalizedKey}`)
+    .update(
+      `gpt:${model}:${type}:${target_language}:${source_language}:${normalizedKey}`
+    )
     .digest("hex");
 }
