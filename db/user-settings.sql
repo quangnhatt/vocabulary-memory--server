@@ -9,8 +9,8 @@ CREATE TABLE user_settings (
   last_notification_sent_at TIMESTAMP,
   timezone TEXT DEFAULT 'UTC',
   preferred_notification_time TIME,
-   source_lang VARCHAR(10),
-  target_lang VARCHAR(10),
+  native_lang VARCHAR(10), -- rename from source_lang
+  learning_lang VARCHAR(10), -- rename from target_lang
 
   last_sync_at TIMESTAMP,
   created_at TIMESTAMP NOT NULL DEFAULT NOW(),
