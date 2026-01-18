@@ -27,6 +27,8 @@ CREATE TABLE quiz_answers (
   option_text TEXT NOT NULL,
   answer_type TEXT NOT NULL
     CHECK (answer_type IN ('best', 'acceptable', 'ok', 'wrong')),
+  answer_point INTEGER, --new
+    CHECK (answer_point BETWEEN 0 AND 10),
   explanation TEXT,
   status TEXT DEFAULT 'active'
     CHECK (status IN ('active', 'review', 'disabled')),
@@ -39,6 +41,8 @@ CREATE TABLE quiz_attempts (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   user_id UUID NOT NULL,
   level_at_start TEXT NOT NULL,
+  total_possible_points INTEGER NOT NULL DEFAULT 0, --new
+  total_earned_points INTEGER,
   quiz_ratio NUMERIC(4,3)
     CHECK (quiz_ratio BETWEEN 0 AND 1),
   difficulty_pressure NUMERIC(4,3),
@@ -65,9 +69,12 @@ CREATE TABLE quiz_attempt_answers (
   attempt_question_id INTEGER NOT NULL
     REFERENCES quiz_attempt_questions(id)
     ON DELETE CASCADE,
-  selected_option_key TEXT NOT NULL,
-  answer_weight NUMERIC(3,2)
-    CHECK (answer_weight BETWEEN 0 AND 1),
+  answer_id INTEGER NOT NULL
+    REFERENCES quiz_answers(id), --new
+  answer_text TEXT NOT NULL, --selected_option_key TEXT NOT NULL,
+  earned_point INTEGER, --new
+  -- answer_weight NUMERIC(3,2)
+  --   CHECK (answer_weight BETWEEN 0 AND 1),
   created_at TIMESTAMP DEFAULT NOW(),
   updated_at TIMESTAMP DEFAULT NOW()
 );

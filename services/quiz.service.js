@@ -3,7 +3,12 @@ import { inverseSkillMultiplier } from "../utils/quiz.scoring.js";
 
 class QuizService {
   async startQuiz(userId) {
-    const questions = await generateQuiz(userId);
+    //
+    const inverse_skill_multiplier = await calculateUserInverseSkillMultiplier(
+      userId
+    );
+    // 0. ...question (popularity_score,...), effectiveDifficulty, zone
+    const questions = await generateQuiz(inverse_skill_multiplier, 20);
 
     // 1. Create quiz attempt
     const { rows } = await pgPool.query(
@@ -22,10 +27,10 @@ class QuizService {
       await pgPool.query(
         `
       INSERT INTO quiz_attempt_questions
-        (attempt_id, question_id, prompt, popularity_score, dimension)
-      VALUES ($1, $2, $3, $4, $5)
+        (attempt_id, question_id, prompt, popularity_score)
+      VALUES ($1, $2, $3, $4)
       `,
-        [attemptId, q.id, q.prompt, q.popularity_score, q.dimension]
+        [attemptId, q.id, q.prompt, q.popularity_score]
       );
     }
 
@@ -36,7 +41,7 @@ class QuizService {
       id,
       question_id,
       prompt,
-      dimension
+      popularity_score
     FROM quiz_attempt_questions
     WHERE attempt_id = $1
     ORDER BY id
@@ -45,11 +50,12 @@ class QuizService {
     );
 
     // 4. Attach answers to each attempt question
+    let totalPossiblePoints = 0;
     const enrichedQuestions = await Promise.all(
       attemptQuestions.map(async (aq) => {
         const { rows: answers } = await pgPool.query(
           `
-        SELECT option_text
+        SELECT id, option_text, answer_type, answer_point
         FROM quiz_answers
         WHERE question_id = $1
           AND status = 'active'
@@ -57,38 +63,90 @@ class QuizService {
         `,
           [aq.question_id]
         );
-
+        const relative_difficulty =
+          aq.popularity_score * inverse_skill_multiplier;
+        let finalAnswers = [];
+        let maxPoint = 0;
+        for (const ans of answers) {
+          const earned_point = calculateEarnedPoint(
+            ans?.answer_type,
+            ans.answer_point,
+            relative_difficulty
+          );
+          if (earned_point > maxPoint) {
+            maxPoint = earned_point;
+          }
+          finalAnswers.push({
+            id: ans.id,
+            text: ans.option_text,
+            earned_point,
+          });
+        }
+        totalPossiblePoints += maxPoint;
         return {
           attemptQuestionId: aq.id,
           prompt: aq.prompt,
-          dimension: aq.dimension,
-          answers: answers.map((a) => ({
-            text: a.option_text,
-          })),
+          popularity_score: aq.popularity_score,
+          answers: finalAnswers,
         };
       })
     );
 
+    // Update total possible points in attempt record
+    await pgPool.query(
+      `
+    UPDATE quiz_attempts
+    SET total_possible_points = $1
+    WHERE id = $2
+    `,
+      [totalPossiblePoints, attemptId]
+    );
+
     return {
       attemptId,
+      totalPossiblePoints,
       questions: enrichedQuestions,
     };
   }
 
-  async submitQuiz(attemptId, answers) {
-    /**
-     * answers = [
-     *   { attemptQuestionId, selectedAnswerText }
-     * ]
-     */
+  async submitQuiz(userId, attemptId, answers) {
+    try {
+      await pgPool.query("BEGIN");
+      /**
+       * answers = [
+       *   { attemptQuestionId, selectedAnswerText }
+       * ]
+       */
 
-    let earned = 0;
-    let possible = 0;
-    let difficulties = [];
-
-    for (const ans of answers) {
-      const { rows } = await pgPool.query(
+      // Verify attempt belongs to user
+      const { rows: attemptRows } = await pgPool.query(
         `
+      SELECT user_id, total_possible_points
+      FROM quiz_attempts
+      WHERE id = $1
+      `,
+        [attemptId]
+      );
+
+      if (attemptRows.length === 0) {
+        throw new Error("Invalid attempt ID");
+      }
+
+      if (attemptRows[0].user_id !== userId) {
+        throw new Error("Unauthorized attempt submission");
+      }
+
+      const totalPossiblePoints = attemptRows[0].total_possible_points;
+
+      const inverse_skill_multiplier =
+        await calculateUserInverseSkillMultiplier(userId);
+
+      let totalEarned = 0;
+      let difficulties = [];
+
+      for (const ans of answers) {
+        const { rows } = await pgPool.query(
+          `
         SELECT
           aq.question_id,
           aq.popularity_score,
@@ -96,53 +154,53 @@ class QuizService {
         FROM quiz_attempt_questions aq
         JOIN quiz_answers qa
           ON qa.question_id = aq.question_id
-         AND qa.option_text = $1
-        WHERE aq.id = $2
+        WHERE qa.id = $1  AND qa.option_text = $2 AND  aq.id = $3
         `,
-        [ans.selectedAnswerText, ans.attemptQuestionId]
-      );
+          [
+            ans.selectedAnswer.id,
+            ans.selectedAnswer.text,
+            ans.attemptQuestionId
+          ]
+        );
 
-      const row = rows[0];
+        const row = rows[0];
+        const relative_difficulty =
+          row?.popularity_score * inverse_skill_multiplier;
+        const difficulty = +row?.popularity_score;
+        const earned = calculateEarnedPoint(
+          row?.answer_type,
+          row?.answer_point,
+          relative_difficulty
+        );
+        totalEarned += earned;
+        difficulties.push(difficulty);
 
-      const weight =
-        row?.answer_type === "best"
-          ? 1
-          : row?.answer_type === "acceptable"
-          ? 0.7
-          : row?.answer_type === "ok"
-          ? 0.4
-          : 0;
-
-      const difficulty = +(row.popularity_score);
-
-      earned += 10 * difficulty * weight;
-      possible += 10 * difficulty;
-      difficulties.push(difficulty);
-
-      await pgPool.query(
-        `
+        await pgPool.query(
+          `
         INSERT INTO quiz_attempt_answers
-          (attempt_question_id, selected_option_text, answer_weight)
-        VALUES ($1, $2, $3)
+          (attempt_question_id, answer_id, answer_text, earned_point)
+        VALUES ($1, $2, $3, $4)
         `,
-        [ans.attemptQuestionId, ans.selectedAnswerText, weight]
-      );
+          [ans.attemptQuestionId, ans.selectedAnswer.id, ans.selectedAnswer.text, earned]
+        );
+      }
+
+      const quizRatio = totalEarned / totalPossiblePoints;
+      const difficultyPressure =
+        difficulties.reduce((a, b) => a + b, 0) / difficulties.length;
+      await pgPool.query("COMMIT");
+      return { quizRatio, difficultyPressure };
+    } catch (e) {
+      console.log(e);
+      await pgPool.query("ROLLBACK");
+      return { success: false, message: e.message };
     }
-
-    const quizRatio = earned / possible;
-    const difficultyPressure =
-      difficulties.reduce((a, b) => a + b, 0) / difficulties.length;
-
-    return { quizRatio, difficultyPressure };
   }
 }
 
 export default new QuizService();
 
-// ================================
-// Quiz generation (adaptive)
-// ================================
-async function generateQuiz(userId, questionCount = 18) {
+async function calculateUserInverseSkillMultiplier(userId) {
   // 1. Load user confidence score (MERGED INTO users)
   const { rows } = await pgPool.query(
     `
@@ -154,9 +212,26 @@ async function generateQuiz(userId, questionCount = 18) {
   );
 
   const cs = rows[0]?.confidence_score ?? 0;
-  const multiplier = inverseSkillMultiplier(cs);
+  return inverseSkillMultiplier(cs);
+}
 
-  // 2. Load active questions
+function calculateEarnedPoint(answerType, answerPoint, relativeDifficulty) {
+  const weight =
+    answerType === "best"
+      ? 10
+      : answerType === "acceptable"
+      ? 7
+      : answerType === "ok"
+      ? 4
+      : 0;
+  const earned_point = Math.ceil(relativeDifficulty * (answerPoint ?? weight));
+  return earned_point;
+}
+// ================================
+// Quiz generation (adaptive)
+// ================================
+async function generateQuiz(inverse_skill_multiplier, questionCount = 18) {
+  // 1. Load active questions
   const q = await pgPool.query(
     `
     SELECT *
@@ -165,9 +240,9 @@ async function generateQuiz(userId, questionCount = 18) {
     `
   );
 
-  // 3. Compute effective difficulty per user
+  // 2. Compute effective difficulty per user
   const questions = q.rows.map((row) => {
-    const effectiveDifficulty = row.popularity_score * multiplier;
+    const effectiveDifficulty = row.popularity_score * inverse_skill_multiplier;
 
     let zone = "same";
     if (effectiveDifficulty < 0.45) zone = "below";
@@ -176,7 +251,7 @@ async function generateQuiz(userId, questionCount = 18) {
     return { ...row, effectiveDifficulty, zone };
   });
 
-  // 4. Zone-based sampling
+  // 3. Zone-based sampling
   const same = questions.filter((q) => q.zone === "same");
   const above = questions.filter((q) => q.zone === "above");
   const below = questions.filter((q) => q.zone === "below");

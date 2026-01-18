@@ -1,23 +1,18 @@
 import { pgPool } from "../db/index.js";
 import { calculateDeltaCS } from "../utils/quiz.scoring.js";
-
-function resolveLevel(cs) {
-  if (cs < 100) return "explorer";
-  if (cs < 300) return "builder";
-  if (cs < 500) return "confident";
-  if (cs < 700) return "fluent";
-  if (cs < 900) return "near_native";
-  return "native_like";
-}
+import {
+  resolveLevel,
+} from "../utils/progress.js";
 
 class ProgressService {
   async updateUserProgress({ userId, quizRatio, difficultyPressure }) {
     const { rows } = await pgPool.query(
-      `SELECT confidence_score FROM users WHERE id = $1`,
+      `SELECT confidence_score, current_level FROM users WHERE id = $1`,
       [userId]
     );
 
     const currentCS = +(rows[0].confidence_score);
+    const currentLevel = rows[0].current_level;
 
     const delta = calculateDeltaCS({
       quizRatio,
@@ -38,12 +33,13 @@ class ProgressService {
         updated_at = NOW()
     WHERE id = $3
   `,
-      [newCS, newLevel, userId]
+      [+newCS.toFixed(2), newLevel, userId]
     );
 
     return {
       confidenceScore: newCS,
-      level: newLevel,
+      oldLevel: currentLevel,
+      currentLevel: newLevel,
     };
   }
 }
