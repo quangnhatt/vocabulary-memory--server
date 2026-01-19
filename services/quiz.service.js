@@ -13,8 +13,8 @@ class QuizService {
     // 1. Create quiz attempt
     const { rows } = await pgPool.query(
       `
-    INSERT INTO quiz_attempts (user_id, level_at_start)
-    VALUES ($1, 'unknown')
+    INSERT INTO quiz_attempts (user_id, level_at_start, total_possible_points)
+    VALUES ($1, 'unknown', 0)
     RETURNING id
     `,
       [userId]
