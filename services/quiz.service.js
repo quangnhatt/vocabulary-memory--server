@@ -167,14 +167,13 @@ class QuizService {
         const row = rows[0];
         const relative_difficulty =
           row?.popularity_score * inverse_skill_multiplier;
-        const difficulty = +row?.popularity_score;
         const earned = calculateEarnedPoint(
           row?.answer_type,
           row?.answer_point,
           relative_difficulty
         );
         totalEarned += earned;
-        difficulties.push(difficulty);
+        difficulties.push(relative_difficulty);
 
         await pgPool.query(
           `
