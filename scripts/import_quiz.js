@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { pgPool } from "../db/index.js";
+import { getPopularity, DEFAULT_POPULARITY_SCORE } from '../helpers/popularity.helper.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -52,20 +53,26 @@ async function run(fileName) {
           question.prompt
         );
       }
-      const popularityScore = question.popularity_score;
+      let popularityScore = question.popularity_score;
       // 1. Insert question
+      if (popularityScore === null || popularityScore === undefined) {
+        popularityScore = 0.8; // default
+      }
+      const defaultPopularity = getPopularity(popularityScore);
+      popularityScore = DEFAULT_POPULARITY_SCORE[defaultPopularity];
       const questionRes = await pgPool.query(
         `
         INSERT INTO quiz_questions (
           prompt,
+          default_popularity,
           popularity_score,
           categories,
           status
         )
-        VALUES ($1, $2, $3, 'active')
+        VALUES ($1, $2, $3, $4, 'active')
         RETURNING id
         `,
-        [question.prompt, popularityScore, question.categories ?? []]
+        [question.prompt, defaultPopularity, popularityScore, question.categories ?? []]
       );
 
       const questionId = questionRes.rows[0].id;

@@ -104,6 +104,7 @@ class QuizService {
 
     return {
       attemptId,
+      totalQuestions: enrichedQuestions.length,
       totalPossiblePoints,
       questions: enrichedQuestions,
     };
@@ -241,20 +242,29 @@ async function generateQuiz(inverse_skill_multiplier, questionCount = 20) {
   );
 
   // 2. Compute effective difficulty per user
+  let maxDifficulty = 0;
+  let minDifficulty = 2;
+  let maxPopularity = 0;
+  let minPopularity = 2;
   const questions = q.rows.map((row) => {
-    const effectiveDifficulty = row.popularity_score * inverse_skill_multiplier;
-
+    // const effectiveDifficulty = row.popularity_score * inverse_skill_multiplier;
+    const effectiveDifficulty = inverse_skill_multiplier / (+row.popularity_score + 0.5);
+    if (effectiveDifficulty > maxDifficulty) maxDifficulty = effectiveDifficulty;
+    if (effectiveDifficulty < minDifficulty) minDifficulty = effectiveDifficulty;
+    if (row.popularity_score > maxPopularity) maxPopularity = row.popularity_score;
+    if (row.popularity_score < minPopularity) minPopularity = row.popularity_score;
     let zone = "same";
-    if (effectiveDifficulty < 0.45) zone = "below";
-    else if (effectiveDifficulty > 0.75) zone = "above";
+    if (effectiveDifficulty < 0.85) zone = "below";
+    else if (effectiveDifficulty > 0.9) zone = "above";
 
     return { ...row, effectiveDifficulty, zone };
   });
-
+  console.log("Difficulty range:", minDifficulty, "to", maxDifficulty);
+  console.log("Popularity range:", minPopularity, "to", maxPopularity);
   // 3. Zone-based sampling
-  const same = questions.filter((q) => q.zone === "same");
-  const above = questions.filter((q) => q.zone === "above");
-  const below = questions.filter((q) => q.zone === "below");
+  const same = questions.filter((q) => q.zone === "same"); // 0.8765851852
+  const above = questions.filter((q) => q.zone === "above"); // 1.02903478261
+  const below = questions.filter((q) => q.zone === "below"); // 0.8161310345
 
   const pick = (arr, n) => arr.sort(() => 0.5 - Math.random()).slice(0, n);
 

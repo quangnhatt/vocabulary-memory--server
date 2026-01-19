@@ -1,6 +1,7 @@
 CREATE TABLE quiz_questions (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   prompt TEXT NOT NULL,
+  default_popularity TEXT,
   popularity_score NUMERIC(3,2)
     CHECK (popularity_score BETWEEN 0.2 AND 1.0)
     NOT NULL,

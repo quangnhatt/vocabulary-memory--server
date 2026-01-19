@@ -22,3 +22,12 @@ export default Object.freeze({
     LEARN_VOCABULARY: "learn_vocabulary",
   },
 });
+
+
+export const POPULARITY_LABELS = {
+  VERY_COMMON: 'VERY_COMMON',
+  COMMON: 'COMMON',
+  FREQUENT: 'FREQUENT',
+  UNCOMMON: 'UNCOMMON',
+  RARE: 'RARE'
+};
