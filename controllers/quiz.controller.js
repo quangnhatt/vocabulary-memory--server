@@ -18,7 +18,8 @@ class QuizController {
     );
 
     const {
-      confidenceScore,
+      oldCS,
+      newCS,
       oldLevel,
       currentLevel
     } = await ProgressService.updateUserProgress({
@@ -29,7 +30,8 @@ class QuizController {
 
     res.json({
       quizRatio,
-      confidenceScore: confidenceScore,
+      oldCS,
+      newCS,
       oldLevel,
       currentLevel
     });

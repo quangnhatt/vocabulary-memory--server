@@ -37,7 +37,8 @@ class ProgressService {
     );
 
     return {
-      confidenceScore: newCS,
+      oldCS: currentCS,
+      newCS: newCS,
       oldLevel: currentLevel,
       currentLevel: newLevel,
     };
