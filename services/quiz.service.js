@@ -160,7 +160,7 @@ class QuizService {
           [
             ans.selectedAnswer.id,
             ans.selectedAnswer.text,
-            ans.attemptQuestionId
+            ans.attemptQuestionId,
           ]
         );
 
@@ -182,7 +182,12 @@ class QuizService {
           (attempt_question_id, answer_id, answer_text, earned_point)
         VALUES ($1, $2, $3, $4)
         `,
-          [ans.attemptQuestionId, ans.selectedAnswer.id, ans.selectedAnswer.text, earned]
+          [
+            ans.attemptQuestionId,
+            ans.selectedAnswer.id,
+            ans.selectedAnswer.text,
+            earned,
+          ]
         );
       }
 
@@ -248,11 +253,16 @@ async function generateQuiz(inverse_skill_multiplier, questionCount = 20) {
   let minPopularity = 2;
   const questions = q.rows.map((row) => {
     // const effectiveDifficulty = row.popularity_score * inverse_skill_multiplier;
-    const effectiveDifficulty = inverse_skill_multiplier / (+row.popularity_score + 0.5);
-    if (effectiveDifficulty > maxDifficulty) maxDifficulty = effectiveDifficulty;
-    if (effectiveDifficulty < minDifficulty) minDifficulty = effectiveDifficulty;
-    if (row.popularity_score > maxPopularity) maxPopularity = row.popularity_score;
-    if (row.popularity_score < minPopularity) minPopularity = row.popularity_score;
+    const effectiveDifficulty =
+      inverse_skill_multiplier / (+row.popularity_score + 0.5);
+    if (effectiveDifficulty > maxDifficulty)
+      maxDifficulty = effectiveDifficulty;
+    if (effectiveDifficulty < minDifficulty)
+      minDifficulty = effectiveDifficulty;
+    if (row.popularity_score > maxPopularity)
+      maxPopularity = row.popularity_score;
+    if (row.popularity_score < minPopularity)
+      minPopularity = row.popularity_score;
     let zone = "same";
     if (effectiveDifficulty < 0.85) zone = "below";
     else if (effectiveDifficulty > 0.9) zone = "above";
@@ -262,20 +272,70 @@ async function generateQuiz(inverse_skill_multiplier, questionCount = 20) {
   console.log("Difficulty range:", minDifficulty, "to", maxDifficulty);
   console.log("Popularity range:", minPopularity, "to", maxPopularity);
   // 3. Zone-based sampling
-  const same = questions.filter((q) => q.zone === "same"); // 0.8765851852
-  const above = questions.filter((q) => q.zone === "above"); // 1.02903478261
-  const below = questions.filter((q) => q.zone === "below"); // 0.8161310345
+  const pickedQuestions = pickQuestionsByZone(questions, questionCount);
+  return pickedQuestions
+  // const same = pickedQuestions.filter((q) => q.zone === "same"); // 0.8765851852
+  // const above = pickedQuestions.filter((q) => q.zone === "above"); // 1.02903478261
+  // const below = pickedQuestions.filter((q) => q.zone === "below"); // 0.8161310345
 
-  const pick = (arr, n) => arr.sort(() => 0.5 - Math.random()).slice(0, n);
+  // const pick = (arr, n) => arr.sort(() => 0.5 - Math.random()).slice(0, n);
 
-  return [
-    ...pick(same, Math.floor(questionCount * 0.5)),
-    ...pick(above, Math.floor(questionCount * 0.3)),
-    ...pick(
-      below,
-      questionCount -
-        Math.floor(questionCount * 0.5) -
-        Math.floor(questionCount * 0.3)
-    ),
-  ];
+  // return [
+  //   ...pick(same, Math.floor(questionCount * 0.5)),
+  //   ...pick(above, Math.floor(questionCount * 0.3)),
+  //   ...pick(
+  //     below,
+  //     questionCount -
+  //       Math.floor(questionCount * 0.5) -
+  //       Math.floor(questionCount * 0.3)
+  //   ),
+  // ];
+}
+
+const DISTRIBUTION = {
+  same: 0.5,
+  above: 0.3,
+  below: 0.2,
+};
+
+const pickUpTo = (arr, n) =>
+  arr
+    .slice() // avoid mutating original
+    .sort(() => Math.random() - 0.5)
+    .slice(0, Math.min(n, arr.length));
+
+function pickQuestionsByZone(questions, questionCount) {
+  const zones = {
+    same: questions.filter((q) => q.zone === "same"),
+    above: questions.filter((q) => q.zone === "above"),
+    below: questions.filter((q) => q.zone === "below"),
+  };
+
+  const result = [];
+  const pickedIds = new Set();
+
+  const remaining = { ...zones };
+
+  // 1. Initial allocation
+  for (const zone in DISTRIBUTION) {
+    const target = Math.floor(questionCount * DISTRIBUTION[zone]);
+    const picked = pickUpTo(remaining[zone], target);
+
+    picked.forEach((q) => pickedIds.add(q.id));
+    result.push(...picked);
+
+    remaining[zone] = remaining[zone].filter((q) => !pickedIds.has(q.id));
+  }
+
+  // 2. Fill the gap from any remaining questions
+  if (result.length < questionCount) {
+    const pool = Object.values(remaining).flat();
+
+    const needed = questionCount - result.length;
+    const extra = pickUpTo(pool, needed);
+
+    result.push(...extra);
+  }
+
+  return result.slice(0, questionCount);
 }
