@@ -230,7 +230,7 @@ function calculateEarnedPoint(answerType, answerPoint, relativeDifficulty) {
 // ================================
 // Quiz generation (adaptive)
 // ================================
-async function generateQuiz(inverse_skill_multiplier, questionCount = 18) {
+async function generateQuiz(inverse_skill_multiplier, questionCount = 20) {
   // 1. Load active questions
   const q = await pgPool.query(
     `

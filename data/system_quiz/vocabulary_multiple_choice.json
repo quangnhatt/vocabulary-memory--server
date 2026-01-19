@@ -1,0 +1,3734 @@
+[
+  {
+    "id": "a1b2c3d4-0001-4000-8000-000000000001",
+    "prompt": "The legal team worked tirelessly to ______ the contract's hidden clauses.",
+    "categories": ["Vocabulary", "Verbs", "C1-Advanced"],
+    "popularity_score": 0.85,
+    "status": "active",
+    "created_at": "2026-01-19T10:00:00Z",
+    "updated_at": "2026-01-19T10:00:00Z",
+    "answers": [
+      {
+        "option_text": "scrutinize",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Scrutinize' means to examine something very thoroughly and carefully, which is ideal for legal contexts.",
+        "status": "active"
+      },
+      {
+        "option_text": "look at",
+        "answer_type": "ok",
+        "answer_point": 5,
+        "explanation": "Grammatically correct but far too informal for a professional or legal setting.",
+        "status": "active"
+      },
+      {
+        "option_text": "glance",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Glance' means to look quickly, which contradicts the 'tirelessly' effort mentioned.",
+        "status": "active"
+      },
+      {
+        "option_text": "inspect",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "A good synonym for examining, though 'scrutinize' carries a stronger connotation of detail.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "b2c3d4e5-0002-4000-8000-000000000002",
+    "prompt": "Due to the economic downturn, many companies have had to ______ their expansion plans.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "B2-Upper Intermediate"],
+    "popularity_score": 0.89,
+    "status": "active",
+    "created_at": "2026-01-19T10:00:00Z",
+    "updated_at": "2026-01-19T10:00:00Z",
+    "answers": [
+      {
+        "option_text": "shelve",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To 'shelve' a plan means to decide not to proceed with it for the time being.",
+        "status": "active"
+      },
+      {
+        "option_text": "cancel",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "'Cancel' is clear and correct, but 'shelve' implies it might be revisited later, which is common in business.",
+        "status": "active"
+      },
+      {
+        "option_text": "put off",
+        "answer_type": "ok",
+        "answer_point": 7,
+        "explanation": "A common phrasal verb for delaying, though slightly less formal than 'shelve' or 'postpone'.",
+        "status": "active"
+      },
+      {
+        "option_text": "forget",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Too informal and doesn't accurately describe a strategic business decision.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "c3d4e5f6-0003-4000-8000-000000000003",
+    "prompt": "Choose the most appropriate word: 'The view from the top of the mountain was absolutely ______.'",
+    "categories": ["Vocabulary", "Adjectives", "B2-Upper Intermediate"],
+    "popularity_score": 0.94,
+    "status": "active",
+    "created_at": "2026-01-19T10:00:00Z",
+    "updated_at": "2026-01-19T10:00:00Z",
+    "answers": [
+      {
+        "option_text": "breathtaking",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A classic and strong adjective used specifically for impressive scenery.",
+        "status": "active"
+      },
+      {
+        "option_text": "nice",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "'Nice' is a 'weak' adjective and doesn't match the emphasis of 'absolutely'.",
+        "status": "active"
+      },
+      {
+        "option_text": "stunning",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "An excellent synonym for breathtaking, conveying high impact.",
+        "status": "active"
+      },
+      {
+        "option_text": "good",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "Too simple and lacks the necessary descriptive power for this context.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "d4e5f6g7-0004-4000-8000-000000000004",
+    "prompt": "She has a ______ memory and can recall dates from decades ago with perfect accuracy.",
+    "categories": ["Vocabulary", "Collocations", "C1-Advanced"],
+    "popularity_score": 0.82,
+    "status": "active",
+    "created_at": "2026-01-19T10:00:00Z",
+    "updated_at": "2026-01-19T10:00:00Z",
+    "answers": [
+      {
+        "option_text": "photographic",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The standard collocation for a memory that captures images/details perfectly.",
+        "status": "active"
+      },
+      {
+        "option_text": "retentive",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "A sophisticated word for a memory that retains a lot of information.",
+        "status": "active"
+      },
+      {
+        "option_text": "strong",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "Correct and clear, but lacks the specific nuance of 'photographic'.",
+        "status": "active"
+      },
+      {
+        "option_text": "hard",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "This is not a recognized collocation for 'memory'.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "e5f6g7h8-0005-4000-8000-000000000005",
+    "prompt": "I don't want to ______ the point, but we really must leave now if we want to catch the train.",
+    "categories": ["Vocabulary", "Idiomatic Verbs", "C1-Advanced"],
+    "popularity_score": 0.76,
+    "status": "active",
+    "created_at": "2026-01-19T10:00:00Z",
+    "updated_at": "2026-01-19T10:00:00Z",
+    "answers": [
+      {
+        "option_text": "labor",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To 'labor the point' means to explain or insist on something more than is necessary.",
+        "status": "active"
+      },
+      {
+        "option_text": "repeat",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "While it makes sense, it doesn't capture the idiomatic nuance of over-explaining.",
+        "status": "active"
+      },
+      {
+        "option_text": "emphasize",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "A good formal alternative, though 'labor' is the more specific idiom.",
+        "status": "active"
+      },
+      {
+        "option_text": "stress",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Similar to emphasize; correct but lacks the idiomatic 'flavor'.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "f6g7h8i9-0006-4000-8000-000000000006",
+    "prompt": "The weather in this region is notoriously ______, so always carry an umbrella.",
+    "categories": ["Vocabulary", "Adjectives", "B2-Upper Intermediate"],
+    "popularity_score": 0.91,
+    "status": "active",
+    "created_at": "2026-01-19T10:00:00Z",
+    "updated_at": "2026-01-19T10:00:00Z",
+    "answers": [
+      {
+        "option_text": "unpredictable",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Best describes weather that changes frequently and without warning.",
+        "status": "active"
+      },
+      {
+        "option_text": "variable",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Correct, though 'unpredictable' is more common when warning someone.",
+        "status": "active"
+      },
+      {
+        "option_text": "volatile",
+        "answer_type": "ok",
+        "answer_point": 7,
+        "explanation": "'Volatile' usually refers to chemical reactions or emotions, but can be used for weather to show extreme change.",
+        "status": "active"
+      },
+      {
+        "option_text": "reliable",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "The opposite of what is implied by the need for an umbrella.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "g7h8i9j0-0007-4000-8000-000000000007",
+    "prompt": "If you want to succeed in this industry, you need to ______ a lot of effort.",
+    "categories": ["Vocabulary", "Collocations", "B1-Intermediate"],
+    "popularity_score": 0.98,
+    "status": "active",
+    "created_at": "2026-01-19T10:00:00Z",
+    "updated_at": "2026-01-19T10:00:00Z",
+    "answers": [
+      {
+        "option_text": "put in",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Put in effort' is the most natural phrasal verb collocation.",
+        "status": "active"
+      },
+      {
+        "option_text": "make",
+        "answer_type": "acceptable",
+        "answer_point": 9,
+        "explanation": "'Make an effort' is also very common and correct.",
+        "status": "active"
+      },
+      {
+        "option_text": "do",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "We 'make' or 'put in' effort; we do not 'do' effort.",
+        "status": "active"
+      },
+      {
+        "option_text": "give",
+        "answer_type": "ok",
+        "answer_point": 5,
+        "explanation": "Sometimes used casually, but 'make' or 'put in' are much stronger collocations.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "h8i9j0k1-0008-4000-8000-000000000008",
+    "prompt": "The new software update is intended to ______ the user experience.",
+    "categories": ["Vocabulary", "Business English", "B2-Upper Intermediate"],
+    "popularity_score": 0.93,
+    "status": "active",
+    "created_at": "2026-01-19T10:00:00Z",
+    "updated_at": "2026-01-19T10:00:00Z",
+    "answers": [
+      {
+        "option_text": "enhance",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Enhance' is the professional standard for improving quality or experience.",
+        "status": "active"
+      },
+      {
+        "option_text": "improve",
+        "answer_type": "acceptable",
+        "answer_point": 9,
+        "explanation": "Perfectly correct and clear, though 'enhance' sounds slightly more sophisticated in tech.",
+        "status": "active"
+      },
+      {
+        "option_text": "increase",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "You can increase speed or quantity, but you enhance or improve an 'experience'.",
+        "status": "active"
+      },
+      {
+        "option_text": "better",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "Can be used as a verb, but sounds less formal than the other options.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "i9j0k1l2-0009-4000-8000-000000000009",
+    "prompt": "Despite the evidence, he remained ______ in his belief that he was right.",
+    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
+    "popularity_score": 0.84,
+    "status": "active",
+    "created_at": "2026-01-19T10:00:00Z",
+    "updated_at": "2026-01-19T10:00:00Z",
+    "answers": [
+      {
+        "option_text": "steadfast",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means dutifully firm and unwavering; used for beliefs or loyalty.",
+        "status": "active"
+      },
+      {
+        "option_text": "stubborn",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "Correct, but has a negative connotation of being unreasonable.",
+        "status": "active"
+      },
+      {
+        "option_text": "resolute",
+        "answer_type": "acceptable",
+        "answer_point": 9,
+        "explanation": "Very similar to steadfast; implies admirable determination.",
+        "status": "active"
+      },
+      {
+        "option_text": "fixed",
+        "answer_type": "wrong",
+        "answer_point": 3,
+        "explanation": "Usually refers to physical objects, not usually used for a person's mindset in this way.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "j0k1l2m3-0010-4000-8000-000000000010",
+    "prompt": "When the boss asked who broke the printer, Sarah decided to ______ clean and admit it was her.",
+    "categories": ["Vocabulary", "Idioms", "B1-Intermediate"],
+    "popularity_score": 0.9,
+    "status": "active",
+    "created_at": "2026-01-19T10:00:00Z",
+    "updated_at": "2026-01-19T10:00:00Z",
+    "answers": [
+      {
+        "option_text": "come",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Come clean' is a common idiom meaning to admit the truth.",
+        "status": "active"
+      },
+      {
+        "option_text": "go",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Not a valid part of this specific idiom.",
+        "status": "active"
+      },
+      {
+        "option_text": "stay",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Not a valid part of this specific idiom.",
+        "status": "active"
+      },
+      {
+        "option_text": "be",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "While 'be clean' exists (meaning drug-free), it is not the idiom for confessing.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "k1l2m3n4-0011-4000-8000-000000000011",
+    "prompt": "The findings of the study ______ the theory that sleep deprivation affects cognitive performance.",
+    "categories": ["Vocabulary", "Academic English", "C1-Advanced"],
+    "popularity_score": 0.88,
+    "status": "active",
+    "created_at": "2026-01-19T10:15:00Z",
+    "updated_at": "2026-01-19T10:15:00Z",
+    "answers": [
+      {
+        "option_text": "corroborate",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Corroborate' is the precise academic term for providing evidence to support a theory or finding.",
+        "status": "active"
+      },
+      {
+        "option_text": "support",
+        "answer_type": "acceptable",
+        "answer_point": 9,
+        "explanation": "Perfectly correct, though 'corroborate' is more formal and specific to research contexts.",
+        "status": "active"
+      },
+      {
+        "option_text": "agree with",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "Grammatically correct but sounds slightly too conversational for a research finding.",
+        "status": "active"
+      },
+      {
+        "option_text": "prove",
+        "answer_type": "ok",
+        "answer_point": 5,
+        "explanation": "In science, findings rarely 'prove' a theory; they usually 'support' or 'corroborate' it.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "l2m3n4o5-0012-4000-8000-000000000012",
+    "prompt": "We need to ______ the pros and cons before making a final decision.",
+    "categories": ["Vocabulary", "Collocations", "B2-Upper Intermediate"],
+    "popularity_score": 0.96,
+    "status": "active",
+    "created_at": "2026-01-19T10:15:00Z",
+    "updated_at": "2026-01-19T10:15:00Z",
+    "answers": [
+      {
+        "option_text": "weigh",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Weigh the pros and cons' is the standard English collocation for evaluation.",
+        "status": "active"
+      },
+      {
+        "option_text": "consider",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Correct in meaning, but doesn't complete the fixed idiom as well as 'weigh'.",
+        "status": "active"
+      },
+      {
+        "option_text": "balance",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Often used similarly to weigh, especially in business contexts.",
+        "status": "active"
+      },
+      {
+        "option_text": "measure",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "While it implies calculation, 'measure' is not typically used with 'pros and cons'.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "m3n4o5p6-0013-4000-8000-000000000013",
+    "prompt": "She has a very ______ sense of humor; not everyone understands her dry jokes.",
+    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
+    "popularity_score": 0.79,
+    "status": "active",
+    "created_at": "2026-01-19T10:15:00Z",
+    "updated_at": "2026-01-19T10:15:00Z",
+    "answers": [
+      {
+        "option_text": "subtle",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Subtle' fits perfectly with 'dry' jokes that are not obvious or loud.",
+        "status": "active"
+      },
+      {
+        "option_text": "weird",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Informal and slightly judgmental; doesn't describe the quality of the humor well.",
+        "status": "active"
+      },
+      {
+        "option_text": "wry",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Wry' specifically describes humor that is dry, mocking, or ironic.",
+        "status": "active"
+      },
+      {
+        "option_text": "funny",
+        "answer_type": "ok",
+        "answer_point": 3,
+        "explanation": "A very generic adjective that doesn't capture the specific nature of the humor described.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "n4o5p6q7-0014-4000-8000-000000000014",
+    "prompt": "The government has promised to ______ the problem of rising energy costs.",
+    "categories": ["Vocabulary", "Verbs", "B2-Upper Intermediate"],
+    "popularity_score": 0.92,
+    "status": "active",
+    "created_at": "2026-01-19T10:15:00Z",
+    "updated_at": "2026-01-19T10:15:00Z",
+    "answers": [
+      {
+        "option_text": "address",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Address a problem' is the most professional and common way to talk about dealing with an issue.",
+        "status": "active"
+      },
+      {
+        "option_text": "tackle",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Tackle' is a strong, active verb often used by officials to signal decisive action.",
+        "status": "active"
+      },
+      {
+        "option_text": "fix",
+        "answer_type": "ok",
+        "answer_point": 5,
+        "explanation": "Clear but informal; usually used for physical objects like a broken car.",
+        "status": "active"
+      },
+      {
+        "option_text": "look at",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "Vague and non-committal; implies observation rather than action.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "o5p6q7r8-0015-4000-8000-000000000015",
+    "prompt": "After the scandal, the politician's reputation was ______ beyond repair.",
+    "categories": ["Vocabulary", "Advanced Verbs", "C1-Advanced"],
+    "popularity_score": 0.81,
+    "status": "active",
+    "created_at": "2026-01-19T10:15:00Z",
+    "updated_at": "2026-01-19T10:15:00Z",
+    "answers": [
+      {
+        "option_text": "tarnished",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Tarnished' is the classic collocation for a damaged reputation.",
+        "status": "active"
+      },
+      {
+        "option_text": "damaged",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Correct, but lacks the descriptive nuance of 'tarnished'.",
+        "status": "active"
+      },
+      {
+        "option_text": "broken",
+        "answer_type": "wrong",
+        "answer_point": 3,
+        "explanation": "While a system can be broken, a reputation is usually 'damaged' or 'tarnished'.",
+        "status": "active"
+      },
+      {
+        "option_text": "marred",
+        "answer_type": "acceptable",
+        "answer_point": 9,
+        "explanation": "An excellent high-level synonym for spoiled or damaged.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "p6q7r8s9-0016-4000-8000-000000000016",
+    "prompt": "I'm sorry, I didn't quite ______ what you said. Could you repeat that?",
+    "categories": ["Vocabulary", "Listening/Verbs", "B1-Intermediate"],
+    "popularity_score": 0.98,
+    "status": "active",
+    "created_at": "2026-01-19T10:15:00Z",
+    "updated_at": "2026-01-19T10:15:00Z",
+    "answers": [
+      {
+        "option_text": "catch",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Catch' is the most common verb used when you fail to hear someone's words.",
+        "status": "active"
+      },
+      {
+        "option_text": "hear",
+        "answer_type": "acceptable",
+        "answer_point": 9,
+        "explanation": "Correct, but 'catch' is more common in the phrase 'didn't quite catch'.",
+        "status": "active"
+      },
+      {
+        "option_text": "understand",
+        "answer_type": "ok",
+        "answer_point": 7,
+        "explanation": "Implies you heard the words but didn't know the meaning, rather than not hearing them at all.",
+        "status": "active"
+      },
+      {
+        "option_text": "listen",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You 'listen to' something; you do not 'listen what you said'.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "q7r8s9t0-0017-4000-8000-000000000017",
+    "prompt": "The company decided to ______ the two departments to save on administrative costs.",
+    "categories": ["Vocabulary", "Business English", "B2-Upper Intermediate"],
+    "popularity_score": 0.89,
+    "status": "active",
+    "created_at": "2026-01-19T10:15:00Z",
+    "updated_at": "2026-01-19T10:15:00Z",
+    "answers": [
+      {
+        "option_text": "merge",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Merge' is the standard business term for joining two entities into one.",
+        "status": "active"
+      },
+      {
+        "option_text": "combine",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Correct, but 'merge' is the more specific professional term.",
+        "status": "active"
+      },
+      {
+        "option_text": "join",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "Clear but a bit too simple for a formal business context.",
+        "status": "active"
+      },
+      {
+        "option_text": "unite",
+        "answer_type": "ok",
+        "answer_point": 7,
+        "explanation": "Slightly more poetic or political than 'merge'.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "r8s9t0u1-0018-4000-8000-000000000018",
+    "prompt": "His argument was so ______ that I had no choice but to agree with him.",
+    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
+    "popularity_score": 0.83,
+    "status": "active",
+    "created_at": "2026-01-19T10:15:00Z",
+    "updated_at": "2026-01-19T10:15:00Z",
+    "answers": [
+      {
+        "option_text": "compelling",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Compelling' means so powerful that it forces you to believe or do something.",
+        "status": "active"
+      },
+      {
+        "option_text": "persuasive",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "An excellent synonym for 'compelling' in the context of an argument.",
+        "status": "active"
+      },
+      {
+        "option_text": "strong",
+        "answer_type": "ok",
+        "answer_point": 5,
+        "explanation": "A basic adjective; doesn't convey the same level of mastery as the others.",
+        "status": "active"
+      },
+      {
+        "option_text": "logical",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Valid, but logically sound arguments aren't always 'compelling'.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "s9t0u1v2-0019-4000-8000-000000000019",
+    "prompt": "She has a ______ for languages and can speak five of them fluently.",
+    "categories": ["Vocabulary", "Nouns", "B2-Upper Intermediate"],
+    "popularity_score": 0.94,
+    "status": "active",
+    "created_at": "2026-01-19T10:15:00Z",
+    "updated_at": "2026-01-19T10:15:00Z",
+    "answers": [
+      {
+        "option_text": "flair",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To have a 'flair' for something means to have a natural talent.",
+        "status": "active"
+      },
+      {
+        "option_text": "knack",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A 'knack' is an informal but very natural way to describe a talent.",
+        "status": "active"
+      },
+      {
+        "option_text": "gift",
+        "answer_type": "acceptable",
+        "answer_point": 9,
+        "explanation": "Commonly used to describe high natural ability.",
+        "status": "active"
+      },
+      {
+        "option_text": "skill",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "Skills are usually learned; the prompt implies a natural ease.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "t0u1v2w3-0020-4000-8000-000000000020",
+    "prompt": "The results of the test are ______ and do not clearly point to one conclusion.",
+    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
+    "popularity_score": 0.86,
+    "status": "active",
+    "created_at": "2026-01-19T10:15:00Z",
+    "updated_at": "2026-01-19T10:15:00Z",
+    "answers": [
+      {
+        "option_text": "inconclusive",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The standard academic term for results that do not lead to a firm conclusion.",
+        "status": "active"
+      },
+      {
+        "option_text": "unclear",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Correct, but lacks the formal precision of 'inconclusive'.",
+        "status": "active"
+      },
+      {
+        "option_text": "ambiguous",
+        "answer_type": "acceptable",
+        "answer_point": 9,
+        "explanation": "Implies multiple possible interpretations, which fits the context well.",
+        "status": "active"
+      },
+      {
+        "option_text": "wrong",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "The prompt says they aren't clear, not that they are factually incorrect.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "u1v2w3x4-0021-4000-8000-000000000021",
+    "prompt": "Choose the correct formal inversion: 'Rarely ______ such a beautiful sunset.'",
+    "categories": ["Grammar", "Syntax", "C1-Advanced"],
+    "popularity_score": 0.82,
+    "status": "active",
+    "created_at": "2026-01-19T10:30:00Z",
+    "updated_at": "2026-01-19T10:30:00Z",
+    "answers": [
+      {
+        "option_text": "have I seen",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "After negative or restrictive adverbs like 'rarely', the subject and auxiliary verb must be inverted.",
+        "status": "active"
+      },
+      {
+        "option_text": "I have seen",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "This is standard word order, but formal inversion is required when 'Rarely' starts the sentence.",
+        "status": "active"
+      },
+      {
+        "option_text": "did I saw",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Double past tense error; 'did' must be followed by the base form 'see'.",
+        "status": "active"
+      },
+      {
+        "option_text": "I saw",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Common in very casual speech, but grammatically incorrect in this structural context.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "v2w3x4y5-0022-4000-8000-000000000022",
+    "prompt": "Select the word that best fits the context: 'The medicine had a profound ______ on her recovery.'",
+    "categories": ["Vocabulary", "Confusing Words", "B2-Upper Intermediate"],
+    "popularity_score": 0.95,
+    "status": "active",
+    "created_at": "2026-01-19T10:30:00Z",
+    "updated_at": "2026-01-19T10:30:00Z",
+    "answers": [
+      {
+        "option_text": "effect",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Effect' is usually a noun meaning the result or impact of something.",
+        "status": "active"
+      },
+      {
+        "option_text": "affect",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "'Affect' is usually a verb meaning to influence something.",
+        "status": "active"
+      },
+      {
+        "option_text": "impact",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Impact' is an excellent and common synonym for 'effect' in this context.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "w3x4y5z6-0023-4000-8000-000000000023",
+    "prompt": "If you ______ me about the meeting, I would have attended.",
+    "categories": ["Grammar", "Conditionals", "B2-Upper Intermediate"],
+    "popularity_score": 0.9,
+    "status": "active",
+    "created_at": "2026-01-19T10:30:00Z",
+    "updated_at": "2026-01-19T10:30:00Z",
+    "answers": [
+      {
+        "option_text": "had told",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The Third Conditional uses 'had + past participle' in the if-clause to talk about the past.",
+        "status": "active"
+      },
+      {
+        "option_text": "told",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "This would be Second Conditional (present/future), but the result 'would have attended' is past.",
+        "status": "active"
+      },
+      {
+        "option_text": "would have told",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Common learner error; 'would' should not appear in the 'if' part of the sentence.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "x4y5z6a7-0024-4000-8000-000000000024",
+    "prompt": "Which sentence is punctuated correctly?",
+    "categories": ["Grammar", "Punctuation", "B2-Upper Intermediate"],
+    "popularity_score": 0.85,
+    "status": "active",
+    "created_at": "2026-01-19T10:30:00Z",
+    "updated_at": "2026-01-19T10:30:00Z",
+    "answers": [
+      {
+        "option_text": "I wanted to go to the park, however, it started raining.",
+        "answer_type": "ok",
+        "answer_point": 5,
+        "explanation": "This is a comma splice; 'however' should be preceded by a semicolon when connecting two independent clauses.",
+        "status": "active"
+      },
+      {
+        "option_text": "I wanted to go to the park; however, it started raining.",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Correct use of a semicolon and comma with a conjunctive adverb.",
+        "status": "active"
+      },
+      {
+        "option_text": "I wanted to go to the park however it started raining.",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Lacks necessary punctuation to separate the independent clauses.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "y5z6a7b8-0025-4000-8000-000000000025",
+    "prompt": "He is ______ to be one of the best players in the history of the game.",
+    "categories": ["Vocabulary", "Passive Voice", "B2-Upper Intermediate"],
+    "popularity_score": 0.88,
+    "status": "active",
+    "created_at": "2026-01-19T10:30:00Z",
+    "updated_at": "2026-01-19T10:30:00Z",
+    "answers": [
+      {
+        "option_text": "considered",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard passive structure for general opinion.",
+        "status": "active"
+      },
+      {
+        "option_text": "regarded",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Needs 'as' to be fully correct ('regarded as being'), though often used this way in casual speech.",
+        "status": "active"
+      },
+      {
+        "option_text": "thought",
+        "answer_type": "acceptable",
+        "answer_point": 9,
+        "explanation": "Correct and common passive reporting verb.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "z6a7b8c9-0026-4000-8000-000000000026",
+    "prompt": "Which prefix is used to mean 'against' or 'opposite' in words like ______social or ______climax?",
+    "categories": ["Vocabulary", "Morphology", "B1-Intermediate"],
+    "popularity_score": 0.92,
+    "status": "active",
+    "created_at": "2026-01-19T10:30:00Z",
+    "updated_at": "2026-01-19T10:30:00Z",
+    "answers": [
+      {
+        "option_text": "anti",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Anti-' specifically means against or opposite.",
+        "status": "active"
+      },
+      {
+        "option_text": "un",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Un-' means 'not', but doesn't fit 'social' or 'climax' in this context.",
+        "status": "active"
+      },
+      {
+        "option_text": "dis",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "'Dis-' can mean opposite, but 'dissocial' is rare compared to 'antisocial'.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "a7b8c9d0-0027-4000-8000-000000000027",
+    "prompt": "I ______ to the gym every day, but I’ve been too busy lately.",
+    "categories": ["Grammar", "Used to", "B1-Intermediate"],
+    "popularity_score": 0.97,
+    "status": "active",
+    "created_at": "2026-01-19T10:30:00Z",
+    "updated_at": "2026-01-19T10:30:00Z",
+    "answers": [
+      {
+        "option_text": "used to go",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Correct structure for a past habit that no longer happens.",
+        "status": "active"
+      },
+      {
+        "option_text": "am used to going",
+        "answer_type": "wrong",
+        "answer_point": 3,
+        "explanation": "This means you are currently 'accustomed to' going, which doesn't fit the 'but' contrast.",
+        "status": "active"
+      },
+      {
+        "option_text": "use to go",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Spelling error; 'used' must have the 'd' in positive statements.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "b8c9d0e1-0028-4000-8000-000000000028",
+    "prompt": "The project was completed ______ schedule, much to the client's delight.",
+    "categories": ["Vocabulary", "Prepositions", "B2-Upper Intermediate"],
+    "popularity_score": 0.89,
+    "status": "active",
+    "created_at": "2026-01-19T10:30:00Z",
+    "updated_at": "2026-01-19T10:30:00Z",
+    "answers": [
+      {
+        "option_text": "ahead of",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Ahead of schedule' is the standard phrase for finishing early.",
+        "status": "active"
+      },
+      {
+        "option_text": "before",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "Grammatically okay, but not the idiomatic business expression.",
+        "status": "active"
+      },
+      {
+        "option_text": "on",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Means it was finished exactly at the right time, though 'delight' usually implies it was early.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "c9d0e1f2-0029-4000-8000-000000000029",
+    "prompt": "She is very ______; she always thinks about others' feelings before her own.",
+    "categories": ["Vocabulary", "Personality", "B2-Upper Intermediate"],
+    "popularity_score": 0.91,
+    "status": "active",
+    "created_at": "2026-01-19T10:30:00Z",
+    "updated_at": "2026-01-19T10:30:00Z",
+    "answers": [
+      {
+        "option_text": "considerate",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To be considerate is to be careful not to inconvenience or harm others.",
+        "status": "active"
+      },
+      {
+        "option_text": "considerable",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "This means 'large in size or amount'.",
+        "status": "active"
+      },
+      {
+        "option_text": "thoughtful",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "An exact synonym for considerate in this context.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "d0e1f2g3-0030-4000-8000-000000000030",
+    "prompt": "I don't think I can ______ another minute of this loud music!",
+    "categories": ["Vocabulary", "Phrasal Verbs", "B1-Intermediate"],
+    "popularity_score": 0.93,
+    "status": "active",
+    "created_at": "2026-01-19T10:30:00Z",
+    "updated_at": "2026-01-19T10:30:00Z",
+    "answers": [
+      {
+        "option_text": "stand",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Can't stand' is a very common way to say you strongly dislike something.",
+        "status": "active"
+      },
+      {
+        "option_text": "put up with",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "An excellent phrasal verb meaning to tolerate.",
+        "status": "active"
+      },
+      {
+        "option_text": "bear",
+        "answer_type": "acceptable",
+        "answer_point": 9,
+        "explanation": "Slightly more formal than 'stand', but perfectly correct.",
+        "status": "active"
+      },
+      {
+        "option_text": "stay",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Stay' cannot be used as a synonym for tolerate in this structure.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "e1f2g3h4-0031-4000-8000-000000000031",
+    "prompt": "We reached the summit ______ the freezing temperatures and heavy snow.",
+    "categories": ["Grammar", "Conjunctions", "B2-Upper Intermediate"],
+    "popularity_score": 0.94,
+    "status": "active",
+    "created_at": "2026-01-19T10:45:00Z",
+    "updated_at": "2026-01-19T10:45:00Z",
+    "answers": [
+      {
+        "option_text": "despite",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Despite' is followed directly by a noun phrase to show contrast.",
+        "status": "active"
+      },
+      {
+        "option_text": "in spite of",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Synonymous with 'despite' and grammatically identical in this context.",
+        "status": "active"
+      },
+      {
+        "option_text": "although",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "'Although' must be followed by a subject and a verb (a clause).",
+        "status": "active"
+      },
+      {
+        "option_text": "even though",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "Similar to 'although', this requires a full clause, not just a noun phrase.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "f2g3h4i5-0032-4000-8000-000000000032",
+    "prompt": "The manager is very satisfied ______ the progress we have made this quarter.",
+    "categories": ["Vocabulary", "Prepositions", "B1-Intermediate"],
+    "popularity_score": 0.97,
+    "status": "active",
+    "created_at": "2026-01-19T10:45:00Z",
+    "updated_at": "2026-01-19T10:45:00Z",
+    "answers": [
+      {
+        "option_text": "with",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Satisfied with' is the standard adjective + preposition collocation.",
+        "status": "active"
+      },
+      {
+        "option_text": "about",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "Understandable, but 'with' is significantly more natural for this adjective.",
+        "status": "active"
+      },
+      {
+        "option_text": "for",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "This preposition does not follow the adjective 'satisfied'.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "g3h4i5j6-0033-4000-8000-000000000033",
+    "prompt": "I will finish the report by noon, ______ there is a sudden emergency.",
+    "categories": ["Grammar", "Conditionals", "B2-Upper Intermediate"],
+    "popularity_score": 0.91,
+    "status": "active",
+    "created_at": "2026-01-19T10:45:00Z",
+    "updated_at": "2026-01-19T10:45:00Z",
+    "answers": [
+      {
+        "option_text": "unless",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Unless' means 'if... not', which creates the necessary exception for the plan.",
+        "status": "active"
+      },
+      {
+        "option_text": "if",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Using 'if' would mean the report is only finished if an emergency happens, which is illogical.",
+        "status": "active"
+      },
+      {
+        "option_text": "provided that",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "This means 'only if', which again makes the sentence illogical in this context.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "h4i5j6k7-0034-4000-8000-000000000034",
+    "prompt": "The researchers decided to ______ the experiment under more controlled conditions.",
+    "categories": ["Vocabulary", "Academic English", "C1-Advanced"],
+    "popularity_score": 0.86,
+    "status": "active",
+    "created_at": "2026-01-19T10:45:00Z",
+    "updated_at": "2026-01-19T10:45:00Z",
+    "answers": [
+      {
+        "option_text": "conduct",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Conduct an experiment' is the standard formal/academic collocation.",
+        "status": "active"
+      },
+      {
+        "option_text": "carry out",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A very natural phrasal verb that is commonly used in scientific writing.",
+        "status": "active"
+      },
+      {
+        "option_text": "do",
+        "answer_type": "ok",
+        "answer_point": 5,
+        "explanation": "Clear and common, but too simple for an academic context.",
+        "status": "active"
+      },
+      {
+        "option_text": "make",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "We 'do' or 'conduct' experiments; we never 'make' them.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "i5j6k7l8-0035-4000-8000-000000000035",
+    "prompt": "I’m not very good ______ remembering names, but I never forget a face.",
+    "categories": ["Grammar", "Prepositions", "B1-Intermediate"],
+    "popularity_score": 0.99,
+    "status": "active",
+    "created_at": "2026-01-19T10:45:00Z",
+    "updated_at": "2026-01-19T10:45:00Z",
+    "answers": [
+      {
+        "option_text": "at",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The correct preposition after the adjective 'good' (when referring to a skill) is 'at'.",
+        "status": "active"
+      },
+      {
+        "option_text": "in",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "A common error for many language learners; 'in' is not used after 'good' for skills.",
+        "status": "active"
+      },
+      {
+        "option_text": "with",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "'Good with names' is acceptable, though 'at remembering' is more grammatically standard.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "j6k7l8m9-0036-4000-8000-000000000036",
+    "prompt": "The price of the hotel includes breakfast; ______, guests have free access to the spa.",
+    "categories": ["Grammar", "Transition Words", "B2-Upper Intermediate"],
+    "popularity_score": 0.88,
+    "status": "active",
+    "created_at": "2026-01-19T10:45:00Z",
+    "updated_at": "2026-01-19T10:45:00Z",
+    "answers": [
+      {
+        "option_text": "furthermore",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used to add formal information that supports or extends the previous point.",
+        "status": "active"
+      },
+      {
+        "option_text": "moreover",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "An excellent formal alternative to 'furthermore'.",
+        "status": "active"
+      },
+      {
+        "option_text": "besides",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Correct, though slightly less formal than the other two options.",
+        "status": "active"
+      },
+      {
+        "option_text": "on the other hand",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "This indicates contrast, but the sentence is adding a benefit.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "k7l8m9n0-0037-4000-8000-000000000037",
+    "prompt": "It’s high time you ______ looking for a job; you've been unemployed for months.",
+    "categories": ["Grammar", "Advanced Structures", "C1-Advanced"],
+    "popularity_score": 0.83,
+    "status": "active",
+    "created_at": "2026-01-19T10:45:00Z",
+    "updated_at": "2026-01-19T10:45:00Z",
+    "answers": [
+      {
+        "option_text": "started",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "After the expression 'It's high time', the past simple is used to refer to the present or future.",
+        "status": "active"
+      },
+      {
+        "option_text": "start",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "Although it feels logical, 'start' is grammatically incorrect in this specific subjunctive structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "should start",
+        "answer_type": "ok",
+        "answer_point": 5,
+        "explanation": "Understandable, but the idiomatic structure 'It's high time' specifically triggers the past tense.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "l8m9n0o1-0038-4000-8000-000000000038",
+    "prompt": "She succeeded ______ sheer hard work and determination.",
+    "categories": ["Vocabulary", "Prepositions", "B2-Upper Intermediate"],
+    "popularity_score": 0.92,
+    "status": "active",
+    "created_at": "2026-01-19T10:45:00Z",
+    "updated_at": "2026-01-19T10:45:00Z",
+    "answers": [
+      {
+        "option_text": "through",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Through' is often used to show the means or method of achieving success.",
+        "status": "active"
+      },
+      {
+        "option_text": "by",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Usually followed by a gerund ('by working hard'), but sometimes used with nouns.",
+        "status": "active"
+      },
+      {
+        "option_text": "with",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "Clear, but 'through' is the more sophisticated choice for this context.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "m9n0o1p2-0039-4000-8000-000000000039",
+    "prompt": "Hardly ______ the building when the fire alarm went off.",
+    "categories": ["Grammar", "Syntax", "C1-Advanced"],
+    "popularity_score": 0.8,
+    "status": "active",
+    "created_at": "2026-01-19T10:45:00Z",
+    "updated_at": "2026-01-19T10:45:00Z",
+    "answers": [
+      {
+        "option_text": "had we entered",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The restrictive adverb 'Hardly' requires inversion (auxiliary + subject) and the past perfect.",
+        "status": "active"
+      },
+      {
+        "option_text": "we had entered",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Incorrect word order for a sentence beginning with 'Hardly'.",
+        "status": "active"
+      },
+      {
+        "option_text": "did we enter",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Grammatically possible, but the past perfect ('had we entered') is the standard for this idiom.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "n0o1p2q3-0040-4000-8000-000000000040",
+    "prompt": "I’m looking forward ______ you at the conference next week.",
+    "categories": ["Grammar", "Gerunds", "B1-Intermediate"],
+    "popularity_score": 0.98,
+    "status": "active",
+    "created_at": "2026-01-19T10:45:00Z",
+    "updated_at": "2026-01-19T10:45:00Z",
+    "answers": [
+      {
+        "option_text": "to seeing",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "In the phrase 'look forward to', 'to' is a preposition, so it must be followed by a gerund (-ing).",
+        "status": "active"
+      },
+      {
+        "option_text": "to see",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "A very common error; 'to' here is not part of an infinitive, but a preposition.",
+        "status": "active"
+      },
+      {
+        "option_text": "seeing",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "The preposition 'to' is required.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "o1p2q3r4-0041-4000-8000-000000000041",
+    "prompt": "Could you ______ me your pen for a moment? I need to sign this form.",
+    "categories": ["Vocabulary", "Confusing Words", "B1-Intermediate"],
+    "popularity_score": 0.98,
+    "status": "active",
+    "created_at": "2026-01-19T11:00:00Z",
+    "updated_at": "2026-01-19T11:00:00Z",
+    "answers": [
+      {
+        "option_text": "lend",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Lend' means to give something temporarily. The person owning the pen 'lends' it.",
+        "status": "active"
+      },
+      {
+        "option_text": "borrow",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "'Borrow' means to take or receive something temporarily. You would say 'Can I borrow your pen?'",
+        "status": "active"
+      },
+      {
+        "option_text": "loan",
+        "answer_type": "acceptable",
+        "answer_point": 9,
+        "explanation": "Commonly used as a verb in American English, though 'lend' is the more traditional choice.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "p2q3r4s5-0042-4000-8000-000000000042",
+    "prompt": "I ______ thought the movie was starting at 8:00, but it actually starts at 8:30.",
+    "categories": ["Vocabulary", "Adverbs", "B2-Upper Intermediate"],
+    "popularity_score": 0.91,
+    "status": "active",
+    "created_at": "2026-01-19T11:00:00Z",
+    "updated_at": "2026-01-19T11:00:00Z",
+    "answers": [
+      {
+        "option_text": "actually",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used to emphasize a fact or correct a misunderstanding.",
+        "status": "active"
+      },
+      {
+        "option_text": "currently",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "'Currently' means 'at the present time' and does not fit a past thought or correction.",
+        "status": "active"
+      },
+      {
+        "option_text": "really",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "Acceptable in casual speech, but doesn't convey the sense of 'correction' as well as 'actually'.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "q3r4s5t6-0043-4000-8000-000000000043",
+    "prompt": "The company's ______ objective is to increase its market share in Asia.",
+    "categories": ["Vocabulary", "Academic English", "B2-Upper Intermediate"],
+    "popularity_score": 0.88,
+    "status": "active",
+    "created_at": "2026-01-19T11:00:00Z",
+    "updated_at": "2026-01-19T11:00:00Z",
+    "answers": [
+      {
+        "option_text": "principal",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Principal' as an adjective means 'main' or 'most important'.",
+        "status": "active"
+      },
+      {
+        "option_text": "principle",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Principle' is a noun meaning a fundamental truth or belief.",
+        "status": "active"
+      },
+      {
+        "option_text": "primary",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "An excellent synonym for principal/main in this context.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "r4s5t6u7-0044-4000-8000-000000000044",
+    "prompt": "It's important to ______ between 'fact' and 'opinion' when reading the news.",
+    "categories": ["Vocabulary", "Verbs", "C1-Advanced"],
+    "popularity_score": 0.84,
+    "status": "active",
+    "created_at": "2026-01-19T11:00:00Z",
+    "updated_at": "2026-01-19T11:00:00Z",
+    "answers": [
+      {
+        "option_text": "distinguish",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Distinguish between' is the formal and precise way to describe recognizing differences.",
+        "status": "active"
+      },
+      {
+        "option_text": "differentiate",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally formal and correct as a synonym for distinguish.",
+        "status": "active"
+      },
+      {
+        "option_text": "tell",
+        "answer_type": "ok",
+        "answer_point": 5,
+        "explanation": "Commonly used in 'tell the difference', but 'tell between' is less formal.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "s5t6u7v8-0045-4000-8000-000000000045",
+    "prompt": "She was ______ for her contribution to the project at the annual gala.",
+    "categories": ["Vocabulary", "Passive Voice", "B2-Upper Intermediate"],
+    "popularity_score": 0.9,
+    "status": "active",
+    "created_at": "2026-01-19T11:00:00Z",
+    "updated_at": "2026-01-19T11:00:00Z",
+    "answers": [
+      {
+        "option_text": "commended",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Commended' is a formal way to say 'praised publicly'.",
+        "status": "active"
+      },
+      {
+        "option_text": "recommended",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "'Recommended' means suggested for a role or task, not praised for past work.",
+        "status": "active"
+      },
+      {
+        "option_text": "praised",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Correct, though 'commended' fits the formal 'annual gala' context better.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "t6u7v8w9-0046-4000-8000-000000000046",
+    "prompt": "I will ______ you to the station if you'd like.",
+    "categories": ["Vocabulary", "Verbs", "B1-Intermediate"],
+    "popularity_score": 0.96,
+    "status": "active",
+    "created_at": "2026-01-19T11:00:00Z",
+    "updated_at": "2026-01-19T11:00:00Z",
+    "answers": [
+      {
+        "option_text": "drive",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The most natural way to offer someone a ride in your car.",
+        "status": "active"
+      },
+      {
+        "option_text": "take",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Simple and very common; 'I will take you there.'",
+        "status": "active"
+      },
+      {
+        "option_text": "conduct",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Conduct' is used for leading people or performing tasks, not giving car rides.",
+        "status": "active"
+      },
+      {
+        "option_text": "bring",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Generally, 'bring' implies movement toward the speaker's location; 'take' is better here.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "u7v8w9x0-0047-4000-8000-000000000047",
+    "prompt": "The weather was so bad that they had to ______ the football match.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "B1-Intermediate"],
+    "popularity_score": 0.93,
+    "status": "active",
+    "created_at": "2026-01-19T11:00:00Z",
+    "updated_at": "2026-01-19T11:00:00Z",
+    "answers": [
+      {
+        "option_text": "call off",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Call off' is the specific phrasal verb meaning to cancel an event.",
+        "status": "active"
+      },
+      {
+        "option_text": "put off",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "This means 'postpone'. If they postponed it, this is correct; if they cancelled it, 'call off' is better.",
+        "status": "active"
+      },
+      {
+        "option_text": "cancel",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The formal and direct synonym for 'call off'.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "v8w9x0y1-0048-4000-8000-000000000048",
+    "prompt": "I can't ______ the difference between these two brands of coffee.",
+    "categories": ["Vocabulary", "Collocations", "B1-Intermediate"],
+    "popularity_score": 0.92,
+    "status": "active",
+    "created_at": "2026-01-19T11:00:00Z",
+    "updated_at": "2026-01-19T11:00:00Z",
+    "answers": [
+      {
+        "option_text": "tell",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Tell the difference' is the standard collocation for perceiving a distinction.",
+        "status": "active"
+      },
+      {
+        "option_text": "say",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Say' cannot be used in this collocation.",
+        "status": "active"
+      },
+      {
+        "option_text": "see",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Commonly used for visual differences, and often figuratively for taste.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "w9x0y1z2-0049-4000-8000-000000000049",
+    "prompt": "He is very ______; he never spends money if he can avoid it.",
+    "categories": ["Vocabulary", "Adjectives", "B2-Upper Intermediate"],
+    "popularity_score": 0.85,
+    "status": "active",
+    "created_at": "2026-01-19T11:00:00Z",
+    "updated_at": "2026-01-19T11:00:00Z",
+    "answers": [
+      {
+        "option_text": "stingy",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "Correct, but has a very negative/rude connotation.",
+        "status": "active"
+      },
+      {
+        "option_text": "frugal",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Frugal' is the more positive/neutral way to describe someone who is careful with money.",
+        "status": "active"
+      },
+      {
+        "option_text": "economical",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Usually used for systems or things (an economical car) rather than a person's character.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "x0y1z2a3-0050-4000-8000-000000000050",
+    "prompt": "I haven't seen him ______ last summer.",
+    "categories": ["Grammar", "Prepositions", "B1-Intermediate"],
+    "popularity_score": 0.99,
+    "status": "active",
+    "created_at": "2026-01-19T11:00:00Z",
+    "updated_at": "2026-01-19T11:00:00Z",
+    "answers": [
+      {
+        "option_text": "since",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Since' is used with a specific point in time (last summer).",
+        "status": "active"
+      },
+      {
+        "option_text": "for",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "'For' is used for a duration (e.g., 'for six months').",
+        "status": "active"
+      },
+      {
+        "option_text": "during",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Grammatically possible, but it implies 'at no point in the middle of summer' rather than 'not from that point until now'.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "y1z2a3b4-0051-4000-8000-000000000051",
+    "prompt": "I was going to go skydiving, but I ______ at the last minute because I was too scared.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "B2-Upper Intermediate"],
+    "popularity_score": 0.88,
+    "status": "active",
+    "created_at": "2026-01-19T11:15:00Z",
+    "updated_at": "2026-01-19T11:15:00Z",
+    "answers": [
+      {
+        "option_text": "chickened out",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To 'chicken out' is a common idiom meaning to decide not to do something out of fear.",
+        "status": "active"
+      },
+      {
+        "option_text": "backed out",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Correct and formal, but lacks the specific 'fear' nuance of the prompt.",
+        "status": "active"
+      },
+      {
+        "option_text": "gave up",
+        "answer_type": "ok",
+        "answer_point": 5,
+        "explanation": "'Gave up' usually implies stopping an effort rather than a sudden decision based on fear.",
+        "status": "active"
+      },
+      {
+        "option_text": "ran away",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "Too literal; it implies physical running rather than a change of mind.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "z2a3b4c5-0052-4000-8000-000000000052",
+    "prompt": "He’s been working so hard lately that he’s starting to ______.",
+    "categories": ["Vocabulary", "Idioms", "C1-Advanced"],
+    "popularity_score": 0.82,
+    "status": "active",
+    "created_at": "2026-01-19T11:15:00Z",
+    "updated_at": "2026-01-19T11:15:00Z",
+    "answers": [
+      {
+        "option_text": "burn out",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Burn out' refers to physical or mental collapse caused by overwork or stress.",
+        "status": "active"
+      },
+      {
+        "option_text": "fade away",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "This means to disappear gradually, not usually used for work exhaustion.",
+        "status": "active"
+      },
+      {
+        "option_text": "run down",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "To feel 'run down' is to feel tired, though 'burn out' is a more complete state.",
+        "status": "active"
+      },
+      {
+        "option_text": "break even",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "This is a financial term meaning to make neither a profit nor a loss.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "a3b4c5d6-0053-4000-8000-000000000053",
+    "prompt": "We shouldn't jump to conclusions; let's ______ until we have all the facts.",
+    "categories": ["Vocabulary", "Idioms", "B2-Upper Intermediate"],
+    "popularity_score": 0.91,
+    "status": "active",
+    "created_at": "2026-01-19T11:15:00Z",
+    "updated_at": "2026-01-19T11:15:00Z",
+    "answers": [
+      {
+        "option_text": "hold our horses",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "An idiom meaning to wait or slow down before acting.",
+        "status": "active"
+      },
+      {
+        "option_text": "keep our cool",
+        "answer_type": "ok",
+        "answer_point": 5,
+        "explanation": "This means to stay calm, which is helpful but doesn't mean 'waiting' specifically.",
+        "status": "active"
+      },
+      {
+        "option_text": "bide our time",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "This means to wait for a good opportunity, which is very close to the intended meaning.",
+        "status": "active"
+      },
+      {
+        "option_text": "sleep on it",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "This means to wait until the next day to decide, which fits but is more specific than needed.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "b4c5d6e7-0054-4000-8000-000000000054",
+    "prompt": "I can't believe he said that! He really ______ when he mentioned her ex-husband.",
+    "categories": ["Vocabulary", "Idioms", "C1-Advanced"],
+    "popularity_score": 0.79,
+    "status": "active",
+    "created_at": "2026-01-19T11:15:00Z",
+    "updated_at": "2026-01-19T11:15:00Z",
+    "answers": [
+      {
+        "option_text": "put his foot in it",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To 'put your foot in it' (or in your mouth) means to say something accidental that embarrasses or upsets someone.",
+        "status": "active"
+      },
+      {
+        "option_text": "hit the nail on the head",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "This means to describe exactly what is causing a situation; it's a positive idiom.",
+        "status": "active"
+      },
+      {
+        "option_text": "spilled the beans",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "This means to reveal a secret, which isn't quite the same as making a social blunder.",
+        "status": "active"
+      },
+      {
+        "option_text": "broke the ice",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "This means to start a conversation in a social setting to make people feel comfortable.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "c5d6e7f8-0055-4000-8000-000000000055",
+    "prompt": "I’m feeling a bit ______ today, so I think I’ll stay home and rest.",
+    "categories": ["Vocabulary", "Idioms", "B1-Intermediate"],
+    "popularity_score": 0.95,
+    "status": "active",
+    "created_at": "2026-01-19T11:15:00Z",
+    "updated_at": "2026-01-19T11:15:00Z",
+    "answers": [
+      {
+        "option_text": "under the weather",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A very common idiom meaning to feel slightly ill or unwell.",
+        "status": "active"
+      },
+      {
+        "option_text": "down in the dumps",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "This means to feel sad or depressed, rather than physically ill.",
+        "status": "active"
+      },
+      {
+        "option_text": "out of sorts",
+        "answer_type": "acceptable",
+        "answer_point": 9,
+        "explanation": "A more sophisticated way to say you don't feel like your usual self.",
+        "status": "active"
+      },
+      {
+        "option_text": "on thin ice",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "This means to be in a risky or dangerous situation.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "d6e7f8g9-0056-4000-8000-000000000056",
+    "prompt": "If you want to get the job, you need to ______ during the interview.",
+    "categories": ["Vocabulary", "Collocations", "B2-Upper Intermediate"],
+    "popularity_score": 0.87,
+    "status": "active",
+    "created_at": "2026-01-19T11:15:00Z",
+    "updated_at": "2026-01-19T11:15:00Z",
+    "answers": [
+      {
+        "option_text": "make a good impression",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The standard collocation for causing someone to have a positive opinion of you.",
+        "status": "active"
+      },
+      {
+        "option_text": "do a good impression",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "To 'do an impression' means to mimic someone's voice or behavior (like a comedian).",
+        "status": "active"
+      },
+      {
+        "option_text": "give a good feeling",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Understandable, but not a standard professional collocation.",
+        "status": "active"
+      },
+      {
+        "option_text": "create a good impact",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct in meaning, but 'make an impression' is the most natural choice.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "e7f8g9h0-0057-4000-8000-000000000057",
+    "prompt": "That new car costs ______, but it's worth every penny.",
+    "categories": ["Vocabulary", "Idioms", "B2-Upper Intermediate"],
+    "popularity_score": 0.9,
+    "status": "active",
+    "created_at": "2026-01-19T11:15:00Z",
+    "updated_at": "2026-01-19T11:15:00Z",
+    "answers": [
+      {
+        "option_text": "an arm and a leg",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A very common idiom meaning something is extremely expensive.",
+        "status": "active"
+      },
+      {
+        "option_text": "a small fortune",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "An equally valid and common way to describe something very expensive.",
+        "status": "active"
+      },
+      {
+        "option_text": "the world",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "'Costs the world' is used, but 'an arm and a leg' or 'the earth' is more common.",
+        "status": "active"
+      },
+      {
+        "option_text": "a pretty penny",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "A slightly old-fashioned but correct way to say something is expensive.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "f8g9h0i1-0058-4000-8000-000000000058",
+    "prompt": "I don't really like opera; it’s just not my ______.",
+    "categories": ["Vocabulary", "Idioms", "B1-Intermediate"],
+    "popularity_score": 0.93,
+    "status": "active",
+    "created_at": "2026-01-19T11:15:00Z",
+    "updated_at": "2026-01-19T11:15:00Z",
+    "answers": [
+      {
+        "option_text": "cup of tea",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "An idiom used to say that something is not to your taste or interest.",
+        "status": "active"
+      },
+      {
+        "option_text": "piece of cake",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "This means something is very easy to do.",
+        "status": "active"
+      },
+      {
+        "option_text": "slice of life",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "This refers to a realistic representation of everyday experience in art.",
+        "status": "active"
+      },
+      {
+        "option_text": "thing",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Very common in casual speech ('It's not my thing'), though 'cup of tea' is the specific idiom.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "g9h0i1j2-0059-4000-8000-000000000059",
+    "prompt": "Stop ______ and tell me what you really think!",
+    "categories": ["Vocabulary", "Idioms", "C1-Advanced"],
+    "popularity_score": 0.81,
+    "status": "active",
+    "created_at": "2026-01-19T11:15:00Z",
+    "updated_at": "2026-01-19T11:15:00Z",
+    "answers": [
+      {
+        "option_text": "beating around the bush",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To 'beat around the bush' means to avoid talking about what is important.",
+        "status": "active"
+      },
+      {
+        "option_text": "barking up the wrong tree",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "This means to pursue a mistaken line of thought or course of action.",
+        "status": "active"
+      },
+      {
+        "option_text": "pulling my leg",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "This means to tease someone or tell a lie as a joke.",
+        "status": "active"
+      },
+      {
+        "option_text": "mincing your words",
+        "answer_type": "acceptable",
+        "answer_point": 9,
+        "explanation": "To 'not mince words' means to speak directly; 'mincing words' means being overly polite/vague.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "h0i1j2k3-0060-4000-8000-000000000060",
+    "prompt": "You should take what he says with a ______. He tends to exaggerate.",
+    "categories": ["Vocabulary", "Idioms", "B2-Upper Intermediate"],
+    "popularity_score": 0.89,
+    "status": "active",
+    "created_at": "2026-01-19T11:15:00Z",
+    "updated_at": "2026-01-19T11:15:00Z",
+    "answers": [
+      {
+        "option_text": "grain of salt",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To take something with a grain (or pinch) of salt means to not believe it completely.",
+        "status": "active"
+      },
+      {
+        "option_text": "pinch of pepper",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Not a recognized idiom.",
+        "status": "active"
+      },
+      {
+        "option_text": "heavy heart",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "This means to do something with great sadness.",
+        "status": "active"
+      },
+      {
+        "option_text": "pinch of salt",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The British version of the idiom; equally correct as 'grain of salt'.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "i1j2k3l4-0061-4000-8000-000000000061",
+    "prompt": "I have ______ friends in the city, so I often feel a bit lonely.",
+    "categories": ["Grammar", "Quantifiers", "B1-Intermediate"],
+    "popularity_score": 0.96,
+    "status": "active",
+    "created_at": "2026-01-19T11:30:00Z",
+    "updated_at": "2026-01-19T11:30:00Z",
+    "answers": [
+      {
+        "option_text": "few",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Few' has a negative connotation meaning 'not enough,' which fits the context of feeling lonely.",
+        "status": "active"
+      },
+      {
+        "option_text": "a few",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "'A few' has a positive connotation meaning 'some.' It doesn't logically lead to feeling lonely.",
+        "status": "active"
+      },
+      {
+        "option_text": "little",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Little' is used with uncountable nouns; 'friends' is countable.",
+        "status": "active"
+      },
+      {
+        "option_text": "many",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "If the speaker had many friends, they would likely not feel lonely.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "j2k3l4m5-0062-4000-8000-000000000062",
+    "prompt": "The two sisters are very different; ______ of them likes the same kind of music.",
+    "categories": ["Grammar", "Determiners", "B2-Upper Intermediate"],
+    "popularity_score": 0.89,
+    "status": "active",
+    "created_at": "2026-01-19T11:30:00Z",
+    "updated_at": "2026-01-19T11:30:00Z",
+    "answers": [
+      {
+        "option_text": "neither",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Neither' is used to talk about two people/things in a negative sense.",
+        "status": "active"
+      },
+      {
+        "option_text": "none",
+        "answer_type": "ok",
+        "answer_point": 5,
+        "explanation": "'None' is typically used for three or more people.",
+        "status": "active"
+      },
+      {
+        "option_text": "either",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "'Either' implies one or the other, but the context requires a negative to show they are different.",
+        "status": "active"
+      },
+      {
+        "option_text": "both",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "If 'both' liked the same music, they wouldn't be 'very different' in that regard.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "k3l4m5n6-0063-4000-8000-000000000063",
+    "prompt": "There is ______ hope of finding the lost hikers before nightfall, as the storm is worsening.",
+    "categories": ["Grammar", "Quantifiers", "C1-Advanced"],
+    "popularity_score": 0.82,
+    "status": "active",
+    "created_at": "2026-01-19T11:30:00Z",
+    "updated_at": "2026-01-19T11:30:00Z",
+    "answers": [
+      {
+        "option_text": "little",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Little' with an uncountable noun like 'hope' means 'hardly any.'",
+        "status": "active"
+      },
+      {
+        "option_text": "a little",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "'A little' suggests a positive amount of hope, which contradicts the 'worsening storm' context.",
+        "status": "active"
+      },
+      {
+        "option_text": "few",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Few' is only used with countable nouns.",
+        "status": "active"
+      },
+      {
+        "option_text": "slight",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Grammatically 'There is a slight hope' would be better, but 'slight hope' is often used.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "l4m5n6o7-0064-4000-8000-000000000064",
+    "prompt": "______ employee is required to attend the safety workshop.",
+    "categories": ["Grammar", "Determiners", "B1-Intermediate"],
+    "popularity_score": 0.94,
+    "status": "active",
+    "created_at": "2026-01-19T11:30:00Z",
+    "updated_at": "2026-01-19T11:30:00Z",
+    "answers": [
+      {
+        "option_text": "Every",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Every' is followed by a singular countable noun and refers to all members of a group.",
+        "status": "active"
+      },
+      {
+        "option_text": "All",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "'All' would require the plural 'employees' (e.g., 'All employees are...').",
+        "status": "active"
+      },
+      {
+        "option_text": "Each",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Each' is also correct and focuses more on the individuals within the group.",
+        "status": "active"
+      },
+      {
+        "option_text": "Entire",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Entire' usually refers to the whole of a single thing (e.g., 'the entire staff').",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "m5n6o7p8-0065-4000-8000-000000000065",
+    "prompt": "We have ______ time left, so we must hurry if we want to finish.",
+    "categories": ["Grammar", "Quantifiers", "B1-Intermediate"],
+    "popularity_score": 0.97,
+    "status": "active",
+    "created_at": "2026-01-19T11:30:00Z",
+    "updated_at": "2026-01-19T11:30:00Z",
+    "answers": [
+      {
+        "option_text": "little",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Indicates a lack of time, which explains the need to hurry.",
+        "status": "active"
+      },
+      {
+        "option_text": "a little",
+        "answer_type": "ok",
+        "answer_point": 5,
+        "explanation": "Suggests 'some' time, which is less urgent than 'little.'",
+        "status": "active"
+      },
+      {
+        "option_text": "few",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Time is uncountable; 'few' cannot be used.",
+        "status": "active"
+      },
+      {
+        "option_text": "much",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "If there were much time, there would be no need to hurry.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "n6o7p8q9-0066-4000-8000-000000000066",
+    "prompt": "I've read ______ book on that shelf, and they are all excellent.",
+    "categories": ["Grammar", "Determiners", "B2-Upper Intermediate"],
+    "popularity_score": 0.9,
+    "status": "active",
+    "created_at": "2026-01-19T11:30:00Z",
+    "updated_at": "2026-01-19T11:30:00Z",
+    "answers": [
+      {
+        "option_text": "every",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used with singular nouns to refer to the total group.",
+        "status": "active"
+      },
+      {
+        "option_text": "all",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "Requires plural 'books' (e.g., 'all the books').",
+        "status": "active"
+      },
+      {
+        "option_text": "each",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Interchangeable with 'every' here; emphasizes the individual books.",
+        "status": "active"
+      },
+      {
+        "option_text": "whole",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Usually refers to the entirety of one specific book (e.g., 'the whole book').",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "o7p8q9r0-0067-4000-8000-000000000067",
+    "prompt": "Would you like ______ water?",
+    "categories": ["Grammar", "Quantifiers", "A2-Elementary"],
+    "popularity_score": 0.99,
+    "status": "active",
+    "created_at": "2026-01-19T11:30:00Z",
+    "updated_at": "2026-01-19T11:30:00Z",
+    "answers": [
+      {
+        "option_text": "some",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Some' is used in questions when offering something or making a request.",
+        "status": "active"
+      },
+      {
+        "option_text": "any",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "Grammatically correct for questions, but 'some' is more polite for offers.",
+        "status": "active"
+      },
+      {
+        "option_text": "a",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Water is uncountable; 'a' cannot be used.",
+        "status": "active"
+      },
+      {
+        "option_text": "few",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "'Few' is for countable items, and implies a lack of something.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "p8q9r0s1-0068-4000-8000-000000000068",
+    "prompt": "There are ______ people who still believe the earth is flat.",
+    "categories": ["Grammar", "Quantifiers", "B1-Intermediate"],
+    "popularity_score": 0.92,
+    "status": "active",
+    "created_at": "2026-01-19T11:30:00Z",
+    "updated_at": "2026-01-19T11:30:00Z",
+    "answers": [
+      {
+        "option_text": "a few",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used with countable nouns to mean 'some.'",
+        "status": "active"
+      },
+      {
+        "option_text": "few",
+        "answer_type": "ok",
+        "answer_point": 7,
+        "explanation": "Implies 'hardly any,' which might be factually true but less common in this descriptive sentence.",
+        "status": "active"
+      },
+      {
+        "option_text": "a little",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'A little' is only for uncountable nouns.",
+        "status": "active"
+      },
+      {
+        "option_text": "much",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "'Much' is used with uncountable nouns in negative sentences/questions.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "q9r0s1t2-0069-4000-8000-000000000069",
+    "prompt": "The dessert was ______ sweet for my liking; I couldn't finish it.",
+    "categories": ["Grammar", "Adverbs of Degree", "B1-Intermediate"],
+    "popularity_score": 0.95,
+    "status": "active",
+    "created_at": "2026-01-19T11:30:00Z",
+    "updated_at": "2026-01-19T11:30:00Z",
+    "answers": [
+      {
+        "option_text": "too",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Too' indicates an excessive amount that leads to a negative result.",
+        "status": "active"
+      },
+      {
+        "option_text": "very",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "Correct, but doesn't necessarily imply the 'excess' that prevented finishing.",
+        "status": "active"
+      },
+      {
+        "option_text": "enough",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Would follow the adjective ('sweet enough') and implies a positive state.",
+        "status": "active"
+      },
+      {
+        "option_text": "quite",
+        "answer_type": "ok",
+        "answer_point": 5,
+        "explanation": "Means 'fairly,' which is too weak for the result of not being able to finish.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "r0s1t2u3-0070-4000-8000-000000000070",
+    "prompt": "He spends ______ his free time playing video games.",
+    "categories": ["Grammar", "Quantifiers", "B2-Upper Intermediate"],
+    "popularity_score": 0.91,
+    "status": "active",
+    "created_at": "2026-01-19T11:30:00Z",
+    "updated_at": "2026-01-19T11:30:00Z",
+    "answers": [
+      {
+        "option_text": "most of",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Most of' is used before a determiner (like 'his') to mean the majority.",
+        "status": "active"
+      },
+      {
+        "option_text": "most",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "Cannot be used directly before a pronoun or possessive like 'his.'",
+        "status": "active"
+      },
+      {
+        "option_text": "the most",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "This is a superlative and doesn't fit the quantifier role here.",
+        "status": "active"
+      },
+      {
+        "option_text": "a lot",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "Needs 'of' (e.g., 'a lot of his free time') to be grammatically correct.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "s1t2u3v4-0071-4000-8000-000000000071",
+    "prompt": "The ground is soaking wet; it ______ heavily last night.",
+    "categories": ["Grammar", "Modal Verbs", "B2-Upper Intermediate"],
+    "popularity_score": 0.94,
+    "status": "active",
+    "created_at": "2026-01-19T11:45:00Z",
+    "updated_at": "2026-01-19T11:45:00Z",
+    "answers": [
+      {
+        "option_text": "must have rained",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used to make a logical deduction about a past event with high certainty.",
+        "status": "active"
+      },
+      {
+        "option_text": "should have rained",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "Implies that it was expected to rain but didn't, which contradicts the 'wet ground'.",
+        "status": "active"
+      },
+      {
+        "option_text": "might rain",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Refers to a future possibility, whereas the wet ground is evidence of a past event.",
+        "status": "active"
+      },
+      {
+        "option_text": "can have rained",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Can have' is not used for positive logical deductions; 'must have' is the correct form.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "t2u3v4w5-0072-4000-8000-000000000072",
+    "prompt": "You ______ tell anyone about this; it’s a top-secret project.",
+    "categories": ["Grammar", "Modal Verbs", "B1-Intermediate"],
+    "popularity_score": 0.98,
+    "status": "active",
+    "created_at": "2026-01-19T11:45:00Z",
+    "updated_at": "2026-01-19T11:45:00Z",
+    "answers": [
+      {
+        "option_text": "mustn't",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Mustn't' is used to express strong prohibition.",
+        "status": "active"
+      },
+      {
+        "option_text": "don't have to",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "This means there is no obligation to do it, but you still can. A secret requires prohibition.",
+        "status": "active"
+      },
+      {
+        "option_text": "couldn't",
+        "answer_type": "ok",
+        "answer_point": 5,
+        "explanation": "Usually refers to past ability, though sometimes used for permission; 'mustn't' is much stronger here.",
+        "status": "active"
+      },
+      {
+        "option_text": "shouldn't",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Correct as advice, but 'mustn't' better fits the context of a 'top-secret' rule.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "u3v4w5x6-0073-4000-8000-000000000073",
+    "prompt": "I'm not sure where Sarah is. She ______ be in the library, or she might have gone home.",
+    "categories": ["Grammar", "Modal Verbs", "B1-Intermediate"],
+    "popularity_score": 0.92,
+    "status": "active",
+    "created_at": "2026-01-19T11:45:00Z",
+    "updated_at": "2026-01-19T11:45:00Z",
+    "answers": [
+      {
+        "option_text": "could",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Could' expresses a current possibility.",
+        "status": "active"
+      },
+      {
+        "option_text": "must",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "'Must' implies certainty, which contradicts 'I'm not sure'.",
+        "status": "active"
+      },
+      {
+        "option_text": "will",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Implies a future fact or a very strong prediction.",
+        "status": "active"
+      },
+      {
+        "option_text": "might",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Interchangeable with 'could' in this context of possibility.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "v4w5x6y7-0074-4000-8000-000000000074",
+    "prompt": "I ______ my keys at the office. I can't find them anywhere in my bag.",
+    "categories": ["Grammar", "Modal Verbs", "B2-Upper Intermediate"],
+    "popularity_score": 0.88,
+    "status": "active",
+    "created_at": "2026-01-19T11:45:00Z",
+    "updated_at": "2026-01-19T11:45:00Z",
+    "answers": [
+      {
+        "option_text": "might have left",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Expresses a past possibility when you are not 100% certain.",
+        "status": "active"
+      },
+      {
+        "option_text": "can leave",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Grammatically incorrect for a past event.",
+        "status": "active"
+      },
+      {
+        "option_text": "must leave",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Refers to a current or future obligation, not a past event.",
+        "status": "active"
+      },
+      {
+        "option_text": "should have left",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually implies you regret not leaving them there, which doesn't fit the context.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "w5x6y7z8-0075-4000-8000-000000000075",
+    "prompt": "We ______ have booked a table; the restaurant was nearly empty when we arrived.",
+    "categories": ["Grammar", "Modal Verbs", "C1-Advanced"],
+    "popularity_score": 0.85,
+    "status": "active",
+    "created_at": "2026-01-19T11:45:00Z",
+    "updated_at": "2026-01-19T11:45:00Z",
+    "answers": [
+      {
+        "option_text": "needn't",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Needn't have' is used when an action was performed but was actually unnecessary.",
+        "status": "active"
+      },
+      {
+        "option_text": "didn't need to",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Similar to 'needn't have', though often implies the speaker knew it was unnecessary and didn't do it.",
+        "status": "active"
+      },
+      {
+        "option_text": "shouldn't",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "Implies the booking was a bad idea or a mistake, which is a bit strong for just being unnecessary.",
+        "status": "active"
+      },
+      {
+        "option_text": "mustn't",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Cannot be used with 'have' for past unnecessary actions.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "x6y7z8a9-0076-4000-8000-000000000076",
+    "prompt": "You ______ to be more careful when driving in such thick fog.",
+    "categories": ["Grammar", "Modal Verbs", "B1-Intermediate"],
+    "popularity_score": 0.96,
+    "status": "active",
+    "created_at": "2026-01-19T11:45:00Z",
+    "updated_at": "2026-01-19T11:45:00Z",
+    "answers": [
+      {
+        "option_text": "ought",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Ought' is the only modal here that must be followed by 'to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "should",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "'Should' is followed by the base form without 'to' (e.g., 'should be').",
+        "status": "active"
+      },
+      {
+        "option_text": "must",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Like 'should', 'must' is followed by the base form without 'to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "had better",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "'Had better' is followed by the base form without 'to'.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "y7z8a9b0-0077-4000-8000-000000000077",
+    "prompt": "That ______ be the postman at the door; he's already been here today.",
+    "categories": ["Grammar", "Modal Verbs", "B2-Upper Intermediate"],
+    "popularity_score": 0.91,
+    "status": "active",
+    "created_at": "2026-01-19T11:45:00Z",
+    "updated_at": "2026-01-19T11:45:00Z",
+    "answers": [
+      {
+        "option_text": "can't",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used for a negative logical deduction based on evidence.",
+        "status": "active"
+      },
+      {
+        "option_text": "mustn't",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "In English, 'mustn't' is for prohibition, not for negative logical deduction.",
+        "status": "active"
+      },
+      {
+        "option_text": "won't",
+        "answer_type": "ok",
+        "answer_point": 5,
+        "explanation": "Usually refers to future or refusal; 'can't' is the standard for present impossibility.",
+        "status": "active"
+      },
+      {
+        "option_text": "might not",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but implies less certainty than 'can't' given the strong evidence.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "z8a9b0c1-0078-4000-8000-000000000078",
+    "prompt": "If you had studied harder, you ______ the exam easily.",
+    "categories": ["Grammar", "Conditionals", "B2-Upper Intermediate"],
+    "popularity_score": 0.93,
+    "status": "active",
+    "created_at": "2026-01-19T11:45:00Z",
+    "updated_at": "2026-01-19T11:45:00Z",
+    "answers": [
+      {
+        "option_text": "could have passed",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard Third Conditional expressing past possibility/ability.",
+        "status": "active"
+      },
+      {
+        "option_text": "can pass",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect tense for a past hypothetical situation.",
+        "status": "active"
+      },
+      {
+        "option_text": "would pass",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "Used for Second Conditional (present/future hypothetical).",
+        "status": "active"
+      },
+      {
+        "option_text": "might pass",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Incorrect tense; requires 'might have passed'.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "a9b0c1d2-0079-4000-8000-000000000079",
+    "prompt": "You ______ go to the doctor if that cough doesn't improve by tomorrow.",
+    "categories": ["Grammar", "Modal Verbs", "B1-Intermediate"],
+    "popularity_score": 0.97,
+    "status": "active",
+    "created_at": "2026-01-19T11:45:00Z",
+    "updated_at": "2026-01-19T11:45:00Z",
+    "answers": [
+      {
+        "option_text": "should",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The standard way to give advice.",
+        "status": "active"
+      },
+      {
+        "option_text": "had better",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used for strong advice or warnings about consequences.",
+        "status": "active"
+      },
+      {
+        "option_text": "must",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Used to show a strong necessity, though sounds more authoritative.",
+        "status": "active"
+      },
+      {
+        "option_text": "may",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Used for permission or slight possibility; too weak for advice in this context.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "b0c1d2e3-0080-4000-8000-000000000080",
+    "prompt": "I ______ swim when I was only four years old.",
+    "categories": ["Grammar", "Modal Verbs", "A2-Elementary"],
+    "popularity_score": 0.99,
+    "status": "active",
+    "created_at": "2026-01-19T11:45:00Z",
+    "updated_at": "2026-01-19T11:45:00Z",
+    "answers": [
+      {
+        "option_text": "could",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used to describe a general ability in the past.",
+        "status": "active"
+      },
+      {
+        "option_text": "can",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "Present tense; the prompt refers to 'when I was four'.",
+        "status": "active"
+      },
+      {
+        "option_text": "was able to",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "An alternative to 'could' for past ability.",
+        "status": "active"
+      },
+      {
+        "option_text": "might",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Refers to possibility, not ability.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "c1d2e3f4-0081-4000-8000-000000000081",
+    "prompt": "The ______ of the new bridge has significantly reduced travel time for commuters.",
+    "categories": ["Vocabulary", "Word Formation", "B2-Upper Intermediate"],
+    "popularity_score": 0.94,
+    "status": "active",
+    "created_at": "2026-01-19T12:00:00Z",
+    "updated_at": "2026-01-19T12:00:00Z",
+    "answers": [
+      {
+        "option_text": "construction",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The noun form of the verb 'construct' fits the subject position of the sentence.",
+        "status": "active"
+      },
+      {
+        "option_text": "construct",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "This is the verb form; the sentence requires a noun after the article 'The'.",
+        "status": "active"
+      },
+      {
+        "option_text": "constructive",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "This is an adjective meaning 'serving a useful purpose'.",
+        "status": "active"
+      },
+      {
+        "option_text": "constructor",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "This refers to the person/company doing the building, not the building process itself.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "d2e3f4g5-0082-4000-8000-000000000082",
+    "prompt": "Due to her high level of ______, she was promoted to senior manager within a year.",
+    "categories": ["Vocabulary", "Word Formation", "C1-Advanced"],
+    "popularity_score": 0.88,
+    "status": "active",
+    "created_at": "2026-01-19T12:00:00Z",
+    "updated_at": "2026-01-19T12:00:00Z",
+    "answers": [
+      {
+        "option_text": "efficiency",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The noun form describing the quality of working well and without waste.",
+        "status": "active"
+      },
+      {
+        "option_text": "efficient",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "This is an adjective; a noun is needed after 'level of'.",
+        "status": "active"
+      },
+      {
+        "option_text": "efficiently",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "This is an adverb.",
+        "status": "active"
+      },
+      {
+        "option_text": "efficacy",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Refers to the ability to produce a desired result, usually used for medicine/treatments.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "e3f4g5h6-0083-4000-8000-000000000083",
+    "prompt": "The weather forecast is quite ______; it changes every hour.",
+    "categories": ["Vocabulary", "Word Formation", "B2-Upper Intermediate"],
+    "popularity_score": 0.91,
+    "status": "active",
+    "created_at": "2026-01-19T12:00:00Z",
+    "updated_at": "2026-01-19T12:00:00Z",
+    "answers": [
+      {
+        "option_text": "unreliable",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Adjective meaning 'not able to be trusted or depended on'.",
+        "status": "active"
+      },
+      {
+        "option_text": "reliability",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "This is a noun; the sentence requires an adjective to describe the forecast.",
+        "status": "active"
+      },
+      {
+        "option_text": "reliance",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Noun meaning 'dependence on someone or something'.",
+        "status": "active"
+      },
+      {
+        "option_text": "reliably",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "This is an adverb.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "f4g5h6i7-0084-4000-8000-000000000084",
+    "prompt": "It is ______ to park your car here; you might get a fine.",
+    "categories": ["Vocabulary", "Word Formation", "B1-Intermediate"],
+    "popularity_score": 0.97,
+    "status": "active",
+    "created_at": "2026-01-19T12:00:00Z",
+    "updated_at": "2026-01-19T12:00:00Z",
+    "answers": [
+      {
+        "option_text": "illegal",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The prefix 'il-' is used with 'legal' to mean 'not allowed by law'.",
+        "status": "active"
+      },
+      {
+        "option_text": "unlegal",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect prefix for the word 'legal'.",
+        "status": "active"
+      },
+      {
+        "option_text": "dislegal",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect prefix for the word 'legal'.",
+        "status": "active"
+      },
+      {
+        "option_text": "lawless",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Means 'not governed by laws', which is too dramatic for a parking spot.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "g5h6i7j8-0085-4000-8000-000000000085",
+    "prompt": "The ______ of the internet has changed how we consume information.",
+    "categories": ["Vocabulary", "Word Formation", "B2-Upper Intermediate"],
+    "popularity_score": 0.95,
+    "status": "active",
+    "created_at": "2026-01-19T12:00:00Z",
+    "updated_at": "2026-01-19T12:00:00Z",
+    "answers": [
+      {
+        "option_text": "emergence",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Noun form of 'emerge', referring to the process of becoming visible or important.",
+        "status": "active"
+      },
+      {
+        "option_text": "emergency",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "A serious/dangerous situation; a common false friend for 'emergence'.",
+        "status": "active"
+      },
+      {
+        "option_text": "emergent",
+        "answer_type": "ok",
+        "answer_point": 5,
+        "explanation": "This is an adjective, not a noun.",
+        "status": "active"
+      },
+      {
+        "option_text": "emerging",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "A gerund/present participle, but 'emergence' is the standard noun choice here.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "h6i7j8k9-0086-4000-8000-000000000086",
+    "prompt": "His ______ to the team was invaluable during the crisis.",
+    "categories": ["Vocabulary", "Word Formation", "C1-Advanced"],
+    "popularity_score": 0.86,
+    "status": "active",
+    "created_at": "2026-01-19T12:00:00Z",
+    "updated_at": "2026-01-19T12:00:00Z",
+    "answers": [
+      {
+        "option_text": "commitment",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Noun form of 'commit', meaning dedication or obligation.",
+        "status": "active"
+      },
+      {
+        "option_text": "committing",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "Gerund form; doesn't function as well as the abstract noun 'commitment'.",
+        "status": "active"
+      },
+      {
+        "option_text": "committed",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Adjective form; cannot follow a possessive 'His' in this structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "committal",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually refers to a legal process of sending someone to a prison or hospital.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "i7j8k9l0-0087-4000-8000-000000000087",
+    "prompt": "She looked at the old photographs ______ and remembered her childhood.",
+    "categories": ["Vocabulary", "Word Formation", "B2-Upper Intermediate"],
+    "popularity_score": 0.89,
+    "status": "active",
+    "created_at": "2026-01-19T12:00:00Z",
+    "updated_at": "2026-01-19T12:00:00Z",
+    "answers": [
+      {
+        "option_text": "nostalgically",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Adverb form needed to describe the action of looking.",
+        "status": "active"
+      },
+      {
+        "option_text": "nostalgic",
+        "answer_type": "ok",
+        "answer_point": 5,
+        "explanation": "Adjective; would require 'She felt nostalgic' rather than describing the verb 'looked'.",
+        "status": "active"
+      },
+      {
+        "option_text": "nostalgia",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "Noun form.",
+        "status": "active"
+      },
+      {
+        "option_text": "nostalgist",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Refers to a person who has nostalgic feelings.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "j8k9l0m1-0088-4000-8000-000000000088",
+    "prompt": "The ______ of the experiment were quite unexpected.",
+    "categories": ["Vocabulary", "Nouns", "B1-Intermediate"],
+    "popularity_score": 0.98,
+    "status": "active",
+    "created_at": "2026-01-19T12:00:00Z",
+    "updated_at": "2026-01-19T12:00:00Z",
+    "answers": [
+      {
+        "option_text": "results",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard noun for the outcome of a test or experiment.",
+        "status": "active"
+      },
+      {
+        "option_text": "resultants",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "A specialized mathematical/physical term, not used for general outcomes.",
+        "status": "active"
+      },
+      {
+        "option_text": "resulting",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "Present participle/Adjective; cannot be the plural subject.",
+        "status": "active"
+      },
+      {
+        "option_text": "resulted",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Past tense verb.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "k9l0m1n2-0089-4000-8000-000000000089",
+    "prompt": "You need to provide ______ evidence if you want people to believe your theory.",
+    "categories": ["Vocabulary", "Word Formation", "C1-Advanced"],
+    "popularity_score": 0.83,
+    "status": "active",
+    "created_at": "2026-01-19T12:00:00Z",
+    "updated_at": "2026-01-19T12:00:00Z",
+    "answers": [
+      {
+        "option_text": "substantial",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Adjective form of 'substance' meaning considerable or solid.",
+        "status": "active"
+      },
+      {
+        "option_text": "substance",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "This is a noun; the sentence requires an adjective to modify 'evidence'.",
+        "status": "active"
+      },
+      {
+        "option_text": "substantive",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Often used in legal/formal contexts to mean having a firm basis in reality.",
+        "status": "active"
+      },
+      {
+        "option_text": "substantially",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "This is an adverb.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "l0m1n2o3-0090-4000-8000-000000000090",
+    "prompt": "The ______ of the software was a long and complicated process.",
+    "categories": ["Vocabulary", "Word Formation", "B2-Upper Intermediate"],
+    "popularity_score": 0.92,
+    "status": "active",
+    "created_at": "2026-01-19T12:00:00Z",
+    "updated_at": "2026-01-19T12:00:00Z",
+    "answers": [
+      {
+        "option_text": "development",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The standard noun form for the process of creating or improving something.",
+        "status": "active"
+      },
+      {
+        "option_text": "developer",
+        "answer_type": "ok",
+        "answer_point": 3,
+        "explanation": "Refers to the person, and doesn't fit 'was a... process'.",
+        "status": "active"
+      },
+      {
+        "option_text": "developed",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Past tense verb or adjective.",
+        "status": "active"
+      },
+      {
+        "option_text": "developing",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "The gerund can be used as a noun, but 'development' is more common for the overall process.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "m1n2o3p4-0091-4000-8000-000000000091",
+    "prompt": "Choose the correct spelling for the word meaning 'to achieve' or 'to fulfill':",
+    "categories": ["Spelling", "C1-Advanced"],
+    "popularity_score": 0.88,
+    "status": "active",
+    "created_at": "2026-01-19T12:15:00Z",
+    "updated_at": "2026-01-19T12:15:00Z",
+    "answers": [
+      {
+        "option_text": "accomplish",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Correct spelling with double 'c' and single 'm'.",
+        "status": "active"
+      },
+      {
+        "option_text": "acomplish",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Missing the second 'c'.",
+        "status": "active"
+      },
+      {
+        "option_text": "accompish",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Missing the 'l'.",
+        "status": "active"
+      },
+      {
+        "option_text": "accommodate",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "This is a different word meaning to provide lodging or space.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "n2o3p4q5-0092-4000-8000-000000000092",
+    "prompt": "They are going to ______ their old house and build a modern one in its place.",
+    "categories": ["Vocabulary", "Confusing Words", "B2-Upper Intermediate"],
+    "popularity_score": 0.92,
+    "status": "active",
+    "created_at": "2026-01-19T12:15:00Z",
+    "updated_at": "2026-01-19T12:15:00Z",
+    "answers": [
+      {
+        "option_text": "raze",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Raze' means to completely destroy a building or town.",
+        "status": "active"
+      },
+      {
+        "option_text": "raise",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "A homophone; 'raise' means to lift or increase something.",
+        "status": "active"
+      },
+      {
+        "option_text": "rise",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Intransitive verb meaning to move upward.",
+        "status": "active"
+      },
+      {
+        "option_text": "erase",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually refers to marks or data, not physical structures.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "o3p4q5r6-0093-4000-8000-000000000093",
+    "prompt": "I ______ have gone to the party, but I was feeling exhausted.",
+    "categories": ["Grammar", "Modal Verbs", "B2-Upper Intermediate"],
+    "popularity_score": 0.95,
+    "status": "active",
+    "created_at": "2026-01-19T12:15:00Z",
+    "updated_at": "2026-01-19T12:15:00Z",
+    "answers": [
+      {
+        "option_text": "could",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Could have' describes a past possibility that did not happen.",
+        "status": "active"
+      },
+      {
+        "option_text": "must",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "Implies certainty that the person went, which contradicts 'but I was exhausted'.",
+        "status": "active"
+      },
+      {
+        "option_text": "should",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Also correct; implies it was a good idea or an obligation that wasn't met.",
+        "status": "active"
+      },
+      {
+        "option_text": "would",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Correct for a conditional past (I would have gone if I hadn't been tired).",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "p4q5r6s7-0094-4000-8000-000000000094",
+    "prompt": "The ______ of the crime was cordoned off by the police.",
+    "categories": ["Vocabulary", "Confusing Words", "B1-Intermediate"],
+    "popularity_score": 0.98,
+    "status": "active",
+    "created_at": "2026-01-19T12:15:00Z",
+    "updated_at": "2026-01-19T12:15:00Z",
+    "answers": [
+      {
+        "option_text": "scene",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Correct word for the place where an incident occurs.",
+        "status": "active"
+      },
+      {
+        "option_text": "seen",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "The past participle of the verb 'see'.",
+        "status": "active"
+      },
+      {
+        "option_text": "sight",
+        "answer_type": "ok",
+        "answer_point": 3,
+        "explanation": "Refers to the ability to see or something worth seeing, not a specific location.",
+        "status": "active"
+      },
+      {
+        "option_text": "site",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Refers to a location for construction or an event; 'scene' is the idiomatic choice for crime.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "q5r6s7t8-0095-4000-8000-000000000095",
+    "prompt": "Not only ______ the game, but they also broke the national record.",
+    "categories": ["Grammar", "Inversion", "C1-Advanced"],
+    "popularity_score": 0.84,
+    "status": "active",
+    "created_at": "2026-01-19T12:15:00Z",
+    "updated_at": "2026-01-19T12:15:00Z",
+    "answers": [
+      {
+        "option_text": "did they win",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "When a sentence begins with 'Not only', the subject and auxiliary verb must be inverted.",
+        "status": "active"
+      },
+      {
+        "option_text": "they won",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "Standard word order is incorrect following 'Not only'.",
+        "status": "active"
+      },
+      {
+        "option_text": "they did win",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Lacks the required inversion.",
+        "status": "active"
+      },
+      {
+        "option_text": "have they won",
+        "answer_type": "acceptable",
+        "answer_point": 8,
+        "explanation": "Grammatically correct inversion, but the past simple 'did they win' usually pairs better with 'broke'.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "r6s7t8u9-0096-4000-8000-000000000096",
+    "prompt": "She has a very ______ personality; she never gives up until she succeeds.",
+    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
+    "popularity_score": 0.81,
+    "status": "active",
+    "created_at": "2026-01-19T12:15:00Z",
+    "updated_at": "2026-01-19T12:15:00Z",
+    "answers": [
+      {
+        "option_text": "tenacious",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means persistent and determined.",
+        "status": "active"
+      },
+      {
+        "option_text": "tentative",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Means hesitant or not certain.",
+        "status": "active"
+      },
+      {
+        "option_text": "tedious",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Means boring and slow.",
+        "status": "active"
+      },
+      {
+        "option_text": "tender",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "Means kind or gentle.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "s7t8u9v0-0097-4000-8000-000000000097",
+    "prompt": "The government decided to ______ new taxes on luxury goods.",
+    "categories": ["Vocabulary", "Academic English", "B2-Upper Intermediate"],
+    "popularity_score": 0.89,
+    "status": "active",
+    "created_at": "2026-01-19T12:15:00Z",
+    "updated_at": "2026-01-19T12:15:00Z",
+    "answers": [
+      {
+        "option_text": "impose",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The standard formal verb for officially introducing a new tax or rule.",
+        "status": "active"
+      },
+      {
+        "option_text": "enforce",
+        "answer_type": "ok",
+        "answer_point": 6,
+        "explanation": "Refers to making sure people obey a rule that already exists.",
+        "status": "active"
+      },
+      {
+        "option_text": "inflict",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "Usually used for causing pain or suffering.",
+        "status": "active"
+      },
+      {
+        "option_text": "impact",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Used as a verb, it means to affect something; you don't 'impact taxes' in this sense.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "t8u9v0w1-0098-4000-8000-000000000098",
+    "prompt": "Choose the word that describes a person who is 'easily tricked':",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "popularity_score": 0.77,
+    "status": "active",
+    "created_at": "2026-01-19T12:15:00Z",
+    "updated_at": "2026-01-19T12:15:00Z",
+    "answers": [
+      {
+        "option_text": "gullible",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The specific adjective for someone who believes anything they are told.",
+        "status": "active"
+      },
+      {
+        "option_text": "culpable",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Means deserving blame.",
+        "status": "active"
+      },
+      {
+        "option_text": "malleable",
+        "answer_type": "ok",
+        "answer_point": 5,
+        "explanation": "Means easily influenced or shaped, but not necessarily 'tricked'.",
+        "status": "active"
+      },
+      {
+        "option_text": "credible",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Means able to be believed.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "u9v0w1x2-0099-4000-8000-000000000099",
+    "prompt": "If he ______ more attention, he wouldn't have made that mistake.",
+    "categories": ["Grammar", "Conditionals", "B2-Upper Intermediate"],
+    "popularity_score": 0.94,
+    "status": "active",
+    "created_at": "2026-01-19T12:15:00Z",
+    "updated_at": "2026-01-19T12:15:00Z",
+    "answers": [
+      {
+        "option_text": "had paid",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Third Conditional (past hypothetical).",
+        "status": "active"
+      },
+      {
+        "option_text": "would have paid",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Incorrect structure for the 'if' clause.",
+        "status": "active"
+      },
+      {
+        "option_text": "paid",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "Incorrect tense for a past result.",
+        "status": "active"
+      },
+      {
+        "option_text": "was paying",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Possible in a mixed conditional, but 'had paid' is the standard answer.",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "id": "v0w1x2y3-0100-4000-8000-000000000100",
+    "prompt": "Which of these words is a synonym for 'ephemeral'?",
+    "categories": ["Vocabulary", "Synonyms", "C2-Proficiency"],
+    "popularity_score": 0.75,
+    "status": "active",
+    "created_at": "2026-01-19T12:15:00Z",
+    "updated_at": "2026-01-19T12:15:00Z",
+    "answers": [
+      {
+        "option_text": "fleeting",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Both words mean lasting for a very short time.",
+        "status": "active"
+      },
+      {
+        "option_text": "eternal",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "An antonym, meaning lasting forever.",
+        "status": "active"
+      },
+      {
+        "option_text": "substantial",
+        "answer_type": "wrong",
+        "answer_point": 1,
+        "explanation": "Means of considerable importance or size.",
+        "status": "active"
+      },
+      {
+        "option_text": "ubiquitous",
+        "answer_type": "wrong",
+        "answer_point": 2,
+        "explanation": "Means present or found everywhere.",
+        "status": "active"
+      }
+    ]
+  }
+]

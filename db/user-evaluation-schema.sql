@@ -4,14 +4,7 @@ CREATE TABLE quiz_questions (
   popularity_score NUMERIC(3,2)
     CHECK (popularity_score BETWEEN 0.2 AND 1.0)
     NOT NULL,
-  dimension TEXT NOT NULL
-    CHECK (dimension IN (
-      'word_choice',
-      'collocation',
-      'register',
-      'sentence_flow',
-      'edge_case'
-    )),
+    categories TEXT[], -- new
   status TEXT DEFAULT 'active'
     CHECK (status IN ('active', 'review', 'disabled')),
   created_at TIMESTAMP DEFAULT NOW(),
@@ -59,7 +52,6 @@ CREATE TABLE quiz_attempt_questions (
   question_id UUID NOT NULL,
   prompt TEXT NOT NULL,
   popularity_score NUMERIC(3,2),
-  dimension TEXT,
   created_at TIMESTAMP DEFAULT NOW(),
   updated_at TIMESTAMP DEFAULT NOW()
 );
