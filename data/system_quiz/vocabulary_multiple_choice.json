@@ -2,8 +2,11 @@
   {
     "id": "a1b2c3d4-0001-4000-8000-000000000001",
     "prompt": "The legal team worked tirelessly to ______ the contract's hidden clauses.",
-    "categories": ["Vocabulary", "Verbs", "C1-Advanced"],
-    "popularity_score": 0.85,
+    "categories": [
+      "Vocabulary",
+      "Verbs",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:00:00Z",
     "updated_at": "2026-01-19T10:00:00Z",
@@ -36,13 +39,17 @@
         "explanation": "A good synonym for examining, though 'scrutinize' carries a stronger connotation of detail.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "b2c3d4e5-0002-4000-8000-000000000002",
     "prompt": "Due to the economic downturn, many companies have had to ______ their expansion plans.",
-    "categories": ["Vocabulary", "Phrasal Verbs", "B2-Upper Intermediate"],
-    "popularity_score": 0.89,
+    "categories": [
+      "Vocabulary",
+      "Phrasal Verbs",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:00:00Z",
     "updated_at": "2026-01-19T10:00:00Z",
@@ -75,13 +82,17 @@
         "explanation": "Too informal and doesn't accurately describe a strategic business decision.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "c3d4e5f6-0003-4000-8000-000000000003",
     "prompt": "Choose the most appropriate word: 'The view from the top of the mountain was absolutely ______.'",
-    "categories": ["Vocabulary", "Adjectives", "B2-Upper Intermediate"],
-    "popularity_score": 0.94,
+    "categories": [
+      "Vocabulary",
+      "Adjectives",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:00:00Z",
     "updated_at": "2026-01-19T10:00:00Z",
@@ -114,13 +125,17 @@
         "explanation": "Too simple and lacks the necessary descriptive power for this context.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "d4e5f6g7-0004-4000-8000-000000000004",
     "prompt": "She has a ______ memory and can recall dates from decades ago with perfect accuracy.",
-    "categories": ["Vocabulary", "Collocations", "C1-Advanced"],
-    "popularity_score": 0.82,
+    "categories": [
+      "Vocabulary",
+      "Collocations",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:00:00Z",
     "updated_at": "2026-01-19T10:00:00Z",
@@ -153,13 +168,17 @@
         "explanation": "This is not a recognized collocation for 'memory'.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "e5f6g7h8-0005-4000-8000-000000000005",
     "prompt": "I don't want to ______ the point, but we really must leave now if we want to catch the train.",
-    "categories": ["Vocabulary", "Idiomatic Verbs", "C1-Advanced"],
-    "popularity_score": 0.66,
+    "categories": [
+      "Vocabulary",
+      "Idiomatic Verbs",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:00:00Z",
     "updated_at": "2026-01-19T10:00:00Z",
@@ -192,13 +211,17 @@
         "explanation": "Similar to emphasize; correct but lacks the idiomatic 'flavor'.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "f6g7h8i9-0006-4000-8000-000000000006",
     "prompt": "The weather in this region is notoriously ______, so always carry an umbrella.",
-    "categories": ["Vocabulary", "Adjectives", "B2-Upper Intermediate"],
-    "popularity_score": 0.91,
+    "categories": [
+      "Vocabulary",
+      "Adjectives",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:00:00Z",
     "updated_at": "2026-01-19T10:00:00Z",
@@ -231,13 +254,17 @@
         "explanation": "The opposite of what is implied by the need for an umbrella.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "g7h8i9j0-0007-4000-8000-000000000007",
     "prompt": "If you want to succeed in this industry, you need to ______ a lot of effort.",
-    "categories": ["Vocabulary", "Collocations", "B1-Intermediate"],
-    "popularity_score": 0.98,
+    "categories": [
+      "Vocabulary",
+      "Collocations",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:00:00Z",
     "updated_at": "2026-01-19T10:00:00Z",
@@ -270,13 +297,17 @@
         "explanation": "Sometimes used casually, but 'make' or 'put in' are much stronger collocations.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "h8i9j0k1-0008-4000-8000-000000000008",
     "prompt": "The new software update is intended to ______ the user experience.",
-    "categories": ["Vocabulary", "Business English", "B2-Upper Intermediate"],
-    "popularity_score": 0.93,
+    "categories": [
+      "Vocabulary",
+      "Business English",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:00:00Z",
     "updated_at": "2026-01-19T10:00:00Z",
@@ -309,13 +340,17 @@
         "explanation": "Can be used as a verb, but sounds less formal than the other options.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "i9j0k1l2-0009-4000-8000-000000000009",
     "prompt": "Despite the evidence, he remained ______ in his belief that he was right.",
-    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
-    "popularity_score": 0.84,
+    "categories": [
+      "Vocabulary",
+      "Adjectives",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:00:00Z",
     "updated_at": "2026-01-19T10:00:00Z",
@@ -348,13 +383,17 @@
         "explanation": "Usually refers to physical objects, not usually used for a person's mindset in this way.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "j0k1l2m3-0010-4000-8000-000000000010",
     "prompt": "When the boss asked who broke the printer, Sarah decided to ______ clean and admit it was her.",
-    "categories": ["Vocabulary", "Idioms", "B1-Intermediate"],
-    "popularity_score": 0.9,
+    "categories": [
+      "Vocabulary",
+      "Idioms",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:00:00Z",
     "updated_at": "2026-01-19T10:00:00Z",
@@ -387,13 +426,17 @@
         "explanation": "While 'be clean' exists (meaning drug-free), it is not the idiom for confessing.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "k1l2m3n4-0011-4000-8000-000000000011",
     "prompt": "The findings of the study ______ the theory that sleep deprivation affects cognitive performance.",
-    "categories": ["Vocabulary", "Academic English", "C1-Advanced"],
-    "popularity_score": 0.88,
+    "categories": [
+      "Vocabulary",
+      "Academic English",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:15:00Z",
     "updated_at": "2026-01-19T10:15:00Z",
@@ -426,13 +469,17 @@
         "explanation": "In science, findings rarely 'prove' a theory; they usually 'support' or 'corroborate' it.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "l2m3n4o5-0012-4000-8000-000000000012",
     "prompt": "We need to ______ the pros and cons before making a final decision.",
-    "categories": ["Vocabulary", "Collocations", "B2-Upper Intermediate"],
-    "popularity_score": 0.96,
+    "categories": [
+      "Vocabulary",
+      "Collocations",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:15:00Z",
     "updated_at": "2026-01-19T10:15:00Z",
@@ -465,13 +512,17 @@
         "explanation": "While it implies calculation, 'measure' is not typically used with 'pros and cons'.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "m3n4o5p6-0013-4000-8000-000000000013",
     "prompt": "She has a very ______ sense of humor; not everyone understands her dry jokes.",
-    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
-    "popularity_score": 0.69,
+    "categories": [
+      "Vocabulary",
+      "Adjectives",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:15:00Z",
     "updated_at": "2026-01-19T10:15:00Z",
@@ -504,13 +555,17 @@
         "explanation": "A very generic adjective that doesn't capture the specific nature of the humor described.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "n4o5p6q7-0014-4000-8000-000000000014",
     "prompt": "The government has promised to ______ the problem of rising energy costs.",
-    "categories": ["Vocabulary", "Verbs", "B2-Upper Intermediate"],
-    "popularity_score": 0.92,
+    "categories": [
+      "Vocabulary",
+      "Verbs",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:15:00Z",
     "updated_at": "2026-01-19T10:15:00Z",
@@ -543,13 +598,17 @@
         "explanation": "Vague and non-committal; implies observation rather than action.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "o5p6q7r8-0015-4000-8000-000000000015",
     "prompt": "After the scandal, the politician's reputation was ______ beyond repair.",
-    "categories": ["Vocabulary", "Advanced Verbs", "C1-Advanced"],
-    "popularity_score": 0.71,
+    "categories": [
+      "Vocabulary",
+      "Advanced Verbs",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:15:00Z",
     "updated_at": "2026-01-19T10:15:00Z",
@@ -582,13 +641,17 @@
         "explanation": "An excellent high-level synonym for spoiled or damaged.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "p6q7r8s9-0016-4000-8000-000000000016",
     "prompt": "I'm sorry, I didn't quite ______ what you said. Could you repeat that?",
-    "categories": ["Vocabulary", "Listening/Verbs", "B1-Intermediate"],
-    "popularity_score": 0.98,
+    "categories": [
+      "Vocabulary",
+      "Listening/Verbs",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:15:00Z",
     "updated_at": "2026-01-19T10:15:00Z",
@@ -621,13 +684,17 @@
         "explanation": "You 'listen to' something; you do not 'listen what you said'.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "q7r8s9t0-0017-4000-8000-000000000017",
     "prompt": "The company decided to ______ the two departments to save on administrative costs.",
-    "categories": ["Vocabulary", "Business English", "B2-Upper Intermediate"],
-    "popularity_score": 0.79,
+    "categories": [
+      "Vocabulary",
+      "Business English",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:15:00Z",
     "updated_at": "2026-01-19T10:15:00Z",
@@ -660,13 +727,17 @@
         "explanation": "Slightly more poetic or political than 'merge'.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "r8s9t0u1-0018-4000-8000-000000000018",
     "prompt": "His argument was so ______ that I had no choice but to agree with him.",
-    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
-    "popularity_score": 0.73,
+    "categories": [
+      "Vocabulary",
+      "Adjectives",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:15:00Z",
     "updated_at": "2026-01-19T10:15:00Z",
@@ -699,13 +770,17 @@
         "explanation": "Valid, but logically sound arguments aren't always 'compelling'.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "s9t0u1v2-0019-4000-8000-000000000019",
     "prompt": "She has a ______ for languages and can speak five of them fluently.",
-    "categories": ["Vocabulary", "Nouns", "B2-Upper Intermediate"],
-    "popularity_score": 0.94,
+    "categories": [
+      "Vocabulary",
+      "Nouns",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:15:00Z",
     "updated_at": "2026-01-19T10:15:00Z",
@@ -738,13 +813,17 @@
         "explanation": "Skills are usually learned; the prompt implies a natural ease.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "t0u1v2w3-0020-4000-8000-000000000020",
     "prompt": "The results of the test are ______ and do not clearly point to one conclusion.",
-    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
-    "popularity_score": 0.76,
+    "categories": [
+      "Vocabulary",
+      "Adjectives",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:15:00Z",
     "updated_at": "2026-01-19T10:15:00Z",
@@ -777,13 +856,17 @@
         "explanation": "The prompt says they aren't clear, not that they are factually incorrect.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "u1v2w3x4-0021-4000-8000-000000000021",
     "prompt": "Choose the correct formal inversion: 'Rarely ______ such a beautiful sunset.'",
-    "categories": ["Grammar", "Syntax", "C1-Advanced"],
-    "popularity_score": 0.72,
+    "categories": [
+      "Grammar",
+      "Syntax",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:30:00Z",
     "updated_at": "2026-01-19T10:30:00Z",
@@ -816,13 +899,17 @@
         "explanation": "Common in very casual speech, but grammatically incorrect in this structural context.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "v2w3x4y5-0022-4000-8000-000000000022",
     "prompt": "Select the word that best fits the context: 'The medicine had a profound ______ on her recovery.'",
-    "categories": ["Vocabulary", "Confusing Words", "B2-Upper Intermediate"],
-    "popularity_score": 0.95,
+    "categories": [
+      "Vocabulary",
+      "Confusing Words",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:30:00Z",
     "updated_at": "2026-01-19T10:30:00Z",
@@ -848,13 +935,17 @@
         "explanation": "'Impact' is an excellent and common synonym for 'effect' in this context.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "w3x4y5z6-0023-4000-8000-000000000023",
     "prompt": "If you ______ me about the meeting, I would have attended.",
-    "categories": ["Grammar", "Conditionals", "B2-Upper Intermediate"],
-    "popularity_score": 0.9,
+    "categories": [
+      "Grammar",
+      "Conditionals",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:30:00Z",
     "updated_at": "2026-01-19T10:30:00Z",
@@ -880,13 +971,17 @@
         "explanation": "Common learner error; 'would' should not appear in the 'if' part of the sentence.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "x4y5z6a7-0024-4000-8000-000000000024",
     "prompt": "Which sentence is punctuated correctly?",
-    "categories": ["Grammar", "Punctuation", "B2-Upper Intermediate"],
-    "popularity_score": 0.75,
+    "categories": [
+      "Grammar",
+      "Punctuation",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:30:00Z",
     "updated_at": "2026-01-19T10:30:00Z",
@@ -912,13 +1007,17 @@
         "explanation": "Lacks necessary punctuation to separate the independent clauses.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "y5z6a7b8-0025-4000-8000-000000000025",
     "prompt": "He is ______ to be one of the best players in the history of the game.",
-    "categories": ["Vocabulary", "Passive Voice", "B2-Upper Intermediate"],
-    "popularity_score": 0.78,
+    "categories": [
+      "Vocabulary",
+      "Passive Voice",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:30:00Z",
     "updated_at": "2026-01-19T10:30:00Z",
@@ -944,13 +1043,17 @@
         "explanation": "Correct and common passive reporting verb.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "z6a7b8c9-0026-4000-8000-000000000026",
     "prompt": "Which prefix is used to mean 'against' or 'opposite' in words like ______social or ______climax?",
-    "categories": ["Vocabulary", "Morphology", "B1-Intermediate"],
-    "popularity_score": 0.92,
+    "categories": [
+      "Vocabulary",
+      "Morphology",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:30:00Z",
     "updated_at": "2026-01-19T10:30:00Z",
@@ -976,13 +1079,17 @@
         "explanation": "'Dis-' can mean opposite, but 'dissocial' is rare compared to 'antisocial'.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "a7b8c9d0-0027-4000-8000-000000000027",
     "prompt": "I ______ to the gym every day, but I’ve been too busy lately.",
-    "categories": ["Grammar", "Used to", "B1-Intermediate"],
-    "popularity_score": 0.97,
+    "categories": [
+      "Grammar",
+      "Used to",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:30:00Z",
     "updated_at": "2026-01-19T10:30:00Z",
@@ -1008,13 +1115,17 @@
         "explanation": "Spelling error; 'used' must have the 'd' in positive statements.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "b8c9d0e1-0028-4000-8000-000000000028",
     "prompt": "The project was completed ______ schedule, much to the client's delight.",
-    "categories": ["Vocabulary", "Prepositions", "B2-Upper Intermediate"],
-    "popularity_score": 0.79,
+    "categories": [
+      "Vocabulary",
+      "Prepositions",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:30:00Z",
     "updated_at": "2026-01-19T10:30:00Z",
@@ -1040,13 +1151,17 @@
         "explanation": "Means it was finished exactly at the right time, though 'delight' usually implies it was early.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "c9d0e1f2-0029-4000-8000-000000000029",
     "prompt": "She is very ______; she always thinks about others' feelings before her own.",
-    "categories": ["Vocabulary", "Personality", "B2-Upper Intermediate"],
-    "popularity_score": 0.91,
+    "categories": [
+      "Vocabulary",
+      "Personality",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:30:00Z",
     "updated_at": "2026-01-19T10:30:00Z",
@@ -1072,13 +1187,17 @@
         "explanation": "An exact synonym for considerate in this context.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "d0e1f2g3-0030-4000-8000-000000000030",
     "prompt": "I don't think I can ______ another minute of this loud music!",
-    "categories": ["Vocabulary", "Phrasal Verbs", "B1-Intermediate"],
-    "popularity_score": 0.93,
+    "categories": [
+      "Vocabulary",
+      "Phrasal Verbs",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:30:00Z",
     "updated_at": "2026-01-19T10:30:00Z",
@@ -1111,13 +1230,17 @@
         "explanation": "'Stay' cannot be used as a synonym for tolerate in this structure.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "e1f2g3h4-0031-4000-8000-000000000031",
     "prompt": "We reached the summit ______ the freezing temperatures and heavy snow.",
-    "categories": ["Grammar", "Conjunctions", "B2-Upper Intermediate"],
-    "popularity_score": 0.94,
+    "categories": [
+      "Grammar",
+      "Conjunctions",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:45:00Z",
     "updated_at": "2026-01-19T10:45:00Z",
@@ -1150,13 +1273,17 @@
         "explanation": "Similar to 'although', this requires a full clause, not just a noun phrase.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "f2g3h4i5-0032-4000-8000-000000000032",
     "prompt": "The manager is very satisfied ______ the progress we have made this quarter.",
-    "categories": ["Vocabulary", "Prepositions", "B1-Intermediate"],
-    "popularity_score": 0.97,
+    "categories": [
+      "Vocabulary",
+      "Prepositions",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:45:00Z",
     "updated_at": "2026-01-19T10:45:00Z",
@@ -1182,13 +1309,17 @@
         "explanation": "This preposition does not follow the adjective 'satisfied'.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "g3h4i5j6-0033-4000-8000-000000000033",
     "prompt": "I will finish the report by noon, ______ there is a sudden emergency.",
-    "categories": ["Grammar", "Conditionals", "B2-Upper Intermediate"],
-    "popularity_score": 0.91,
+    "categories": [
+      "Grammar",
+      "Conditionals",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:45:00Z",
     "updated_at": "2026-01-19T10:45:00Z",
@@ -1214,13 +1345,17 @@
         "explanation": "This means 'only if', which again makes the sentence illogical in this context.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "h4i5j6k7-0034-4000-8000-000000000034",
     "prompt": "The researchers decided to ______ the experiment under more controlled conditions.",
-    "categories": ["Vocabulary", "Academic English", "C1-Advanced"],
-    "popularity_score": 0.76,
+    "categories": [
+      "Vocabulary",
+      "Academic English",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:45:00Z",
     "updated_at": "2026-01-19T10:45:00Z",
@@ -1253,13 +1388,17 @@
         "explanation": "We 'do' or 'conduct' experiments; we never 'make' them.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "i5j6k7l8-0035-4000-8000-000000000035",
     "prompt": "I’m not very good ______ remembering names, but I never forget a face.",
-    "categories": ["Grammar", "Prepositions", "B1-Intermediate"],
-    "popularity_score": 0.99,
+    "categories": [
+      "Grammar",
+      "Prepositions",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:45:00Z",
     "updated_at": "2026-01-19T10:45:00Z",
@@ -1285,13 +1424,17 @@
         "explanation": "'Good with names' is acceptable, though 'at remembering' is more grammatically standard.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "j6k7l8m9-0036-4000-8000-000000000036",
     "prompt": "The price of the hotel includes breakfast; ______, guests have free access to the spa.",
-    "categories": ["Grammar", "Transition Words", "B2-Upper Intermediate"],
-    "popularity_score": 0.78,
+    "categories": [
+      "Grammar",
+      "Transition Words",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:45:00Z",
     "updated_at": "2026-01-19T10:45:00Z",
@@ -1324,13 +1467,17 @@
         "explanation": "This indicates contrast, but the sentence is adding a benefit.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "k7l8m9n0-0037-4000-8000-000000000037",
     "prompt": "It’s high time you ______ looking for a job; you've been unemployed for months.",
-    "categories": ["Grammar", "Advanced Structures", "C1-Advanced"],
-    "popularity_score": 0.63,
+    "categories": [
+      "Grammar",
+      "Advanced Structures",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:45:00Z",
     "updated_at": "2026-01-19T10:45:00Z",
@@ -1356,13 +1503,17 @@
         "explanation": "Understandable, but the idiomatic structure 'It's high time' specifically triggers the past tense.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "l8m9n0o1-0038-4000-8000-000000000038",
     "prompt": "She succeeded ______ sheer hard work and determination.",
-    "categories": ["Vocabulary", "Prepositions", "B2-Upper Intermediate"],
-    "popularity_score": 0.92,
+    "categories": [
+      "Vocabulary",
+      "Prepositions",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:45:00Z",
     "updated_at": "2026-01-19T10:45:00Z",
@@ -1388,13 +1539,17 @@
         "explanation": "Clear, but 'through' is the more sophisticated choice for this context.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "m9n0o1p2-0039-4000-8000-000000000039",
     "prompt": "Hardly ______ the building when the fire alarm went off.",
-    "categories": ["Grammar", "Syntax", "C1-Advanced"],
-    "popularity_score": 0.8,
+    "categories": [
+      "Grammar",
+      "Syntax",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:45:00Z",
     "updated_at": "2026-01-19T10:45:00Z",
@@ -1420,13 +1575,17 @@
         "explanation": "Grammatically possible, but the past perfect ('had we entered') is the standard for this idiom.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "n0o1p2q3-0040-4000-8000-000000000040",
     "prompt": "I’m looking forward ______ you at the conference next week.",
-    "categories": ["Grammar", "Gerunds", "B1-Intermediate"],
-    "popularity_score": 0.98,
+    "categories": [
+      "Grammar",
+      "Gerunds",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T10:45:00Z",
     "updated_at": "2026-01-19T10:45:00Z",
@@ -1452,13 +1611,17 @@
         "explanation": "The preposition 'to' is required.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "o1p2q3r4-0041-4000-8000-000000000041",
     "prompt": "Could you ______ me your pen for a moment? I need to sign this form.",
-    "categories": ["Vocabulary", "Confusing Words", "B1-Intermediate"],
-    "popularity_score": 0.98,
+    "categories": [
+      "Vocabulary",
+      "Confusing Words",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:00:00Z",
     "updated_at": "2026-01-19T11:00:00Z",
@@ -1484,13 +1647,17 @@
         "explanation": "Commonly used as a verb in American English, though 'lend' is the more traditional choice.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "p2q3r4s5-0042-4000-8000-000000000042",
     "prompt": "I ______ thought the movie was starting at 8:00, but it actually starts at 8:30.",
-    "categories": ["Vocabulary", "Adverbs", "B2-Upper Intermediate"],
-    "popularity_score": 0.91,
+    "categories": [
+      "Vocabulary",
+      "Adverbs",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:00:00Z",
     "updated_at": "2026-01-19T11:00:00Z",
@@ -1516,13 +1683,17 @@
         "explanation": "Acceptable in casual speech, but doesn't convey the sense of 'correction' as well as 'actually'.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "q3r4s5t6-0043-4000-8000-000000000043",
     "prompt": "The company's ______ objective is to increase its market share in Asia.",
-    "categories": ["Vocabulary", "Academic English", "B2-Upper Intermediate"],
-    "popularity_score": 0.88,
+    "categories": [
+      "Vocabulary",
+      "Academic English",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:00:00Z",
     "updated_at": "2026-01-19T11:00:00Z",
@@ -1548,13 +1719,17 @@
         "explanation": "An excellent synonym for principal/main in this context.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "r4s5t6u7-0044-4000-8000-000000000044",
     "prompt": "It's important to ______ between 'fact' and 'opinion' when reading the news.",
-    "categories": ["Vocabulary", "Verbs", "C1-Advanced"],
-    "popularity_score": 0.84,
+    "categories": [
+      "Vocabulary",
+      "Verbs",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:00:00Z",
     "updated_at": "2026-01-19T11:00:00Z",
@@ -1580,13 +1755,17 @@
         "explanation": "Commonly used in 'tell the difference', but 'tell between' is less formal.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "s5t6u7v8-0045-4000-8000-000000000045",
     "prompt": "She was ______ for her contribution to the project at the annual gala.",
-    "categories": ["Vocabulary", "Passive Voice", "B2-Upper Intermediate"],
-    "popularity_score": 0.9,
+    "categories": [
+      "Vocabulary",
+      "Passive Voice",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:00:00Z",
     "updated_at": "2026-01-19T11:00:00Z",
@@ -1612,13 +1791,17 @@
         "explanation": "Correct, though 'commended' fits the formal 'annual gala' context better.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "t6u7v8w9-0046-4000-8000-000000000046",
     "prompt": "I will ______ you to the station if you'd like.",
-    "categories": ["Vocabulary", "Verbs", "B1-Intermediate"],
-    "popularity_score": 0.96,
+    "categories": [
+      "Vocabulary",
+      "Verbs",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:00:00Z",
     "updated_at": "2026-01-19T11:00:00Z",
@@ -1651,13 +1834,17 @@
         "explanation": "Generally, 'bring' implies movement toward the speaker's location; 'take' is better here.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "u7v8w9x0-0047-4000-8000-000000000047",
     "prompt": "The weather was so bad that they had to ______ the football match.",
-    "categories": ["Vocabulary", "Phrasal Verbs", "B1-Intermediate"],
-    "popularity_score": 0.93,
+    "categories": [
+      "Vocabulary",
+      "Phrasal Verbs",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:00:00Z",
     "updated_at": "2026-01-19T11:00:00Z",
@@ -1683,13 +1870,17 @@
         "explanation": "The formal and direct synonym for 'call off'.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "v8w9x0y1-0048-4000-8000-000000000048",
     "prompt": "I can't ______ the difference between these two brands of coffee.",
-    "categories": ["Vocabulary", "Collocations", "B1-Intermediate"],
-    "popularity_score": 0.92,
+    "categories": [
+      "Vocabulary",
+      "Collocations",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:00:00Z",
     "updated_at": "2026-01-19T11:00:00Z",
@@ -1715,13 +1906,17 @@
         "explanation": "Commonly used for visual differences, and often figuratively for taste.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "w9x0y1z2-0049-4000-8000-000000000049",
     "prompt": "He is very ______; he never spends money if he can avoid it.",
-    "categories": ["Vocabulary", "Adjectives", "B2-Upper Intermediate"],
-    "popularity_score": 0.65,
+    "categories": [
+      "Vocabulary",
+      "Adjectives",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:00:00Z",
     "updated_at": "2026-01-19T11:00:00Z",
@@ -1747,13 +1942,17 @@
         "explanation": "Usually used for systems or things (an economical car) rather than a person's character.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "x0y1z2a3-0050-4000-8000-000000000050",
     "prompt": "I haven't seen him ______ last summer.",
-    "categories": ["Grammar", "Prepositions", "B1-Intermediate"],
-    "popularity_score": 0.99,
+    "categories": [
+      "Grammar",
+      "Prepositions",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:00:00Z",
     "updated_at": "2026-01-19T11:00:00Z",
@@ -1779,13 +1978,17 @@
         "explanation": "Grammatically possible, but it implies 'at no point in the middle of summer' rather than 'not from that point until now'.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "y1z2a3b4-0051-4000-8000-000000000051",
     "prompt": "I was going to go skydiving, but I ______ at the last minute because I was too scared.",
-    "categories": ["Vocabulary", "Phrasal Verbs", "B2-Upper Intermediate"],
-    "popularity_score": 0.68,
+    "categories": [
+      "Vocabulary",
+      "Phrasal Verbs",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:15:00Z",
     "updated_at": "2026-01-19T11:15:00Z",
@@ -1818,13 +2021,17 @@
         "explanation": "Too literal; it implies physical running rather than a change of mind.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "z2a3b4c5-0052-4000-8000-000000000052",
     "prompt": "He’s been working so hard lately that he’s starting to ______.",
-    "categories": ["Vocabulary", "Idioms", "C1-Advanced"],
-    "popularity_score": 0.62,
+    "categories": [
+      "Vocabulary",
+      "Idioms",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:15:00Z",
     "updated_at": "2026-01-19T11:15:00Z",
@@ -1857,13 +2064,17 @@
         "explanation": "This is a financial term meaning to make neither a profit nor a loss.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "a3b4c5d6-0053-4000-8000-000000000053",
     "prompt": "We shouldn't jump to conclusions; let's ______ until we have all the facts.",
-    "categories": ["Vocabulary", "Idioms", "B2-Upper Intermediate"],
-    "popularity_score": 0.91,
+    "categories": [
+      "Vocabulary",
+      "Idioms",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:15:00Z",
     "updated_at": "2026-01-19T11:15:00Z",
@@ -1896,13 +2107,17 @@
         "explanation": "This means to wait until the next day to decide, which fits but is more specific than needed.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "b4c5d6e7-0054-4000-8000-000000000054",
     "prompt": "I can't believe he said that! He really ______ when he mentioned her ex-husband.",
-    "categories": ["Vocabulary", "Idioms", "C1-Advanced"],
-    "popularity_score": 0.69,
+    "categories": [
+      "Vocabulary",
+      "Idioms",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:15:00Z",
     "updated_at": "2026-01-19T11:15:00Z",
@@ -1935,13 +2150,17 @@
         "explanation": "This means to start a conversation in a social setting to make people feel comfortable.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "c5d6e7f8-0055-4000-8000-000000000055",
     "prompt": "I’m feeling a bit ______ today, so I think I’ll stay home and rest.",
-    "categories": ["Vocabulary", "Idioms", "B1-Intermediate"],
-    "popularity_score": 0.95,
+    "categories": [
+      "Vocabulary",
+      "Idioms",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:15:00Z",
     "updated_at": "2026-01-19T11:15:00Z",
@@ -1974,13 +2193,17 @@
         "explanation": "This means to be in a risky or dangerous situation.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "d6e7f8g9-0056-4000-8000-000000000056",
     "prompt": "If you want to get the job, you need to ______ during the interview.",
-    "categories": ["Vocabulary", "Collocations", "B2-Upper Intermediate"],
-    "popularity_score": 0.87,
+    "categories": [
+      "Vocabulary",
+      "Collocations",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:15:00Z",
     "updated_at": "2026-01-19T11:15:00Z",
@@ -2013,13 +2236,17 @@
         "explanation": "Correct in meaning, but 'make an impression' is the most natural choice.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "e7f8g9h0-0057-4000-8000-000000000057",
     "prompt": "That new car costs ______, but it's worth every penny.",
-    "categories": ["Vocabulary", "Idioms", "B2-Upper Intermediate"],
-    "popularity_score": 0.9,
+    "categories": [
+      "Vocabulary",
+      "Idioms",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:15:00Z",
     "updated_at": "2026-01-19T11:15:00Z",
@@ -2052,13 +2279,17 @@
         "explanation": "A slightly old-fashioned but correct way to say something is expensive.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "f8g9h0i1-0058-4000-8000-000000000058",
     "prompt": "I don't really like opera; it’s just not my ______.",
-    "categories": ["Vocabulary", "Idioms", "B1-Intermediate"],
-    "popularity_score": 0.93,
+    "categories": [
+      "Vocabulary",
+      "Idioms",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:15:00Z",
     "updated_at": "2026-01-19T11:15:00Z",
@@ -2091,13 +2322,17 @@
         "explanation": "Very common in casual speech ('It's not my thing'), though 'cup of tea' is the specific idiom.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "g9h0i1j2-0059-4000-8000-000000000059",
     "prompt": "Stop ______ and tell me what you really think!",
-    "categories": ["Vocabulary", "Idioms", "C1-Advanced"],
-    "popularity_score": 0.61,
+    "categories": [
+      "Vocabulary",
+      "Idioms",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:15:00Z",
     "updated_at": "2026-01-19T11:15:00Z",
@@ -2130,13 +2365,17 @@
         "explanation": "To 'not mince words' means to speak directly; 'mincing words' means being overly polite/vague.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "h0i1j2k3-0060-4000-8000-000000000060",
     "prompt": "You should take what he says with a ______. He tends to exaggerate.",
-    "categories": ["Vocabulary", "Idioms", "B2-Upper Intermediate"],
-    "popularity_score": 0.89,
+    "categories": [
+      "Vocabulary",
+      "Idioms",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:15:00Z",
     "updated_at": "2026-01-19T11:15:00Z",
@@ -2169,13 +2408,17 @@
         "explanation": "The British version of the idiom; equally correct as 'grain of salt'.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "i1j2k3l4-0061-4000-8000-000000000061",
     "prompt": "I have ______ friends in the city, so I often feel a bit lonely.",
-    "categories": ["Grammar", "Quantifiers", "B1-Intermediate"],
-    "popularity_score": 0.96,
+    "categories": [
+      "Grammar",
+      "Quantifiers",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:30:00Z",
     "updated_at": "2026-01-19T11:30:00Z",
@@ -2208,13 +2451,17 @@
         "explanation": "If the speaker had many friends, they would likely not feel lonely.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "j2k3l4m5-0062-4000-8000-000000000062",
     "prompt": "The two sisters are very different; ______ of them likes the same kind of music.",
-    "categories": ["Grammar", "Determiners", "B2-Upper Intermediate"],
-    "popularity_score": 0.89,
+    "categories": [
+      "Grammar",
+      "Determiners",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:30:00Z",
     "updated_at": "2026-01-19T11:30:00Z",
@@ -2247,13 +2494,17 @@
         "explanation": "If 'both' liked the same music, they wouldn't be 'very different' in that regard.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "k3l4m5n6-0063-4000-8000-000000000063",
     "prompt": "There is ______ hope of finding the lost hikers before nightfall, as the storm is worsening.",
-    "categories": ["Grammar", "Quantifiers", "C1-Advanced"],
-    "popularity_score": 0.82,
+    "categories": [
+      "Grammar",
+      "Quantifiers",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:30:00Z",
     "updated_at": "2026-01-19T11:30:00Z",
@@ -2286,13 +2537,17 @@
         "explanation": "Grammatically 'There is a slight hope' would be better, but 'slight hope' is often used.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "l4m5n6o7-0064-4000-8000-000000000064",
     "prompt": "______ employee is required to attend the safety workshop.",
-    "categories": ["Grammar", "Determiners", "B1-Intermediate"],
-    "popularity_score": 0.94,
+    "categories": [
+      "Grammar",
+      "Determiners",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:30:00Z",
     "updated_at": "2026-01-19T11:30:00Z",
@@ -2325,13 +2580,17 @@
         "explanation": "'Entire' usually refers to the whole of a single thing (e.g., 'the entire staff').",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "m5n6o7p8-0065-4000-8000-000000000065",
     "prompt": "We have ______ time left, so we must hurry if we want to finish.",
-    "categories": ["Grammar", "Quantifiers", "B1-Intermediate"],
-    "popularity_score": 0.97,
+    "categories": [
+      "Grammar",
+      "Quantifiers",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:30:00Z",
     "updated_at": "2026-01-19T11:30:00Z",
@@ -2364,13 +2623,17 @@
         "explanation": "If there were much time, there would be no need to hurry.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "n6o7p8q9-0066-4000-8000-000000000066",
     "prompt": "I've read ______ book on that shelf, and they are all excellent.",
-    "categories": ["Grammar", "Determiners", "B2-Upper Intermediate"],
-    "popularity_score": 0.9,
+    "categories": [
+      "Grammar",
+      "Determiners",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:30:00Z",
     "updated_at": "2026-01-19T11:30:00Z",
@@ -2403,13 +2666,17 @@
         "explanation": "Usually refers to the entirety of one specific book (e.g., 'the whole book').",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "o7p8q9r0-0067-4000-8000-000000000067",
     "prompt": "Would you like ______ water?",
-    "categories": ["Grammar", "Quantifiers", "A2-Elementary"],
-    "popularity_score": 0.99,
+    "categories": [
+      "Grammar",
+      "Quantifiers",
+      "A2-Elementary"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:30:00Z",
     "updated_at": "2026-01-19T11:30:00Z",
@@ -2442,13 +2709,17 @@
         "explanation": "'Few' is for countable items, and implies a lack of something.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "VERY_EASY"
   },
   {
     "id": "p8q9r0s1-0068-4000-8000-000000000068",
     "prompt": "There are ______ people who still believe the earth is flat.",
-    "categories": ["Grammar", "Quantifiers", "B1-Intermediate"],
-    "popularity_score": 0.92,
+    "categories": [
+      "Grammar",
+      "Quantifiers",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:30:00Z",
     "updated_at": "2026-01-19T11:30:00Z",
@@ -2481,13 +2752,17 @@
         "explanation": "'Much' is used with uncountable nouns in negative sentences/questions.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "q9r0s1t2-0069-4000-8000-000000000069",
     "prompt": "The dessert was ______ sweet for my liking; I couldn't finish it.",
-    "categories": ["Grammar", "Adverbs of Degree", "B1-Intermediate"],
-    "popularity_score": 0.95,
+    "categories": [
+      "Grammar",
+      "Adverbs of Degree",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:30:00Z",
     "updated_at": "2026-01-19T11:30:00Z",
@@ -2520,13 +2795,17 @@
         "explanation": "Means 'fairly,' which is too weak for the result of not being able to finish.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "r0s1t2u3-0070-4000-8000-000000000070",
     "prompt": "He spends ______ his free time playing video games.",
-    "categories": ["Grammar", "Quantifiers", "B2-Upper Intermediate"],
-    "popularity_score": 0.91,
+    "categories": [
+      "Grammar",
+      "Quantifiers",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:30:00Z",
     "updated_at": "2026-01-19T11:30:00Z",
@@ -2559,13 +2838,17 @@
         "explanation": "Needs 'of' (e.g., 'a lot of his free time') to be grammatically correct.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "s1t2u3v4-0071-4000-8000-000000000071",
     "prompt": "The ground is soaking wet; it ______ heavily last night.",
-    "categories": ["Grammar", "Modal Verbs", "B2-Upper Intermediate"],
-    "popularity_score": 0.94,
+    "categories": [
+      "Grammar",
+      "Modal Verbs",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:45:00Z",
     "updated_at": "2026-01-19T11:45:00Z",
@@ -2598,13 +2881,17 @@
         "explanation": "'Can have' is not used for positive logical deductions; 'must have' is the correct form.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "t2u3v4w5-0072-4000-8000-000000000072",
     "prompt": "You ______ tell anyone about this; it’s a top-secret project.",
-    "categories": ["Grammar", "Modal Verbs", "B1-Intermediate"],
-    "popularity_score": 0.98,
+    "categories": [
+      "Grammar",
+      "Modal Verbs",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:45:00Z",
     "updated_at": "2026-01-19T11:45:00Z",
@@ -2637,13 +2924,17 @@
         "explanation": "Correct as advice, but 'mustn't' better fits the context of a 'top-secret' rule.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "u3v4w5x6-0073-4000-8000-000000000073",
     "prompt": "I'm not sure where Sarah is. She ______ be in the library, or she might have gone home.",
-    "categories": ["Grammar", "Modal Verbs", "B1-Intermediate"],
-    "popularity_score": 0.92,
+    "categories": [
+      "Grammar",
+      "Modal Verbs",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:45:00Z",
     "updated_at": "2026-01-19T11:45:00Z",
@@ -2676,13 +2967,17 @@
         "explanation": "Interchangeable with 'could' in this context of possibility.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "v4w5x6y7-0074-4000-8000-000000000074",
     "prompt": "I ______ my keys at the office. I can't find them anywhere in my bag.",
-    "categories": ["Grammar", "Modal Verbs", "B2-Upper Intermediate"],
-    "popularity_score": 0.88,
+    "categories": [
+      "Grammar",
+      "Modal Verbs",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:45:00Z",
     "updated_at": "2026-01-19T11:45:00Z",
@@ -2715,13 +3010,17 @@
         "explanation": "Usually implies you regret not leaving them there, which doesn't fit the context.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "w5x6y7z8-0075-4000-8000-000000000075",
     "prompt": "We ______ have booked a table; the restaurant was nearly empty when we arrived.",
-    "categories": ["Grammar", "Modal Verbs", "C1-Advanced"],
-    "popularity_score": 0.85,
+    "categories": [
+      "Grammar",
+      "Modal Verbs",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:45:00Z",
     "updated_at": "2026-01-19T11:45:00Z",
@@ -2754,13 +3053,17 @@
         "explanation": "Cannot be used with 'have' for past unnecessary actions.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "x6y7z8a9-0076-4000-8000-000000000076",
     "prompt": "You ______ to be more careful when driving in such thick fog.",
-    "categories": ["Grammar", "Modal Verbs", "B1-Intermediate"],
-    "popularity_score": 0.96,
+    "categories": [
+      "Grammar",
+      "Modal Verbs",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:45:00Z",
     "updated_at": "2026-01-19T11:45:00Z",
@@ -2793,13 +3096,17 @@
         "explanation": "'Had better' is followed by the base form without 'to'.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "y7z8a9b0-0077-4000-8000-000000000077",
     "prompt": "That ______ be the postman at the door; he's already been here today.",
-    "categories": ["Grammar", "Modal Verbs", "B2-Upper Intermediate"],
-    "popularity_score": 0.91,
+    "categories": [
+      "Grammar",
+      "Modal Verbs",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:45:00Z",
     "updated_at": "2026-01-19T11:45:00Z",
@@ -2832,13 +3139,17 @@
         "explanation": "Correct, but implies less certainty than 'can't' given the strong evidence.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "z8a9b0c1-0078-4000-8000-000000000078",
     "prompt": "If you had studied harder, you ______ the exam easily.",
-    "categories": ["Grammar", "Conditionals", "B2-Upper Intermediate"],
-    "popularity_score": 0.93,
+    "categories": [
+      "Grammar",
+      "Conditionals",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:45:00Z",
     "updated_at": "2026-01-19T11:45:00Z",
@@ -2871,13 +3182,17 @@
         "explanation": "Incorrect tense; requires 'might have passed'.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "a9b0c1d2-0079-4000-8000-000000000079",
     "prompt": "You ______ go to the doctor if that cough doesn't improve by tomorrow.",
-    "categories": ["Grammar", "Modal Verbs", "B1-Intermediate"],
-    "popularity_score": 0.97,
+    "categories": [
+      "Grammar",
+      "Modal Verbs",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:45:00Z",
     "updated_at": "2026-01-19T11:45:00Z",
@@ -2910,13 +3225,17 @@
         "explanation": "Used for permission or slight possibility; too weak for advice in this context.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "b0c1d2e3-0080-4000-8000-000000000080",
     "prompt": "I ______ swim when I was only four years old.",
-    "categories": ["Grammar", "Modal Verbs", "A2-Elementary"],
-    "popularity_score": 0.99,
+    "categories": [
+      "Grammar",
+      "Modal Verbs",
+      "A2-Elementary"
+    ],
     "status": "active",
     "created_at": "2026-01-19T11:45:00Z",
     "updated_at": "2026-01-19T11:45:00Z",
@@ -2949,13 +3268,17 @@
         "explanation": "Refers to possibility, not ability.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "VERY_EASY"
   },
   {
     "id": "c1d2e3f4-0081-4000-8000-000000000081",
     "prompt": "The ______ of the new bridge has significantly reduced travel time for commuters.",
-    "categories": ["Vocabulary", "Word Formation", "B2-Upper Intermediate"],
-    "popularity_score": 0.94,
+    "categories": [
+      "Vocabulary",
+      "Word Formation",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:00:00Z",
     "updated_at": "2026-01-19T12:00:00Z",
@@ -2988,13 +3311,17 @@
         "explanation": "This refers to the person/company doing the building, not the building process itself.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "d2e3f4g5-0082-4000-8000-000000000082",
     "prompt": "Due to her high level of ______, she was promoted to senior manager within a year.",
-    "categories": ["Vocabulary", "Word Formation", "C1-Advanced"],
-    "popularity_score": 0.88,
+    "categories": [
+      "Vocabulary",
+      "Word Formation",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:00:00Z",
     "updated_at": "2026-01-19T12:00:00Z",
@@ -3027,13 +3354,17 @@
         "explanation": "Refers to the ability to produce a desired result, usually used for medicine/treatments.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "e3f4g5h6-0083-4000-8000-000000000083",
     "prompt": "The weather forecast is quite ______; it changes every hour.",
-    "categories": ["Vocabulary", "Word Formation", "B2-Upper Intermediate"],
-    "popularity_score": 0.91,
+    "categories": [
+      "Vocabulary",
+      "Word Formation",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:00:00Z",
     "updated_at": "2026-01-19T12:00:00Z",
@@ -3066,13 +3397,17 @@
         "explanation": "This is an adverb.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "f4g5h6i7-0084-4000-8000-000000000084",
     "prompt": "It is ______ to park your car here; you might get a fine.",
-    "categories": ["Vocabulary", "Word Formation", "B1-Intermediate"],
-    "popularity_score": 0.97,
+    "categories": [
+      "Vocabulary",
+      "Word Formation",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:00:00Z",
     "updated_at": "2026-01-19T12:00:00Z",
@@ -3105,13 +3440,17 @@
         "explanation": "Means 'not governed by laws', which is too dramatic for a parking spot.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "g5h6i7j8-0085-4000-8000-000000000085",
     "prompt": "The ______ of the internet has changed how we consume information.",
-    "categories": ["Vocabulary", "Word Formation", "B2-Upper Intermediate"],
-    "popularity_score": 0.95,
+    "categories": [
+      "Vocabulary",
+      "Word Formation",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:00:00Z",
     "updated_at": "2026-01-19T12:00:00Z",
@@ -3144,13 +3483,17 @@
         "explanation": "A gerund/present participle, but 'emergence' is the standard noun choice here.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "h6i7j8k9-0086-4000-8000-000000000086",
     "prompt": "His ______ to the team was invaluable during the crisis.",
-    "categories": ["Vocabulary", "Word Formation", "C1-Advanced"],
-    "popularity_score": 0.86,
+    "categories": [
+      "Vocabulary",
+      "Word Formation",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:00:00Z",
     "updated_at": "2026-01-19T12:00:00Z",
@@ -3183,13 +3526,17 @@
         "explanation": "Usually refers to a legal process of sending someone to a prison or hospital.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "i7j8k9l0-0087-4000-8000-000000000087",
     "prompt": "She looked at the old photographs ______ and remembered her childhood.",
-    "categories": ["Vocabulary", "Word Formation", "B2-Upper Intermediate"],
-    "popularity_score": 0.89,
+    "categories": [
+      "Vocabulary",
+      "Word Formation",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:00:00Z",
     "updated_at": "2026-01-19T12:00:00Z",
@@ -3222,13 +3569,17 @@
         "explanation": "Refers to a person who has nostalgic feelings.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "j8k9l0m1-0088-4000-8000-000000000088",
     "prompt": "The ______ of the experiment were quite unexpected.",
-    "categories": ["Vocabulary", "Nouns", "B1-Intermediate"],
-    "popularity_score": 0.98,
+    "categories": [
+      "Vocabulary",
+      "Nouns",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:00:00Z",
     "updated_at": "2026-01-19T12:00:00Z",
@@ -3261,13 +3612,17 @@
         "explanation": "Past tense verb.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "k9l0m1n2-0089-4000-8000-000000000089",
     "prompt": "You need to provide ______ evidence if you want people to believe your theory.",
-    "categories": ["Vocabulary", "Word Formation", "C1-Advanced"],
-    "popularity_score": 0.83,
+    "categories": [
+      "Vocabulary",
+      "Word Formation",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:00:00Z",
     "updated_at": "2026-01-19T12:00:00Z",
@@ -3300,13 +3655,17 @@
         "explanation": "This is an adverb.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "l0m1n2o3-0090-4000-8000-000000000090",
     "prompt": "The ______ of the software was a long and complicated process.",
-    "categories": ["Vocabulary", "Word Formation", "B2-Upper Intermediate"],
-    "popularity_score": 0.92,
+    "categories": [
+      "Vocabulary",
+      "Word Formation",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:00:00Z",
     "updated_at": "2026-01-19T12:00:00Z",
@@ -3339,13 +3698,16 @@
         "explanation": "The gerund can be used as a noun, but 'development' is more common for the overall process.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "m1n2o3p4-0091-4000-8000-000000000091",
     "prompt": "Choose the correct spelling for the word meaning 'to achieve' or 'to fulfill':",
-    "categories": ["Spelling", "C1-Advanced"],
-    "popularity_score": 0.88,
+    "categories": [
+      "Spelling",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:15:00Z",
     "updated_at": "2026-01-19T12:15:00Z",
@@ -3378,13 +3740,17 @@
         "explanation": "This is a different word meaning to provide lodging or space.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "n2o3p4q5-0092-4000-8000-000000000092",
     "prompt": "They are going to ______ their old house and build a modern one in its place.",
-    "categories": ["Vocabulary", "Confusing Words", "B2-Upper Intermediate"],
-    "popularity_score": 0.92,
+    "categories": [
+      "Vocabulary",
+      "Confusing Words",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:15:00Z",
     "updated_at": "2026-01-19T12:15:00Z",
@@ -3417,13 +3783,17 @@
         "explanation": "Usually refers to marks or data, not physical structures.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "o3p4q5r6-0093-4000-8000-000000000093",
     "prompt": "I ______ have gone to the party, but I was feeling exhausted.",
-    "categories": ["Grammar", "Modal Verbs", "B2-Upper Intermediate"],
-    "popularity_score": 0.95,
+    "categories": [
+      "Grammar",
+      "Modal Verbs",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:15:00Z",
     "updated_at": "2026-01-19T12:15:00Z",
@@ -3456,13 +3826,17 @@
         "explanation": "Correct for a conditional past (I would have gone if I hadn't been tired).",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "p4q5r6s7-0094-4000-8000-000000000094",
     "prompt": "The ______ of the crime was cordoned off by the police.",
-    "categories": ["Vocabulary", "Confusing Words", "B1-Intermediate"],
-    "popularity_score": 0.98,
+    "categories": [
+      "Vocabulary",
+      "Confusing Words",
+      "B1-Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:15:00Z",
     "updated_at": "2026-01-19T12:15:00Z",
@@ -3495,13 +3869,17 @@
         "explanation": "Refers to a location for construction or an event; 'scene' is the idiomatic choice for crime.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "EASY"
   },
   {
     "id": "q5r6s7t8-0095-4000-8000-000000000095",
     "prompt": "Not only ______ the game, but they also broke the national record.",
-    "categories": ["Grammar", "Inversion", "C1-Advanced"],
-    "popularity_score": 0.84,
+    "categories": [
+      "Grammar",
+      "Inversion",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:15:00Z",
     "updated_at": "2026-01-19T12:15:00Z",
@@ -3534,13 +3912,17 @@
         "explanation": "Grammatically correct inversion, but the past simple 'did they win' usually pairs better with 'broke'.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "r6s7t8u9-0096-4000-8000-000000000096",
     "prompt": "She has a very ______ personality; she never gives up until she succeeds.",
-    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
-    "popularity_score": 0.81,
+    "categories": [
+      "Vocabulary",
+      "Adjectives",
+      "C1-Advanced"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:15:00Z",
     "updated_at": "2026-01-19T12:15:00Z",
@@ -3573,13 +3955,17 @@
         "explanation": "Means kind or gentle.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "HARD"
   },
   {
     "id": "s7t8u9v0-0097-4000-8000-000000000097",
     "prompt": "The government decided to ______ new taxes on luxury goods.",
-    "categories": ["Vocabulary", "Academic English", "B2-Upper Intermediate"],
-    "popularity_score": 0.89,
+    "categories": [
+      "Vocabulary",
+      "Academic English",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:15:00Z",
     "updated_at": "2026-01-19T12:15:00Z",
@@ -3612,13 +3998,17 @@
         "explanation": "Used as a verb, it means to affect something; you don't 'impact taxes' in this sense.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "t8u9v0w1-0098-4000-8000-000000000098",
     "prompt": "Choose the word that describes a person who is 'easily tricked':",
-    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
-    "popularity_score": 0.67,
+    "categories": [
+      "Vocabulary",
+      "Adjectives",
+      "C2-Proficiency"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:15:00Z",
     "updated_at": "2026-01-19T12:15:00Z",
@@ -3651,13 +4041,17 @@
         "explanation": "Means able to be believed.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "VERY_HARD"
   },
   {
     "id": "u9v0w1x2-0099-4000-8000-000000000099",
     "prompt": "If he ______ more attention, he wouldn't have made that mistake.",
-    "categories": ["Grammar", "Conditionals", "B2-Upper Intermediate"],
-    "popularity_score": 0.94,
+    "categories": [
+      "Grammar",
+      "Conditionals",
+      "B2-Upper Intermediate"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:15:00Z",
     "updated_at": "2026-01-19T12:15:00Z",
@@ -3690,13 +4084,17 @@
         "explanation": "Possible in a mixed conditional, but 'had paid' is the standard answer.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "MEDIUM"
   },
   {
     "id": "v0w1x2y3-0100-4000-8000-000000000100",
     "prompt": "Which of these words is a synonym for 'ephemeral'?",
-    "categories": ["Vocabulary", "Synonyms", "C2-Proficiency"],
-    "popularity_score": 0.65,
+    "categories": [
+      "Vocabulary",
+      "Synonyms",
+      "C2-Proficiency"
+    ],
     "status": "active",
     "created_at": "2026-01-19T12:15:00Z",
     "updated_at": "2026-01-19T12:15:00Z",
@@ -3729,6 +4127,7 @@
         "explanation": "Means present or found everywhere.",
         "status": "active"
       }
-    ]
+    ],
+    "default_popularity": "VERY_HARD"
   }
 ]

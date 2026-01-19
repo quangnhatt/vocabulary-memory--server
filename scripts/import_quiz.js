@@ -46,20 +46,8 @@ async function run(fileName) {
     await pgPool.query("BEGIN");
     console.log("🚀 Starting quiz import...");
     for (const question of data) {
-      if (!fitsNumeric32(question.popularity_score)) {
-        console.log(
-          "⚠️ Invalid popularity_score:",
-          question.popularity_score,
-          question.prompt
-        );
-      }
-      let popularityScore = question.popularity_score;
       // 1. Insert question
-      if (popularityScore === null || popularityScore === undefined) {
-        popularityScore = 0.8; // default
-      }
-      const defaultPopularity = getPopularity(popularityScore);
-      popularityScore = DEFAULT_POPULARITY_SCORE[defaultPopularity];
+      const popularityScore = DEFAULT_POPULARITY_SCORE[question.default_popularity];
       const questionRes = await pgPool.query(
         `
         INSERT INTO quiz_questions (
@@ -72,7 +60,7 @@ async function run(fileName) {
         VALUES ($1, $2, $3, $4, 'active')
         RETURNING id
         `,
-        [question.prompt, defaultPopularity, popularityScore, question.categories ?? []]
+        [question.prompt, question.default_popularity, popularityScore, question.categories ?? []]
       );
 
       const questionId = questionRes.rows[0].id;

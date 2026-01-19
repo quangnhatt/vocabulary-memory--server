@@ -14,7 +14,7 @@ export default Object.freeze({
 
   DICTIONARY_SOURCES: {
     CHATGPT: "chatgpt",
-    CAMBRIDGE: "cambridge"
+    CAMBRIDGE: "cambridge",
   },
 
   ACTIVITY_TYPES: {
@@ -23,11 +23,10 @@ export default Object.freeze({
   },
 });
 
-
 export const POPULARITY_LABELS = {
-  VERY_COMMON: 'VERY_COMMON',
-  COMMON: 'COMMON',
-  FREQUENT: 'FREQUENT',
-  UNCOMMON: 'UNCOMMON',
-  RARE: 'RARE'
+  VERY_EASY: "VERY_EASY",
+  EASY: "EASY",
+  MEDIUM: "MEDIUM",
+  HARD: "HARD",
+  VERY_HARD: "VERY_HARD",
 };

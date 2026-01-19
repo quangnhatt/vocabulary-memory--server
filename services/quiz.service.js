@@ -1,5 +1,5 @@
 import { pgPool } from "../db/index.js";
-import { inverseSkillMultiplier } from "../utils/quiz.scoring.js";
+import { clamp, inverseSkillMultiplier } from "../utils/quiz.scoring.js";
 
 class QuizService {
   async startQuiz(userId) {
@@ -253,8 +253,7 @@ async function generateQuiz(inverse_skill_multiplier, questionCount = 20) {
   let minPopularity = 2;
   const questions = q.rows.map((row) => {
     // const effectiveDifficulty = row.popularity_score * inverse_skill_multiplier;
-    const effectiveDifficulty =
-      inverse_skill_multiplier / (+row.popularity_score + 0.5);
+    const effectiveDifficulty = clamp(inverse_skill_multiplier / (+row.popularity_score + 0.5), 0.5, 1.3);
     if (effectiveDifficulty > maxDifficulty)
       maxDifficulty = effectiveDifficulty;
     if (effectiveDifficulty < minDifficulty)
@@ -264,8 +263,8 @@ async function generateQuiz(inverse_skill_multiplier, questionCount = 20) {
     if (row.popularity_score < minPopularity)
       minPopularity = row.popularity_score;
     let zone = "same";
-    if (effectiveDifficulty < 0.85) zone = "below";
-    else if (effectiveDifficulty > 0.9) zone = "above";
+    if (effectiveDifficulty < 0.8) zone = "below";
+    else if (effectiveDifficulty > 1) zone = "above";
 
     return { ...row, effectiveDifficulty, zone };
   });
