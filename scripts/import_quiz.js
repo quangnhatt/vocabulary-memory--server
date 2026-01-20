@@ -11,7 +11,19 @@ const __dirname = path.dirname(__filename);
 
 const DATASETS = [
   {
-    file_name: "system_quiz/vocabulary_multiple_choice.json",
+    file_name: "system_quiz/very_easy.json",
+  },
+   {
+    file_name: "system_quiz/easy.json",
+  },
+   {
+    file_name: "system_quiz/medium.json",
+  },
+   {
+    file_name: "system_quiz/hard.json",
+  },
+   {
+    file_name: "system_quiz/very_hard.json",
   },
 ];
 

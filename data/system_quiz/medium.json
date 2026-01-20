@@ -1,0 +1,3602 @@
+[
+  {
+    "id": "medium-201",
+    "prompt": "By the time the film started, we ______ all the popcorn.",
+    "categories": ["Grammar", "Past Perfect", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "had already eaten",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The Past Perfect describes an action completed before another action in the past.",
+        "status": "active"
+      },
+      {
+        "option_text": "already ate",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Common in informal speech, but grammatically less precise than past perfect.",
+        "status": "active"
+      },
+      {
+        "option_text": "have already eaten",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Present perfect cannot be used with the past simple 'started'.",
+        "status": "active"
+      },
+      {
+        "option_text": "were eating",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically correct if the action was still in progress when the film began.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-202",
+    "prompt": "If I ______ the lottery, I would travel around the world.",
+    "categories": ["Grammar", "Second Conditional", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "won",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The second conditional uses 'if + past simple' for hypothetical situations.",
+        "status": "active"
+      },
+      {
+        "option_text": "win",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "This would require 'will travel' (First Conditional).",
+        "status": "active"
+      },
+      {
+        "option_text": "had won",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "This is the third conditional form; doesn't match 'would travel'.",
+        "status": "active"
+      },
+      {
+        "option_text": "would win",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "We don't use 'would' in the 'if' clause.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-203",
+    "prompt": "This house ______ by a famous architect in 1920.",
+    "categories": ["Grammar", "Passive Voice", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "was built",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Past simple passive is used to focus on the object/action in history.",
+        "status": "active"
+      },
+      {
+        "option_text": "built",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "The house did not perform the action of building.",
+        "status": "active"
+      },
+      {
+        "option_text": "has been built",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Specific past dates (1920) require the past simple, not present perfect.",
+        "status": "active"
+      },
+      {
+        "option_text": "was being built",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Technically correct if referring to a process in 1920, but less likely than 'was built'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-204",
+    "prompt": "I'm not sure where he is. He ______ have forgotten about the meeting.",
+    "categories": ["Grammar", "Modals of Deduction", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "might",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used for a possibility in the past.",
+        "status": "active"
+      },
+      {
+        "option_text": "must",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Used for a strong logical conclusion.",
+        "status": "active"
+      },
+      {
+        "option_text": "can",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Can have' is not used for past deduction; 'could' or 'might' is used.",
+        "status": "active"
+      },
+      {
+        "option_text": "should",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Implies it was a good idea to forget, which makes little sense here.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-205",
+    "prompt": "She's very reliable; she never ______ her colleagues down.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "lets",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Let someone down' means to disappoint or fail them.",
+        "status": "active"
+      },
+      {
+        "option_text": "gets",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Get down' means to feel depressed.",
+        "status": "active"
+      },
+      {
+        "option_text": "puts",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "'Put down' usually means to insult or kill an animal humanely.",
+        "status": "active"
+      },
+      {
+        "option_text": "takes",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Take down' means to dismantle or record something.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-206",
+    "prompt": "I ______ to enjoy exercise, but now I go to the gym every day.",
+    "categories": ["Grammar", "Habits", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "didn't use",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Negative form of 'used to' for past states/habits.",
+        "status": "active"
+      },
+      {
+        "option_text": "wasn't use",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Grammatically incorrect.",
+        "status": "active"
+      },
+      {
+        "option_text": "never used",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Natural way to express a past negative habit.",
+        "status": "active"
+      },
+      {
+        "option_text": "hadn't used",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect tense for past habits.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-207",
+    "prompt": "The manager suggested ______ the meeting until next Tuesday.",
+    "categories": ["Grammar", "Verb Patterns", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "postponing",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Suggest' is followed by the gerund (-ing).",
+        "status": "active"
+      },
+      {
+        "option_text": "to postpone",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Common error; 'suggest' never takes the infinitive.",
+        "status": "active"
+      },
+      {
+        "option_text": "we postpone",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct use of a 'that' clause (with 'that' omitted).",
+        "status": "active"
+      },
+      {
+        "option_text": "postpone",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Missing required grammatical structure.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-208",
+    "prompt": "You'll have to ______ the appointment because something urgent has come up.",
+    "categories": ["Vocabulary", "Business", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "cancel",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To call off a planned event.",
+        "status": "active"
+      },
+      {
+        "option_text": "postpone",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "To move to a later time.",
+        "status": "active"
+      },
+      {
+        "option_text": "reject",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You reject offers, not appointments.",
+        "status": "active"
+      },
+      {
+        "option_text": "delay",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually refers to a late arrival, not the act of rescheduling.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-209",
+    "prompt": "I don't mind ______ late if it means finishing the project.",
+    "categories": ["Grammar", "Verb Patterns", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "working",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Don't mind' is followed by the -ing form.",
+        "status": "active"
+      },
+      {
+        "option_text": "to work",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Common mistake; 'mind' does not take the infinitive.",
+        "status": "active"
+      },
+      {
+        "option_text": "work",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Missing required gerund.",
+        "status": "active"
+      },
+      {
+        "option_text": "having worked",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Refers to a past action; doesn't fit the 'if it means finishing' context.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-210",
+    "prompt": "That’s the woman ______ son won the national chess championship.",
+    "categories": ["Grammar", "Relative Clauses", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "whose",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Relative pronoun indicating possession.",
+        "status": "active"
+      },
+      {
+        "option_text": "who's",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Contraction of 'who is' or 'who has'.",
+        "status": "active"
+      },
+      {
+        "option_text": "which",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for objects.",
+        "status": "active"
+      },
+      {
+        "option_text": "that",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Cannot be used as a possessive relative pronoun.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-211",
+    "prompt": "He succeeded ______ passing the exam despite the difficulty.",
+    "categories": ["Grammar", "Prepositions", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "in",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The verb 'succeed' is followed by the preposition 'in'.",
+        "status": "active"
+      },
+      {
+        "option_text": "at",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect preposition for this verb.",
+        "status": "active"
+      },
+      {
+        "option_text": "on",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect preposition for this verb.",
+        "status": "active"
+      },
+      {
+        "option_text": "to",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "A common mistake; learners confuse it with 'managed to'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-212",
+    "prompt": "I wish I ______ more time to study for the test last week.",
+    "categories": ["Grammar", "Wishes", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "had had",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Wishes about the past use the Past Perfect.",
+        "status": "active"
+      },
+      {
+        "option_text": "had",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Used for wishes about the present.",
+        "status": "active"
+      },
+      {
+        "option_text": "would have",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for wishes about someone else's behavior.",
+        "status": "active"
+      },
+      {
+        "option_text": "have had",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Grammatically incorrect after 'I wish'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-213",
+    "prompt": "We are really looking forward ______ you at the conference.",
+    "categories": ["Grammar", "Phrases", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "to meeting",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Look forward to' takes a gerund because 'to' is a preposition.",
+        "status": "active"
+      },
+      {
+        "option_text": "to meet",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "The most common error at this level.",
+        "status": "active"
+      },
+      {
+        "option_text": "meeting",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Missing the preposition 'to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "for meeting",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect preposition.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-214",
+    "prompt": "The company decided to ______ off 100 workers due to the financial crisis.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "lay",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Lay off' means to end someone's employment for economic reasons.",
+        "status": "active"
+      },
+      {
+        "option_text": "put",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Put off' means to postpone.",
+        "status": "active"
+      },
+      {
+        "option_text": "fire",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Similar meaning, but usually implies it's the worker's fault.",
+        "status": "active"
+      },
+      {
+        "option_text": "give",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect phrasal verb.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-215",
+    "prompt": "Hardly ______ had I entered the house when the phone rang.",
+    "categories": ["Grammar", "Inversion", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "ever",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Fits the word 'Hardly', but the 'had I' inversion usually follows 'Hardly' alone or 'Hardly ever'.",
+        "status": "active"
+      },
+      {
+        "option_text": "at all",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Does not fit the grammatical structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "any",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Does not fit.",
+        "status": "active"
+      },
+      {
+        "option_text": " ",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The structure 'Hardly had I...' is a classic B1/B2 inversion for dramatic effect.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-216",
+    "prompt": "She asked me ______ I had finished the report yet.",
+    "categories": ["Grammar", "Reported Speech", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "if",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used to report yes/no questions.",
+        "status": "active"
+      },
+      {
+        "option_text": "whether",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "More formal but equally correct synonym for 'if'.",
+        "status": "active"
+      },
+      {
+        "option_text": "that",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'That' is for reporting statements, not questions.",
+        "status": "active"
+      },
+      {
+        "option_text": "did",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order for reported speech.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-217",
+    "prompt": "I’m very tired; I ______ all morning.",
+    "categories": ["Grammar", "Present Perfect Continuous", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "have been working",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used for an action that started in the past and has just stopped, leaving a result.",
+        "status": "active"
+      },
+      {
+        "option_text": "worked",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct past simple, but doesn't emphasize the duration or result as well.",
+        "status": "active"
+      },
+      {
+        "option_text": "was working",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Suggests a specific moment, not the cause of current tiredness.",
+        "status": "active"
+      },
+      {
+        "option_text": "had worked",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect tense relation to the present 'I am'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-218",
+    "prompt": "The flight was delayed ______ the heavy fog.",
+    "categories": ["Grammar", "Conjunctions", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "due to",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used before a noun/noun phrase to show cause.",
+        "status": "active"
+      },
+      {
+        "option_text": "because",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires a full clause (because there was heavy fog).",
+        "status": "active"
+      },
+      {
+        "option_text": "owing to",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct and more formal synonym for 'due to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "as",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Similar to 'because'; needs a full clause.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-219",
+    "prompt": "I don't think I can ______ up with his constant complaining much longer.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "put",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Put up with' means to tolerate.",
+        "status": "active"
+      },
+      {
+        "option_text": "get",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Get up' means to rise from bed.",
+        "status": "active"
+      },
+      {
+        "option_text": "keep",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "'Keep up with' means to stay at the same speed.",
+        "status": "active"
+      },
+      {
+        "option_text": "stay",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Does not form a valid phrasal verb here.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-220",
+    "prompt": "By next year, I ______ my degree.",
+    "categories": ["Grammar", "Future Perfect", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "will have finished",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used for an action that will be completed by a specific time in the future.",
+        "status": "active"
+      },
+      {
+        "option_text": "will finish",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Focuses on the moment of finishing, not the state of completion.",
+        "status": "active"
+      },
+      {
+        "option_text": "am finishing",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Does not fit with 'by next year'.",
+        "status": "active"
+      },
+      {
+        "option_text": "would have finished",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for hypotheticals in the past.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-221",
+    "prompt": "It's time you ______ looking for a job.",
+    "categories": ["Grammar", "Subjunctive/Fixed Phrases", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "started",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "After 'It's time...', we use the past simple to show an action is overdue.",
+        "status": "active"
+      },
+      {
+        "option_text": "start",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Common logical error; 'it's time' requires a shift back in tense.",
+        "status": "active"
+      },
+      {
+        "option_text": "to start",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically correct (It's time to start), but the 'you' makes the past simple 'started' better.",
+        "status": "active"
+      },
+      {
+        "option_text": "should start",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Understandable but not the idiomatic form.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-222",
+    "prompt": "I can't ______ to buy a new car right now; I have too many bills.",
+    "categories": ["Vocabulary", "Money", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "afford",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To have enough money to buy something.",
+        "status": "active"
+      },
+      {
+        "option_text": "manage",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Implies ability to handle a situation, but 'afford' is specifically for money.",
+        "status": "active"
+      },
+      {
+        "option_text": "spend",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You can't 'spend to buy'.",
+        "status": "active"
+      },
+      {
+        "option_text": "pay",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Grammatically incorrect in this structure.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-223",
+    "prompt": "He ______ me that he had already seen the movie.",
+    "categories": ["Grammar", "Reported Speech", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "told",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Tell' requires an object (me).",
+        "status": "active"
+      },
+      {
+        "option_text": "said",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You say something *to* someone (said to me).",
+        "status": "active"
+      },
+      {
+        "option_text": "informed",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, though more formal than necessary here.",
+        "status": "active"
+      },
+      {
+        "option_text": "explained",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually used for instructions/reasons, and normally needs 'to me'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-224",
+    "prompt": "Neither my sister ______ my brother lives in London.",
+    "categories": ["Grammar", "Correlative Conjunctions", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "nor",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The standard pair is 'neither... nor'.",
+        "status": "active"
+      },
+      {
+        "option_text": "or",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used with 'either'.",
+        "status": "active"
+      },
+      {
+        "option_text": "and",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used with 'both'.",
+        "status": "active"
+      },
+      {
+        "option_text": "but",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used with 'not only'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-215",
+    "prompt": "She ______ to be a very talented musician.",
+    "categories": ["Grammar", "Passive/Reporting Verbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "is said",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Passive construction for general beliefs.",
+        "status": "active"
+      },
+      {
+        "option_text": "says",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "She isn't saying it about herself in this structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "is saying",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Active voice; doesn't fit the 'to be' pattern well.",
+        "status": "active"
+      },
+      {
+        "option_text": "seems",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct and common.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-226",
+    "prompt": "Despite ______ hard, he failed the exam.",
+    "categories": ["Grammar", "Conjunctions", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "studying",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Despite' is a preposition and must be followed by a gerund or noun.",
+        "status": "active"
+      },
+      {
+        "option_text": "he studied",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Needs 'In spite of the fact that' or 'Although'.",
+        "status": "active"
+      },
+      {
+        "option_text": "the fact he studied",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically correct but more wordy.",
+        "status": "active"
+      },
+      {
+        "option_text": "study",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect grammatical form.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-227",
+    "prompt": "Could you tell me ______ ?",
+    "categories": ["Grammar", "Embedded Questions", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "where the station is",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Indirect questions use statement word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "where is the station",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Common mistake; uses direct question word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "if the station is there",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically correct indirect question.",
+        "status": "active"
+      },
+      {
+        "option_text": "the station where",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-228",
+    "prompt": "I'm exhausted. I've ______ been on the go since 6 AM.",
+    "categories": ["Vocabulary", "Adverbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "literally",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Used for emphasis.",
+        "status": "active"
+      },
+      {
+        "option_text": "practically",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Means 'almost'.",
+        "status": "active"
+      },
+      {
+        "option_text": "already",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Doesn't fit the 'on the go since' context perfectly.",
+        "status": "active"
+      },
+      {
+        "option_text": "constantly",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The most natural adverb for continuous activity.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-229",
+    "prompt": "The car ______ if you don't take it to the garage soon.",
+    "categories": ["Grammar", "Conditionals/Phrasal Verbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "will break down",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "First conditional with a common phrasal verb for mechanical failure.",
+        "status": "active"
+      },
+      {
+        "option_text": "breaks down",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Zero conditional; implies a general fact rather than a specific future warning.",
+        "status": "active"
+      },
+      {
+        "option_text": "would break down",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Second conditional form; doesn't match 'don't take'.",
+        "status": "active"
+      },
+      {
+        "option_text": "is breaking down",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Suggests it is happening right now.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-230",
+    "prompt": "I ______ my hair cut yesterday.",
+    "categories": ["Grammar", "Causative", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "had",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Causative structure: 'have something done'.",
+        "status": "active"
+      },
+      {
+        "option_text": "got",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Informal causative structure; equally correct.",
+        "status": "active"
+      },
+      {
+        "option_text": "cut",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Implies you cut your own hair.",
+        "status": "approximate"
+      },
+      {
+        "option_text": "was",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Passive voice; incorrect meaning.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-231",
+    "prompt": "I'm not used to ______ up so early in the morning.",
+    "categories": ["Grammar", "Verb Patterns", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "getting",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Be used to' is followed by a gerund (-ing) to describe familiarity.",
+        "status": "active"
+      },
+      {
+        "option_text": "get",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Commonly confused with 'used to' (past habit).",
+        "status": "active"
+      },
+      {
+        "option_text": "have got",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Grammatically incorrect in this structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "waking",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct gerund form and fits the context.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-232",
+    "prompt": "You ______ better see a doctor about that cough.",
+    "categories": ["Grammar", "Advice", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "had",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The phrase 'had better' is used for strong advice or warnings.",
+        "status": "active"
+      },
+      {
+        "option_text": "should",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Does not fit with the word 'better' (should see a doctor).",
+        "status": "active"
+      },
+      {
+        "option_text": "would",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect modal for this idiom.",
+        "status": "active"
+      },
+      {
+        "option_text": "'d",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The standard contraction for 'had' in this phrase.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-233",
+    "prompt": "The man ______ car was stolen reported it to the police.",
+    "categories": ["Grammar", "Relative Clauses", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "whose",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Possessive relative pronoun.",
+        "status": "active"
+      },
+      {
+        "option_text": "who",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Needs a verb, not a noun, following it.",
+        "status": "active"
+      },
+      {
+        "option_text": "that",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Cannot show possession.",
+        "status": "active"
+      },
+      {
+        "option_text": "whom",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used as an object pronoun, not possessive.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-234",
+    "prompt": "He’s been working here for ten years, ______ ?",
+    "categories": ["Grammar", "Question Tags", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "hasn't he",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The tag must match the auxiliary verb 'has'.",
+        "status": "active"
+      },
+      {
+        "option_text": "isn't he",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Common mistake; 's here stands for 'has', not 'is'.",
+        "status": "active"
+      },
+      {
+        "option_text": "doesn't he",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Does not match the present perfect tense.",
+        "status": "active"
+      },
+      {
+        "option_text": "has he",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Positive tags are used for negative statements; this is a positive statement.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-235",
+    "prompt": "I’ll lend you the money ______ you pay me back next week.",
+    "categories": ["Grammar", "Conditionals", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "provided",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means 'only if'; used to set a condition.",
+        "status": "active"
+      },
+      {
+        "option_text": "as long as",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Common synonym for 'provided'.",
+        "status": "active"
+      },
+      {
+        "option_text": "unless",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Means 'if not', which changes the meaning incorrectly.",
+        "status": "active"
+      },
+      {
+        "option_text": "if",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but 'provided' is a more precise B1 choice.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-236",
+    "prompt": "I ______ to see the dentist tomorrow afternoon.",
+    "categories": ["Grammar", "Future Arrangements", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "am going",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Present continuous for fixed appointments.",
+        "status": "active"
+      },
+      {
+        "option_text": "will go",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Less common for scheduled appointments.",
+        "status": "active"
+      },
+      {
+        "option_text": "go",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Present simple is used for timetables, not personal plans.",
+        "status": "active"
+      },
+      {
+        "option_text": "have to go",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correctly shows obligation and future intent.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-237",
+    "prompt": "If you ______ me, I would have helped you.",
+    "categories": ["Grammar", "Third Conditional", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "had asked",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Third conditional 'if' clause requires Past Perfect.",
+        "status": "active"
+      },
+      {
+        "option_text": "asked",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "This would be second conditional (would help).",
+        "status": "active"
+      },
+      {
+        "option_text": "would have asked",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "We don't use 'would have' in the 'if' clause.",
+        "status": "active"
+      },
+      {
+        "option_text": "have asked",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Tense mismatch.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-238",
+    "prompt": "We need to ______ the pros and cons before making a decision.",
+    "categories": ["Vocabulary", "Idioms", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "weigh",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard idiom for comparing advantages and disadvantages.",
+        "status": "active"
+      },
+      {
+        "option_text": "consider",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Synonym, though less idiomatic than 'weigh'.",
+        "status": "active"
+      },
+      {
+        "option_text": "think",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Needs 'about' to be correct.",
+        "status": "active"
+      },
+      {
+        "option_text": "measure",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too literal; 'weigh' is the preferred term.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-239",
+    "prompt": "The meeting has been ______ until next Friday.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "put off",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To postpone.",
+        "status": "active"
+      },
+      {
+        "option_text": "called off",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "To cancel entirely.",
+        "status": "active"
+      },
+      {
+        "option_text": "held up",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "To delay momentarily.",
+        "status": "active"
+      },
+      {
+        "option_text": "set back",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "To delay progress.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-240",
+    "prompt": "I can’t believe he ______ to finish the marathon.",
+    "categories": ["Vocabulary", "Verbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "managed",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To succeed in doing something difficult.",
+        "status": "active"
+      },
+      {
+        "option_text": "succeeded",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'in' + -ing (succeeded in finishing).",
+        "status": "active"
+      },
+      {
+        "option_text": "achieved",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires a noun (achieved his goal).",
+        "status": "active"
+      },
+      {
+        "option_text": "was able",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct grammar and meaning.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-241",
+    "prompt": "Despite the ______ , the team played exceptionally well.",
+    "categories": ["Vocabulary", "Nouns", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "circumstances",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Refers to the conditions surrounding an event.",
+        "status": "active"
+      },
+      {
+        "option_text": "weather",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A specific type of circumstance.",
+        "status": "active"
+      },
+      {
+        "option_text": "adversity",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "More advanced B2 word, but fits well.",
+        "status": "active"
+      },
+      {
+        "option_text": "problems",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Very simple vocabulary for this level.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-242",
+    "prompt": "That was the first time I ______ sushi.",
+    "categories": ["Grammar", "Past Perfect", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "had ever eaten",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used with 'the first time' in past contexts.",
+        "status": "active"
+      },
+      {
+        "option_text": "have ever eaten",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for 'This is the first time' (present).",
+        "status": "active"
+      },
+      {
+        "option_text": "ate",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Understood, but less precise than Past Perfect.",
+        "status": "active"
+      },
+      {
+        "option_text": "was eating",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Continuous aspect is incorrect here.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-243",
+    "prompt": "You ______ smoke in the hospital. It's strictly forbidden.",
+    "categories": ["Grammar", "Modals", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "mustn't",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Shows strong prohibition/rules.",
+        "status": "active"
+      },
+      {
+        "option_text": "don't have to",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Means it is optional, which is incorrect.",
+        "status": "active"
+      },
+      {
+        "option_text": "shouldn't",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Used for advice; 'mustn't' is better for laws.",
+        "status": "active"
+      },
+      {
+        "option_text": "ought not to",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Formal advice equivalent to 'shouldn't'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-244",
+    "prompt": "The car ______ at the moment, so I'm taking the bus.",
+    "categories": ["Grammar", "Passive Voice", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "is being repaired",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Present continuous passive for an action in progress.",
+        "status": "active"
+      },
+      {
+        "option_text": "is repairing",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Active voice; cars cannot repair themselves.",
+        "status": "active"
+      },
+      {
+        "option_text": "repaired",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Tense mismatch with 'at the moment'.",
+        "status": "active"
+      },
+      {
+        "option_text": "has been repaired",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Means it's finished, which contradicts taking the bus.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-245",
+    "prompt": "She's much taller ______ she used to be.",
+    "categories": ["Grammar", "Comparatives", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "than",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard word for comparisons.",
+        "status": "active"
+      },
+      {
+        "option_text": "as",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used in 'as... as' structures.",
+        "status": "active"
+      },
+      {
+        "option_text": "that",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Common translation error from some languages.",
+        "status": "active"
+      },
+      {
+        "option_text": "then",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Spelling error; 'then' refers to time.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-246",
+    "prompt": "I ______ my keys. I can't find them anywhere.",
+    "categories": ["Grammar", "Present Perfect", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "have lost",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Action in the past with a result in the present.",
+        "status": "active"
+      },
+      {
+        "option_text": "lost",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, though Present Perfect is more common when the result is immediate.",
+        "status": "active"
+      },
+      {
+        "option_text": "am losing",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Continuous aspect is incorrect for this verb here.",
+        "status": "active"
+      },
+      {
+        "option_text": "was losing",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect tense.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-247",
+    "prompt": "He ______ to be the best player in the league.",
+    "categories": ["Grammar", "Passive Reporting", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "is considered",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Common passive structure for opinions.",
+        "status": "active"
+      },
+      {
+        "option_text": "considers",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Active voice; he would need an object.",
+        "status": "active"
+      },
+      {
+        "option_text": "thinks",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'he thinks he is...'.",
+        "status": "active"
+      },
+      {
+        "option_text": "is thought",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct and formal passive structure.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-248",
+    "prompt": "If only I ______ that job, everything would be different now.",
+    "categories": ["Grammar", "Wishes", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "had taken",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'If only' with past perfect for past regrets.",
+        "status": "active"
+      },
+      {
+        "option_text": "took",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Used for present regrets.",
+        "status": "active"
+      },
+      {
+        "option_text": "would take",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for complaints about others.",
+        "status": "active"
+      },
+      {
+        "option_text": "have taken",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Grammatically incorrect.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-249",
+    "prompt": "The film was ______ more interesting than I expected.",
+    "categories": ["Grammar", "Comparatives", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "far",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used to emphasize a difference.",
+        "status": "active"
+      },
+      {
+        "option_text": "very",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Cannot be used with comparatives.",
+        "status": "active"
+      },
+      {
+        "option_text": "much",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally correct intensifier.",
+        "status": "active"
+      },
+      {
+        "option_text": "a lot",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct but slightly more informal.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-250",
+    "prompt": "I don’t know why she’s so ______ . She’s usually very friendly.",
+    "categories": ["Vocabulary", "Adjectives", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "moody",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Describes someone whose feelings change frequently.",
+        "status": "active"
+      },
+      {
+        "option_text": "mean",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Opposite of friendly.",
+        "status": "active"
+      },
+      {
+        "option_text": "selfish",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Doesn't necessarily contrast with 'friendly'.",
+        "status": "active"
+      },
+      {
+        "option_text": "polite",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Opposite of the intended meaning.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-251",
+    "prompt": "By the end of the year, she ______ in this city for five years.",
+    "categories": ["Grammar", "Future Perfect Continuous", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "will have been living",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Describes duration up to a point in the future.",
+        "status": "active"
+      },
+      {
+        "option_text": "will have lived",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Focuses on the state rather than the continuous duration.",
+        "status": "active"
+      },
+      {
+        "option_text": "is living",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Tense mismatch.",
+        "status": "active"
+      },
+      {
+        "option_text": "will be living",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Doesn't correctly show the 'up to' duration.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-252",
+    "prompt": "We’ll have to ______ the situation carefully.",
+    "categories": ["Vocabulary", "Verbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "monitor",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To watch or check something over time.",
+        "status": "active"
+      },
+      {
+        "option_text": "look",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Needs 'at'.",
+        "status": "active"
+      },
+      {
+        "option_text": "see",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too simple/vague for this context.",
+        "status": "active"
+      },
+      {
+        "option_text": "assess",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "To judge the value or quality of something.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-253",
+    "prompt": "I couldn’t ______ what he was saying because of the noise.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "make out",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To hear or see something with difficulty.",
+        "status": "active"
+      },
+      {
+        "option_text": "take in",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "To absorb information.",
+        "status": "active"
+      },
+      {
+        "option_text": "hear out",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "To listen to someone until they finish.",
+        "status": "active"
+      },
+      {
+        "option_text": "figure out",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "To understand a logic/problem.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-254",
+    "prompt": "Hardly ______ any students passed the difficult test.",
+    "categories": ["Vocabulary", "Adverbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "any",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Hardly any' is a common phrase meaning 'almost none'.",
+        "status": "active"
+      },
+      {
+        "option_text": "some",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect collocation with 'hardly'.",
+        "status": "active"
+      },
+      {
+        "option_text": "none",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Double negative.",
+        "status": "active"
+      },
+      {
+        "option_text": "all",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Contradicts the meaning of 'hardly'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-255",
+    "prompt": "I ______ you if I had known you were in trouble.",
+    "categories": ["Grammar", "Third Conditional", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "would have helped",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Result clause for a hypothetical past situation.",
+        "status": "active"
+      },
+      {
+        "option_text": "will help",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "First conditional; doesn't match 'had known'.",
+        "status": "active"
+      },
+      {
+        "option_text": "would help",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Mixed conditional; only works if the help is in the present.",
+        "status": "active"
+      },
+      {
+        "option_text": "helped",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Grammatically incorrect result clause.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-256",
+    "prompt": "The police are ______ the disappearance of the young girl.",
+    "categories": ["Vocabulary", "Verbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "investigating",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Formal verb for police work.",
+        "status": "active"
+      },
+      {
+        "option_text": "looking into",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Common phrasal verb synonym.",
+        "status": "active"
+      },
+      {
+        "option_text": "searching",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually 'searching for', but 'investigating' is more comprehensive.",
+        "status": "active"
+      },
+      {
+        "option_text": "watching",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect meaning.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-257",
+    "prompt": "She was ______ exhausted after the 10-mile hike.",
+    "categories": ["Grammar", "Adverbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "absolutely",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used with extreme adjectives (exhausted).",
+        "status": "active"
+      },
+      {
+        "option_text": "very",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Cannot be used with extreme adjectives (very tired, NOT very exhausted).",
+        "status": "active"
+      },
+      {
+        "option_text": "completely",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Also used with extreme adjectives.",
+        "status": "active"
+      },
+      {
+        "option_text": "totally",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Slightly more informal but correct.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-258",
+    "prompt": "It ______ like it's going to rain later.",
+    "categories": ["Vocabulary", "Verbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "looks",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used for visual evidence or general impressions.",
+        "status": "active"
+      },
+      {
+        "option_text": "seems",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Similar meaning, but 'looks' is more common with weather.",
+        "status": "active"
+      },
+      {
+        "option_text": "feels",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Based on touch/physical sensation.",
+        "status": "active"
+      },
+      {
+        "option_text": "shows",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires an object.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-259",
+    "prompt": "I don't ______ to go out tonight; let's stay in.",
+    "categories": ["Vocabulary", "Phrasal Verbs/Idioms", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "feel like",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires -ing (feel like going).",
+        "status": "active"
+      },
+      {
+        "option_text": "want",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Simple and correct.",
+        "status": "active"
+      },
+      {
+        "option_text": "fancy",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires -ing (fancy going).",
+        "status": "active"
+      },
+      {
+        "option_text": "care",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "'Don't care to' is a slightly formal/dated way of saying don't want to.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-260",
+    "prompt": "He didn't get the job ______ he had all the right qualifications.",
+    "categories": ["Grammar", "Conjunctions", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "although",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used to show contrast between two clauses.",
+        "status": "active"
+      },
+      {
+        "option_text": "despite",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires a noun phrase or gerund.",
+        "status": "active"
+      },
+      {
+        "option_text": "even though",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally correct and slightly more emphatic.",
+        "status": "active"
+      },
+      {
+        "option_text": "however",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires a new sentence or semicolon.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-261",
+    "prompt": "The police ______ the suspect for three hours before he finally confessed.",
+    "categories": ["Grammar", "Past Perfect Continuous", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "had been questioning",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used for a continuous action that happened before another past action.",
+        "status": "active"
+      },
+      {
+        "option_text": "were questioning",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Describes an action in progress, but doesn't emphasize the sequence as well.",
+        "status": "active"
+      },
+      {
+        "option_text": "have been questioning",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Present perfect cannot be used with the past 'confessed'.",
+        "status": "active"
+      },
+      {
+        "option_text": "questioned",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically correct, but less descriptive of the ongoing process.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-262",
+    "prompt": "I'd rather you ______ tell anyone what I just said.",
+    "categories": ["Grammar", "Preference Structures", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "didn't",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "After 'would rather + person', we use the past simple for the present/future.",
+        "status": "active"
+      },
+      {
+        "option_text": "don't",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Common logical error; this structure requires a tense shift.",
+        "status": "active"
+      },
+      {
+        "option_text": "not",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Only used if the subject is the same (I'd rather not tell).",
+        "status": "active"
+      },
+      {
+        "option_text": "shouldn't",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Understandable but not the standard idiomatic structure.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-263",
+    "prompt": "The car was a total ______ of money; it broke down a week after I bought it.",
+    "categories": ["Vocabulary", "Idioms", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "waste",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard collocation for money spent poorly.",
+        "status": "active"
+      },
+      {
+        "option_text": "loss",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually refers to the decrease in value, not the act of buying.",
+        "status": "active"
+      },
+      {
+        "option_text": "spend",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Not used as a noun in this context.",
+        "status": "active"
+      },
+      {
+        "option_text": "disaster",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Metaphorical and fits the context well.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-264",
+    "prompt": "By the time we arrived at the stadium, the game ______ .",
+    "categories": ["Grammar", "Past Perfect", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "had already begun",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Past Perfect for an action finished before another past action.",
+        "status": "active"
+      },
+      {
+        "option_text": "already began",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Common in US English, but less formal.",
+        "status": "active"
+      },
+      {
+        "option_text": "was beginning",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Implies it was starting exactly as they arrived.",
+        "status": "active"
+      },
+      {
+        "option_text": "has begun",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Tense mismatch.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-265",
+    "prompt": "I'm looking for a ______ to the problem, not just a temporary fix.",
+    "categories": ["Vocabulary", "Nouns", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "solution",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The standard noun for solving a problem.",
+        "status": "active"
+      },
+      {
+        "option_text": "answer",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Commonly used for questions or puzzles.",
+        "status": "active"
+      },
+      {
+        "option_text": "result",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Refers to the outcome, not the act of solving.",
+        "status": "active"
+      },
+      {
+        "option_text": "key",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Metaphorical 'key to the problem'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-266",
+    "prompt": "You ______ have seen him at the mall; he's been in Paris all week.",
+    "categories": ["Grammar", "Modals of Deduction", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "can't",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used for logical impossibility in the past.",
+        "status": "active"
+      },
+      {
+        "option_text": "mustn't",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for prohibition, not deduction.",
+        "status": "active"
+      },
+      {
+        "option_text": "couldn't",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally correct for negative deduction.",
+        "status": "active"
+      },
+      {
+        "option_text": "mightn't",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Suggests a weak possibility, but 'can't' is stronger here.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-267",
+    "prompt": "It's important to ______ a good impression during a job interview.",
+    "categories": ["Vocabulary", "Collocations", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "make",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The standard verb collocation for 'impression'.",
+        "status": "active"
+      },
+      {
+        "option_text": "do",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect collocation.",
+        "status": "active"
+      },
+      {
+        "option_text": "give",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Commonly used and understood.",
+        "status": "active"
+      },
+      {
+        "option_text": "create",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "More formal but correct.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-268",
+    "prompt": "The more you practice, ______ you will become.",
+    "categories": ["Grammar", "Comparative Structures", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "the better",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The 'the + comparative, the + comparative' structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "better",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Missing the required 'the'.",
+        "status": "active"
+      },
+      {
+        "option_text": "the best",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires a comparative, not a superlative.",
+        "status": "active"
+      },
+      {
+        "option_text": "the more good",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect comparative form of 'good'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-269",
+    "prompt": "I'm not sure if I can come; it ______ on how much work I have.",
+    "categories": ["Vocabulary", "Phrases", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "depends",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Always followed by 'on'.",
+        "status": "active"
+      },
+      {
+        "option_text": "relies",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually used for people/support, not general situations.",
+        "status": "active"
+      },
+      {
+        "option_text": "counts",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually 'counts on' a person.",
+        "status": "active"
+      },
+      {
+        "option_text": "rests",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Formal synonym for 'depends on'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-270",
+    "prompt": "If I ______ you, I'd apologize for what happened.",
+    "categories": ["Grammar", "Second Conditional", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "were",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard subjunctive 'were' used for advice in the second conditional.",
+        "status": "active"
+      },
+      {
+        "option_text": "was",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Common in spoken English, though 'were' is more formal.",
+        "status": "active"
+      },
+      {
+        "option_text": "am",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Tense mismatch.",
+        "status": "active"
+      },
+      {
+        "option_text": "had been",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Third conditional form; doesn't match 'would apologize'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-271",
+    "prompt": "We were so ______ with the service that we didn't leave a tip.",
+    "categories": ["Vocabulary", "Adjectives", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "disappointed",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Describes the feeling of expectation not being met.",
+        "status": "active"
+      },
+      {
+        "option_text": "unhappy",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "General term for dissatisfaction.",
+        "status": "active"
+      },
+      {
+        "option_text": "annoyed",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Describes slight anger.",
+        "status": "active"
+      },
+      {
+        "option_text": "satisfied",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Opposite of the intended meaning.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-272",
+    "prompt": "She ______ have left her phone at home; she isn't answering my calls.",
+    "categories": ["Grammar", "Modals of Deduction", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "must",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Logical conclusion based on evidence.",
+        "status": "active"
+      },
+      {
+        "option_text": "should",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Refers to expectation, but 'must' is stronger for deduction.",
+        "status": "active"
+      },
+      {
+        "option_text": "can",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Can have' is not used for positive deduction.",
+        "status": "active"
+      },
+      {
+        "option_text": "might",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Shows possibility, but less certain than 'must'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-273",
+    "prompt": "He doesn't have much money, ______ he always dresses very well.",
+    "categories": ["Grammar", "Conjunctions", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "yet",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used to show a surprising contrast.",
+        "status": "active"
+      },
+      {
+        "option_text": "but",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard conjunction for contrast.",
+        "status": "active"
+      },
+      {
+        "option_text": "so",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Shows result, not contrast.",
+        "status": "active"
+      },
+      {
+        "option_text": "although",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually starts the sentence or requires a different structure.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-274",
+    "prompt": "The company is ______ a new product next month.",
+    "categories": ["Vocabulary", "Business", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "launching",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The standard verb for releasing a new product.",
+        "status": "active"
+      },
+      {
+        "option_text": "starting",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Very general.",
+        "status": "active"
+      },
+      {
+        "option_text": "opening",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Used for stores or events, not products.",
+        "status": "active"
+      },
+      {
+        "option_text": "releasing",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Commonly used for movies, books, or software.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-275",
+    "prompt": "______ by the noise, she couldn't concentrate on her book.",
+    "categories": ["Grammar", "Participle Clauses", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "Distracted",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Past participle clause expressing a reason/state.",
+        "status": "active"
+      },
+      {
+        "option_text": "Distracting",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Present participle would mean she was the one causing the distraction.",
+        "status": "active"
+      },
+      {
+        "option_text": "Being distracted",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but slightly more complex than necessary.",
+        "status": "active"
+      },
+      {
+        "option_text": "To distract",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect grammatical structure for this context.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-276",
+    "prompt": "It's ______ unlikely that we will finish on time.",
+    "categories": ["Grammar", "Adverbs of Degree", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "highly",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard adverb collocation with 'unlikely'.",
+        "status": "active"
+      },
+      {
+        "option_text": "very",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Common and correct.",
+        "status": "active"
+      },
+      {
+        "option_text": "extremely",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Adds more emphasis.",
+        "status": "active"
+      },
+      {
+        "option_text": "strongly",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used with verbs like 'believe' or 'disagree'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-277",
+    "prompt": "I'm not sure if I can ______ up with his demands.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "keep",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Keep up with' means to move/work at the same rate.",
+        "status": "active"
+      },
+      {
+        "option_text": "put",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "'Put up with' means to tolerate; fits well here.",
+        "status": "active"
+      },
+      {
+        "option_text": "stay",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Does not form the correct phrasal verb.",
+        "status": "active"
+      },
+      {
+        "option_text": "catch",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "'Catch up with' implies being behind first.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-278",
+    "prompt": "The report was ______ written and easy to understand.",
+    "categories": ["Vocabulary", "Adverbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "well",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Adverb form of 'good'.",
+        "status": "active"
+      },
+      {
+        "option_text": "clearly",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Fits the context of being 'easy to understand'.",
+        "status": "active"
+      },
+      {
+        "option_text": "good",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Adjective form; cannot modify the verb 'written'.",
+        "status": "active"
+      },
+      {
+        "option_text": "simply",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Logical for something easy to understand.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-279",
+    "prompt": "He ______ to have stolen the money, but he denied it.",
+    "categories": ["Grammar", "Passive Reporting", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "was alleged",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Formal way to report a claim without proof.",
+        "status": "active"
+      },
+      {
+        "option_text": "was said",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Common passive reporting structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "claimed",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Active voice; he would be claiming it about someone else.",
+        "status": "active"
+      },
+      {
+        "option_text": "was thought",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Refers to general belief.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-280",
+    "prompt": "We should ______ the most of this beautiful weather.",
+    "categories": ["Vocabulary", "Idioms", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "make",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The idiom 'make the most of' means to use to the best advantage.",
+        "status": "active"
+      },
+      {
+        "option_text": "do",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect idiom.",
+        "status": "active"
+      },
+      {
+        "option_text": "get",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Understood, but 'make' is the standard verb.",
+        "status": "active"
+      },
+      {
+        "option_text": "take",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Used in 'take advantage of', but 'make' fits this specific phrase.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-281",
+    "prompt": "If you ______ told me earlier, I could have done something about it.",
+    "categories": ["Grammar", "Third Conditional", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "had",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Past Perfect in the 'if' clause of a third conditional.",
+        "status": "active"
+      },
+      {
+        "option_text": "would have",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Cannot use 'would have' in the 'if' clause.",
+        "status": "active"
+      },
+      {
+        "option_text": "did",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect tense.",
+        "status": "active"
+      },
+      {
+        "option_text": "have",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Tense mismatch.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-282",
+    "prompt": "I was ______ surprised by her reaction; I didn't expect her to be so angry.",
+    "categories": ["Grammar", "Adverbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "quite",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Common adverb of degree.",
+        "status": "active"
+      },
+      {
+        "option_text": "rather",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Often used for negative or surprising situations.",
+        "status": "active"
+      },
+      {
+        "option_text": "very",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Simple and correct.",
+        "status": "active"
+      },
+      {
+        "option_text": "fairly",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Implies a moderate amount.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-283",
+    "prompt": "She ______ to be a very reliable employee.",
+    "categories": ["Vocabulary", "Verbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "proved",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To show to be true over time.",
+        "status": "active"
+      },
+      {
+        "option_text": "showed",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Usually requires 'showed herself to be'.",
+        "status": "active"
+      },
+      {
+        "option_text": "turned out",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Phrasal verb meaning 'proved to be'.",
+        "status": "active"
+      },
+      {
+        "option_text": "seemed",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but refers to appearance rather than proof.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-284",
+    "prompt": "The ______ of living has increased significantly this year.",
+    "categories": ["Vocabulary", "Economy", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "cost",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard term for the price of daily expenses.",
+        "status": "active"
+      },
+      {
+        "option_text": "price",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Refers to specific items, not the general level of expenses.",
+        "status": "active"
+      },
+      {
+        "option_text": "expense",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Used for specific costs incurred.",
+        "status": "active"
+      },
+      {
+        "option_text": "standard",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Refers to quality of life, which usually 'drops' when prices 'rise'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-285",
+    "prompt": "I don't mind staying late ______ I get paid overtime.",
+    "categories": ["Grammar", "Conditionals", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "provided",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used to express a condition.",
+        "status": "active"
+      },
+      {
+        "option_text": "as long as",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally correct conditional phrase.",
+        "status": "active"
+      },
+      {
+        "option_text": "if",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Standard and correct.",
+        "status": "active"
+      },
+      {
+        "option_text": "unless",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Meaning is reversed.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-286",
+    "prompt": "The meeting was ______ because the manager was ill.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "called off",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Phrasal verb meaning 'cancelled'.",
+        "status": "active"
+      },
+      {
+        "option_text": "put off",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Means 'postponed'; also very likely.",
+        "status": "active"
+      },
+      {
+        "option_text": "taken off",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for planes or clothes.",
+        "status": "active"
+      },
+      {
+        "option_text": "set off",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Means 'to start a journey'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-287",
+    "prompt": "I'm looking forward ______ you again soon.",
+    "categories": ["Grammar", "Verb Patterns", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "to seeing",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The 'to' in 'look forward to' is a preposition and requires -ing.",
+        "status": "active"
+      },
+      {
+        "option_text": "to see",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "The most common error for this level.",
+        "status": "active"
+      },
+      {
+        "option_text": "seeing",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Missing the preposition 'to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "at seeing",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect preposition.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-288",
+    "prompt": "He succeeded ______ passing the driving test on his first attempt.",
+    "categories": ["Grammar", "Prepositions", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "in",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Succeed' always takes 'in' + -ing.",
+        "status": "active"
+      },
+      {
+        "option_text": "at",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect preposition.",
+        "status": "active"
+      },
+      {
+        "option_text": "to",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Confused with 'managed to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "with",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Sometimes used with objects, but 'in' is correct for actions.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-289",
+    "prompt": "It ______ like a good idea at the time.",
+    "categories": ["Vocabulary", "Verbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "seemed",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard verb for impressions.",
+        "status": "active"
+      },
+      {
+        "option_text": "looked",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Used for visual or general impressions.",
+        "status": "active"
+      },
+      {
+        "option_text": "sounded",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Used when hearing about an idea.",
+        "status": "active"
+      },
+      {
+        "option_text": "was",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Simple but less nuanced.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-290",
+    "prompt": "She was so ______ in her work that she didn't hear me enter.",
+    "categories": ["Vocabulary", "Adjectives", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "absorbed",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Meaning giving all your attention to something.",
+        "status": "active"
+      },
+      {
+        "option_text": "interested",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too weak for the context.",
+        "status": "active"
+      },
+      {
+        "option_text": "busy",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Logical, but 'absorbed' is more descriptive.",
+        "status": "active"
+      },
+      {
+        "option_text": "concentrated",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Adjectives describing the person use 'concentrating'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-291",
+    "prompt": "The project was delayed ______ unforeseen technical issues.",
+    "categories": ["Grammar", "Conjunctions", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "due to",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Followed by a noun phrase to explain a cause.",
+        "status": "active"
+      },
+      {
+        "option_text": "because",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires a full clause (subject + verb).",
+        "status": "active"
+      },
+      {
+        "option_text": "owing to",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A formal and correct synonym for 'due to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "resulted in",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect grammatical structure; 'The issues resulted in a delay' would work.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-292",
+    "prompt": "I'm not ______ of the details yet, but I'll let you know as soon as I am.",
+    "categories": ["Vocabulary", "Adjectives", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "aware",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Aware of' means having knowledge of something.",
+        "status": "active"
+      },
+      {
+        "option_text": "familiar",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, though 'familiar with' is a more common collocation.",
+        "status": "active"
+      },
+      {
+        "option_text": "sure",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually 'sure about' or 'sure of'.",
+        "status": "active"
+      },
+      {
+        "option_text": "knowing",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect grammatical usage here.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-293",
+    "prompt": "He ______ have been joking when he said he was quitting.",
+    "categories": ["Grammar", "Modals of Deduction", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "must",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Strong logical deduction about a past action.",
+        "status": "active"
+      },
+      {
+        "option_text": "should",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect for deduction.",
+        "status": "active"
+      },
+      {
+        "option_text": "can",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Can have' is not used for positive past deduction.",
+        "status": "active"
+      },
+      {
+        "option_text": "might",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Possible deduction, though less certain than 'must'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-294",
+    "prompt": "I'd like to ______ out that we haven't reached a final decision yet.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "point",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Point out' means to bring attention to a fact.",
+        "status": "active"
+      },
+      {
+        "option_text": "set",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Set out' means to start a journey or explain in detail.",
+        "status": "active"
+      },
+      {
+        "option_text": "show",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Used as a single verb; 'show out' is rare (meaning to lead someone to an exit).",
+        "status": "active"
+      },
+      {
+        "option_text": "bring",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Bring out' means to launch or highlight a quality.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-295",
+    "prompt": "Unless it ______ raining, we'll go for a walk.",
+    "categories": ["Grammar", "Conditionals", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "stops",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Unless' follows the same rules as 'if' (present simple for future).",
+        "status": "active"
+      },
+      {
+        "option_text": "will stop",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Future 'will' is not used in conditional clauses.",
+        "status": "active"
+      },
+      {
+        "option_text": "stopped",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Tense mismatch for the future result.",
+        "status": "active"
+      },
+      {
+        "option_text": "doesn't stop",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Redundant negative with 'unless'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-296",
+    "prompt": "She's very ______ ; she always wants to win.",
+    "categories": ["Vocabulary", "Personality Adjectives", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "competitive",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Describes someone with a strong desire to succeed.",
+        "status": "active"
+      },
+      {
+        "option_text": "ambitious",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Describes wanting success in life, but 'competitive' fits 'winning' better.",
+        "status": "active"
+      },
+      {
+        "option_text": "determined",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Shows strong will, but not necessarily against others.",
+        "status": "active"
+      },
+      {
+        "option_text": "aggressive",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Negative connotation for wanting to win forcefully.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-297",
+    "prompt": "The house was ______ built ten years ago.",
+    "categories": ["Vocabulary", "Adverbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "originally",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Refers to the first time or the start of something.",
+        "status": "active"
+      },
+      {
+        "option_text": "initially",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Formal synonym for 'originally'.",
+        "status": "active"
+      },
+      {
+        "option_text": "first",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Understood, but 'originally' is more natural with 'built'.",
+        "status": "active"
+      },
+      {
+        "option_text": "actually",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Used for correction, but fits grammatically.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-298",
+    "prompt": "I can't ______ that sound anymore; it's driving me crazy.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "stand",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Idiomatic way to say 'tolerate' or 'endure'.",
+        "status": "active"
+      },
+      {
+        "option_text": "bear",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Slightly more formal synonym for 'stand'.",
+        "status": "active"
+      },
+      {
+        "option_text": "put up with",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard phrasal verb for tolerance.",
+        "status": "active"
+      },
+      {
+        "option_text": "handle",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "To manage or cope with something.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-299",
+    "prompt": "I'll call you ______ I get home.",
+    "categories": ["Grammar", "Time Clauses", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "as soon as",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used for an action happening immediately after another.",
+        "status": "active"
+      },
+      {
+        "option_text": "when",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Simple and correct for time sequences.",
+        "status": "active"
+      },
+      {
+        "option_text": "while",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for simultaneous actions.",
+        "status": "active"
+      },
+      {
+        "option_text": "until",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect meaning (calls continuously before arriving).",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  },
+  {
+    "id": "medium-300",
+    "prompt": "By the end of the year, they ______ the new bridge.",
+    "categories": ["Grammar", "Future Perfect", "B1-Intermediate"],
+    "answers": [
+      {
+        "option_text": "will have finished",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The Future Perfect is used for actions completed by a point in the future.",
+        "status": "active"
+      },
+      {
+        "option_text": "will finish",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Simple future; doesn't emphasize completion 'by' the time as well.",
+        "status": "active"
+      },
+      {
+        "option_text": "are finishing",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect tense for this time marker.",
+        "status": "active"
+      },
+      {
+        "option_text": "have finished",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Present perfect cannot be used for the future.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "MEDIUM"
+  }
+]

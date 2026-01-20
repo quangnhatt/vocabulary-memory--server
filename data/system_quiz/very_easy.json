@@ -1,0 +1,3567 @@
+[
+  {
+    "id": "v-easy-001",
+    "prompt": "What ______ is the sky on a clear day?",
+    "categories": ["Vocabulary", "Adjectives", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "color",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Color' is the correct category for describing the sky.",
+        "status": "active"
+      },
+      {
+        "option_text": "name",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You don't ask for the 'name' of the sky's appearance in this context.",
+        "status": "active"
+      },
+      {
+        "option_text": "weather",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Related to sky, but grammatically incorrect for the sentence structure.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-002",
+    "prompt": "I write with a ______.",
+    "categories": ["Vocabulary", "Nouns", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "pen",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A pen is a standard tool for writing.",
+        "status": "active"
+      },
+      {
+        "option_text": "pencil",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A pencil is also used for writing, though 'pen' is more common in general prompts.",
+        "status": "active"
+      },
+      {
+        "option_text": "apple",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "An apple is a fruit, not a writing tool.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-003",
+    "prompt": "A ______ says 'Meow'.",
+    "categories": ["Vocabulary", "Animals", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "cat",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Cats are the only animals that meow.",
+        "status": "active"
+      },
+      {
+        "option_text": "kitten",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A kitten is a young cat and also meows.",
+        "status": "active"
+      },
+      {
+        "option_text": "dog",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Dogs bark; they do not meow.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-004",
+    "prompt": "Nice to ______ you.",
+    "categories": ["Phrases", "Greetings", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "meet",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard polite greeting upon first introduction.",
+        "status": "active"
+      },
+      {
+        "option_text": "see",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "'Nice to see you' is used when you already know the person.",
+        "status": "active"
+      },
+      {
+        "option_text": "eat",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "This is grammatically correct but nonsensical in a greeting.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-005",
+    "prompt": "The sun rises in the ______.",
+    "categories": ["Vocabulary", "Nature", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "morning",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The sunrise happens specifically in the morning.",
+        "status": "active"
+      },
+      {
+        "option_text": "East",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct direction, but 'morning' is the more common beginner time-vocabulary answer.",
+        "status": "active"
+      },
+      {
+        "option_text": "night",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "The sun sets before night begins.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-006",
+    "prompt": "There are seven days in a ______.",
+    "categories": ["Vocabulary", "Time", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "week",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A week consists exactly of seven days.",
+        "status": "active"
+      },
+      {
+        "option_text": "month",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "A month has days, but usually 30 or 31, not seven.",
+        "status": "active"
+      },
+      {
+        "option_text": "year",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A year has 365 days.",
+        "status": "active"
+      },
+      {
+        "option_text": "weekend",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A weekend only has two days.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-007",
+    "prompt": "My father's sister is my ______.",
+    "categories": ["Vocabulary", "Family", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "aunt",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The sister of one's parent is an aunt.",
+        "status": "active"
+      },
+      {
+        "option_text": "auntie",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "'Auntie' is a common informal term for aunt.",
+        "status": "active"
+      },
+      {
+        "option_text": "uncle",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "An uncle is a male relative.",
+        "status": "active"
+      },
+      {
+        "option_text": "mother",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Your father's sister is not your mother.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-008",
+    "prompt": "I use my ______ to hear music.",
+    "categories": ["Vocabulary", "Body Parts", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "ears",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Ears are the organ used for the sense of hearing.",
+        "status": "active"
+      },
+      {
+        "option_text": "headphones",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "You use headphones to hear, but 'ears' is the primary body part.",
+        "status": "active"
+      },
+      {
+        "option_text": "eyes",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Eyes are for seeing, not hearing.",
+        "status": "active"
+      },
+      {
+        "option_text": "mouth",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "The mouth is for eating and speaking.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-009",
+    "prompt": "Please ______ the door. It is cold outside.",
+    "categories": ["Vocabulary", "Verbs", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "close",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Closing the door keeps the cold air out.",
+        "status": "active"
+      },
+      {
+        "option_text": "shut",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "'Shut' is a synonym for 'close'.",
+        "status": "active"
+      },
+      {
+        "option_text": "open",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Opening the door would let more cold air in.",
+        "status": "active"
+      },
+      {
+        "option_text": "stop",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You don't 'stop' a door to keep cold out.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-010",
+    "prompt": "An apple is a type of ______.",
+    "categories": ["Vocabulary", "Food", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "fruit",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Apples belong to the fruit food group.",
+        "status": "active"
+      },
+      {
+        "option_text": "food",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "While true, 'fruit' is the more specific and better category.",
+        "status": "active"
+      },
+      {
+        "option_text": "vegetable",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Apples are not vegetables.",
+        "status": "active"
+      },
+      {
+        "option_text": "meat",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Apples are plants, not meat.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-011",
+    "prompt": "It is raining. I need an ______.",
+    "categories": ["Vocabulary", "Objects", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "umbrella",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "An umbrella is the standard tool used to stay dry in the rain.",
+        "status": "active"
+      },
+      {
+        "option_text": "raincoat",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A raincoat is also used for rain, though 'umbrella' is the most common beginner noun.",
+        "status": "active"
+      },
+      {
+        "option_text": "hat",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "A hat provides some protection but is not the primary solution for rain.",
+        "status": "active"
+      },
+      {
+        "option_text": "ice cream",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "This is a food item and irrelevant to rain.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-012",
+    "prompt": "I wear ______ on my feet to go running.",
+    "categories": ["Vocabulary", "Clothing", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "sneakers",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Sneakers (or trainers) are designed specifically for sports like running.",
+        "status": "active"
+      },
+      {
+        "option_text": "shoes",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "This is a general term that is correct but less specific than sneakers.",
+        "status": "active"
+      },
+      {
+        "option_text": "socks",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "You wear socks on your feet, but you need shoes to go running safely.",
+        "status": "active"
+      },
+      {
+        "option_text": "gloves",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Gloves are worn on hands, not feet.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-013",
+    "prompt": "The ______ takes me to school with other students.",
+    "categories": ["Vocabulary", "Transportation", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "bus",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A school bus is the primary mode of shared transport for students.",
+        "status": "active"
+      },
+      {
+        "option_text": "van",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A van can also transport a group of students.",
+        "status": "active"
+      },
+      {
+        "option_text": "car",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "A car is usually for a single family, not a group of students.",
+        "status": "active"
+      },
+      {
+        "option_text": "bicycle",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A bicycle only carries one or two people, not a group.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-014",
+    "prompt": "When I am ______ , I want to drink water.",
+    "categories": ["Vocabulary", "Feelings", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "thirsty",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Thirst is the physical need to drink fluids.",
+        "status": "active"
+      },
+      {
+        "option_text": "parched",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "'Parched' is a synonym, though slightly more advanced than 'thirsty'.",
+        "status": "active"
+      },
+      {
+        "option_text": "hungry",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Hunger is the need for food, not water.",
+        "status": "active"
+      },
+      {
+        "option_text": "tired",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Tiredness leads to a need for sleep, not specifically water.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-015",
+    "prompt": "I go to the ______ to buy bread and milk.",
+    "categories": ["Vocabulary", "Places", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "supermarket",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Supermarkets sell a variety of groceries like bread and milk.",
+        "status": "active"
+      },
+      {
+        "option_text": "store",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A general term for a place of purchase.",
+        "status": "active"
+      },
+      {
+        "option_text": "bakery",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "A bakery sells bread, but usually not milk.",
+        "status": "active"
+      },
+      {
+        "option_text": "library",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Libraries are for books, not food.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-016",
+    "prompt": "One, two, three, ______, five.",
+    "categories": ["Vocabulary", "Numbers", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "four",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Four is the number that follows three.",
+        "status": "active"
+      },
+      {
+        "option_text": "4",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "The digit is correct but the word form is preferred in text.",
+        "status": "active"
+      },
+      {
+        "option_text": "six",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Six comes after five.",
+        "status": "active"
+      },
+      {
+        "option_text": "zero",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Zero comes before one.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-017",
+    "prompt": "You use a ______ to eat soup.",
+    "categories": ["Vocabulary", "Kitchen", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "spoon",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A spoon is the correct utensil for liquid food.",
+        "status": "active"
+      },
+      {
+        "option_text": "bowl",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "You eat soup *from* a bowl, but you use a spoon *to* eat it.",
+        "status": "active"
+      },
+      {
+        "option_text": "fork",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A fork cannot hold liquid soup.",
+        "status": "active"
+      },
+      {
+        "option_text": "knife",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A knife is for cutting, not for eating soup.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-018",
+    "prompt": "The ______ is the person who teaches the class.",
+    "categories": ["Vocabulary", "Jobs", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "teacher",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A teacher is the professional who instructs students.",
+        "status": "active"
+      },
+      {
+        "option_text": "professor",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A professor also teaches, though usually at a university level.",
+        "status": "active"
+      },
+      {
+        "option_text": "student",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "The student is the one learning, not teaching.",
+        "status": "active"
+      },
+      {
+        "option_text": "doctor",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A doctor works in a hospital, not a classroom.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-019",
+    "prompt": "I sleep in a ______.",
+    "categories": ["Vocabulary", "Furniture", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "bed",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A bed is the standard piece of furniture for sleeping.",
+        "status": "active"
+      },
+      {
+        "option_text": "couch",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "You can sleep on a couch, but it is not its primary purpose.",
+        "status": "active"
+      },
+      {
+        "option_text": "chair",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Chairs are for sitting.",
+        "status": "active"
+      },
+      {
+        "option_text": "table",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A table is for eating or working.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-020",
+    "prompt": "Today is Monday. Tomorrow is ______.",
+    "categories": ["Vocabulary", "Time", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "Tuesday",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Tuesday is the day that follows Monday.",
+        "status": "active"
+      },
+      {
+        "option_text": "Wednesday",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Wednesday is two days after Monday.",
+        "status": "active"
+      },
+      {
+        "option_text": "Sunday",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Sunday is the day before Monday.",
+        "status": "active"
+      },
+      {
+        "option_text": "Friday",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Friday is four days after Monday.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-021",
+    "prompt": "I use a ______ to wash my hair.",
+    "categories": ["Vocabulary", "Hygiene", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "shampoo",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Shampoo is specifically for cleaning hair.",
+        "status": "active"
+      },
+      {
+        "option_text": "soap",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Soap can wash hair, but shampoo is the standard product.",
+        "status": "active"
+      },
+      {
+        "option_text": "water",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "You use water, but you need a cleaning agent to 'wash' it properly.",
+        "status": "active"
+      },
+      {
+        "option_text": "toothpaste",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Toothpaste is for teeth.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-022",
+    "prompt": "The ______ is very hot today. The sun is shining.",
+    "categories": ["Vocabulary", "Weather", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "weather",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Weather describes the daily state of the atmosphere.",
+        "status": "active"
+      },
+      {
+        "option_text": "temperature",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Temperature refers to the heat, but 'weather' fits the sentence structure better.",
+        "status": "active"
+      },
+      {
+        "option_text": "climate",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Climate is long-term weather; usually too advanced for this context.",
+        "status": "active"
+      },
+      {
+        "option_text": "sky",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "The sky isn't 'hot'; the air or weather is.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-023",
+    "prompt": "A ______ has four legs and barks.",
+    "categories": ["Vocabulary", "Animals", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "dog",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Barking is the unique sound a dog makes.",
+        "status": "active"
+      },
+      {
+        "option_text": "puppy",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A puppy is a young dog.",
+        "status": "active"
+      },
+      {
+        "option_text": "cat",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Cats meow.",
+        "status": "active"
+      },
+      {
+        "option_text": "bird",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Birds have two legs and chirp.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-024",
+    "prompt": "I read ______ in the library.",
+    "categories": ["Vocabulary", "Objects", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "books",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Books are the primary items read in a library.",
+        "status": "active"
+      },
+      {
+        "option_text": "magazines",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Magazines are also found in libraries.",
+        "status": "active"
+      },
+      {
+        "option_text": "stories",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "You read stories *in* books.",
+        "status": "active"
+      },
+      {
+        "option_text": "music",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You listen to music.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-025",
+    "prompt": "My ______ hurts. I cannot walk.",
+    "categories": ["Vocabulary", "Body Parts", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "leg",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Legs are necessary for walking.",
+        "status": "active"
+      },
+      {
+        "option_text": "foot",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A hurt foot also prevents walking.",
+        "status": "active"
+      },
+      {
+        "option_text": "arm",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A hurt arm does not stop you from walking.",
+        "status": "active"
+      },
+      {
+        "option_text": "finger",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A hurt finger does not affect walking.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-026",
+    "prompt": "I buy food at the ______.",
+    "categories": ["Vocabulary", "Places", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "market",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A market is a primary place for buying food.",
+        "status": "active"
+      },
+      {
+        "option_text": "shop",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "General term for a place of commerce.",
+        "status": "active"
+      },
+      {
+        "option_text": "restaurant",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "You buy meals at a restaurant, but usually not 'food' as groceries.",
+        "status": "active"
+      },
+      {
+        "option_text": "bank",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Banks are for money.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-027",
+    "prompt": "A ______ is a very big animal with a long trunk.",
+    "categories": ["Vocabulary", "Animals", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "elephant",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Only elephants have trunks.",
+        "status": "active"
+      },
+      {
+        "option_text": "giraffe",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Giraffes have long necks, not trunks.",
+        "status": "active"
+      },
+      {
+        "option_text": "lion",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Lions do not have trunks.",
+        "status": "active"
+      },
+      {
+        "option_text": "mouse",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Mice are very small.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-028",
+    "prompt": "I ______ to the radio every morning.",
+    "categories": ["Vocabulary", "Verbs", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "listen",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "You listen to audio media.",
+        "status": "active"
+      },
+      {
+        "option_text": "hear",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Hearing is passive; 'listen' is the intentional action for radio.",
+        "status": "active"
+      },
+      {
+        "option_text": "watch",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You watch TV, not radio.",
+        "status": "active"
+      },
+      {
+        "option_text": "talk",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You talk *to* people, not usually the radio.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-029",
+    "prompt": "The opposite of 'big' is ______.",
+    "categories": ["Vocabulary", "Adjectives", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "small",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Small is the direct antonym of big.",
+        "status": "active"
+      },
+      {
+        "option_text": "little",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Little is a synonym for small.",
+        "status": "active"
+      },
+      {
+        "option_text": "short",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Short is the opposite of tall/long.",
+        "status": "active"
+      },
+      {
+        "option_text": "large",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Large is a synonym for big.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-030",
+    "prompt": "I cook dinner in the ______.",
+    "categories": ["Vocabulary", "Rooms", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "kitchen",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The kitchen is the room for cooking.",
+        "status": "active"
+      },
+      {
+        "option_text": "oven",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "You cook *in* an oven, but the prompt asks for the location (room).",
+        "status": "active"
+      },
+      {
+        "option_text": "bedroom",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Bedrooms are for sleeping.",
+        "status": "active"
+      },
+      {
+        "option_text": "bathroom",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Bathrooms are for washing.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-031",
+    "prompt": "The color of grass is ______.",
+    "categories": ["Vocabulary", "Colors", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "green",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Healthy grass is naturally green.",
+        "status": "active"
+      },
+      {
+        "option_text": "yellow",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Grass can turn yellow if dry, but green is the standard answer.",
+        "status": "active"
+      },
+      {
+        "option_text": "blue",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Grass is not blue.",
+        "status": "active"
+      },
+      {
+        "option_text": "red",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Grass is not red.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-032",
+    "prompt": "I put my clothes in a ______.",
+    "categories": ["Vocabulary", "Furniture", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "closet",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A closet or wardrobe is the primary place to store clothes.",
+        "status": "active"
+      },
+      {
+        "option_text": "drawer",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Drawers are also used for clothing.",
+        "status": "active"
+      },
+      {
+        "option_text": "fridge",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A fridge is for food.",
+        "status": "active"
+      },
+      {
+        "option_text": "sink",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A sink is for washing.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-033",
+    "prompt": "I drink ______ with my cereal.",
+    "categories": ["Vocabulary", "Food", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "milk",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Milk is the standard liquid used with cereal.",
+        "status": "active"
+      },
+      {
+        "option_text": "juice",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Some people might, but it is uncommon compared to milk.",
+        "status": "active"
+      },
+      {
+        "option_text": "coffee",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You drink coffee *with* breakfast, but not *in* the cereal.",
+        "status": "active"
+      },
+      {
+        "option_text": "soup",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Soup is a meal, not a cereal topping.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-034",
+    "prompt": "A ______ flies in the sky.",
+    "categories": ["Vocabulary", "Transportation", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "plane",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Planes are the most common form of air travel.",
+        "status": "active"
+      },
+      {
+        "option_text": "helicopter",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Helicopters also fly, but planes are more fundamental vocabulary.",
+        "status": "active"
+      },
+      {
+        "option_text": "boat",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Boats travel on water.",
+        "status": "active"
+      },
+      {
+        "option_text": "train",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Trains travel on tracks.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-035",
+    "prompt": "I use my ______ to smell flowers.",
+    "categories": ["Vocabulary", "Body Parts", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "nose",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The nose is the organ used for smelling.",
+        "status": "active"
+      },
+      {
+        "option_text": "mouth",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "The mouth is for tasting and eating.",
+        "status": "active"
+      },
+      {
+        "option_text": "ear",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Ears are for hearing.",
+        "status": "active"
+      },
+      {
+        "option_text": "hand",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Hands are for touching.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-036",
+    "prompt": "The ______ shines at night.",
+    "categories": ["Vocabulary", "Nature", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "moon",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The moon is the primary light source in the night sky.",
+        "status": "active"
+      },
+      {
+        "option_text": "stars",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Stars also shine at night.",
+        "status": "active"
+      },
+      {
+        "option_text": "sun",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "The sun shines during the day.",
+        "status": "active"
+      },
+      {
+        "option_text": "clouds",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Clouds do not shine; they block light.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-037",
+    "prompt": "I sit on a ______ to work at my desk.",
+    "categories": ["Vocabulary", "Furniture", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "chair",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Chairs are designed for sitting.",
+        "status": "active"
+      },
+      {
+        "option_text": "stool",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A stool is also for sitting.",
+        "status": "active"
+      },
+      {
+        "option_text": "bed",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "You can sit on a bed, but it is not for desk work.",
+        "status": "active"
+      },
+      {
+        "option_text": "shelf",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Shelves are for storage, not sitting.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-038",
+    "prompt": "What is the ______? It is 3 o'clock.",
+    "categories": ["Vocabulary", "Time", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "time",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard question for checking the hour.",
+        "status": "active"
+      },
+      {
+        "option_text": "hour",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Grammatically awkward in this specific phrase.",
+        "status": "active"
+      },
+      {
+        "option_text": "day",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "This would require a day of the week as an answer.",
+        "status": "active"
+      },
+      {
+        "option_text": "name",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Irrelevant context.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-039",
+    "prompt": "A ______ works in a hospital and helps sick people.",
+    "categories": ["Vocabulary", "Jobs", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "doctor",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Doctors are the primary medical professionals in hospitals.",
+        "status": "active"
+      },
+      {
+        "option_text": "nurse",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Nurses also help sick people in hospitals.",
+        "status": "active"
+      },
+      {
+        "option_text": "patient",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A patient is the one being helped.",
+        "status": "active"
+      },
+      {
+        "option_text": "chef",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A chef works in a kitchen.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-040",
+    "prompt": "I use a ______ to take photos.",
+    "categories": ["Vocabulary", "Technology", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "camera",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A camera's main function is taking photos.",
+        "status": "active"
+      },
+      {
+        "option_text": "phone",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Modern phones are often used for photos.",
+        "status": "active"
+      },
+      {
+        "option_text": "radio",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Radios are for audio.",
+        "status": "active"
+      },
+      {
+        "option_text": "watch",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Watches are for telling time.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-041",
+    "prompt": "Ice is ______.",
+    "categories": ["Vocabulary", "Adjectives", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "cold",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Cold is the physical property of ice.",
+        "status": "active"
+      },
+      {
+        "option_text": "freezing",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "More descriptive, but 'cold' is the core A1 word.",
+        "status": "active"
+      },
+      {
+        "option_text": "hot",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Ice is the opposite of hot.",
+        "status": "active"
+      },
+      {
+        "option_text": "warm",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Ice is not warm.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-042",
+    "prompt": "I brush my ______ twice a day.",
+    "categories": ["Vocabulary", "Hygiene", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "teeth",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Brushing teeth is a standard daily routine.",
+        "status": "active"
+      },
+      {
+        "option_text": "hair",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Brushing hair is also common.",
+        "status": "active"
+      },
+      {
+        "option_text": "hands",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You wash hands, you don't 'brush' them.",
+        "status": "active"
+      },
+      {
+        "option_text": "face",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You wash your face.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-043",
+    "prompt": "A ______ is a place where you watch movies.",
+    "categories": ["Vocabulary", "Places", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "cinema",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The cinema is the specific place for public movie viewing.",
+        "status": "active"
+      },
+      {
+        "option_text": "theater",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "In many dialects, theater is used for movies too.",
+        "status": "active"
+      },
+      {
+        "option_text": "home",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "You can watch movies at home, but cinema is the categorical answer.",
+        "status": "active"
+      },
+      {
+        "option_text": "gym",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A gym is for exercise.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-044",
+    "prompt": "Birds have ______ to fly.",
+    "categories": ["Vocabulary", "Animals", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "wings",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Wings are the body parts required for flight.",
+        "status": "active"
+      },
+      {
+        "option_text": "feathers",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Feathers help, but wings are the structure that enables flight.",
+        "status": "active"
+      },
+      {
+        "option_text": "arms",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Birds do not have arms.",
+        "status": "active"
+      },
+      {
+        "option_text": "legs",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Legs are for walking or perching.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-045",
+    "prompt": "The book is ______ the table.",
+    "categories": ["Grammar", "Prepositions", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "on",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard preposition for surface contact.",
+        "status": "active"
+      },
+      {
+        "option_text": "under",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A book can be under a table, logically.",
+        "status": "active"
+      },
+      {
+        "option_text": "at",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect preposition for this object relationship.",
+        "status": "active"
+      },
+      {
+        "option_text": "between",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires two objects.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-046",
+    "prompt": "I need a ______ to cut my meat.",
+    "categories": ["Vocabulary", "Kitchen", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "knife",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Knives are for cutting.",
+        "status": "active"
+      },
+      {
+        "option_text": "fork",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Forks are for stabbing or holding food.",
+        "status": "active"
+      },
+      {
+        "option_text": "spoon",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Spoons are for liquids.",
+        "status": "active"
+      },
+      {
+        "option_text": "plate",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A plate holds the food.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-047",
+    "prompt": "A ______ is a very tall building.",
+    "categories": ["Vocabulary", "City", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "skyscraper",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The specific term for very tall buildings.",
+        "status": "active"
+      },
+      {
+        "option_text": "tower",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A tower is also tall.",
+        "status": "active"
+      },
+      {
+        "option_text": "house",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Houses are usually short.",
+        "status": "active"
+      },
+      {
+        "option_text": "park",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A park is an open green space.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-048",
+    "prompt": "I am ______ . I want to sleep.",
+    "categories": ["Vocabulary", "Adjectives", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "tired",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Tiredness leads to a desire for sleep.",
+        "status": "active"
+      },
+      {
+        "option_text": "sleepy",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Synonym for tired in this context.",
+        "status": "active"
+      },
+      {
+        "option_text": "happy",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Happiness doesn't cause sleepiness.",
+        "status": "active"
+      },
+      {
+        "option_text": "hungry",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Hunger makes you want food.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-049",
+    "prompt": "Yellow and blue make ______.",
+    "categories": ["Vocabulary", "Colors", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "green",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Basic color mixing result.",
+        "status": "active"
+      },
+      {
+        "option_text": "purple",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Red and blue make purple.",
+        "status": "active"
+      },
+      {
+        "option_text": "orange",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Red and yellow make orange.",
+        "status": "active"
+      },
+      {
+        "option_text": "black",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect result.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-050",
+    "prompt": "I put ______ in my tea to make it sweet.",
+    "categories": ["Vocabulary", "Food", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "sugar",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Sugar is the primary sweetener.",
+        "status": "active"
+      },
+      {
+        "option_text": "honey",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Honey is also a common sweetener.",
+        "status": "active"
+      },
+      {
+        "option_text": "salt",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Salt makes food salty, not sweet.",
+        "status": "active"
+      },
+      {
+        "option_text": "pepper",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Pepper is spicy/savory.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-051",
+    "prompt": "The ______ is the leader of a country (like the USA).",
+    "categories": ["Vocabulary", "Politics", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "President",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Title for the head of state in a republic.",
+        "status": "active"
+      },
+      {
+        "option_text": "King",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "A king is a leader, but not of the USA.",
+        "status": "active"
+      },
+      {
+        "option_text": "Teacher",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Teachers lead classrooms, not countries.",
+        "status": "active"
+      },
+      {
+        "option_text": "Police",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Police enforce laws, they don't lead the country.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-052",
+    "prompt": "Fish live in the ______.",
+    "categories": ["Vocabulary", "Nature", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "water",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "General habitat for fish.",
+        "status": "active"
+      },
+      {
+        "option_text": "ocean",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Specific correct habitat.",
+        "status": "active"
+      },
+      {
+        "option_text": "forest",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Fish cannot survive in a forest.",
+        "status": "active"
+      },
+      {
+        "option_text": "sky",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Fish do not fly.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-053",
+    "prompt": "I use a ______ to keep my pants up.",
+    "categories": ["Vocabulary", "Clothing", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "belt",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Belts are designed to hold pants in place.",
+        "status": "active"
+      },
+      {
+        "option_text": "string",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Possible but not the standard clothing item.",
+        "status": "active"
+      },
+      {
+        "option_text": "hat",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Hats are for the head.",
+        "status": "active"
+      },
+      {
+        "option_text": "shoe",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Shoes are for feet.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-054",
+    "prompt": "A ______ has a very long neck.",
+    "categories": ["Vocabulary", "Animals", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "giraffe",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Defining characteristic of a giraffe.",
+        "status": "active"
+      },
+      {
+        "option_text": "snake",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "A snake is almost all 'neck' but not in the way described.",
+        "status": "active"
+      },
+      {
+        "option_text": "horse",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Horses have normal-sized necks.",
+        "status": "active"
+      },
+      {
+        "option_text": "pig",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Pigs have short necks.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-055",
+    "prompt": "I go to the ______ to mail a letter.",
+    "categories": ["Vocabulary", "Places", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "post office",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The facility for mail services.",
+        "status": "active"
+      },
+      {
+        "option_text": "bank",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Banks handle money.",
+        "status": "active"
+      },
+      {
+        "option_text": "school",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Schools are for learning.",
+        "status": "active"
+      },
+      {
+        "option_text": "park",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Parks are for recreation.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-056",
+    "prompt": "The ______ is the person who flies an airplane.",
+    "categories": ["Vocabulary", "Jobs", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "pilot",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Specific job title for operating a plane.",
+        "status": "active"
+      },
+      {
+        "option_text": "driver",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Drivers operate cars or buses.",
+        "status": "active"
+      },
+      {
+        "option_text": "captain",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "The head pilot is a captain.",
+        "status": "active"
+      },
+      {
+        "option_text": "mechanic",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Mechanics fix engines.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-057",
+    "prompt": "I use a ______ to talk to my friends far away.",
+    "categories": ["Vocabulary", "Technology", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "phone",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Primary device for distance communication.",
+        "status": "active"
+      },
+      {
+        "option_text": "computer",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Computers are also used for calls/chat.",
+        "status": "active"
+      },
+      {
+        "option_text": "mirror",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Mirrors only show your reflection.",
+        "status": "active"
+      },
+      {
+        "option_text": "book",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Books are for reading.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-058",
+    "prompt": "Fire is ______.",
+    "categories": ["Vocabulary", "Adjectives", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "hot",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Physical property of fire.",
+        "status": "active"
+      },
+      {
+        "option_text": "dangerous",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Fire is dangerous, but 'hot' is more fundamental.",
+        "status": "active"
+      },
+      {
+        "option_text": "cold",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Opposite of fire's nature.",
+        "status": "active"
+      },
+      {
+        "option_text": "wet",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Water is wet; fire is not.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-059",
+    "prompt": "I wear a ______ when it is cold.",
+    "categories": ["Vocabulary", "Clothing", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "jacket",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Jackets provide warmth.",
+        "status": "active"
+      },
+      {
+        "option_text": "coat",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Coats are also for cold weather.",
+        "status": "active"
+      },
+      {
+        "option_text": "t-shirt",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "T-shirts are for warm weather.",
+        "status": "active"
+      },
+      {
+        "option_text": "swimsuit",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Swimsuits are for swimming.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-060",
+    "prompt": "A ______ is a small house for a dog.",
+    "categories": ["Vocabulary", "Home", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "kennel",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard term for a dog house.",
+        "status": "active"
+      },
+      {
+        "option_text": "doghouse",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Commonly used compound word.",
+        "status": "active"
+      },
+      {
+        "option_text": "garage",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A garage is for cars.",
+        "status": "active"
+      },
+      {
+        "option_text": "nest",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A nest is for birds.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-061",
+    "prompt": "I use ______ to wash my hands.",
+    "categories": ["Vocabulary", "Hygiene", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "soap",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Soap is the primary cleaning agent.",
+        "status": "active"
+      },
+      {
+        "option_text": "water",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "You use water, but soap does the 'washing'.",
+        "status": "active"
+      },
+      {
+        "option_text": "dirt",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Dirt makes hands dirty.",
+        "status": "active"
+      },
+      {
+        "option_text": "oil",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Oil is usually what you are trying to wash off.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-062",
+    "prompt": "The ______ of an orange is orange.",
+    "categories": ["Vocabulary", "Colors", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "color",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Refers to the visual appearance.",
+        "status": "active"
+      },
+      {
+        "option_text": "taste",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "The taste is sweet or sour.",
+        "status": "active"
+      },
+      {
+        "option_text": "name",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Technically true, the fruit name is also the color name.",
+        "status": "active"
+      },
+      {
+        "option_text": "size",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Size is a measurement.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-063",
+    "prompt": "I write on a piece of ______.",
+    "categories": ["Vocabulary", "School", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "paper",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Paper is the standard material for writing.",
+        "status": "active"
+      },
+      {
+        "option_text": "notebook",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "You write in a notebook (made of paper).",
+        "status": "active"
+      },
+      {
+        "option_text": "glass",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Hard to write on without special tools.",
+        "status": "active"
+      },
+      {
+        "option_text": "wall",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Usually not allowed!",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-064",
+    "prompt": "A ______ has five fingers.",
+    "categories": ["Vocabulary", "Body Parts", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "hand",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Humans have five fingers on each hand.",
+        "status": "active"
+      },
+      {
+        "option_text": "foot",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Feet have toes, not fingers.",
+        "status": "active"
+      },
+      {
+        "option_text": "arm",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "The hand is *at the end* of the arm.",
+        "status": "active"
+      },
+      {
+        "option_text": "head",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Heads have hair, eyes, etc.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-065",
+    "prompt": "I ______ to music with my headphones.",
+    "categories": ["Vocabulary", "Verbs", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "listen",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Correct verb for audio enjoyment.",
+        "status": "active"
+      },
+      {
+        "option_text": "hear",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Hear is passive; listen is active.",
+        "status": "active"
+      },
+      {
+        "option_text": "look",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You look with your eyes.",
+        "status": "active"
+      },
+      {
+        "option_text": "sing",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "You can sing along, but 'listen' is the standard activity with headphones.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-066",
+    "prompt": "The ______ is blue and has many fish.",
+    "categories": ["Vocabulary", "Nature", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "sea",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A large body of saltwater.",
+        "status": "active"
+      },
+      {
+        "option_text": "ocean",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Interchangeable with sea in this context.",
+        "status": "active"
+      },
+      {
+        "option_text": "lake",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Lakes are smaller and usually freshwater.",
+        "status": "active"
+      },
+      {
+        "option_text": "mountain",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Mountains are rock and earth.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-067",
+    "prompt": "I use a ______ to tell the time.",
+    "categories": ["Vocabulary", "Objects", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "watch",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A device worn on the wrist to check time.",
+        "status": "active"
+      },
+      {
+        "option_text": "clock",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A device on a wall to check time.",
+        "status": "active"
+      },
+      {
+        "option_text": "calendar",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Calendars tell the date, not the time.",
+        "status": "active"
+      },
+      {
+        "option_text": "ruler",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Rulers measure length.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-068",
+    "prompt": "My ______ is the person I play with.",
+    "categories": ["Vocabulary", "People", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "friend",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A companion for social activities.",
+        "status": "active"
+      },
+      {
+        "option_text": "enemy",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You don't usually 'play' with an enemy.",
+        "status": "active"
+      },
+      {
+        "option_text": "boss",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You work for a boss.",
+        "status": "active"
+      },
+      {
+        "option_text": "neighbor",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A neighbor can be a friend you play with.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-069",
+    "prompt": "A ______ has two wheels and no engine.",
+    "categories": ["Vocabulary", "Transportation", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "bicycle",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard human-powered two-wheel vehicle.",
+        "status": "active"
+      },
+      {
+        "option_text": "bike",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Short form of bicycle.",
+        "status": "active"
+      },
+      {
+        "option_text": "motorcycle",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Motorcycles have engines.",
+        "status": "active"
+      },
+      {
+        "option_text": "car",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Cars have four wheels.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-070",
+    "prompt": "I eat with a ______ and a knife.",
+    "categories": ["Vocabulary", "Kitchen", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "fork",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard pairing for solid food.",
+        "status": "active"
+      },
+      {
+        "option_text": "spoon",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually not paired with a knife for one task.",
+        "status": "active"
+      },
+      {
+        "option_text": "plate",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You eat *off* a plate.",
+        "status": "active"
+      },
+      {
+        "option_text": "napkin",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A napkin is for cleaning your mouth.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-071",
+    "prompt": "I use a ______ to open the front door.",
+    "categories": ["Vocabulary", "Objects", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "key",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A key is the specific object used to unlock a door.",
+        "status": "active"
+      },
+      {
+        "option_text": "handle",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "You turn a handle, but a key 'opens' a locked door.",
+        "status": "active"
+      },
+      {
+        "option_text": "button",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Usually used for elevators, not standard front doors.",
+        "status": "active"
+      },
+      {
+        "option_text": "hammer",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A hammer is a tool for nails, not opening doors.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-072",
+    "prompt": "The ______ of the grass is green.",
+    "categories": ["Vocabulary", "Colors", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "color",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Refers to the visual property.",
+        "status": "active"
+      },
+      {
+        "option_text": "paint",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Grass is naturally green, not painted.",
+        "status": "active"
+      },
+      {
+        "option_text": "smell",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Green is not a smell.",
+        "status": "active"
+      },
+      {
+        "option_text": "look",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Informal, but 'color' is the grammatically correct noun here.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-073",
+    "prompt": "I am ______ because I won the game!",
+    "categories": ["Vocabulary", "Emotions", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "happy",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Winning usually results in happiness.",
+        "status": "active"
+      },
+      {
+        "option_text": "excited",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A high-energy positive emotion for winning.",
+        "status": "active"
+      },
+      {
+        "option_text": "sad",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Sadness is for losing.",
+        "status": "active"
+      },
+      {
+        "option_text": "angry",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Anger is a negative emotion.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-074",
+    "prompt": "A ______ is a very small insect that makes honey.",
+    "categories": ["Vocabulary", "Animals", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "bee",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Bees are known for producing honey.",
+        "status": "active"
+      },
+      {
+        "option_text": "fly",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Flies do not make honey.",
+        "status": "active"
+      },
+      {
+        "option_text": "spider",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Spiders make webs.",
+        "status": "active"
+      },
+      {
+        "option_text": "ant",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Ants do not make honey.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-075",
+    "prompt": "I go to ______ to learn.",
+    "categories": ["Vocabulary", "Places", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "school",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The primary place for education.",
+        "status": "active"
+      },
+      {
+        "option_text": "class",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "You go to a class, though 'school' is the location.",
+        "status": "active"
+      },
+      {
+        "option_text": "the park",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Parks are for playing.",
+        "status": "active"
+      },
+      {
+        "option_text": "the shop",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Shops are for buying.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-076",
+    "prompt": "Milk is the color ______.",
+    "categories": ["Vocabulary", "Colors", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "white",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Natural milk is white.",
+        "status": "active"
+      },
+      {
+        "option_text": "yellow",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect color.",
+        "status": "active"
+      },
+      {
+        "option_text": "black",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect color.",
+        "status": "active"
+      },
+      {
+        "option_text": "clear",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Water is clear, milk is opaque.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-077",
+    "prompt": "I sit on a ______ in the park.",
+    "categories": ["Vocabulary", "Objects", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "bench",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Public seats in parks are called benches.",
+        "status": "active"
+      },
+      {
+        "option_text": "chair",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct in function, but less specific to a park.",
+        "status": "active"
+      },
+      {
+        "option_text": "grass",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "You can sit on the grass.",
+        "status": "active"
+      },
+      {
+        "option_text": "tree",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You climb or sit under a tree.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-078",
+    "prompt": "I ______ my eyes to sleep.",
+    "categories": ["Vocabulary", "Verbs", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "close",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The action required to fall asleep.",
+        "status": "active"
+      },
+      {
+        "option_text": "shut",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Synonym for close.",
+        "status": "active"
+      },
+      {
+        "option_text": "open",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You open eyes to wake up.",
+        "status": "active"
+      },
+      {
+        "option_text": "wash",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Irrelevant to the act of sleeping.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-079",
+    "prompt": "A ______ is a very small cat.",
+    "categories": ["Vocabulary", "Animals", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "kitten",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The specific name for a young/baby cat.",
+        "status": "active"
+      },
+      {
+        "option_text": "puppy",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A puppy is a baby dog.",
+        "status": "active"
+      },
+      {
+        "option_text": "mouse",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A mouse is a different species.",
+        "status": "active"
+      },
+      {
+        "option_text": "hamster",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A hamster is a different species.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-080",
+    "prompt": "I have ten ______ on my feet.",
+    "categories": ["Vocabulary", "Body Parts", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "toes",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The digits on feet.",
+        "status": "active"
+      },
+      {
+        "option_text": "fingers",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Fingers are on hands.",
+        "status": "active"
+      },
+      {
+        "option_text": "legs",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You only have two legs.",
+        "status": "active"
+      },
+      {
+        "option_text": "shoes",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "You wear shoes, but you 'have' toes as body parts.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-081",
+    "prompt": "The ______ tells me the day and month.",
+    "categories": ["Vocabulary", "Time", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "calendar",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used to track days, weeks, and months.",
+        "status": "active"
+      },
+      {
+        "option_text": "clock",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A clock tells the time (hours/minutes).",
+        "status": "active"
+      },
+      {
+        "option_text": "watch",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A watch tells the time.",
+        "status": "active"
+      },
+      {
+        "option_text": "diary",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Diaries often contain calendars.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-082",
+    "prompt": "I use a ______ to draw a straight line.",
+    "categories": ["Vocabulary", "Objects", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "ruler",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The tool used for measuring and drawing straight lines.",
+        "status": "active"
+      },
+      {
+        "option_text": "pencil",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "You use it to draw, but it doesn't make the line straight by itself.",
+        "status": "active"
+      },
+      {
+        "option_text": "eraser",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "An eraser removes lines.",
+        "status": "active"
+      },
+      {
+        "option_text": "book",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "You can use the edge of a book as a ruler.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-083",
+    "prompt": "A ______ has a lot of trees.",
+    "categories": ["Vocabulary", "Nature", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "forest",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A large area covered chiefly with trees.",
+        "status": "active"
+      },
+      {
+        "option_text": "garden",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Gardens have plants, but fewer trees than a forest.",
+        "status": "active"
+      },
+      {
+        "option_text": "beach",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Beaches have sand and water.",
+        "status": "active"
+      },
+      {
+        "option_text": "wood",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A smaller version of a forest.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-084",
+    "prompt": "I eat ______ for my first meal of the day.",
+    "categories": ["Vocabulary", "Daily Routine", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "breakfast",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The morning meal.",
+        "status": "active"
+      },
+      {
+        "option_text": "lunch",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "The midday meal.",
+        "status": "active"
+      },
+      {
+        "option_text": "dinner",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "The evening meal.",
+        "status": "active"
+      },
+      {
+        "option_text": "food",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "True, but 'breakfast' is the specific name of the meal.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-085",
+    "prompt": "A ______ says 'Moo'.",
+    "categories": ["Vocabulary", "Animals", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "cow",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Cows make the 'moo' sound.",
+        "status": "active"
+      },
+      {
+        "option_text": "bull",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A male cow also makes this sound.",
+        "status": "active"
+      },
+      {
+        "option_text": "sheep",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Sheep say 'baaa'.",
+        "status": "active"
+      },
+      {
+        "option_text": "chicken",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Chickens cluck.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-086",
+    "prompt": "I wear ______ when it is sunny to protect my eyes.",
+    "categories": ["Vocabulary", "Clothing", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "sunglasses",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Designed to block sunlight from eyes.",
+        "status": "active"
+      },
+      {
+        "option_text": "glasses",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Regular glasses don't usually protect from sun.",
+        "status": "active"
+      },
+      {
+        "option_text": "a hat",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A hat provides shade for the eyes.",
+        "status": "active"
+      },
+      {
+        "option_text": "gloves",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Gloves are for hands.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-087",
+    "prompt": "I ______ my bike to the park.",
+    "categories": ["Vocabulary", "Verbs", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "ride",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Correct verb for operating a bicycle.",
+        "status": "active"
+      },
+      {
+        "option_text": "drive",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You drive a car.",
+        "status": "active"
+      },
+      {
+        "option_text": "walk",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "You can walk your bike, but 'ride' is the standard activity.",
+        "status": "active"
+      },
+      {
+        "option_text": "push",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Similar to walking a bike.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-088",
+    "prompt": "The ______ is where you cook food.",
+    "categories": ["Vocabulary", "Home", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "kitchen",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The room for cooking.",
+        "status": "active"
+      },
+      {
+        "option_text": "stove",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "The appliance where you cook, though 'kitchen' is the location.",
+        "status": "active"
+      },
+      {
+        "option_text": "bedroom",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Room for sleeping.",
+        "status": "active"
+      },
+      {
+        "option_text": "garage",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Room for cars.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-089",
+    "prompt": "I drink ______ from a cup.",
+    "categories": ["Vocabulary", "Food", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "water",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A common liquid for drinking.",
+        "status": "active"
+      },
+      {
+        "option_text": "tea",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Commonly drunk from a cup.",
+        "status": "active"
+      },
+      {
+        "option_text": "bread",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Bread is eaten, not drunk.",
+        "status": "active"
+      },
+      {
+        "option_text": "pizza",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Pizza is eaten.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-090",
+    "prompt": "A ______ helps you find the way in a city.",
+    "categories": ["Vocabulary", "Objects", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "map",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Traditional tool for navigation.",
+        "status": "active"
+      },
+      {
+        "option_text": "GPS",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Modern digital map.",
+        "status": "active"
+      },
+      {
+        "option_text": "book",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Too general; a map is specific.",
+        "status": "active"
+      },
+      {
+        "option_text": "mirror",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Mirrors show reflections.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-091",
+    "prompt": "I ______ my teeth in the morning.",
+    "categories": ["Vocabulary", "Verbs", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "brush",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard action for dental hygiene.",
+        "status": "active"
+      },
+      {
+        "option_text": "clean",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "General term for the action.",
+        "status": "active"
+      },
+      {
+        "option_text": "wash",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually used for hands/face, but sometimes used loosely for teeth.",
+        "status": "active"
+      },
+      {
+        "option_text": "eat",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You don't eat your teeth.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-092",
+    "prompt": "A ______ is a place with many animals for people to visit.",
+    "categories": ["Vocabulary", "Places", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "zoo",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Specific location for public animal viewing.",
+        "status": "active"
+      },
+      {
+        "option_text": "farm",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Farms have animals, but aren't primarily for 'visiting' in the same way.",
+        "status": "active"
+      },
+      {
+        "option_text": "park",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Parks have fewer animals than a zoo.",
+        "status": "active"
+      },
+      {
+        "option_text": "forest",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Animals live there, but it's not a managed facility for visitors.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-093",
+    "prompt": "I use a ______ to keep my head warm.",
+    "categories": ["Vocabulary", "Clothing", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "hat",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard head covering for warmth.",
+        "status": "active"
+      },
+      {
+        "option_text": "cap",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A type of hat.",
+        "status": "active"
+      },
+      {
+        "option_text": "scarf",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A scarf is for the neck.",
+        "status": "active"
+      },
+      {
+        "option_text": "shoe",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Shoes are for feet.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-094",
+    "prompt": "The ______ is in the sky and is very bright at noon.",
+    "categories": ["Vocabulary", "Nature", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "sun",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The brightest object in the daytime sky.",
+        "status": "active"
+      },
+      {
+        "option_text": "moon",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Usually visible at night and not bright at noon.",
+        "status": "active"
+      },
+      {
+        "option_text": "star",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "The sun is a star, but we use the name 'Sun' for our own.",
+        "status": "active"
+      },
+      {
+        "option_text": "cloud",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Clouds can be bright but aren't the source of light.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-095",
+    "prompt": "I ______ a book every night before bed.",
+    "categories": ["Vocabulary", "Verbs", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "read",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The action of processing written text.",
+        "status": "active"
+      },
+      {
+        "option_text": "watch",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You watch TV, not a book.",
+        "status": "active"
+      },
+      {
+        "option_text": "write",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Some people write in journals/books.",
+        "status": "active"
+      },
+      {
+        "option_text": "listen",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "You can listen to an audiobook.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-096",
+    "prompt": "A ______ has four legs and says 'Woof'.",
+    "categories": ["Vocabulary", "Animals", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "dog",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard onomatopoeia for a dog.",
+        "status": "active"
+      },
+      {
+        "option_text": "puppy",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A young dog.",
+        "status": "active"
+      },
+      {
+        "option_text": "cat",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Cats meow.",
+        "status": "active"
+      },
+      {
+        "option_text": "lion",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Lions roar.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-097",
+    "prompt": "I eat ______ for dessert.",
+    "categories": ["Vocabulary", "Food", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "cake",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A classic sweet dessert.",
+        "status": "active"
+      },
+      {
+        "option_text": "ice cream",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Also a very common dessert.",
+        "status": "active"
+      },
+      {
+        "option_text": "meat",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Meat is a main course.",
+        "status": "active"
+      },
+      {
+        "option_text": "soup",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Soup is a starter or main course.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-098",
+    "prompt": "I sleep in my ______.",
+    "categories": ["Vocabulary", "Home", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "bedroom",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The room designated for sleeping.",
+        "status": "active"
+      },
+      {
+        "option_text": "bed",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "The furniture item, though 'bedroom' is the room.",
+        "status": "active"
+      },
+      {
+        "option_text": "kitchen",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Room for cooking.",
+        "status": "active"
+      },
+      {
+        "option_text": "bathroom",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Room for washing.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-099",
+    "prompt": "A ______ helps you when you are sick.",
+    "categories": ["Vocabulary", "Jobs", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "doctor",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Medical professional.",
+        "status": "active"
+      },
+      {
+        "option_text": "nurse",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Also helps the sick.",
+        "status": "active"
+      },
+      {
+        "option_text": "chef",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Makes food.",
+        "status": "active"
+      },
+      {
+        "option_text": "pilot",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Flies planes.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  },
+  {
+    "id": "v-easy-100",
+    "prompt": "The color of a banana is ______.",
+    "categories": ["Vocabulary", "Colors", "A1-Beginner"],
+    "answers": [
+      {
+        "option_text": "yellow",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Ripe bananas are yellow.",
+        "status": "active"
+      },
+      {
+        "option_text": "green",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Unripe bananas are green.",
+        "status": "active"
+      },
+      {
+        "option_text": "red",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Not a standard banana color.",
+        "status": "active"
+      },
+      {
+        "option_text": "blue",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Bananas are not blue.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_EASY"
+  }
+]

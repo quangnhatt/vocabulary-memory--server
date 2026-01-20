@@ -1,0 +1,3606 @@
+[
+  {
+    "id": "expert-401",
+    "prompt": "Try ______ he might, he could not open the rusted vault.",
+    "categories": ["Grammar", "Fronting", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "as",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The structure 'Try as he might' is a formal way to say 'Despite how hard he tried'.",
+        "status": "active"
+      },
+      {
+        "option_text": "though",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically possible but 'as' is the standard idiomatic choice for this construction.",
+        "status": "active"
+      },
+      {
+        "option_text": "hard",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'However hard he might try'.",
+        "status": "active"
+      },
+      {
+        "option_text": "if",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Changes the meaning to a simple conditional which doesn't fit the 'might'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-402",
+    "prompt": "The witness's account was ______ with inconsistencies that the jury could not ignore.",
+    "categories": ["Vocabulary", "Collocations", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "shot through",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A sophisticated phrasal verb meaning to be filled with or pervaded by something (usually negative).",
+        "status": "active"
+      },
+      {
+        "option_text": "riddled",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but 'shot through' is a more advanced C2-level stylistic choice.",
+        "status": "active"
+      },
+      {
+        "option_text": "replete",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually implies a full supply of something positive or neutral.",
+        "status": "active"
+      },
+      {
+        "option_text": "fraught",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually 'fraught with danger' or 'fraught with anxiety'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-403",
+    "prompt": "______ for the timely intervention of the coastguard, the sailors would certainly have perished.",
+    "categories": ["Grammar", "Conditionals", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "But",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'But for' is a high-level prepositional phrase meaning 'If it hadn't been for'.",
+        "status": "active"
+      },
+      {
+        "option_text": "Save",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Used in very formal/archaic contexts to mean 'except for'.",
+        "status": "active"
+      },
+      {
+        "option_text": "Were it",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'Were it not for'.",
+        "status": "active"
+      },
+      {
+        "option_text": "Except",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually requires 'Except for', and 'But for' is more idiomatic in conditionals.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-404",
+    "prompt": "It is imperative that the document ______ kept under lock and key.",
+    "categories": ["Grammar", "Subjunctive", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "be",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The present subjunctive (base form) is used after verbs/adjectives of necessity.",
+        "status": "active"
+      },
+      {
+        "option_text": "should be",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The standard British English alternative to the subjunctive.",
+        "status": "active"
+      },
+      {
+        "option_text": "is",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Indicative mood is generally avoided in this formal structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "must be",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Redundant when used with 'imperative'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-405",
+    "prompt": "The diplomat’s carefully worded statement ______ any direct responsibility for the incident.",
+    "categories": ["Vocabulary", "Verbs", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "disclaimed",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To formally deny responsibility or knowledge.",
+        "status": "active"
+      },
+      {
+        "option_text": "repudiated",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To refuse to accept or be associated with.",
+        "status": "active"
+      },
+      {
+        "option_text": "abnegated",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually refers to renouncing a right or belief.",
+        "status": "active"
+      },
+      {
+        "option_text": "refuted",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Means to prove a statement to be wrong; doesn't fit 'responsibility'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-406",
+    "prompt": "______ should you believe that this offer will remain open indefinitely.",
+    "categories": ["Grammar", "Inversion", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "On no account",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Negative adverbial phrase requiring subject-auxiliary inversion.",
+        "status": "active"
+      },
+      {
+        "option_text": "Under no circumstances",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally correct formal inversion trigger.",
+        "status": "active"
+      },
+      {
+        "option_text": "In no way",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct inversion, but slightly less idiomatic with 'believe'.",
+        "status": "active"
+      },
+      {
+        "option_text": "Not",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'Not for one moment' or similar phrases to trigger inversion.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-407",
+    "prompt": "The protagonist was so ______ in his own thoughts that he failed to notice the approaching storm.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "enwrapped",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Literary term for being totally absorbed.",
+        "status": "active"
+      },
+      {
+        "option_text": "lost",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Common, but lacks the 'Expert' level nuance.",
+        "status": "active"
+      },
+      {
+        "option_text": "immersed",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Standard high-level word for absorption.",
+        "status": "active"
+      },
+      {
+        "option_text": "deep",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'Deep in thought', not 'Deep in his own thoughts'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-408",
+    "prompt": "The new law is designed to ______ the powers of the local authorities.",
+    "categories": ["Vocabulary", "Verbs", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "curtail",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To reduce or limit something (especially power or spending).",
+        "status": "active"
+      },
+      {
+        "option_text": "circumscribe",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A very formal term meaning to restrict something within limits.",
+        "status": "active"
+      },
+      {
+        "option_text": "abridge",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Usually refers to shortening a text, but can apply to rights.",
+        "status": "active"
+      },
+      {
+        "option_text": "cut",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Too informal for this context.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-409",
+    "prompt": "______ had the company launched its product than it was faced with a massive lawsuit.",
+    "categories": ["Grammar", "Inversion", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "No sooner",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Requires the 'than' found later in the sentence.",
+        "status": "active"
+      },
+      {
+        "option_text": "Hardly",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'when', not 'than'.",
+        "status": "active"
+      },
+      {
+        "option_text": "Scarcely",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'when', not 'than'.",
+        "status": "active"
+      },
+      {
+        "option_text": "Barely",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'when', not 'than'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-410",
+    "prompt": "His reputation was ______ by the scandal, and he never truly recovered his standing.",
+    "categories": ["Vocabulary", "Verbs", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "tarnished",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard collocation for damaging a reputation.",
+        "status": "active"
+      },
+      {
+        "option_text": "sullied",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A more literary/formal synonym for tarnished.",
+        "status": "active"
+      },
+      {
+        "option_text": "marred",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "To spoil the quality of something.",
+        "status": "active"
+      },
+      {
+        "option_text": "broken",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Reputations are usually 'ruined' or 'tarnished', not 'broken'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-411",
+    "prompt": "Were the truth ______ known, the entire administration would collapse.",
+    "categories": ["Grammar", "Inverted Conditionals", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "to be",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inverted second conditional for a hypothetical future/present state.",
+        "status": "active"
+      },
+      {
+        "option_text": "ever",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Adds emphasis but 'to be' completes the grammatical structure better.",
+        "status": "active"
+      },
+      {
+        "option_text": "being",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect grammatical form for this inversion.",
+        "status": "active"
+      },
+      {
+        "option_text": "become",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Semantically correct but 'to be' is the standard auxiliary here.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-412",
+    "prompt": "The CEO's ______ manner made it difficult for employees to approach him with concerns.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "aloof",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Cool and distant; not friendly.",
+        "status": "active"
+      },
+      {
+        "option_text": "haughty",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Arrogantly superior and disdainful.",
+        "status": "active"
+      },
+      {
+        "option_text": "imperious",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Assuming power or authority without justification; arrogant and domineering.",
+        "status": "active"
+      },
+      {
+        "option_text": "mean",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Too informal and imprecise.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-413",
+    "prompt": "Only by ______ the data from multiple sources could the researchers draw a valid conclusion.",
+    "categories": ["Vocabulary", "Verbs", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "triangulating",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A specific academic/research term for using multiple methods/sources to verify data.",
+        "status": "active"
+      },
+      {
+        "option_text": "corroborating",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "To confirm or give support to a statement.",
+        "status": "active"
+      },
+      {
+        "option_text": "synthesizing",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Combining different elements to form a coherent whole.",
+        "status": "active"
+      },
+      {
+        "option_text": "collecting",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too basic for Expert level.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-414",
+    "prompt": "The project fell through ______ to a series of unfortunate misunderstandings.",
+    "categories": ["Grammar", "Conjunctions", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "owing",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Owing to' is a formal synonym for 'because of'.",
+        "status": "active"
+      },
+      {
+        "option_text": "due",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Due to' is widely used, though purists sometimes prefer 'owing to' after a verb.",
+        "status": "active"
+      },
+      {
+        "option_text": "thanks",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually used for positive results; ironic here.",
+        "status": "active"
+      },
+      {
+        "option_text": "resulting",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'resulting from', not 'to'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-415",
+    "prompt": "She was ______ with the task of overseeing the entire merger.",
+    "categories": ["Vocabulary", "Verbs", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "saddled",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Idiomatic for being given a heavy or burdensome responsibility.",
+        "status": "active"
+      },
+      {
+        "option_text": "entrusted",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To give someone a responsibility based on trust.",
+        "status": "active"
+      },
+      {
+        "option_text": "charged",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "To be given a task (charged with).",
+        "status": "active"
+      },
+      {
+        "option_text": "given",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too simple.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-416",
+    "prompt": "Lest he ______ suspected of bias, the judge recused himself from the case.",
+    "categories": ["Grammar", "Subjunctive", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "be",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Lest' is a formal conjunction followed by the subjunctive (base form) or 'should'.",
+        "status": "active"
+      },
+      {
+        "option_text": "should be",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Common alternative after 'lest'.",
+        "status": "active"
+      },
+      {
+        "option_text": "is",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Indicative mood is incorrect after 'lest'.",
+        "status": "active"
+      },
+      {
+        "option_text": "was",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect mood/tense.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-417",
+    "prompt": "The expansion of the city has ______ upon the surrounding countryside.",
+    "categories": ["Vocabulary", "Verbs", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "encroached",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To gradually intrude on a person's territory or rights.",
+        "status": "active"
+      },
+      {
+        "option_text": "infringed",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Usually used for rights or laws, but sometimes for territory.",
+        "status": "active"
+      },
+      {
+        "option_text": "impinged",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To have an effect or impact, especially a negative one; to encroach.",
+        "status": "active"
+      },
+      {
+        "option_text": "stepped",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Not used for territorial expansion in this sense.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-418",
+    "prompt": "Little ______ that their conversation was being recorded.",
+    "categories": ["Grammar", "Inversion", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "did they know",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard literary inversion for dramatic effect.",
+        "status": "active"
+      },
+      {
+        "option_text": "they knew",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "had they known",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Often used for conditionals, but 'did they know' is the classic narrative form.",
+        "status": "active"
+      },
+      {
+        "option_text": "was known to them",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Grammatically correct but clunky compared to the inversion.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-419",
+    "prompt": "The speaker's ______ tone suggested he had little patience for the audience's questions.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "curt",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Rudely brief.",
+        "status": "active"
+      },
+      {
+        "option_text": "brusque",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Abrupt or offhand in speech or manner.",
+        "status": "active"
+      },
+      {
+        "option_text": "terse",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Sparing in the use of words; abrupt.",
+        "status": "active"
+      },
+      {
+        "option_text": "short",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "A common synonym, but less precise than 'curt'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-420",
+    "prompt": "It was not until the 11th hour ______ the two sides reached a compromise.",
+    "categories": ["Grammar", "Cleft Sentences", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "that",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The 'it' cleft construction requires 'that' to link the clauses.",
+        "status": "active"
+      },
+      {
+        "option_text": "when",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Commonly used in speech, but 'that' is the grammatically standard form for clefts.",
+        "status": "active"
+      },
+      {
+        "option_text": "until",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Redundant with the 'until' at the start.",
+        "status": "active"
+      },
+      {
+        "option_text": "before",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Changes the emphasis slightly.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-421",
+    "prompt": "His decision to resign was seen as a ______ of his failure to meet the targets.",
+    "categories": ["Vocabulary", "Nouns", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "tacit admission",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "An admission understood or implied without being stated.",
+        "status": "active"
+      },
+      {
+        "option_text": "confirmation",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but less nuanced.",
+        "status": "active"
+      },
+      {
+        "option_text": "sign",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too basic.",
+        "status": "active"
+      },
+      {
+        "option_text": "consequence",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Logically sound.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-422",
+    "prompt": "______ for the help of my friends, I would never have finished this on time.",
+    "categories": ["Grammar", "Conditionals", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "Had it not been",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inverted third conditional.",
+        "status": "active"
+      },
+      {
+        "option_text": "Were it not",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Used for present hypotheticals; doesn't match 'would have finished'.",
+        "status": "active"
+      },
+      {
+        "option_text": "But",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'But for' is a valid alternative.",
+        "status": "active"
+      },
+      {
+        "option_text": "If it wasn't",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Less formal.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-423",
+    "prompt": "The scholar's ______ prose was difficult for even his peers to decipher.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "turgid",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Overblown, pompous, and bombastic.",
+        "status": "active"
+      },
+      {
+        "option_text": "abstruse",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Difficult to understand; obscure.",
+        "status": "active"
+      },
+      {
+        "option_text": "opaque",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Hard or impossible to understand.",
+        "status": "active"
+      },
+      {
+        "option_text": "dense",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Closely compacted in substance or complexity.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-424",
+    "prompt": "Such ______ the complexity of the issue that no simple solution exists.",
+    "categories": ["Grammar", "Inversion", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "is",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inversion after 'Such' (Such is the X that...).",
+        "status": "active"
+      },
+      {
+        "option_text": "was",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Tense mismatch with 'exists'.",
+        "status": "active"
+      },
+      {
+        "option_text": "has been",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct present perfect form.",
+        "status": "active"
+      },
+      {
+        "option_text": "being",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect grammatical form.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-425",
+    "prompt": "The company's finances were in such a ______ state that bankruptcy was the only option.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "precarious",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Not securely held or in position; dangerously likely to fall or collapse.",
+        "status": "active"
+      },
+      {
+        "option_text": "parlous",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Full of danger or uncertainty; precarious.",
+        "status": "active"
+      },
+      {
+        "option_text": "dire",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Extremely serious or urgent.",
+        "status": "active"
+      },
+      {
+        "option_text": "bad",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Far too simple.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-426",
+    "prompt": "Hardly ______ the plane touched down when the storm broke.",
+    "categories": ["Grammar", "Inversion", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "had",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inversion with 'Hardly... when'.",
+        "status": "active"
+      },
+      {
+        "option_text": "did",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Past simple is possible but past perfect is more typical.",
+        "status": "active"
+      },
+      {
+        "option_text": "was",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect auxiliary.",
+        "status": "active"
+      },
+      {
+        "option_text": "has",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Tense mismatch.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-427",
+    "prompt": "The defendant's ______ behavior in court did little to help his case.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "contumacious",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Stubbornly or willfully disobedient to authority.",
+        "status": "active"
+      },
+      {
+        "option_text": "insolent",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Showing a rude and arrogant lack of respect.",
+        "status": "active"
+      },
+      {
+        "option_text": "defiant",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Showing open resistance; bold disobedience.",
+        "status": "active"
+      },
+      {
+        "option_text": "rude",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too basic.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-428",
+    "prompt": "I ______ to suggest that his motives were anything other than honorable.",
+    "categories": ["Vocabulary", "Verbs/Idioms", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "would be loath",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'To be loath to do something' means to be reluctant to do it.",
+        "status": "active"
+      },
+      {
+        "option_text": "hesitate",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "To pause before saying or doing something.",
+        "status": "active"
+      },
+      {
+        "option_text": "decline",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too formal/incorrect collocation for beliefs.",
+        "status": "active"
+      },
+      {
+        "option_text": "fear",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually 'I fear that...'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-429",
+    "prompt": "______ what may, we must adhere to our original plan.",
+    "categories": ["Grammar", "Fixed Expressions", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "Come",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Come what may' is a fixed subjunctive idiom meaning 'whatever happens'.",
+        "status": "active"
+      },
+      {
+        "option_text": "Be",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect verb for this idiom.",
+        "status": "active"
+      },
+      {
+        "option_text": "Happen",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect verb for this idiom.",
+        "status": "active"
+      },
+      {
+        "option_text": "Whatever",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Requires 'Whatever may come', not 'Whatever what may'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-430",
+    "prompt": "The meeting was ______ short by the fire alarm.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "cut",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard idiom 'to cut something short'.",
+        "status": "active"
+      },
+      {
+        "option_text": "brought",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually 'brought to an end'.",
+        "status": "active"
+      },
+      {
+        "option_text": "called",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually 'called off'.",
+        "status": "active"
+      },
+      {
+        "option_text": "broken",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect collocation.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-431",
+    "prompt": "The editor decided to ______ the controversial chapter from the final manuscript.",
+    "categories": ["Vocabulary", "Verbs", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "excise",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A formal and precise term for removing a section of text.",
+        "status": "active"
+      },
+      {
+        "option_text": "expunge",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To obliterate or remove completely (often from a record).",
+        "status": "active"
+      },
+      {
+        "option_text": "omit",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Correct but lacks the 'Expert' level precision of 'excise'.",
+        "status": "active"
+      },
+      {
+        "option_text": "redact",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Refers specifically to obscuring text for legal or security reasons.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-432",
+    "prompt": "No sooner had the curtain fallen ______ the audience erupted into a standing ovation.",
+    "categories": ["Grammar", "Inversion", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "than",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Invariable correlative conjunction used with 'no sooner'.",
+        "status": "active"
+      },
+      {
+        "option_text": "when",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect; 'when' is paired with 'hardly' or 'scarcely'.",
+        "status": "active"
+      },
+      {
+        "option_text": "then",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Common spelling error; 'than' is for comparisons/sequences here.",
+        "status": "active"
+      },
+      {
+        "option_text": "that",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect grammatical pairing.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-433",
+    "prompt": "The government’s plan was ______ with insurmountable logistical hurdles.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "fraught",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard C2 adjective for being filled with something undesirable.",
+        "status": "active"
+      },
+      {
+        "option_text": "riddled",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Possible, but often used for flaws or errors rather than 'hurdles'.",
+        "status": "active"
+      },
+      {
+        "option_text": "beset",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means troubled or threatened persistently by problems.",
+        "status": "active"
+      },
+      {
+        "option_text": "laden",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually refers to a heavy physical load.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-434",
+    "prompt": "Should there ______ any change in your circumstances, please inform the department.",
+    "categories": ["Grammar", "Inversion", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "be",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inverted first conditional (If there should be...).",
+        "status": "active"
+      },
+      {
+        "option_text": "is",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect verb form for the 'should' inversion.",
+        "status": "active"
+      },
+      {
+        "option_text": "being",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect participle usage.",
+        "status": "active"
+      },
+      {
+        "option_text": "arise",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A more formal and elegant alternative to 'be'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-435",
+    "prompt": "His speech was marked by a ______ lack of empathy for the victims.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "conspicuous",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standing out so as to be clearly visible.",
+        "status": "active"
+      },
+      {
+        "option_text": "glaring",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used for something obvious and typically bad/negative.",
+        "status": "active"
+      },
+      {
+        "option_text": "flagrant",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Conspicuously or obviously offensive.",
+        "status": "active"
+      },
+      {
+        "option_text": "manifest",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Clear or obvious to the eye or mind.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-436",
+    "prompt": "Were the board ______ their support, the project would undoubtedly fail.",
+    "categories": ["Grammar", "Inversion", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "to withdraw",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Formal inverted second conditional for a hypothetical future event.",
+        "status": "active"
+      },
+      {
+        "option_text": "withdrawing",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect structure for 'Were the board...'.",
+        "status": "active"
+      },
+      {
+        "option_text": "withdrawn",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect past participle usage here.",
+        "status": "active"
+      },
+      {
+        "option_text": "should withdraw",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Incorrect; should be 'Should the board withdraw...'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-437",
+    "prompt": "The witness ______ the defendant’s alibi by providing a conflicting timeline.",
+    "categories": ["Vocabulary", "Verbs", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "undermined",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To lessen the effectiveness, power, or ability of something.",
+        "status": "active"
+      },
+      {
+        "option_text": "refuted",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To prove a statement or theory to be wrong or false.",
+        "status": "active"
+      },
+      {
+        "option_text": "invalidated",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "To make something no longer valid.",
+        "status": "active"
+      },
+      {
+        "option_text": "debunked",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually used for myths or false beliefs.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-438",
+    "prompt": "The atmosphere in the room was ______ with tension as the results were announced.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "thick",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Common idiom (thick with tension), but less 'Expert' than others.",
+        "status": "active"
+      },
+      {
+        "option_text": "charged",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Implies an atmosphere full of electricity or strong emotion.",
+        "status": "active"
+      },
+      {
+        "option_text": "palpable",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "So intense as to seem almost tangible/physical.",
+        "status": "active"
+      },
+      {
+        "option_text": "heavy",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Correct but basic.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-439",
+    "prompt": "______ for his quick thinking, the catastrophe would have been far worse.",
+    "categories": ["Grammar", "Conditionals", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "But",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'But for' + noun is a high-level way to express 'If it hadn't been for'.",
+        "status": "active"
+      },
+      {
+        "option_text": "Were it",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'not for'.",
+        "status": "active"
+      },
+      {
+        "option_text": "Had it",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'not been for'.",
+        "status": "active"
+      },
+      {
+        "option_text": "Except",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Requires 'Except for' and is rarely used this way in conditionals.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-440",
+    "prompt": "The senator’s speech was more of a ______ than a genuine call for reform.",
+    "categories": ["Vocabulary", "Nouns", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "diatribe",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A forceful and bitter verbal attack against someone or something.",
+        "status": "active"
+      },
+      {
+        "option_text": "harangue",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A lengthy and aggressive speech.",
+        "status": "active"
+      },
+      {
+        "option_text": "polemic",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A strong verbal or written attack on someone's opinions/principles.",
+        "status": "active"
+      },
+      {
+        "option_text": "lecture",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Too neutral.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-441",
+    "prompt": "Try ______ he might, the artist could never capture the exact shade of the sunset.",
+    "categories": ["Grammar", "Fronting", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "as",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Idiomatic construction (Try as he might) for concession.",
+        "status": "active"
+      },
+      {
+        "option_text": "though",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Possible, but less idiomatic than 'as'.",
+        "status": "active"
+      },
+      {
+        "option_text": "hard",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'However hard he might try'.",
+        "status": "active"
+      },
+      {
+        "option_text": "if",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect structure.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-442",
+    "prompt": "The evidence against him was at best ______ , yet he was still convicted.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "circumstantial",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Points indirectly toward someone's guilt but doesn't prove it.",
+        "status": "active"
+      },
+      {
+        "option_text": "tenuous",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Very weak or slight.",
+        "status": "active"
+      },
+      {
+        "option_text": "flimsy",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Lacking strength or solidity; fragile.",
+        "status": "active"
+      },
+      {
+        "option_text": "scanty",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Small or insufficient in quantity.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-443",
+    "prompt": "It is widely ______ that the economy will enter a recession next year.",
+    "categories": ["Grammar", "Passive Reporting", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "feared",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Expresses a general public apprehension.",
+        "status": "active"
+      },
+      {
+        "option_text": "reckoned",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Used for a calculated expectation.",
+        "status": "active"
+      },
+      {
+        "option_text": "conjectured",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Formal term for forming an opinion on incomplete information.",
+        "status": "active"
+      },
+      {
+        "option_text": "thought",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too basic.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-444",
+    "prompt": "The novel is ______ with allusions to classical mythology.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "replete",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Filled or well-supplied with something (usually neutral/positive).",
+        "status": "active"
+      },
+      {
+        "option_text": "shot through",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Pervaded by a particular quality.",
+        "status": "active"
+      },
+      {
+        "option_text": "imbued",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Inspired or permeated with (usually feelings or qualities).",
+        "status": "active"
+      },
+      {
+        "option_text": "full",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too simple.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-445",
+    "prompt": "Scarcely ______ the speech begun when the protestors started shouting.",
+    "categories": ["Grammar", "Inversion", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "had",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard inversion with Scarcely... when.",
+        "status": "active"
+      },
+      {
+        "option_text": "was",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect auxiliary for 'begun'.",
+        "status": "active"
+      },
+      {
+        "option_text": "did",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Possible with 'begin', but 'had begun' is the standard C2 form.",
+        "status": "active"
+      },
+      {
+        "option_text": "has",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Tense mismatch.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-446",
+    "prompt": "The judge issued a ______ warning to the jury about discussing the case.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "stern",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Serious and unrelenting.",
+        "status": "active"
+      },
+      {
+        "option_text": "solemn",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Formal and dignified; serious.",
+        "status": "active"
+      },
+      {
+        "option_text": "stark",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Severe or bare in appearance or outline.",
+        "status": "active"
+      },
+      {
+        "option_text": "brief",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too neutral.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-447",
+    "prompt": "He found himself in the ______ position of having to fire his own mentor.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "unenviable",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Difficult, undesirable, or unpleasant.",
+        "status": "active"
+      },
+      {
+        "option_text": "invidious",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Likely to arouse or incur resentment or anger in others.",
+        "status": "active"
+      },
+      {
+        "option_text": "awkward",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Correct but lacks depth.",
+        "status": "active"
+      },
+      {
+        "option_text": "precarious",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Uncertain or dangerous.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-448",
+    "prompt": "Not for one moment ______ that the plan would succeed without her.",
+    "categories": ["Grammar", "Inversion", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "did I imagine",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Emphatic inversion in the main clause.",
+        "status": "active"
+      },
+      {
+        "option_text": "I imagined",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "had I imagined",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but 'did I imagine' is more idiomatic for this phrase.",
+        "status": "active"
+      },
+      {
+        "option_text": "was I imagining",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect aspect.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-449",
+    "prompt": "The candidate's performance was ______ by her lack of experience in foreign policy.",
+    "categories": ["Vocabulary", "Verbs", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "marred",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To impair the quality or appearance of; spoil.",
+        "status": "active"
+      },
+      {
+        "option_text": "vitiated",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To spoil or impair the quality or efficiency of (formal/legal).",
+        "status": "active"
+      },
+      {
+        "option_text": "hampered",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "To hinder or impede the movement or progress of.",
+        "status": "active"
+      },
+      {
+        "option_text": "ruined",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too strong.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-450",
+    "prompt": "It is ______ that the two events are unrelated, despite the coincidence.",
+    "categories": ["Vocabulary", "Adverbs", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "highly probable",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A strong formal way to express likelihood.",
+        "status": "active"
+      },
+      {
+        "option_text": "inconceivable",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Not capable of being imagined or grasped mentally.",
+        "status": "active"
+      },
+      {
+        "option_text": "possible",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too weak.",
+        "status": "active"
+      },
+      {
+        "option_text": "likely",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Standard and correct.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-451",
+    "prompt": "______ what may, I will not change my mind about this project.",
+    "categories": ["Grammar", "Fixed Expressions", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "Come",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Fixed subjunctive idiom (Come what may).",
+        "status": "active"
+      },
+      {
+        "option_text": "Be",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect verb for this idiom.",
+        "status": "active"
+      },
+      {
+        "option_text": "Happen",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect verb for this idiom.",
+        "status": "active"
+      },
+      {
+        "option_text": "Regardless",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Incorrect structure for 'what may'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-452",
+    "prompt": "The company’s growth has been ______ by a lack of skilled labor.",
+    "categories": ["Vocabulary", "Verbs", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "stunted",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To prevent from growing or developing properly.",
+        "status": "active"
+      },
+      {
+        "option_text": "impeded",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To delay or prevent someone or something by obstructing them.",
+        "status": "active"
+      },
+      {
+        "option_text": "checked",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "To stop or slow the progress of (something undesirable).",
+        "status": "active"
+      },
+      {
+        "option_text": "stopped",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Too absolute.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-453",
+    "prompt": "______ should you disclose your password to anyone, even if they claim to be from the bank.",
+    "categories": ["Grammar", "Inversion", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "Under no circumstances",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Negative adverbial requiring inversion.",
+        "status": "active"
+      },
+      {
+        "option_text": "On no account",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally correct formal inversion trigger.",
+        "status": "active"
+      },
+      {
+        "option_text": "Never",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but the phrasal versions are more formal.",
+        "status": "active"
+      },
+      {
+        "option_text": "Not",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires more context/words to trigger inversion.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-454",
+    "prompt": "The CEO’s resignation was a ______ to the entire industry.",
+    "categories": ["Vocabulary", "Nouns", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "blow",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Metaphor for a sudden shock or disappointment.",
+        "status": "active"
+      },
+      {
+        "option_text": "bombshell",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used for an unexpected and surprising piece of news.",
+        "status": "active"
+      },
+      {
+        "option_text": "surprise",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too weak.",
+        "status": "active"
+      },
+      {
+        "option_text": "shocker",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too informal.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-455",
+    "prompt": "The document was ______ with errors, making it nearly impossible to understand.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "riddled",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Classic C2 collocation for errors.",
+        "status": "active"
+      },
+      {
+        "option_text": "shot through",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally sophisticated alternative for 'pervaded'.",
+        "status": "active"
+      },
+      {
+        "option_text": "fraught",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually implies danger/anxiety.",
+        "status": "active"
+      },
+      {
+        "option_text": "full",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too basic.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-456",
+    "prompt": "Lest we ______ , we should honor the sacrifices made by those before us.",
+    "categories": ["Grammar", "Subjunctive", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "forget",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Fixed literary expression using the subjunctive.",
+        "status": "active"
+      },
+      {
+        "option_text": "should forget",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The 'should' alternative after 'lest'.",
+        "status": "active"
+      },
+      {
+        "option_text": "forgets",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect mood.",
+        "status": "active"
+      },
+      {
+        "option_text": "forgot",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect tense.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-457",
+    "prompt": "The negotiator’s ______ approach helped resolve the conflict peacefully.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "conciliatory",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Intended or likely to placate or pacify.",
+        "status": "active"
+      },
+      {
+        "option_text": "diplomatic",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but less specific than conciliatory.",
+        "status": "active"
+      },
+      {
+        "option_text": "equanimous",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Calm and composed.",
+        "status": "active"
+      },
+      {
+        "option_text": "soft",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Too informal and vague.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-458",
+    "prompt": "Hardly ______ the meeting started when the argument broke out.",
+    "categories": ["Grammar", "Inversion", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "had",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard inversion trigger.",
+        "status": "active"
+      },
+      {
+        "option_text": "did",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Possible but less traditional than past perfect.",
+        "status": "active"
+      },
+      {
+        "option_text": "was",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect auxiliary.",
+        "status": "active"
+      },
+      {
+        "option_text": "has",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Tense mismatch.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-459",
+    "prompt": "Her argument was so ______ that it left no room for rebuttal.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "cogent",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Clear, logical, and convincing.",
+        "status": "active"
+      },
+      {
+        "option_text": "irrefutable",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Impossible to deny or disprove.",
+        "status": "active"
+      },
+      {
+        "option_text": "compelling",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Evoking interest, attention, or admiration in a powerfully irresistible way.",
+        "status": "active"
+      },
+      {
+        "option_text": "strong",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too basic.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-460",
+    "prompt": "It is ______ to note that the two countries have never formally signed a peace treaty.",
+    "categories": ["Vocabulary", "Adjectives", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "noteworthy",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Worth noticing or paying attention to.",
+        "status": "active"
+      },
+      {
+        "option_text": "salient",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Most noticeable or important.",
+        "status": "active"
+      },
+      {
+        "option_text": "interesting",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too basic.",
+        "status": "active"
+      },
+      {
+        "option_text": "telling",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Having a significant or revealing effect.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-461",
+    "prompt": "The legal team argued that the contract was ______ due to the presence of coercive tactics.",
+    "categories": ["Vocabulary", "Legal/Formal", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "vitiated",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Legal term meaning to spoil or impair the legal validity of something.",
+        "status": "active"
+      },
+      {
+        "option_text": "nullified",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To make legally null and void.",
+        "status": "active"
+      },
+      {
+        "option_text": "voided",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Standard term, though 'vitiated' is more precise for the 'cause'.",
+        "status": "active"
+      },
+      {
+        "option_text": "broken",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Too informal for a legal context.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-462",
+    "prompt": "Only by ______ the complexities of the situation can we hope to find a lasting solution.",
+    "categories": ["Vocabulary", "Verbs", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "fathoming",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To understand a difficult problem after much thought.",
+        "status": "active"
+      },
+      {
+        "option_text": "parsing",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To analyze into logical components.",
+        "status": "active"
+      },
+      {
+        "option_text": "grasping",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but more common at B2/C1 levels.",
+        "status": "active"
+      },
+      {
+        "option_text": "unraveling",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To investigate and solve or explain something complicated.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-463",
+    "prompt": "So ______ was the applause that it could be heard blocks away from the theater.",
+    "categories": ["Grammar", "Inversion", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "thunderous",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Classic C2 inversion (So + Adj + Verb + Subj).",
+        "status": "active"
+      },
+      {
+        "option_text": "great",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too weak for the context.",
+        "status": "active"
+      },
+      {
+        "option_text": "deafening",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Strong adjective fitting the result clause.",
+        "status": "active"
+      },
+      {
+        "option_text": "loudly",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires an adjective, not an adverb, after 'So' in this structure.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-464",
+    "prompt": "His reputation was such that his word was considered ______ .",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "sacrosanct",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Regarded as too important or valuable to be interfered with.",
+        "status": "active"
+      },
+      {
+        "option_text": "inviolate",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Free or safe from injury or violation.",
+        "status": "active"
+      },
+      {
+        "option_text": "absolute",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Correct but lacks the nuance of being 'untouchable'.",
+        "status": "active"
+      },
+      {
+        "option_text": "impeccable",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Usually refers to standards or behavior, not 'words' as truth.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-465",
+    "prompt": "The general's strategy was ______ with risks, but it was his only hope for victory.",
+    "categories": ["Vocabulary", "Adjectives", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "fraught",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard high-level adjective for 'filled with' (negative).",
+        "status": "active"
+      },
+      {
+        "option_text": "replete",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Usually takes 'with' but implies abundance rather than danger.",
+        "status": "active"
+      },
+      {
+        "option_text": "laden",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Weighted down by something.",
+        "status": "active"
+      },
+      {
+        "option_text": "riddled",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually refers to errors or holes.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-466",
+    "prompt": "______ for the sheer tenacity of the researchers, the cure might never have been found.",
+    "categories": ["Grammar", "Conditionals", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "Were it not",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inverted second conditional (used for general truths or present states).",
+        "status": "active"
+      },
+      {
+        "option_text": "Had it not been",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inverted third conditional (used for specific past events).",
+        "status": "active"
+      },
+      {
+        "option_text": "But",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'But for' is perfectly acceptable and elegant.",
+        "status": "active"
+      },
+      {
+        "option_text": "If it wasn't",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Less formal than the inversions.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-467",
+    "prompt": "The author’s ______ style often obscures the underlying meaning of his work.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "tortuous",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Full of twists and turns; excessively lengthy and complex.",
+        "status": "active"
+      },
+      {
+        "option_text": "abstruse",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Difficult to understand; obscure.",
+        "status": "active"
+      },
+      {
+        "option_text": "convoluted",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Extremely complex and difficult to follow.",
+        "status": "active"
+      },
+      {
+        "option_text": "turgid",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Pompous and bombastic (specifically for language).",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-468",
+    "prompt": "Hardly ______ the plane touched down when the passengers began unbuckling their belts.",
+    "categories": ["Grammar", "Inversion", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "had",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard auxiliary for 'Hardly... when' structures.",
+        "status": "active"
+      },
+      {
+        "option_text": "did",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Past simple is used but less common in this literary structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "was",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect auxiliary for 'touched'.",
+        "status": "active"
+      },
+      {
+        "option_text": "has",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Tense mismatch with 'began'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-469",
+    "prompt": "The new legislation is intended to ______ the flow of illegal arms across the border.",
+    "categories": ["Vocabulary", "Verbs", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "stem",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To stop or restrict the flow or spread of something (typically something unpleasant).",
+        "status": "active"
+      },
+      {
+        "option_text": "curtail",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To reduce in extent or quantity.",
+        "status": "active"
+      },
+      {
+        "option_text": "check",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "To stop or slow down the progress of.",
+        "status": "active"
+      },
+      {
+        "option_text": "halt",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "To bring to a complete stop.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-470",
+    "prompt": "Little ______ that their every move was being monitored by the authorities.",
+    "categories": ["Grammar", "Inversion", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "did they suspect",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard literary inversion with 'Little'.",
+        "status": "active"
+      },
+      {
+        "option_text": "they suspected",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order for this emphatic structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "had they suspected",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Possible if referring to a state prior to another past event.",
+        "status": "active"
+      },
+      {
+        "option_text": "could they suspect",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Emphasizes the impossibility of their knowing.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-471",
+    "prompt": "The scholar's ______ knowledge of the period made him the foremost expert in the field.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "encyclopedic",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Comprehensive and wide-ranging.",
+        "status": "active"
+      },
+      {
+        "option_text": "profound",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Very great or intense; showing great knowledge.",
+        "status": "active"
+      },
+      {
+        "option_text": "exhaustive",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Including all possibilities; thorough.",
+        "status": "active"
+      },
+      {
+        "option_text": "vast",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too basic.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-472",
+    "prompt": "No matter ______ hard he tried, the secret remained elusive.",
+    "categories": ["Grammar", "Concessive Clauses", "B2/C1-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "how",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Fixed phrase 'No matter how' followed by an adjective/adverb.",
+        "status": "active"
+      },
+      {
+        "option_text": "as",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect structure; would be 'Try as he might'.",
+        "status": "active"
+      },
+      {
+        "option_text": "what",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'No matter what he did', not 'No matter what hard'.",
+        "status": "active"
+      },
+      {
+        "option_text": "though",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect structure.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-473",
+    "prompt": "The diplomat’s ______ response avoided answering the question directly while remaining polite.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "equivocal",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Open to more than one interpretation; ambiguous.",
+        "status": "active"
+      },
+      {
+        "option_text": "non-committal",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Not displaying a definite opinion or course of action.",
+        "status": "active"
+      },
+      {
+        "option_text": "evasive",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Tending to avoid commitment or self-revelation.",
+        "status": "active"
+      },
+      {
+        "option_text": "oblique",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Not explicit or direct in addressing a point.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-474",
+    "prompt": "It is essential that every member of the team ______ the protocol to the letter.",
+    "categories": ["Grammar", "Subjunctive", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "follow",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Subjunctive (base form) after 'essential that'.",
+        "status": "active"
+      },
+      {
+        "option_text": "follows",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Indicative mood; incorrect in formal subjunctive triggers.",
+        "status": "active"
+      },
+      {
+        "option_text": "should follow",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard British alternative to the subjunctive.",
+        "status": "active"
+      },
+      {
+        "option_text": "must follow",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Redundant with 'essential'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-475",
+    "prompt": "The company was forced to ______ its operations in the region due to civil unrest.",
+    "categories": ["Vocabulary", "Verbs", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "cease",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A formal synonym for 'stop'.",
+        "status": "active"
+      },
+      {
+        "option_text": "suspend",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To temporarily prevent from continuing.",
+        "status": "active"
+      },
+      {
+        "option_text": "curtail",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "To reduce or limit.",
+        "status": "active"
+      },
+      {
+        "option_text": "terminate",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To bring to an end.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-476",
+    "prompt": "______ for the accidental discovery of the manuscript, much of the poet's work would be lost.",
+    "categories": ["Grammar", "Conditionals", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "But",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'But for' is a concise and formal conditional substitute.",
+        "status": "active"
+      },
+      {
+        "option_text": "Were it not",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Correct inverted second conditional.",
+        "status": "active"
+      },
+      {
+        "option_text": "Had it not been",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually for past events; 'would be lost' suggests a present state.",
+        "status": "active"
+      },
+      {
+        "option_text": "Except",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Requires 'Except for'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-477",
+    "prompt": "The politician’s ______ behavior during the debate was widely criticized by the media.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "boorish",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Rough and bad-mannered; coarse.",
+        "status": "active"
+      },
+      {
+        "option_text": "insolent",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Showing a rude and arrogant lack of respect.",
+        "status": "active"
+      },
+      {
+        "option_text": "petulant",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Childishly sulky or bad-tempered.",
+        "status": "active"
+      },
+      {
+        "option_text": "bad",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Too basic.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-478",
+    "prompt": "Not until the final minutes of the match ______ the winning goal.",
+    "categories": ["Grammar", "Inversion", "B2/C1-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "was scored",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Passive inversion after 'Not until'.",
+        "status": "active"
+      },
+      {
+        "option_text": "did they score",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Active inversion after 'Not until'.",
+        "status": "active"
+      },
+      {
+        "option_text": "they scored",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "was it scored",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Clunky but grammatically correct.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-479",
+    "prompt": "The CEO’s decision was ______ by a desire to improve the company’s public image.",
+    "categories": ["Vocabulary", "Verbs", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "prompted",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To cause or bring about an action.",
+        "status": "active"
+      },
+      {
+        "option_text": "actuated",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Formal term meaning motivated or put into action.",
+        "status": "active"
+      },
+      {
+        "option_text": "driven",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but slightly less formal than 'actuated'.",
+        "status": "active"
+      },
+      {
+        "option_text": "made",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'The decision was made because of...'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-480",
+    "prompt": "Her success is ______ to her unwavering dedication and hard work.",
+    "categories": [
+      "Vocabulary",
+      "Adjectives/Prepositions",
+      "C1/C2-Proficiency"
+    ],
+    "answers": [
+      {
+        "option_text": "attributable",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Regarded as being caused by.",
+        "status": "active"
+      },
+      {
+        "option_text": "due",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Correct and standard with 'to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "owing",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Usually starts a clause; 'is owing to' is less common.",
+        "status": "active"
+      },
+      {
+        "option_text": "caused",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'by'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-481",
+    "prompt": "Try ______ she might, she could not suppress a smile at his absurdity.",
+    "categories": ["Grammar", "Fronting", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "as",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Idiomatic fronting for concession.",
+        "status": "active"
+      },
+      {
+        "option_text": "though",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Less common than 'as' in this specific verbal fronting.",
+        "status": "active"
+      },
+      {
+        "option_text": "hard",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'However hard she might try'.",
+        "status": "active"
+      },
+      {
+        "option_text": "if",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect structure.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-482",
+    "prompt": "The meeting was ______ by a series of interruptions from the audience.",
+    "categories": ["Vocabulary", "Verbs", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "marred",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To impair the quality or appearance of.",
+        "status": "active"
+      },
+      {
+        "option_text": "punctuated",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Occurring at intervals throughout.",
+        "status": "active"
+      },
+      {
+        "option_text": "hampered",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "To hinder progress.",
+        "status": "active"
+      },
+      {
+        "option_text": "spoiled",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too informal.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-483",
+    "prompt": "Under no circumstances ______ the door be left unlocked overnight.",
+    "categories": ["Grammar", "Inversion", "B2/C1-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "should",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard modal inversion for obligation/advice.",
+        "status": "active"
+      },
+      {
+        "option_text": "must",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Stronger obligation, equally correct inversion.",
+        "status": "active"
+      },
+      {
+        "option_text": "can",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Refers to possibility/permission.",
+        "status": "active"
+      },
+      {
+        "option_text": "is",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect passive auxiliary without 'to be' elsewhere.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-484",
+    "prompt": "The diplomat was praised for his ______ handling of the crisis.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "adroit",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Clever or skillful in using the hands or mind.",
+        "status": "active"
+      },
+      {
+        "option_text": "deft",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Neatly skillful and quick in one's movements.",
+        "status": "active"
+      },
+      {
+        "option_text": "judicious",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Having, showing, or done with good judgment or sense.",
+        "status": "active"
+      },
+      {
+        "option_text": "good",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Too basic.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-485",
+    "prompt": "Such ______ the severity of the drought that the crops failed entirely.",
+    "categories": ["Grammar", "Inversion", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "was",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inversion after 'Such' for emphasis.",
+        "status": "active"
+      },
+      {
+        "option_text": "is",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Tense mismatch with 'failed'.",
+        "status": "active"
+      },
+      {
+        "option_text": "has been",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but simple past matches 'failed' more directly.",
+        "status": "active"
+      },
+      {
+        "option_text": "being",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect grammatical form.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-486",
+    "prompt": "The witness's testimony was ______ with details that were later proven to be false.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "riddled",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Classic collocation for errors/falsehoods.",
+        "status": "active"
+      },
+      {
+        "option_text": "shot through",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Sophisticated alternative for 'pervaded'.",
+        "status": "active"
+      },
+      {
+        "option_text": "full",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too basic.",
+        "status": "active"
+      },
+      {
+        "option_text": "laden",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Weighted with.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-487",
+    "prompt": "______ what may, we will stand by our decision.",
+    "categories": ["Grammar", "Fixed Expressions", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "Come",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Fixed expression (Come what may).",
+        "status": "active"
+      },
+      {
+        "option_text": "Be",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect verb.",
+        "status": "active"
+      },
+      {
+        "option_text": "Happen",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect verb.",
+        "status": "active"
+      },
+      {
+        "option_text": "Regardless",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Incorrect structure for 'what may'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-488",
+    "prompt": "The athlete was ______ for her remarkable perseverance in the face of adversity.",
+    "categories": ["Vocabulary", "Verbs", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "lauded",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Highly praised.",
+        "status": "active"
+      },
+      {
+        "option_text": "commended",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Praiseworthy behavior.",
+        "status": "active"
+      },
+      {
+        "option_text": "extolled",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Praise enthusiastically.",
+        "status": "active"
+      },
+      {
+        "option_text": "praised",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Standard, but 'Expert' level prefers more specific terms.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-489",
+    "prompt": "No sooner had the news been announced ______ the stock market crashed.",
+    "categories": ["Grammar", "Inversion", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "than",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Paired with 'No sooner'.",
+        "status": "active"
+      },
+      {
+        "option_text": "when",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Paired with 'Hardly' or 'Scarcely'.",
+        "status": "active"
+      },
+      {
+        "option_text": "then",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect comparative spelling.",
+        "status": "active"
+      },
+      {
+        "option_text": "that",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect grammatical pairing.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-490",
+    "prompt": "The scientist's theory was ______ by several independent studies.",
+    "categories": ["Vocabulary", "Verbs", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "corroborated",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Confirmed or gave support to.",
+        "status": "active"
+      },
+      {
+        "option_text": "validated",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Checked or proved the validity of.",
+        "status": "active"
+      },
+      {
+        "option_text": "substantiated",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Provide evidence to support or prove the truth of.",
+        "status": "active"
+      },
+      {
+        "option_text": "proven",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too basic.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-491",
+    "prompt": "The resolution was passed, ______ the objections of the minority leader.",
+    "categories": ["Grammar", "Conjunctions", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "notwithstanding",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A formal preposition meaning 'in spite of'.",
+        "status": "active"
+      },
+      {
+        "option_text": "albeit",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires an adjective or adverbial phrase, not a noun phrase.",
+        "status": "active"
+      },
+      {
+        "option_text": "regardless",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Requires 'of' to be grammatically correct.",
+        "status": "active"
+      },
+      {
+        "option_text": "nevertheless",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "An adverb, not a preposition.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-492",
+    "prompt": "Were the proposal ______ into law, it would fundamentally alter the tax code.",
+    "categories": ["Grammar", "Inverted Conditionals", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "to be enacted",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Passive inverted second conditional for a future hypothetical.",
+        "status": "active"
+      },
+      {
+        "option_text": "enacted",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically possible, but 'to be enacted' is the hallmark of formal C2 syntax.",
+        "status": "active"
+      },
+      {
+        "option_text": "being enacted",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect continuous aspect for this structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "to enact",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect active voice; the proposal must be enacted by others.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-493",
+    "prompt": "The philosopher’s arguments were so ______ that few could find any logical flaws.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "waterlight",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect spelling of 'watertight'.",
+        "status": "active"
+      },
+      {
+        "option_text": "watertight",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Idiomatic for an argument with no weaknesses.",
+        "status": "active"
+      },
+      {
+        "option_text": "incisive",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Intelligently analytical and clear-thinking.",
+        "status": "active"
+      },
+      {
+        "option_text": "irrefutable",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Impossible to deny or disprove.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-494",
+    "prompt": "The diplomat’s ______ behavior at the summit was a major cause for concern.",
+    "categories": ["Vocabulary", "Adjectives", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "erratic",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Unpredictable and not following a regular pattern.",
+        "status": "active"
+      },
+      {
+        "option_text": "capricious",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Given to sudden and unaccountable changes of mood or behavior.",
+        "status": "active"
+      },
+      {
+        "option_text": "mercurial",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Subject to sudden or unpredictable changes of mind or mood.",
+        "status": "active"
+      },
+      {
+        "option_text": "weird",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Far too informal.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-495",
+    "prompt": "______ as he was of the impending danger, he chose to proceed regardless.",
+    "categories": ["Grammar", "Fronting", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "Aware",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Adjective fronting for concession (equivalent to 'Although he was aware').",
+        "status": "active"
+      },
+      {
+        "option_text": "Conscious",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally valid adjective fronting.",
+        "status": "active"
+      },
+      {
+        "option_text": "Cognizant",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "High-level formal term for being aware.",
+        "status": "active"
+      },
+      {
+        "option_text": "Being",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Grammatically correct but loses the specific fronting emphasis.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-496",
+    "prompt": "The report ______ the need for urgent action to address climate change.",
+    "categories": ["Vocabulary", "Verbs", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "underscores",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To emphasize or show the importance of something.",
+        "status": "active"
+      },
+      {
+        "option_text": "accentuates",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To make something more noticeable or prominent.",
+        "status": "active"
+      },
+      {
+        "option_text": "highlights",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but less formal than 'underscores'.",
+        "status": "active"
+      },
+      {
+        "option_text": "foregrounds",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To make something the most prominent or important feature.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-497",
+    "prompt": "Should you ______ any further assistance, please do not hesitate to contact us.",
+    "categories": ["Grammar", "Inversion", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "require",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard formal inverted conditional.",
+        "status": "active"
+      },
+      {
+        "option_text": "need",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but less formal than 'require'.",
+        "status": "active"
+      },
+      {
+        "option_text": "desire",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Possible but slightly archaic in a business context.",
+        "status": "active"
+      },
+      {
+        "option_text": "want",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Too informal for this structure.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-498",
+    "prompt": "The company’s ______ was severely damaged by the scandal.",
+    "categories": ["Vocabulary", "Nouns", "C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "standing",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Refers to status or reputation within a group.",
+        "status": "active"
+      },
+      {
+        "option_text": "prestige",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Widespread respect and admiration felt for someone or something.",
+        "status": "active"
+      },
+      {
+        "option_text": "stature",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Importance or reputation gained by ability or achievement.",
+        "status": "active"
+      },
+      {
+        "option_text": "name",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Commonly used but less formal.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-499",
+    "prompt": "Little ______ that the decision would have such far-reaching consequences.",
+    "categories": ["Grammar", "Inversion", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "did they realize",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard narrative inversion.",
+        "status": "active"
+      },
+      {
+        "option_text": "they realized",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "had they realized",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, though 'did they realize' is more common in this idiom.",
+        "status": "active"
+      },
+      {
+        "option_text": "was realized by them",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Grammatically incorrect in this context.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  },
+  {
+    "id": "expert-500",
+    "prompt": "The project was deemed a success, ______ the initial setbacks.",
+    "categories": ["Grammar", "Conjunctions", "C1/C2-Proficiency"],
+    "answers": [
+      {
+        "option_text": "notwithstanding",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A sophisticated formal choice for 'despite'.",
+        "status": "active"
+      },
+      {
+        "option_text": "despite",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard and correct.",
+        "status": "active"
+      },
+      {
+        "option_text": "in spite of",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally correct multi-word preposition.",
+        "status": "active"
+      },
+      {
+        "option_text": "although",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires a full clause, not a noun phrase.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "VERY_HARD"
+  }
+]

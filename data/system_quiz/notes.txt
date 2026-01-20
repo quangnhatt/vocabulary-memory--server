@@ -1,0 +1,46 @@
+As a master English teacher, I want to create list of questions to evaluation student level from Beginner to Advanced, specially vocabularies and phrases with following requirements 
+
+- Random topics and no repeated questions
+- Each question has 4 answers 
+- Each question has its difficulty (default_popularity) including: VERY_EASY, EASY, MEDIUM, VERY_HARD, HARD
+- Each answers has its answer_type including best, acceptable, ok, wrong with answer_point is 10, 7, 4, 0 respectively.
+
+Output is in json format like 
+
+[{
+
+    "id": "a1b2c3d4-0001-4000-8000-000000000001",
+
+    "prompt": "The legal team worked tirelessly to ______ the contract's hidden clauses.",
+
+    "categories": [
+
+      "Vocabulary",
+
+      "Verbs",
+
+      "C1-Advanced"
+
+    ],
+
+    "answers": [
+
+      {
+
+        "option_text": "scrutinize",
+
+        "answer_type": "best",
+
+        "answer_point": 10,
+
+        "explanation": "'Scrutinize' means to examine something very thoroughly and carefully, which is ideal for legal contexts.",
+
+        "status": "active"
+
+      }
+
+    ],
+
+    "default_popularity": "HARD"
+
+  }]

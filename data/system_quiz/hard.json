@@ -1,0 +1,3606 @@
+[
+  {
+    "id": "hard-301",
+    "prompt": "Not until the late 19th century ______ to become a popular sport.",
+    "categories": ["Grammar", "Inversion", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "did football begin",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Negative adverbial phrases at the start of a sentence require auxiliary-subject inversion.",
+        "status": "active"
+      },
+      {
+        "option_text": "football began",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order for a sentence starting with 'Not until'.",
+        "status": "active"
+      },
+      {
+        "option_text": "has football begun",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Tense mismatch with 'late 19th century'.",
+        "status": "active"
+      },
+      {
+        "option_text": "had football begun",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically possible but 'did begin' is more common for historical facts.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-302",
+    "prompt": "If I ______ you were coming, I would have baked a cake.",
+    "categories": ["Grammar", "Third Conditional", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "had known",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard Third Conditional for past hypothetical situations.",
+        "status": "active"
+      },
+      {
+        "option_text": "knew",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Second conditional form; doesn't match the result 'would have baked'.",
+        "status": "active"
+      },
+      {
+        "option_text": "should have known",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Implies a moral obligation to know, which doesn't fit the 'if' clause well.",
+        "status": "active"
+      },
+      {
+        "option_text": "would have known",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Cannot use 'would have' in the 'if' clause.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-303",
+    "prompt": "The board of directors ______ that the CEO resign immediately.",
+    "categories": ["Grammar", "Subjunctive", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "demanded",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Verbs of demanding/suggesting are followed by the subjunctive (base form).",
+        "status": "active"
+      },
+      {
+        "option_text": "recommends",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Also triggers the subjunctive 'resign'.",
+        "status": "active"
+      },
+      {
+        "option_text": "insists",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Commonly used with the subjunctive in formal English.",
+        "status": "active"
+      },
+      {
+        "option_text": "said",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Would require 'that the CEO should resign' or 'resigned' in reported speech.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-304",
+    "prompt": "I’m exhausted; I ______ for six hours without a break.",
+    "categories": [
+      "Grammar",
+      "Present Perfect Continuous",
+      "B2-Upper-Intermediate"
+    ],
+    "answers": [
+      {
+        "option_text": "have been driving",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Emphasizes the duration of an action continuing up to the present.",
+        "status": "active"
+      },
+      {
+        "option_text": "had been driving",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Past perfect continuous would require a past reference point (I was exhausted).",
+        "status": "active"
+      },
+      {
+        "option_text": "drove",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Correct past simple but lacks the emphasis on current exhaustion.",
+        "status": "active"
+      },
+      {
+        "option_text": "was driving",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Suggests the action was interrupted or specific to a past moment.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-305",
+    "prompt": "Seldom ______ such a breathtaking view.",
+    "categories": ["Grammar", "Inversion", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "have I seen",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Negative adverbs like 'seldom' trigger subject-auxiliary inversion.",
+        "status": "active"
+      },
+      {
+        "option_text": "I have seen",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order after 'Seldom'.",
+        "status": "active"
+      },
+      {
+        "option_text": "did I see",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically correct for a single past event, but less common for general experience.",
+        "status": "active"
+      },
+      {
+        "option_text": "I saw",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-306",
+    "prompt": "The government is under pressure to ______ the new tax laws.",
+    "categories": ["Vocabulary", "Formal English", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "implement",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The formal verb for putting a law or plan into effect.",
+        "status": "active"
+      },
+      {
+        "option_text": "carry out",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A less formal phrasal verb synonym.",
+        "status": "active"
+      },
+      {
+        "option_text": "enforce",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Specifically refers to making sure people obey the law.",
+        "status": "active"
+      },
+      {
+        "option_text": "do",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Too informal and vague for this context.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-307",
+    "prompt": "If he ______ more attention in class, he wouldn't be struggling so much now.",
+    "categories": ["Grammar", "Mixed Conditionals", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "had paid",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Mixed conditional: Past action (had paid) with a present result (wouldn't be).",
+        "status": "active"
+      },
+      {
+        "option_text": "paid",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Implies he generally doesn't pay attention (Second conditional).",
+        "status": "active"
+      },
+      {
+        "option_text": "would have paid",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Cannot use 'would have' in the 'if' clause.",
+        "status": "active"
+      },
+      {
+        "option_text": "has paid",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Tense mismatch.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-308",
+    "prompt": "The suspect finally ______ to the crime after hours of interrogation.",
+    "categories": ["Vocabulary", "Collocations", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "confessed",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Confess to a crime' is the standard legal collocation.",
+        "status": "active"
+      },
+      {
+        "option_text": "admitted",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "'Admitted to' is correct, but 'confessed' is more specific to crimes.",
+        "status": "active"
+      },
+      {
+        "option_text": "denied",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Opposite of the intended meaning in context of 'finally'.",
+        "status": "active"
+      },
+      {
+        "option_text": "acknowledged",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually used for facts or feelings, less common for crimes.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-309",
+    "prompt": "No sooner ______ the room than the fire alarm went off.",
+    "categories": ["Grammar", "Inversion", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "had he entered",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The phrase 'No sooner... than' requires past perfect inversion.",
+        "status": "active"
+      },
+      {
+        "option_text": "he had entered",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "did he enter",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically possible, though 'had he entered' is more traditional.",
+        "status": "active"
+      },
+      {
+        "option_text": "was he entering",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Continuous aspect doesn't fit the 'immediate event' context.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-310",
+    "prompt": "The witness's testimony was ______ to the prosecution's case.",
+    "categories": ["Vocabulary", "Adjectives", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "pivotal",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means 'of crucial importance'.",
+        "status": "active"
+      },
+      {
+        "option_text": "crucial",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally correct advanced synonym.",
+        "status": "active"
+      },
+      {
+        "option_text": "important",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too simple for C1/B2 level.",
+        "status": "active"
+      },
+      {
+        "option_text": "marginal",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Means of minor importance.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-311",
+    "prompt": "It is essential that every passenger ______ their seatbelt fastened.",
+    "categories": ["Grammar", "Subjunctive", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "keep",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Subjunctive base form used after 'essential that'.",
+        "status": "active"
+      },
+      {
+        "option_text": "keeps",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Commonly used in informal speech, but grammatically 'incorrect' in formal tests.",
+        "status": "active"
+      },
+      {
+        "option_text": "should keep",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "The British English alternative to the subjunctive.",
+        "status": "active"
+      },
+      {
+        "option_text": "kept",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect tense.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-312",
+    "prompt": "She was ______ with joy when she heard the news.",
+    "categories": ["Vocabulary", "Idioms", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "overcome",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To be very strongly affected by an emotion.",
+        "status": "active"
+      },
+      {
+        "option_text": "filled",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Common, but 'overcome' is more evocative.",
+        "status": "active"
+      },
+      {
+        "option_text": "beside herself",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Usually 'beside herself with' joy/grief.",
+        "status": "active"
+      },
+      {
+        "option_text": "overwhelmed",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard advanced term for intense emotion.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-313",
+    "prompt": "Little ______ that the surprise party was already being planned.",
+    "categories": ["Grammar", "Inversion", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "did she know",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Fixed inversion phrase for dramatic effect.",
+        "status": "active"
+      },
+      {
+        "option_text": "she knew",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "had she known",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically correct, but usually used for conditional meanings.",
+        "status": "active"
+      },
+      {
+        "option_text": "was she knowing",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Know' is a stative verb.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-314",
+    "prompt": "The negotiation came to a ______ when neither side would compromise.",
+    "categories": ["Vocabulary", "Idioms", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "standstill",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A situation where no progress is possible.",
+        "status": "active"
+      },
+      {
+        "option_text": "deadlock",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Specific term for a failed negotiation.",
+        "status": "active"
+      },
+      {
+        "option_text": "halt",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A general stop.",
+        "status": "active"
+      },
+      {
+        "option_text": "finish",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Implies a completion, not a failure to agree.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-315",
+    "prompt": "Were I ______ you, I would take the offer immediately.",
+    "categories": ["Grammar", "Inversion/Conditionals", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "to be",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inverted second conditional (If I were you = Were I you).",
+        "status": "active"
+      },
+      {
+        "option_text": "in your shoes",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct idiom, but 'to be' fits the grammatical gap perfectly.",
+        "status": "active"
+      },
+      {
+        "option_text": " ",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Were I you' is the complete inverted form.",
+        "status": "active"
+      },
+      {
+        "option_text": "being",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect grammatical form.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-316",
+    "prompt": "His argument was based on a ______ premise.",
+    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "flawed",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Describes something with a fundamental error.",
+        "status": "active"
+      },
+      {
+        "option_text": "false",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but 'flawed' is more sophisticated.",
+        "status": "active"
+      },
+      {
+        "option_text": "wrong",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too simple.",
+        "status": "active"
+      },
+      {
+        "option_text": "erroneous",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Advanced academic term for 'wrong'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-317",
+    "prompt": "I'd rather you ______ my computer without asking first.",
+    "categories": ["Grammar", "Preference Structures", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "hadn't used",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Refers to a past action ('didn't ask first' implies the use already happened).",
+        "status": "active"
+      },
+      {
+        "option_text": "didn't use",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Used for a general or future preference.",
+        "status": "active"
+      },
+      {
+        "option_text": "won't use",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect grammatical structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "not use",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Only used for the same subject (I'd rather not use).",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-318",
+    "prompt": "The new skyscraper is a ______ of modern engineering.",
+    "categories": ["Vocabulary", "Collocations", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "marvel",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard collocation for impressive engineering.",
+        "status": "active"
+      },
+      {
+        "option_text": "feat",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means an impressive achievement of skill/strength.",
+        "status": "active"
+      },
+      {
+        "option_text": "wonder",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Common and correct.",
+        "status": "active"
+      },
+      {
+        "option_text": "victory",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually for battles or sports.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-319",
+    "prompt": "Hardly ______ when the electricity went out.",
+    "categories": ["Grammar", "Inversion", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "had I sat down",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inversion following 'Hardly'.",
+        "status": "active"
+      },
+      {
+        "option_text": "I had sat down",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "did I sit down",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically correct, but past perfect is preferred for 'hardly... when'.",
+        "status": "active"
+      },
+      {
+        "option_text": "was I sitting",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Continuous aspect doesn't fit the sequence.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-320",
+    "prompt": "She has a ______ for getting into trouble.",
+    "categories": ["Vocabulary", "Idioms", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "knack",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means a natural skill or a tendency to do something.",
+        "status": "active"
+      },
+      {
+        "option_text": "penchant",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Means a strong liking for something.",
+        "status": "active"
+      },
+      {
+        "option_text": "talent",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually positive, unlike the context here.",
+        "status": "active"
+      },
+      {
+        "option_text": "propensity",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Formal term for a natural tendency.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-321",
+    "prompt": "Under no circumstances ______ you reveal your password to anyone.",
+    "categories": ["Grammar", "Inversion", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "should",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Negative prepositional phrases trigger inversion.",
+        "status": "active"
+      },
+      {
+        "option_text": "must",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally correct and emphatic.",
+        "status": "active"
+      },
+      {
+        "option_text": "you should",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "can",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Refers to permission, but advice modals are better.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-322",
+    "prompt": "The company's profits have ______ over the last decade.",
+    "categories": ["Vocabulary", "Business English", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "soared",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Advanced verb for 'risen quickly'.",
+        "status": "active"
+      },
+      {
+        "option_text": "plummeted",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Advanced verb for 'fallen quickly'; depends on context, but grammatically fits.",
+        "status": "active"
+      },
+      {
+        "option_text": "increased",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too simple for this level.",
+        "status": "active"
+      },
+      {
+        "option_text": "fluctuated",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Means gone up and down.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-323",
+    "prompt": "______ for your help, I wouldn't have been able to finish the project.",
+    "categories": ["Grammar", "Inverted Conditionals", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "Had it not been",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inverted third conditional for 'If it hadn't been'.",
+        "status": "active"
+      },
+      {
+        "option_text": "If it wasn't",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Second conditional form; doesn't match the past result.",
+        "status": "active"
+      },
+      {
+        "option_text": "But",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The phrase 'But for your help' is a perfectly concise alternative.",
+        "status": "active"
+      },
+      {
+        "option_text": "Without",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Simple and correct, but less 'advanced' than the inverted form.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-324",
+    "prompt": "His behavior was ______ with the company's values.",
+    "categories": ["Vocabulary", "Collocations", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "inconsistent",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means not in agreement with.",
+        "status": "active"
+      },
+      {
+        "option_text": "compatible",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Opposite meaning, but grammatically correct.",
+        "status": "active"
+      },
+      {
+        "option_text": "at odds",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Idiomatic phrase meaning 'in disagreement'.",
+        "status": "active"
+      },
+      {
+        "option_text": "unmatched",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect prepositional use.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-325",
+    "prompt": "Only after the evidence was presented ______ his innocence.",
+    "categories": ["Grammar", "Inversion", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "did he realize",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inversion after 'Only after...'.",
+        "status": "active"
+      },
+      {
+        "option_text": "he realized",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "had he realized",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, though simple past is more natural for a realization at a specific moment.",
+        "status": "active"
+      },
+      {
+        "option_text": "was he realizing",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect aspect.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-326",
+    "prompt": "The meeting was ______ by a heated debate over the budget.",
+    "categories": ["Vocabulary", "Verbs", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "characterized",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means to describe the most important quality of something.",
+        "status": "active"
+      },
+      {
+        "option_text": "marked",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Similar meaning to 'characterized'.",
+        "status": "active"
+      },
+      {
+        "option_text": "interrupted",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Possible, but less descriptive of the meeting's nature.",
+        "status": "active"
+      },
+      {
+        "option_text": "dominated",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Perfectly describes one thing taking up most of the time/attention.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-327",
+    "prompt": "No matter ______ hard I try, I can't seem to get it right.",
+    "categories": ["Grammar", "Conjunctions", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "how",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard phrase 'No matter how' + adjective/adverb.",
+        "status": "active"
+      },
+      {
+        "option_text": "what",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires a noun (No matter what efforts).",
+        "status": "active"
+      },
+      {
+        "option_text": "however",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "One-word synonym for 'no matter how'.",
+        "status": "active"
+      },
+      {
+        "option_text": "so",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect structure.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-328",
+    "prompt": "She's an extremely ______ person; she always pays attention to the smallest details.",
+    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "meticulous",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Advanced word for someone who is very careful and precise.",
+        "status": "active"
+      },
+      {
+        "option_text": "careful",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too simple.",
+        "status": "active"
+      },
+      {
+        "option_text": "thorough",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Good synonym, but 'meticulous' is higher level.",
+        "status": "active"
+      },
+      {
+        "option_text": "conscientious",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Means putting a lot of effort into work.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-329",
+    "prompt": "I ______ have gone to the party, but I was feeling unwell.",
+    "categories": ["Grammar", "Modals", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "would",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used for a past intention or hypothetical that didn't happen.",
+        "status": "active"
+      },
+      {
+        "option_text": "should",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Implies it was a good idea, though 'would' focuses on the desire.",
+        "status": "active"
+      },
+      {
+        "option_text": "could",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Refers to the ability to go.",
+        "status": "active"
+      },
+      {
+        "option_text": "might",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Refers to a possibility.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-330",
+    "prompt": "The new policy had a ______ impact on the company's bottom line.",
+    "categories": ["Vocabulary", "Business English", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "profound",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Advanced adjective for 'great' or 'significant'.",
+        "status": "active"
+      },
+      {
+        "option_text": "significant",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct and formal.",
+        "status": "active"
+      },
+      {
+        "option_text": "big",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Too informal.",
+        "status": "active"
+      },
+      {
+        "option_text": "negligible",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Means 'very small'; fits grammatically but changes meaning.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-331",
+    "prompt": "______ the fact that he was the most qualified candidate, he was passed over for the promotion.",
+    "categories": ["Grammar", "Conjunctions", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "Notwithstanding",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A formal preposition meaning 'despite' or 'in spite of'.",
+        "status": "active"
+      },
+      {
+        "option_text": "Despite",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Grammatically correct and follows the same structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "Although",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires a subject and verb (Although he was...).",
+        "status": "active"
+      },
+      {
+        "option_text": "Regardless",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually requires 'of' to function as a preposition.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-332",
+    "prompt": "Should you ______ any further assistance, please do not hesitate to contact us.",
+    "categories": ["Grammar", "Inversion", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "require",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inverted first conditional (If you should require = Should you require).",
+        "status": "active"
+      },
+      {
+        "option_text": "need",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Less formal than 'require' but grammatically sound.",
+        "status": "active"
+      },
+      {
+        "option_text": "requiring",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect verb form.",
+        "status": "active"
+      },
+      {
+        "option_text": "will need",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Auxiliary 'should' already handles the modal function.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-333",
+    "prompt": "The manager's comments were ______ to an insult.",
+    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "tantamount",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Tantamount to' means equivalent in seriousness to something.",
+        "status": "active"
+      },
+      {
+        "option_text": "similar",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too weak for the intended high-level comparison.",
+        "status": "active"
+      },
+      {
+        "option_text": "equal",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Requires 'equal to', but 'tantamount' is the preferred idiomatic choice here.",
+        "status": "active"
+      },
+      {
+        "option_text": "comparable",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but less precise than 'tantamount'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-334",
+    "prompt": "______ by the lack of progress, the investors decided to withdraw their funding.",
+    "categories": ["Grammar", "Participle Clauses", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "Frustrated",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Past participle clause expressing the reason for the decision.",
+        "status": "active"
+      },
+      {
+        "option_text": "Frustrating",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect; the investors felt frustrated, they weren't the ones causing it.",
+        "status": "active"
+      },
+      {
+        "option_text": "Having frustrated",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Implies the investors frustrated someone else first.",
+        "status": "active"
+      },
+      {
+        "option_text": "Being frustrated",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, though 'Frustrated' alone is more concise and common.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-335",
+    "prompt": "It's high time the government ______ action on climate change.",
+    "categories": ["Grammar", "Hypothetical Past", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "took",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'It's (high) time' is followed by the past simple to express urgency about the present.",
+        "status": "active"
+      },
+      {
+        "option_text": "takes",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A common mistake; this structure requires a tense shift.",
+        "status": "active"
+      },
+      {
+        "option_text": "should take",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Understandable but not the standard idiomatic construction.",
+        "status": "active"
+      },
+      {
+        "option_text": "had taken",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for past regrets, not present urgency.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-336",
+    "prompt": "He is ______ to be one of the most influential thinkers of our time.",
+    "categories": ["Grammar", "Passive Reporting", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "widely regarded",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A standard advanced collocation for general high opinion.",
+        "status": "active"
+      },
+      {
+        "option_text": "thought",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Correct but very basic.",
+        "status": "active"
+      },
+      {
+        "option_text": "reputed",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means 'generally considered to be'.",
+        "status": "active"
+      },
+      {
+        "option_text": "alleged",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Used when the fact is claimed but not proven.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-337",
+    "prompt": "Rarely ______ such a display of public outrage.",
+    "categories": ["Grammar", "Inversion", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "has there been",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inversion triggered by the negative frequency adverb 'Rarely'.",
+        "status": "active"
+      },
+      {
+        "option_text": "there has been",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order for an inverted sentence.",
+        "status": "active"
+      },
+      {
+        "option_text": "was there",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct for a specific past instance.",
+        "status": "active"
+      },
+      {
+        "option_text": "had there been",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct if referring to a time before another past event.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-338",
+    "prompt": "She was so ______ in the book that she completely lost track of time.",
+    "categories": ["Vocabulary", "Adjectives", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "engrossed",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "To give all your attention to something.",
+        "status": "active"
+      },
+      {
+        "option_text": "absorbed",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally correct synonym for 'engrossed'.",
+        "status": "active"
+      },
+      {
+        "option_text": "immersed",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Often used for activities or environments.",
+        "status": "active"
+      },
+      {
+        "option_text": "interested",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Far too weak for the context of losing track of time.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-339",
+    "prompt": "If you hadn't intervened, the situation ______ much worse.",
+    "categories": ["Grammar", "Third Conditional", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "would have been",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Result clause for a past hypothetical situation.",
+        "status": "active"
+      },
+      {
+        "option_text": "could have been",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Refers to the possibility of a worse outcome.",
+        "status": "active"
+      },
+      {
+        "option_text": "had been",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Cannot use past perfect in the result clause.",
+        "status": "active"
+      },
+      {
+        "option_text": "would be",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Mixed conditional: Past intervention with a present result.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-340",
+    "prompt": "The new law ______ a range of issues from digital privacy to tax evasion.",
+    "categories": ["Vocabulary", "Verbs", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "encompasses",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means to include a large number or range of things.",
+        "status": "active"
+      },
+      {
+        "option_text": "addresses",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means to deal with or discuss a matter.",
+        "status": "active"
+      },
+      {
+        "option_text": "covers",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Common and correct, but less formal than 'encompasses'.",
+        "status": "active"
+      },
+      {
+        "option_text": "involves",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Vague in this context.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-341",
+    "prompt": "Were the company ______ bankrupt, the employees would lose their pensions.",
+    "categories": ["Grammar", "Inverted Conditionals", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "to go",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inverted second conditional for 'If the company went...'.",
+        "status": "active"
+      },
+      {
+        "option_text": "going",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect verb form for this structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "gone",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'had' (Had the company gone).",
+        "status": "active"
+      },
+      {
+        "option_text": "should go",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Redundant use of 'should' with 'were'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-342",
+    "prompt": "I was ______ by his sheer arrogance.",
+    "categories": ["Vocabulary", "Verbs", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "taken aback",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Phrasal verb meaning 'surprised and slightly shocked'.",
+        "status": "active"
+      },
+      {
+        "option_text": "appalled",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Stronger adjective meaning 'deeply shocked'.",
+        "status": "active"
+      },
+      {
+        "option_text": "surprised",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too neutral for 'sheer arrogance'.",
+        "status": "active"
+      },
+      {
+        "option_text": "offended",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Logical, but 'taken aback' describes the initial reaction better.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-343",
+    "prompt": "No matter ______ carefully you plan, things can still go wrong.",
+    "categories": ["Grammar", "Conjunctions", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "how",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'No matter how' + adverb.",
+        "status": "active"
+      },
+      {
+        "option_text": "what",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect structure for an adverb.",
+        "status": "active"
+      },
+      {
+        "option_text": "however",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Syntactically equivalent to 'no matter how'.",
+        "status": "active"
+      },
+      {
+        "option_text": "much",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Requires 'how much' or 'no matter how much'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-344",
+    "prompt": "The evidence ______ his theory that the virus originated in a lab.",
+    "categories": ["Vocabulary", "Verbs", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "corroborates",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Formal verb meaning to 'confirm' or 'give support to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "supports",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Common and correct.",
+        "status": "active"
+      },
+      {
+        "option_text": "contradicts",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct grammar, opposite meaning.",
+        "status": "active"
+      },
+      {
+        "option_text": "refutes",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Means to prove to be false.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-345",
+    "prompt": "Had I ______ the truth, I never would have agreed to the deal.",
+    "categories": ["Grammar", "Inverted Conditionals", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "known",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inverted third conditional (If I had known = Had I known).",
+        "status": "active"
+      },
+      {
+        "option_text": "knew",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect past participle.",
+        "status": "active"
+      },
+      {
+        "option_text": "been knowing",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Know' is stative.",
+        "status": "active"
+      },
+      {
+        "option_text": "to know",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect structure for 'Had'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-346",
+    "prompt": "She has an ______ for spotting errors in complex documents.",
+    "categories": ["Vocabulary", "Idioms", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "uncanny ability",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Advanced phrase for a strange or mysterious talent.",
+        "status": "active"
+      },
+      {
+        "option_text": "eye",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The idiom 'have an eye for' something.",
+        "status": "active"
+      },
+      {
+        "option_text": "aptitude",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A natural tendency or ability.",
+        "status": "active"
+      },
+      {
+        "option_text": "interest",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Does not imply the skill of spotting errors.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-347",
+    "prompt": "They were ______ to find that their house had been burgled.",
+    "categories": ["Vocabulary", "Adjectives", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "distraught",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Very worried and upset.",
+        "status": "active"
+      },
+      {
+        "option_text": "devastated",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Severely shocked and saddened.",
+        "status": "active"
+      },
+      {
+        "option_text": "sad",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Far too weak for the situation.",
+        "status": "active"
+      },
+      {
+        "option_text": "appalled",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Shows shock, but 'distraught' is more personal.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-348",
+    "prompt": "Little ______ that he was being watched the whole time.",
+    "categories": ["Grammar", "Inversion", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "did he suspect",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Classic literary inversion.",
+        "status": "active"
+      },
+      {
+        "option_text": "he suspected",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "had he suspected",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct but often used for 'if' meanings.",
+        "status": "active"
+      },
+      {
+        "option_text": "was he suspecting",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect aspect.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-349",
+    "prompt": "The project was ______ with difficulties from the very start.",
+    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "fraught",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The phrase 'fraught with' means full of (usually something bad).",
+        "status": "active"
+      },
+      {
+        "option_text": "riddled",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Usually used for 'riddled with holes' or 'riddled with errors'.",
+        "status": "active"
+      },
+      {
+        "option_text": "plagued",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means troubled or distressed by constant problems.",
+        "status": "active"
+      },
+      {
+        "option_text": "full",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too basic.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-350",
+    "prompt": "Not until I reached the airport ______ I had forgotten my passport.",
+    "categories": ["Grammar", "Inversion", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "did I realize",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inversion in the main clause after 'Not until...'.",
+        "status": "active"
+      },
+      {
+        "option_text": "I realized",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "had I realized",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Possible but realization is usually treated as a past simple point.",
+        "status": "active"
+      },
+      {
+        "option_text": "was I realizing",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect aspect.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-351",
+    "prompt": "He spoke so ______ that it was impossible to follow his logic.",
+    "categories": ["Vocabulary", "Adverbs", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "incoherently",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "In a way that is not clear or logical.",
+        "status": "active"
+      },
+      {
+        "option_text": "vaguely",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "In a way that is not specific.",
+        "status": "active"
+      },
+      {
+        "option_text": "rapidly",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Refers only to speed, not logic.",
+        "status": "active"
+      },
+      {
+        "option_text": "eloquently",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Opposite meaning (speaking clearly and persuasively).",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-352",
+    "prompt": "Such ______ the intensity of the storm that trees were uprooted.",
+    "categories": ["Grammar", "Inversion", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "was",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inversion after 'Such' (Such was the X that...).",
+        "status": "active"
+      },
+      {
+        "option_text": "is",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Present tense, but 'were uprooted' indicates the past.",
+        "status": "active"
+      },
+      {
+        "option_text": "has been",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Tense mismatch with 'were'.",
+        "status": "active"
+      },
+      {
+        "option_text": "had been",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct if emphasizing the state before the result.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-353",
+    "prompt": "The dispute was finally settled out of ______ .",
+    "categories": ["Vocabulary", "Legal/Idioms", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "court",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard legal phrase for a private agreement.",
+        "status": "active"
+      },
+      {
+        "option_text": "hand",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Out of hand' means out of control.",
+        "status": "active"
+      },
+      {
+        "option_text": "the question",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Out of the question' means impossible.",
+        "status": "active"
+      },
+      {
+        "option_text": "sight",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Irrelevant idiom.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-354",
+    "prompt": "Only by working together ______ we hope to solve this crisis.",
+    "categories": ["Grammar", "Inversion", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "can",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inversion after 'Only by...'.",
+        "status": "active"
+      },
+      {
+        "option_text": "we can",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "will",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally correct modal for future hope.",
+        "status": "active"
+      },
+      {
+        "option_text": "do",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically correct but less common than 'can/will'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-355",
+    "prompt": "The CEO's resignation was a ______ to the entire industry.",
+    "categories": ["Vocabulary", "Nouns", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "blow",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Idiom meaning a sudden disappointment or shock.",
+        "status": "active"
+      },
+      {
+        "option_text": "shock",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Direct and correct.",
+        "status": "active"
+      },
+      {
+        "option_text": "surprise",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too weak for a major industry event.",
+        "status": "active"
+      },
+      {
+        "option_text": "disaster",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Metaphorical and fits the context.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-356",
+    "prompt": "I suggest that he ______ his behavior if he wants to stay in the team.",
+    "categories": ["Grammar", "Subjunctive", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "modify",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Subjunctive base form after 'suggest that'.",
+        "status": "active"
+      },
+      {
+        "option_text": "modifies",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect in formal/standard subjunctive usage.",
+        "status": "active"
+      },
+      {
+        "option_text": "should modify",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The standard British alternative to the subjunctive.",
+        "status": "active"
+      },
+      {
+        "option_text": "modified",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect tense.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-357",
+    "prompt": "He was so ______ that he didn't even notice the fire alarm.",
+    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "preoccupied",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Thinking so much about one thing that you don't notice others.",
+        "status": "active"
+      },
+      {
+        "option_text": "oblivious",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Not aware of what is happening around you.",
+        "status": "active"
+      },
+      {
+        "option_text": "distracted",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "General term, 'preoccupied' is more specific to internal thought.",
+        "status": "active"
+      },
+      {
+        "option_text": "unaware",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Requires 'unaware of' to function well here.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-358",
+    "prompt": "No sooner ______ home than the phone started ringing.",
+    "categories": ["Grammar", "Inversion", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "had she got",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inversion after 'No sooner'.",
+        "status": "active"
+      },
+      {
+        "option_text": "did she get",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically correct but less traditional than past perfect.",
+        "status": "active"
+      },
+      {
+        "option_text": "she had got",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "she got",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-359",
+    "prompt": "The findings of the report are ______ with our own research.",
+    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "consistent",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Meaning in agreement with or not contradicting.",
+        "status": "active"
+      },
+      {
+        "option_text": "compatible",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Often used for systems or people, but works here too.",
+        "status": "active"
+      },
+      {
+        "option_text": "aligned",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means to be in the same position or in agreement.",
+        "status": "active"
+      },
+      {
+        "option_text": "contrary",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically correct, opposite meaning.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-360",
+    "prompt": "Scarcely ______ the speech when the audience erupted into applause.",
+    "categories": ["Grammar", "Inversion", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "had he finished",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inversion with 'Scarcely... when'.",
+        "status": "active"
+      },
+      {
+        "option_text": "he had finished",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "did he finish",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Possible, but past perfect is the standard for this structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "was he finishing",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect aspect.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-361",
+    "prompt": "It was ______ his persistence that he finally secured the contract.",
+    "categories": ["Grammar", "Cleft Sentences", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "thanks to",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used in a cleft sentence to emphasize the cause.",
+        "status": "active"
+      },
+      {
+        "option_text": "because of",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally correct for emphasizing the reason.",
+        "status": "active"
+      },
+      {
+        "option_text": "due",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'to' to function as a preposition.",
+        "status": "active"
+      },
+      {
+        "option_text": "owing",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'to' to function as a preposition.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-362",
+    "prompt": "I'd rather you ______ the truth from the beginning.",
+    "categories": ["Grammar", "Hypothetical Past", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "had told",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "After 'would rather + person', we use past perfect to express regret about the past.",
+        "status": "active"
+      },
+      {
+        "option_text": "told",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Used for present or future preference, not past regret.",
+        "status": "active"
+      },
+      {
+        "option_text": "tell",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect tense for this structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "would have told",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect grammatical structure.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-363",
+    "prompt": "The company's failure was ______ to a lack of long-term planning.",
+    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "attributable",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means that something is caused by or the result of something else.",
+        "status": "active"
+      },
+      {
+        "option_text": "due",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard and correct with 'to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "caused",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'by', not 'to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "owing",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Usually starts a sentence; 'was owing to' is grammatically possible but less common.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-364",
+    "prompt": "Not until much later ______ the full extent of the damage.",
+    "categories": ["Grammar", "Inversion", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "did we realize",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inversion in the main clause following 'Not until'.",
+        "status": "active"
+      },
+      {
+        "option_text": "we realized",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "had we realized",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Possible but realization is typically a point in time (past simple).",
+        "status": "active"
+      },
+      {
+        "option_text": "was it realized",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct passive form with inversion.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-365",
+    "prompt": "He is ______ to be the best player the team has ever seen.",
+    "categories": ["Grammar", "Passive Structures", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "widely considered",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A formal collocation for general opinion.",
+        "status": "active"
+      },
+      {
+        "option_text": "thought",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Correct but basic.",
+        "status": "active"
+      },
+      {
+        "option_text": "reckoned",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Common in British English for general belief.",
+        "status": "active"
+      },
+      {
+        "option_text": "acknowledged",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Implies that the fact is generally accepted as true.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-366",
+    "prompt": "If only I ______ so much money on that car last year.",
+    "categories": ["Grammar", "Wishes/Regrets", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "hadn't spent",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'If only' with past perfect expresses regret about a past situation.",
+        "status": "active"
+      },
+      {
+        "option_text": "didn't spend",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for present/future regrets.",
+        "status": "active"
+      },
+      {
+        "option_text": "wouldn't have spent",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect grammatical structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "haven't spent",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Tense mismatch.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-367",
+    "prompt": "Her argument was ______ with contradictions.",
+    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "riddled",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The idiom 'riddled with' means full of something undesirable.",
+        "status": "active"
+      },
+      {
+        "option_text": "fraught",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Usually used for 'fraught with danger/difficulty'.",
+        "status": "active"
+      },
+      {
+        "option_text": "full",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too basic for this level.",
+        "status": "active"
+      },
+      {
+        "option_text": "replete",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually used in a positive or neutral sense (replete with details).",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-368",
+    "prompt": "Scarcely ______ the room when the phone rang.",
+    "categories": ["Grammar", "Inversion", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "had I entered",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inversion following 'Scarcely'.",
+        "status": "active"
+      },
+      {
+        "option_text": "I had entered",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "did I enter",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically correct, but past perfect is the standard for this structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "was I entering",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect aspect.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-369",
+    "prompt": "I ______ to believe that he is capable of such a thing.",
+    "categories": ["Vocabulary", "Verbs", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "refuse",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Strong expression of disbelief or rejection of an idea.",
+        "status": "active"
+      },
+      {
+        "option_text": "decline",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Used for formal invitations, not beliefs.",
+        "status": "active"
+      },
+      {
+        "option_text": "am loath",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Formal phrase meaning 'reluctant to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "hesitate",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Shows doubt, but 'refuse' or 'am loath' is stronger.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-370",
+    "prompt": "The new legislation ______ to protect consumer rights online.",
+    "categories": ["Vocabulary", "Verbs", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "aims",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Followed by the infinitive 'to' to show purpose.",
+        "status": "active"
+      },
+      {
+        "option_text": "intends",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but usually applied to people.",
+        "status": "active"
+      },
+      {
+        "option_text": "targets",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires an object (targets the protection of...).",
+        "status": "active"
+      },
+      {
+        "option_text": "seeks",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Formal verb meaning to try or attempt to do something.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-371",
+    "prompt": "Seldom ______ such a talented young artist.",
+    "categories": ["Grammar", "Inversion", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "does one encounter",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Formal inversion using the generic 'one'.",
+        "status": "active"
+      },
+      {
+        "option_text": "have I seen",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Classic inversion with 'Seldom'.",
+        "status": "active"
+      },
+      {
+        "option_text": "one encounters",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "is seen",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Requires a subject (Seldom is such an artist seen).",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-372",
+    "prompt": "I was ______ surprised by the news of their engagement.",
+    "categories": ["Grammar", "Adverbs", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "genuinely",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Indicates the surprise was real/sincere.",
+        "status": "active"
+      },
+      {
+        "option_text": "utterly",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Emphasizes the intensity of the surprise.",
+        "status": "active"
+      },
+      {
+        "option_text": "somewhat",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Means 'to some degree', very neutral.",
+        "status": "active"
+      },
+      {
+        "option_text": "completely",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Common and correct.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-373",
+    "prompt": "He ______ to have known about the problem, but he did nothing.",
+    "categories": ["Grammar", "Passive Reporting", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "is said",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Followed by the perfect infinitive (to have known) for a past belief.",
+        "status": "active"
+      },
+      {
+        "option_text": "is thought",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally correct passive reporting structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "denies",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'denies knowing' or 'denies having known'.",
+        "status": "active"
+      },
+      {
+        "option_text": "claims",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct structure, but 'did nothing' suggests a third-party perspective.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-374",
+    "prompt": "What I need ______ a long holiday and a complete rest.",
+    "categories": ["Grammar", "Cleft Sentences", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "is",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard 'What' cleft sentence; the verb 'to be' connects the clause and the object.",
+        "status": "active"
+      },
+      {
+        "option_text": "am needing",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Need' is a stative verb.",
+        "status": "active"
+      },
+      {
+        "option_text": "would be",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Adds a hypothetical tone.",
+        "status": "active"
+      },
+      {
+        "option_text": "was",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Only if referring to a past need.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-375",
+    "prompt": "The evidence ______ his theory beyond any reasonable doubt.",
+    "categories": ["Vocabulary", "Verbs", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "substantiates",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Formal verb meaning to provide evidence to support or prove.",
+        "status": "active"
+      },
+      {
+        "option_text": "proves",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but less 'academic' than 'substantiates'.",
+        "status": "active"
+      },
+      {
+        "option_text": "supports",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too weak for 'beyond reasonable doubt'.",
+        "status": "active"
+      },
+      {
+        "option_text": "validates",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Means to confirm the truth or value of something.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-376",
+    "prompt": "Only by ______ hard did he manage to finish the project on time.",
+    "categories": ["Grammar", "Gerunds", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "working",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The preposition 'by' must be followed by a gerund.",
+        "status": "active"
+      },
+      {
+        "option_text": "work",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect grammatical form.",
+        "status": "active"
+      },
+      {
+        "option_text": "to work",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Prepositions are not followed by infinitives.",
+        "status": "active"
+      },
+      {
+        "option_text": "having worked",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, though 'working' is more direct.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-377",
+    "prompt": "He has a ______ for exaggerating his achievements.",
+    "categories": ["Vocabulary", "Nouns", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "tendency",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Commonly used for a recurring behavior.",
+        "status": "active"
+      },
+      {
+        "option_text": "penchant",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Formal term for a strong liking or tendency.",
+        "status": "active"
+      },
+      {
+        "option_text": "habit",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "More informal than 'tendency'.",
+        "status": "active"
+      },
+      {
+        "option_text": "propensity",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Academic term for a natural tendency.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-378",
+    "prompt": "Little ______ that the company was on the verge of bankruptcy.",
+    "categories": ["Grammar", "Inversion", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "did they suspect",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inversion used for literary/dramatic emphasis.",
+        "status": "active"
+      },
+      {
+        "option_text": "they suspected",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "had they suspected",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct if referring to a state before a past event.",
+        "status": "active"
+      },
+      {
+        "option_text": "was it suspected",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Passive version with inversion.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-379",
+    "prompt": "She was ______ with guilt after lying to her parents.",
+    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "consumed",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Metaphorical use meaning the emotion was overpowering.",
+        "status": "active"
+      },
+      {
+        "option_text": "overcome",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard advanced term for intense emotion.",
+        "status": "active"
+      },
+      {
+        "option_text": "filled",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too basic.",
+        "status": "active"
+      },
+      {
+        "option_text": "burdened",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Fits the weight of guilt well.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-380",
+    "prompt": "It is ______ that we act immediately to resolve this issue.",
+    "categories": ["Grammar", "Subjunctive", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "imperative",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Triggers the subjunctive 'act' (base form).",
+        "status": "active"
+      },
+      {
+        "option_text": "crucial",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally correct subjunctive trigger.",
+        "status": "active"
+      },
+      {
+        "option_text": "vital",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally correct subjunctive trigger.",
+        "status": "active"
+      },
+      {
+        "option_text": "important",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too simple for this level.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-381",
+    "prompt": "The weather was ______ cold that we had to cancel the trip.",
+    "categories": ["Grammar", "Adverbs", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "so",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard structure: so + adjective + that.",
+        "status": "active"
+      },
+      {
+        "option_text": "too",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Usually followed by 'to' (too cold to go).",
+        "status": "active"
+      },
+      {
+        "option_text": "very",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Cannot be used with the 'that' clause this way.",
+        "status": "active"
+      },
+      {
+        "option_text": "bitterly",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Requires 'so' (so bitterly cold that...).",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-382",
+    "prompt": "I ______ to the project being postponed, but I was outvoted.",
+    "categories": ["Vocabulary", "Verbs", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "objected",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Requires the preposition 'to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "opposed",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Does not take 'to' (I opposed the project).",
+        "status": "active"
+      },
+      {
+        "option_text": "disagreed",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually 'disagreed with'.",
+        "status": "active"
+      },
+      {
+        "option_text": "protested",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Can be used with 'against' or 'to' in some contexts.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-383",
+    "prompt": "______ by his success, he decided to start his own business.",
+    "categories": ["Grammar", "Participle Clauses", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "Encouraged",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Past participle clause showing the reason.",
+        "status": "active"
+      },
+      {
+        "option_text": "Encouraging",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect; he received encouragement from the success.",
+        "status": "active"
+      },
+      {
+        "option_text": "Having encouraged",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Implies he encouraged someone else.",
+        "status": "active"
+      },
+      {
+        "option_text": "Being encouraged",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct but 'Encouraged' is more concise.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-384",
+    "prompt": "The meeting was ______ to a close by the chairperson.",
+    "categories": ["Vocabulary", "Collocations", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "brought",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard collocation: 'bring something to a close'.",
+        "status": "active"
+      },
+      {
+        "option_text": "led",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Incorrect collocation for 'close'.",
+        "status": "active"
+      },
+      {
+        "option_text": "drawn",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Also a very common formal collocation: 'draw something to a close'.",
+        "status": "active"
+      },
+      {
+        "option_text": "called",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually 'call an end to'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-385",
+    "prompt": "Hardly ______ the plane landed when the passengers started unbuckling their belts.",
+    "categories": ["Grammar", "Inversion", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "had",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inversion following 'Hardly... when'.",
+        "status": "active"
+      },
+      {
+        "option_text": "did",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Possible but less common than past perfect.",
+        "status": "active"
+      },
+      {
+        "option_text": "has",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Tense mismatch with 'landed' and 'started'.",
+        "status": "active"
+      },
+      {
+        "option_text": "was",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect auxiliary for 'landed'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-386",
+    "prompt": "The proposal was ______ rejected by the board.",
+    "categories": ["Vocabulary", "Adverbs", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "flatly",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Collocation meaning 'completely and firmly'.",
+        "status": "active"
+      },
+      {
+        "option_text": "utterly",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Means completely.",
+        "status": "active"
+      },
+      {
+        "option_text": "outright",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means immediately and completely.",
+        "status": "active"
+      },
+      {
+        "option_text": "totally",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "A bit too informal for a board rejection.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-387",
+    "prompt": "If it ______ for his quick thinking, the accident would have been much worse.",
+    "categories": ["Grammar", "Conditionals", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "hadn't been",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Third conditional form for past hypothetical.",
+        "status": "active"
+      },
+      {
+        "option_text": "weren't",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Second conditional form; doesn't match 'would have been'.",
+        "status": "active"
+      },
+      {
+        "option_text": "wasn't",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Less formal than 'weren't'.",
+        "status": "active"
+      },
+      {
+        "option_text": "hasn't been",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Tense mismatch.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-388",
+    "prompt": "She has a ______ for getting herself into difficult situations.",
+    "categories": ["Vocabulary", "Nouns", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "knack",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means a natural skill or tendency, often ironic here.",
+        "status": "active"
+      },
+      {
+        "option_text": "talent",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually for positive skills.",
+        "status": "active"
+      },
+      {
+        "option_text": "habit",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but 'knack' is more idiomatic.",
+        "status": "active"
+      },
+      {
+        "option_text": "gift",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Highly ironic.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-389",
+    "prompt": "Not for one moment ______ that she was lying.",
+    "categories": ["Grammar", "Inversion", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "did I suspect",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Classic emphatic inversion.",
+        "status": "active"
+      },
+      {
+        "option_text": "I suspected",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "had I suspected",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct but 'did I suspect' is more common for this phrase.",
+        "status": "active"
+      },
+      {
+        "option_text": "was I suspecting",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect aspect.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-390",
+    "prompt": "The company is ______ of any wrongdoing.",
+    "categories": ["Vocabulary", "Adjectives", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "innocent",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Requires 'of' to connect to the charge.",
+        "status": "active"
+      },
+      {
+        "option_text": "clear",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Usually 'cleared of'.",
+        "status": "active"
+      },
+      {
+        "option_text": "blameless",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Doesn't usually take 'of' in this way.",
+        "status": "active"
+      },
+      {
+        "option_text": "ignorant",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Means not knowing, not 'not guilty'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-391",
+    "prompt": "The scheme was abandoned, ______ the lack of public support.",
+    "categories": ["Grammar", "Conjunctions", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "such was",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inverted structure for 'because of'.",
+        "status": "active"
+      },
+      {
+        "option_text": "given",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "A formal way to say 'considering'.",
+        "status": "active"
+      },
+      {
+        "option_text": "in view of",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Formal prepositional phrase for cause.",
+        "status": "active"
+      },
+      {
+        "option_text": "because",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires a clause (because there was a lack).",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-392",
+    "prompt": "It is paramount that the witness ______ protected from intimidation.",
+    "categories": ["Grammar", "Subjunctive", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "be",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Passive subjunctive (base form of 'to be') after 'paramount that'.",
+        "status": "active"
+      },
+      {
+        "option_text": "is",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Standard indicative; incorrect in formal subjunctive structures.",
+        "status": "active"
+      },
+      {
+        "option_text": "should be",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The standard British alternative to the subjunctive.",
+        "status": "active"
+      },
+      {
+        "option_text": "was",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect tense.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-393",
+    "prompt": "The CEO's decision to cut bonuses was ______ with criticism from the staff.",
+    "categories": ["Vocabulary", "Collocations", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "met",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard collocation: 'to be met with criticism'.",
+        "status": "active"
+      },
+      {
+        "option_text": "received",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Does not take the preposition 'with'.",
+        "status": "active"
+      },
+      {
+        "option_text": "greeted",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally common formal collocation.",
+        "status": "active"
+      },
+      {
+        "option_text": "confronted",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually 'confronted by'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-394",
+    "prompt": "Hardly ______ when the fire alarm began to blare.",
+    "categories": ["Grammar", "Inversion", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "had they arrived",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Past perfect inversion for immediate sequence.",
+        "status": "active"
+      },
+      {
+        "option_text": "they had arrived",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "did they arrive",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but past perfect is the hallmark of this C1 structure.",
+        "status": "active"
+      },
+      {
+        "option_text": "were they arriving",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect aspect.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-395",
+    "prompt": "The candidate was ______ of the difficulties she would face in the role.",
+    "categories": ["Vocabulary", "Adjectives", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "apprised",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Formal verb meaning 'to be informed of'.",
+        "status": "active"
+      },
+      {
+        "option_text": "aware",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but less formal than 'apprised'.",
+        "status": "active"
+      },
+      {
+        "option_text": "mindful",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means conscious or aware of something.",
+        "status": "active"
+      },
+      {
+        "option_text": "known",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'It was known to her'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-396",
+    "prompt": "Were it not for the ______ intervention of the police, the riot would have escalated.",
+    "categories": ["Vocabulary", "Adjectives", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "timely",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means happening at a useful or correct time.",
+        "status": "active"
+      },
+      {
+        "option_text": "prompt",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means done without delay.",
+        "status": "active"
+      },
+      {
+        "option_text": "swift",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means happening quickly.",
+        "status": "active"
+      },
+      {
+        "option_text": "late",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Contradicts the logic of preventing escalation.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-397",
+    "prompt": "I ______ have checked the tire pressure before we left, but I forgot.",
+    "categories": ["Grammar", "Modals", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "ought to",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used to express an unfulfilled past obligation.",
+        "status": "active"
+      },
+      {
+        "option_text": "should",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Equally correct for past regrets.",
+        "status": "active"
+      },
+      {
+        "option_text": "must",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Must have' is for logical deduction, not obligation.",
+        "status": "active"
+      },
+      {
+        "option_text": "could",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Refers to ability/possibility rather than obligation.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-398",
+    "prompt": "The argument he presented was ______ flawed.",
+    "categories": ["Vocabulary", "Adverbs", "C1-Advanced"],
+    "answers": [
+      {
+        "option_text": "fundamentally",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means at the most basic or essential level.",
+        "status": "active"
+      },
+      {
+        "option_text": "inherently",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Means by its very nature.",
+        "status": "active"
+      },
+      {
+        "option_text": "deeply",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Commonly used for emphasis.",
+        "status": "active"
+      },
+      {
+        "option_text": "slightly",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Opposite intensity but grammatically correct.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-399",
+    "prompt": "Not until the very end ______ the detective reveal the killer.",
+    "categories": ["Grammar", "Inversion", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "did",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Inversion in the main clause after 'Not until'.",
+        "status": "active"
+      },
+      {
+        "option_text": "the detective did",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect word order.",
+        "status": "active"
+      },
+      {
+        "option_text": "had",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually used if the action happened before another past event.",
+        "status": "active"
+      },
+      {
+        "option_text": "was",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect auxiliary for 'reveal'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  },
+  {
+    "id": "hard-400",
+    "prompt": "The negotiations are currently ______ a delicate stage.",
+    "categories": ["Vocabulary", "Prepositions", "B2-Upper-Intermediate"],
+    "answers": [
+      {
+        "option_text": "at",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard preposition for 'stages' or 'points'.",
+        "status": "active"
+      },
+      {
+        "option_text": "in",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Commonly used, though 'at' is more precise for stages.",
+        "status": "active"
+      },
+      {
+        "option_text": "on",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect preposition.",
+        "status": "active"
+      },
+      {
+        "option_text": "through",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for movement, not state.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "HARD"
+  }
+]

@@ -1,0 +1,3602 @@
+[
+  {
+    "id": "easy-101",
+    "prompt": "I'm exhausted. I think I'll ______ for an hour before dinner.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "lie down",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Lie down' is the natural phrasal verb for resting horizontally.",
+        "status": "active"
+      },
+      {
+        "option_text": "sleep",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "'Sleep' is correct but less idiomatic than 'lie down' for a short rest.",
+        "status": "active"
+      },
+      {
+        "option_text": "sit down",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Sitting is resting, but usually not what people do when 'exhausted'.",
+        "status": "active"
+      },
+      {
+        "option_text": "go up",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Go up' does not mean to rest.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-102",
+    "prompt": "Could you please ______ the volume? The music is too loud.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "turn down",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Turn down' means to reduce the volume or heat.",
+        "status": "active"
+      },
+      {
+        "option_text": "lower",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "'Lower' is grammatically correct but less common in casual speech than phrasal verbs.",
+        "status": "active"
+      },
+      {
+        "option_text": "turn off",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "This solves the problem but is more extreme than just reducing the volume.",
+        "status": "active"
+      },
+      {
+        "option_text": "turn up",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Turn up' makes the music louder, which is the opposite of what is needed.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-103",
+    "prompt": "We need to ______ a decision about the holiday by Friday.",
+    "categories": ["Vocabulary", "Collocations", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "make",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "We always 'make a decision', not 'do a decision'.",
+        "status": "active"
+      },
+      {
+        "option_text": "reach",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "'Reach a decision' is correct but slightly more formal/advanced.",
+        "status": "active"
+      },
+      {
+        "option_text": "take",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "'Take a decision' is common in British English but 'make' is more universal at A2.",
+        "status": "active"
+      },
+      {
+        "option_text": "do",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Do a decision' is a common mistake for learners.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-104",
+    "prompt": "The weather was ______ , so we decided to stay home.",
+    "categories": ["Vocabulary", "Adjectives", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "terrible",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Strong adjective to justify staying home.",
+        "status": "active"
+      },
+      {
+        "option_text": "bad",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but 'terrible' is a better descriptor for this context.",
+        "status": "active"
+      },
+      {
+        "option_text": "cloudy",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Cloudy weather usually isn't enough to cancel plans.",
+        "status": "active"
+      },
+      {
+        "option_text": "lovely",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You wouldn't stay home because the weather is lovely.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-105",
+    "prompt": "I didn't ______ any money on my vacation.",
+    "categories": ["Vocabulary", "Verbs", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "spend",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "We 'spend' money on things.",
+        "status": "active"
+      },
+      {
+        "option_text": "waste",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Specific to spending money poorly.",
+        "status": "active"
+      },
+      {
+        "option_text": "pay",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "We 'pay for' things, but 'spend money' is the proper collocation here.",
+        "status": "active"
+      },
+      {
+        "option_text": "cost",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "An item 'costs' money; a person 'spends' it.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-106",
+    "prompt": "She is ______ at playing the piano than her brother.",
+    "categories": ["Grammar", "Comparatives", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "better",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Irregular comparative of 'good'.",
+        "status": "active"
+      },
+      {
+        "option_text": "more good",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Grammatically incorrect; 'good' is irregular.",
+        "status": "active"
+      },
+      {
+        "option_text": "worse",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically correct comparative of 'bad'.",
+        "status": "active"
+      },
+      {
+        "option_text": "best",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Best' is a superlative and requires 'the'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-107",
+    "prompt": "Don't forget to ______ the lights before you leave.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "switch off",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard term for turning off electrical items.",
+        "status": "active"
+      },
+      {
+        "option_text": "turn off",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Commonly used synonym for switch off.",
+        "status": "active"
+      },
+      {
+        "option_text": "close",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You close doors, not lights.",
+        "status": "active"
+      },
+      {
+        "option_text": "put out",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Used for fires/candles, but occasionally used loosely for lights.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-108",
+    "prompt": "The flight was ______ , so we arrived two hours late.",
+    "categories": ["Vocabulary", "Travel", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "delayed",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard travel term for a late departure.",
+        "status": "active"
+      },
+      {
+        "option_text": "cancelled",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "If it were cancelled, you wouldn't arrive late; you wouldn't arrive at all on that flight.",
+        "status": "active"
+      },
+      {
+        "option_text": "slow",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Flights are rarely called 'slow' as a reason for lateness.",
+        "status": "active"
+      },
+      {
+        "option_text": "postponed",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but 'delayed' is the more common aviation term.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-109",
+    "prompt": "I'm looking forward ______ you next week.",
+    "categories": ["Grammar", "Phrases", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "to seeing",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The phrase 'look forward to' must be followed by a gerund (-ing).",
+        "status": "active"
+      },
+      {
+        "option_text": "to see",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A common error; 'to' here is a preposition, not part of an infinitive.",
+        "status": "active"
+      },
+      {
+        "option_text": "meeting",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Missing the required 'to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "for seeing",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect preposition choice.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-110",
+    "prompt": "Excuse me, how ______ does the ticket cost?",
+    "categories": ["Grammar", "Quantifiers", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "much",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used for uncountable things like money/cost.",
+        "status": "active"
+      },
+      {
+        "option_text": "many",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Many' is for countable items.",
+        "status": "active"
+      },
+      {
+        "option_text": "far",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Far' is for distance.",
+        "status": "active"
+      },
+      {
+        "option_text": "often",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Often' is for frequency.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-111",
+    "prompt": "I didn't go to work because I ______ a cold.",
+    "categories": ["Vocabulary", "Health", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "had",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "We use 'have/had' with illnesses like a cold.",
+        "status": "active"
+      },
+      {
+        "option_text": "caught",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "'Caught a cold' is a very common and correct collocation.",
+        "status": "active"
+      },
+      {
+        "option_text": "felt",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "You 'feel sick', but you don't 'feel a cold'.",
+        "status": "active"
+      },
+      {
+        "option_text": "took",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You take medicine, not the illness itself.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-112",
+    "prompt": "Would you mind ______ the window? It's a bit chilly.",
+    "categories": ["Grammar", "Polite Requests", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "closing",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Would you mind' is always followed by the -ing form.",
+        "status": "active"
+      },
+      {
+        "option_text": "to close",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Common error; 'mind' does not take the infinitive.",
+        "status": "active"
+      },
+      {
+        "option_text": "shutting",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct -ing form and synonym for closing.",
+        "status": "active"
+      },
+      {
+        "option_text": "close",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires the gerund form.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-113",
+    "prompt": "I'm not very good ______ cooking, but I try.",
+    "categories": ["Grammar", "Prepositions", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "at",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The standard preposition after 'good' or 'bad' regarding skills is 'at'.",
+        "status": "active"
+      },
+      {
+        "option_text": "in",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A common mistake in many languages.",
+        "status": "active"
+      },
+      {
+        "option_text": "with",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Used for tools or people, but 'at' is better for activities.",
+        "status": "active"
+      },
+      {
+        "option_text": "for",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect preposition.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-114",
+    "prompt": "How ______ does it take to get to the airport?",
+    "categories": ["Grammar", "Questions", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "long",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'How long' is used for duration of time.",
+        "status": "active"
+      },
+      {
+        "option_text": "much time",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically correct but less natural than 'how long'.",
+        "status": "active"
+      },
+      {
+        "option_text": "far",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'How far' is for distance, not time duration.",
+        "status": "active"
+      },
+      {
+        "option_text": "fast",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Refers to speed, not time duration.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-115",
+    "prompt": "She ______ to the cinema three times last month.",
+    "categories": ["Grammar", "Past Simple", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "went",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Irregular past tense of 'go'.",
+        "status": "active"
+      },
+      {
+        "option_text": "has gone",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Present perfect is used for unspecified time; 'last month' requires past simple.",
+        "status": "active"
+      },
+      {
+        "option_text": "goes",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Present tense does not match 'last month'.",
+        "status": "active"
+      },
+      {
+        "option_text": "was go",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect grammatical construction.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-116",
+    "prompt": "If it ______ tomorrow, we will stay at home.",
+    "categories": ["Grammar", "Conditionals", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "rains",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "First conditional uses Present Simple in the 'if' clause.",
+        "status": "active"
+      },
+      {
+        "option_text": "will rain",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "We don't use 'will' in the 'if' part of a first conditional.",
+        "status": "active"
+      },
+      {
+        "option_text": "is raining",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct use of present continuous for future conditions.",
+        "status": "active"
+      },
+      {
+        "option_text": "rained",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Past tense does not match the 'will stay' result.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-117",
+    "prompt": "I'm sorry, I didn't ______ what you said. Can you repeat it?",
+    "categories": ["Vocabulary", "Verbs", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "catch",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Commonly used when you didn't hear something clearly.",
+        "status": "active"
+      },
+      {
+        "option_text": "understand",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A very common and clear word for this context.",
+        "status": "active"
+      },
+      {
+        "option_text": "listen",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You *did* listen, you just didn't catch the words.",
+        "status": "active"
+      },
+      {
+        "option_text": "take",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Does not fit the meaning of hearing/understanding.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-118",
+    "prompt": "We usually ______ lunch at 1:00 PM.",
+    "categories": ["Vocabulary", "Daily Routine", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "have",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The most natural verb for consuming meals.",
+        "status": "active"
+      },
+      {
+        "option_text": "eat",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, though 'have' is often preferred for meals.",
+        "status": "active"
+      },
+      {
+        "option_text": "do",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect verb for eating.",
+        "status": "active"
+      },
+      {
+        "option_text": "make",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Refers to cooking the meal, not necessarily eating it.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-119",
+    "prompt": "That was the ______ movie I have ever seen!",
+    "categories": ["Grammar", "Superlatives", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "worst",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Irregular superlative of 'bad'.",
+        "status": "active"
+      },
+      {
+        "option_text": "worse",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Worse' is a comparative, not a superlative.",
+        "status": "active"
+      },
+      {
+        "option_text": "most bad",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Grammatically incorrect.",
+        "status": "active"
+      },
+      {
+        "option_text": "best",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct superlative, though 'worst' fits the emotional emphasis often used in this prompt.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-120",
+    "prompt": "I need to ______ some money from the bank.",
+    "categories": ["Vocabulary", "Money", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "withdraw",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The formal/correct term for taking money out.",
+        "status": "active"
+      },
+      {
+        "option_text": "get out",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Common phrasal verb for taking money out.",
+        "status": "active"
+      },
+      {
+        "option_text": "take out",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Very common way to say you are getting cash.",
+        "status": "active"
+      },
+      {
+        "option_text": "borrow",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually implies a loan, not taking your own money out.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-121",
+    "prompt": "Wait for me! I can't ______ up with you.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "keep",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Keep up with' means to move at the same speed.",
+        "status": "active"
+      },
+      {
+        "option_text": "stay",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect phrasal verb.",
+        "status": "active"
+      },
+      {
+        "option_text": "hold",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "'Hold up' means to delay, which doesn't fit the context well.",
+        "status": "active"
+      },
+      {
+        "option_text": "get",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect phrasal verb.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-122",
+    "prompt": "Are you ______ on the weekend?",
+    "categories": ["Grammar", "Adjectives", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "free",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard way to ask if someone is available.",
+        "status": "active"
+      },
+      {
+        "option_text": "busy",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Logical question, though 'free' is more common for invitations.",
+        "status": "active"
+      },
+      {
+        "option_text": "available",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, though slightly more formal than 'free'.",
+        "status": "active"
+      },
+      {
+        "option_text": "loose",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Loose' refers to fit (clothes), not time.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-123",
+    "prompt": "I ______ my homework before dinner last night.",
+    "categories": ["Grammar", "Past Simple", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "finished",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard past tense for completed actions.",
+        "status": "active"
+      },
+      {
+        "option_text": "did",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Very common collocation: 'did my homework'.",
+        "status": "active"
+      },
+      {
+        "option_text": "have finished",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Last night' requires the past simple.",
+        "status": "active"
+      },
+      {
+        "option_text": "finish",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Present tense does not match 'last night'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-124",
+    "prompt": "This car is ______ more expensive than the other one.",
+    "categories": ["Grammar", "Comparatives", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "much",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used to emphasize a difference in comparison.",
+        "status": "active"
+      },
+      {
+        "option_text": "very",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "We don't use 'very' before comparatives.",
+        "status": "active"
+      },
+      {
+        "option_text": "lot",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'a' (a lot more).",
+        "status": "active"
+      },
+      {
+        "option_text": "far",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Commonly used to show a large difference in comparison.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-125",
+    "prompt": "I was born ______ October.",
+    "categories": ["Grammar", "Prepositions", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "in",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "We use 'in' for months.",
+        "status": "active"
+      },
+      {
+        "option_text": "on",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Used for specific dates (e.g., on October 5th).",
+        "status": "active"
+      },
+      {
+        "option_text": "at",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for specific times (e.g., at 5 PM).",
+        "status": "active"
+      },
+      {
+        "option_text": "during",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically correct, but 'in' is the standard answer for birth months.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-126",
+    "prompt": "He ______ speak three languages fluently.",
+    "categories": ["Grammar", "Modals", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "can",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Modal verb for ability.",
+        "status": "active"
+      },
+      {
+        "option_text": "knows",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Would require 'how to' (knows how to speak).",
+        "status": "active"
+      },
+      {
+        "option_text": "could",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct for past ability, though 'can' is the standard A1/A2 answer.",
+        "status": "active"
+      },
+      {
+        "option_text": "is able",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Requires 'to' (is able to speak).",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-127",
+    "prompt": "Please ______ off your shoes before entering the house.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "take",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Take off' is the correct phrasal verb for removing clothes.",
+        "status": "active"
+      },
+      {
+        "option_text": "put",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Put on' is for wearing; 'put off' means to delay.",
+        "status": "active"
+      },
+      {
+        "option_text": "get",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "'Get off' is usually for transport (e.g., a bus).",
+        "status": "active"
+      },
+      {
+        "option_text": "remove",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "More formal than 'take off', but correct.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-128",
+    "prompt": "The restaurant was very ______ , so we had to wait for a table.",
+    "categories": ["Vocabulary", "Adjectives", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "crowded",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Describes a place full of people.",
+        "status": "active"
+      },
+      {
+        "option_text": "busy",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Very common way to describe a full restaurant.",
+        "status": "active"
+      },
+      {
+        "option_text": "full",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, implying no more space.",
+        "status": "active"
+      },
+      {
+        "option_text": "noisy",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Logical, but doesn't explain the lack of tables as well as 'crowded'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-129",
+    "prompt": "I ______ to the park every morning when I was a child.",
+    "categories": ["Grammar", "Past habits", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "used to go",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard structure for past habits.",
+        "status": "active"
+      },
+      {
+        "option_text": "went",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct past simple use for repeated actions.",
+        "status": "active"
+      },
+      {
+        "option_text": "go",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Present tense doesn't match 'when I was a child'.",
+        "status": "active"
+      },
+      {
+        "option_text": "was going",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Suggests a specific continuous moment, not a general habit.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-130",
+    "prompt": "You ______ smoke in the hospital. It's forbidden.",
+    "categories": ["Grammar", "Modals", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "mustn't",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used for prohibition and rules.",
+        "status": "active"
+      },
+      {
+        "option_text": "don't have to",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Means it's not necessary, but allowed.",
+        "status": "active"
+      },
+      {
+        "option_text": "shouldn't",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct for advice, though 'mustn't' is better for rules.",
+        "status": "active"
+      },
+      {
+        "option_text": "cannot",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correctly expresses lack of permission.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-131",
+    "prompt": "I'll see you ______ 5 o'clock.",
+    "categories": ["Grammar", "Prepositions", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "at",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Preposition for specific clock times.",
+        "status": "active"
+      },
+      {
+        "option_text": "on",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for days/dates.",
+        "status": "active"
+      },
+      {
+        "option_text": "in",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Can be used for duration (e.g., in 5 hours).",
+        "status": "active"
+      },
+      {
+        "option_text": "around",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Implies an approximate time.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-132",
+    "prompt": "She ______ to work by bus.",
+    "categories": ["Grammar", "Present Simple", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "goes",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Third person singular 's'.",
+        "status": "active"
+      },
+      {
+        "option_text": "go",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Missing the 's' for 'she'.",
+        "status": "active"
+      },
+      {
+        "option_text": "is going",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct for present continuous or future arrangements.",
+        "status": "active"
+      },
+      {
+        "option_text": "went",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct past tense.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-133",
+    "prompt": "I ______ a lot of photos during my trip to Paris.",
+    "categories": ["Vocabulary", "Collocations", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "took",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The standard collocation is 'take a photo'.",
+        "status": "active"
+      },
+      {
+        "option_text": "did",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect collocation.",
+        "status": "active"
+      },
+      {
+        "option_text": "made",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect collocation.",
+        "status": "active"
+      },
+      {
+        "option_text": "got",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Very informal; 'took' is much better.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-134",
+    "prompt": "Is there ______ milk in the fridge?",
+    "categories": ["Grammar", "Quantifiers", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "any",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used in questions and negatives with uncountable nouns.",
+        "status": "active"
+      },
+      {
+        "option_text": "some",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually for positive sentences or offers.",
+        "status": "active"
+      },
+      {
+        "option_text": "many",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Milk is uncountable.",
+        "status": "active"
+      },
+      {
+        "option_text": "a",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Milk is uncountable.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-135",
+    "prompt": "I usually ______ up at 7 AM.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "wake",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Wake up' refers to the moment you stop sleeping.",
+        "status": "active"
+      },
+      {
+        "option_text": "get",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "'Get up' refers to leaving the bed.",
+        "status": "active"
+      },
+      {
+        "option_text": "stand",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Stand up' means rising from a chair.",
+        "status": "active"
+      },
+      {
+        "option_text": "go",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect phrasal verb.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-136",
+    "prompt": "He is ______ interesting person I've ever met.",
+    "categories": ["Grammar", "Articles/Superlatives", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "the most",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Correct superlative for long adjectives.",
+        "status": "active"
+      },
+      {
+        "option_text": "more",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for comparatives.",
+        "status": "active"
+      },
+      {
+        "option_text": "a very",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Grammatically okay but doesn't fit the 'I've ever met' context as well as a superlative.",
+        "status": "active"
+      },
+      {
+        "option_text": "most",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'the'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-137",
+    "prompt": "I ______ a movie when the phone rang.",
+    "categories": ["Grammar", "Past Continuous", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "was watching",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used for an action in progress interrupted by another action.",
+        "status": "active"
+      },
+      {
+        "option_text": "watched",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Suggests the sequence of whole events rather than an interruption.",
+        "status": "active"
+      },
+      {
+        "option_text": "am watching",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Present tense doesn't match 'rang'.",
+        "status": "active"
+      },
+      {
+        "option_text": "have watched",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect tense for this context.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-138",
+    "prompt": "This cake is ______ delicious.",
+    "categories": ["Vocabulary", "Adverbs", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "very",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard intensifier for adjectives.",
+        "status": "active"
+      },
+      {
+        "option_text": "really",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Very common and correct intensifier.",
+        "status": "active"
+      },
+      {
+        "option_text": "absolutely",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Strong intensifier, often used with 'delicious'.",
+        "status": "active"
+      },
+      {
+        "option_text": "much",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Much' is used with comparatives, not base adjectives.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-139",
+    "prompt": "Can you ______ the salt, please?",
+    "categories": ["Vocabulary", "Verbs", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "pass",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The standard verb for handing something to someone at a table.",
+        "status": "active"
+      },
+      {
+        "option_text": "give",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, though 'pass' is more idiomatic at dinner.",
+        "status": "active"
+      },
+      {
+        "option_text": "move",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Technically correct but sounds like you just want it shifted.",
+        "status": "active"
+      },
+      {
+        "option_text": "throw",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Impolite and dangerous!",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-140",
+    "prompt": "I have to go ______ the doctor today.",
+    "categories": ["Grammar", "Prepositions", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "to see",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Natural phrase for visiting a medical professional.",
+        "status": "active"
+      },
+      {
+        "option_text": "to",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct direction, though 'to see' is more common.",
+        "status": "active"
+      },
+      {
+        "option_text": "at",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect preposition.",
+        "status": "active"
+      },
+      {
+        "option_text": "visit",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct and clear.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-141",
+    "prompt": "To get to the bank, go straight and ______ left at the traffic lights.",
+    "categories": ["Vocabulary", "Directions", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "turn",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard verb for changing direction.",
+        "status": "active"
+      },
+      {
+        "option_text": "take",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Commonly used in the phrase 'take a left'.",
+        "status": "active"
+      },
+      {
+        "option_text": "make",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Commonly used in 'make a left'.",
+        "status": "active"
+      },
+      {
+        "option_text": "go",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'to the' (go to the left) to be grammatically correct here.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-142",
+    "prompt": "I ______ my keys. Have you seen them anywhere?",
+    "categories": ["Grammar", "Present Perfect", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "have lost",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Present perfect is used for a past action with a result in the present.",
+        "status": "active"
+      },
+      {
+        "option_text": "lost",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Past simple is correct but less focused on the current situation.",
+        "status": "active"
+      },
+      {
+        "option_text": "am losing",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Implies the action is happening right now.",
+        "status": "active"
+      },
+      {
+        "option_text": "was lost",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Passive voice; incorrect meaning.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-143",
+    "prompt": "That is the man ______ works in the post office.",
+    "categories": ["Grammar", "Relative Clauses", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "who",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Relative pronoun used for people.",
+        "status": "active"
+      },
+      {
+        "option_text": "which",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Relative pronoun used for things.",
+        "status": "active"
+      },
+      {
+        "option_text": "that",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Can be used for both people and things in defining clauses.",
+        "status": "active"
+      },
+      {
+        "option_text": "whose",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for possession.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-144",
+    "prompt": "It's my mother's birthday, so I need to ______ a gift.",
+    "categories": ["Vocabulary", "Verbs", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "buy",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard verb for purchasing.",
+        "status": "active"
+      },
+      {
+        "option_text": "get",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Common informal synonym for buy.",
+        "status": "active"
+      },
+      {
+        "option_text": "give",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "You give it later, but 'buy' or 'get' fits the 'need to' context better.",
+        "status": "active"
+      },
+      {
+        "option_text": "do",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect verb.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-145",
+    "prompt": "I haven't seen him ______ last Monday.",
+    "categories": ["Grammar", "Time Markers", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "since",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used with a specific point in time.",
+        "status": "active"
+      },
+      {
+        "option_text": "for",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for a duration of time (e.g., for a week).",
+        "status": "active"
+      },
+      {
+        "option_text": "from",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Sometimes used, but 'since' is the standard with Present Perfect.",
+        "status": "active"
+      },
+      {
+        "option_text": "ago",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used with Past Simple (e.g., a week ago).",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-146",
+    "prompt": "What's the ______ like today? It's very sunny!",
+    "categories": ["Vocabulary", "Nature", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "weather",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard term for daily atmospheric conditions.",
+        "status": "active"
+      },
+      {
+        "option_text": "temperature",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too specific; the answer 'sunny' refers to the weather.",
+        "status": "active"
+      },
+      {
+        "option_text": "climate",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Refers to long-term patterns, not a specific day.",
+        "status": "active"
+      },
+      {
+        "option_text": "sky",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Informal and common in conversation.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-147",
+    "prompt": "You ______ be late for the exam. The doors close at 9:00.",
+    "categories": ["Grammar", "Modals", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "mustn't",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used for strong obligation or prohibition.",
+        "status": "active"
+      },
+      {
+        "option_text": "shouldn't",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct for advice, though 'mustn't' is more accurate for rules.",
+        "status": "active"
+      },
+      {
+        "option_text": "don't have to",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect; implies it's okay to be late.",
+        "status": "active"
+      },
+      {
+        "option_text": "can",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Gives permission to be late, which is incorrect.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-148",
+    "prompt": "He's really ______ . He always makes people laugh.",
+    "categories": ["Vocabulary", "Adjectives", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "funny",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The specific adjective for causing laughter.",
+        "status": "active"
+      },
+      {
+        "option_text": "fun",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Refers to an enjoyable activity; 'funny' refers to humor.",
+        "status": "active"
+      },
+      {
+        "option_text": "kind",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Positive trait, but doesn't necessarily make people laugh.",
+        "status": "active"
+      },
+      {
+        "option_text": "serious",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Opposite of making people laugh.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-149",
+    "prompt": "I'm interested ______ learning more about photography.",
+    "categories": ["Grammar", "Prepositions", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "in",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "We are always 'interested in' something.",
+        "status": "active"
+      },
+      {
+        "option_text": "on",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect preposition.",
+        "status": "active"
+      },
+      {
+        "option_text": "for",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect preposition.",
+        "status": "active"
+      },
+      {
+        "option_text": "about",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Common mistake; we 'learn about' but are 'interested in'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-150",
+    "prompt": "Could you ______ me a favor?",
+    "categories": ["Vocabulary", "Collocations", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "do",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The standard collocation is 'do a favor'.",
+        "status": "active"
+      },
+      {
+        "option_text": "make",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Common error for learners.",
+        "status": "active"
+      },
+      {
+        "option_text": "give",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Incorrect collocation.",
+        "status": "active"
+      },
+      {
+        "option_text": "ask",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct in the phrase 'ask a favor', though 'do' fits the prompt better.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-151",
+    "prompt": "She ______ her umbrella because it started to rain.",
+    "categories": ["Vocabulary", "Verbs", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "opened",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Correct action for an umbrella.",
+        "status": "active"
+      },
+      {
+        "option_text": "put up",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Common phrasal verb for using an umbrella.",
+        "status": "active"
+      },
+      {
+        "option_text": "closed",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Opposite of what you do when it rains.",
+        "status": "active"
+      },
+      {
+        "option_text": "carried",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Too general; doesn't specify using it.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-152",
+    "prompt": "They ______ dinner when I arrived.",
+    "categories": ["Grammar", "Past Continuous", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "were eating",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Action in progress in the past.",
+        "status": "active"
+      },
+      {
+        "option_text": "ate",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Suggests they finished eating when I arrived.",
+        "status": "active"
+      },
+      {
+        "option_text": "was eating",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Subject-verb agreement error ('they' requires 'were').",
+        "status": "active"
+      },
+      {
+        "option_text": "have eaten",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Present perfect does not match the past context.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-153",
+    "prompt": "I'm going to the ______ to buy some bread.",
+    "categories": ["Vocabulary", "Places", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "bakery",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The specific place that sells bread.",
+        "status": "active"
+      },
+      {
+        "option_text": "supermarket",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Bread is sold there too.",
+        "status": "active"
+      },
+      {
+        "option_text": "butcher",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Butchers sell meat.",
+        "status": "active"
+      },
+      {
+        "option_text": "chemist",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Chemists/pharmacies sell medicine.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-154",
+    "prompt": "How ______ is the Eiffel Tower?",
+    "categories": ["Vocabulary", "Adjectives", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "tall",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used for vertical height of structures/people.",
+        "status": "active"
+      },
+      {
+        "option_text": "high",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, though 'tall' is more common for buildings.",
+        "status": "active"
+      },
+      {
+        "option_text": "long",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for horizontal distance.",
+        "status": "active"
+      },
+      {
+        "option_text": "big",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Vague; doesn't specify height.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-155",
+    "prompt": "I can't find my wallet. I've ______ it at home.",
+    "categories": ["Grammar", "Present Perfect", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "left",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used when you forget an object in a specific place.",
+        "status": "active"
+      },
+      {
+        "option_text": "forgotten",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "You 'forget' a name, but you 'leave' an object.",
+        "status": "active"
+      },
+      {
+        "option_text": "lost",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, but 'left' is more specific since the location is known.",
+        "status": "active"
+      },
+      {
+        "option_text": "put",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incomplete; needs a location like 'put it on the table'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-156",
+    "prompt": "We ______ to the beach if the weather is good.",
+    "categories": ["Grammar", "Conditionals", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "will go",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "First conditional result clause.",
+        "status": "active"
+      },
+      {
+        "option_text": "go",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Present simple can be used for zero conditional/facts, but 'will' is better for a specific plan.",
+        "status": "active"
+      },
+      {
+        "option_text": "went",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Past tense doesn't match the present condition.",
+        "status": "active"
+      },
+      {
+        "option_text": "are going",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct use of present continuous for future intent.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-157",
+    "prompt": "This coffee is ______ hot to drink.",
+    "categories": ["Grammar", "Adverbs", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "too",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used to mean 'more than enough' or excessive.",
+        "status": "active"
+      },
+      {
+        "option_text": "very",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Just describes the level; 'too' is better with the infinitive 'to drink'.",
+        "status": "active"
+      },
+      {
+        "option_text": "enough",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Would mean it is hot enough (positive), but usually hot coffee is hard to drink.",
+        "status": "active"
+      },
+      {
+        "option_text": "so",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Informal and common.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-158",
+    "prompt": "I usually ______ the bus to work.",
+    "categories": ["Vocabulary", "Transport", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "take",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The standard verb for using public transport.",
+        "status": "active"
+      },
+      {
+        "option_text": "go",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Requires 'by' (go by bus).",
+        "status": "active"
+      },
+      {
+        "option_text": "ride",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Commonly used for buses and bikes.",
+        "status": "active"
+      },
+      {
+        "option_text": "get",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Requires 'on' (get on the bus).",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-159",
+    "prompt": "She ______ her keys on the table.",
+    "categories": ["Vocabulary", "Verbs", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "put",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Both present and past form; correct for placing objects.",
+        "status": "active"
+      },
+      {
+        "option_text": "laid",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct past tense of 'lay', though 'put' is more common at A2.",
+        "status": "active"
+      },
+      {
+        "option_text": "gave",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires a person (gave it *to* someone).",
+        "status": "active"
+      },
+      {
+        "option_text": "sat",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Objects don't 'sit' by themselves.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-160",
+    "prompt": "The film was so ______ that I fell asleep.",
+    "categories": ["Vocabulary", "Adjectives", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "boring",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The correct -ing adjective for things that cause boredom.",
+        "status": "active"
+      },
+      {
+        "option_text": "bored",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Describes how a person feels, not the film.",
+        "status": "active"
+      },
+      {
+        "option_text": "long",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "A logical reason for falling asleep.",
+        "status": "active"
+      },
+      {
+        "option_text": "quiet",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Possible, but 'boring' is the classic pair for 'fell asleep'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-161",
+    "prompt": "I'm going to ______ a shower now.",
+    "categories": ["Vocabulary", "Collocations", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "have",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Very common in British English.",
+        "status": "active"
+      },
+      {
+        "option_text": "take",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Very common in American English.",
+        "status": "active"
+      },
+      {
+        "option_text": "do",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect collocation.",
+        "status": "active"
+      },
+      {
+        "option_text": "make",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect collocation.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-162",
+    "prompt": "He ______ to school by bike.",
+    "categories": ["Grammar", "Present Simple", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "cycles",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Specific verb for riding a bike.",
+        "status": "active"
+      },
+      {
+        "option_text": "goes",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct general verb.",
+        "status": "active"
+      },
+      {
+        "option_text": "rides",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually needs 'his bike' (rides his bike to school).",
+        "status": "active"
+      },
+      {
+        "option_text": "walks",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Contradicts 'by bike'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-163",
+    "prompt": "There are ______ books on the shelf.",
+    "categories": ["Grammar", "Quantifiers", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "some",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard quantifier for positive plural nouns.",
+        "status": "active"
+      },
+      {
+        "option_text": "any",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for questions and negatives.",
+        "status": "active"
+      },
+      {
+        "option_text": "a lot of",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct for plural nouns.",
+        "status": "active"
+      },
+      {
+        "option_text": "much",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for uncountable nouns.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-164",
+    "prompt": "I ______ a shower when the electricity went out.",
+    "categories": ["Grammar", "Past Continuous", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "was having",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Interrupted past action.",
+        "status": "active"
+      },
+      {
+        "option_text": "had",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Implies the sequence rather than the interruption.",
+        "status": "active"
+      },
+      {
+        "option_text": "am having",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Tense mismatch.",
+        "status": "active"
+      },
+      {
+        "option_text": "have",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Tense mismatch.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-165",
+    "prompt": "The car is parked ______ the house.",
+    "categories": ["Grammar", "Prepositions", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "in front of",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Common location for a car.",
+        "status": "active"
+      },
+      {
+        "option_text": "next to",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Also a very common and logical location.",
+        "status": "active"
+      },
+      {
+        "option_text": "inside",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Only if there is a garage, but less common than 'in front'.",
+        "status": "active"
+      },
+      {
+        "option_text": "between",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires two objects.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-166",
+    "prompt": "I'm ______ I can't come to your party.",
+    "categories": ["Vocabulary", "Social Expressions", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "afraid",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Polite way to give bad news.",
+        "status": "active"
+      },
+      {
+        "option_text": "sorry",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Standard apology.",
+        "status": "active"
+      },
+      {
+        "option_text": "happy",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Rude in this context.",
+        "status": "active"
+      },
+      {
+        "option_text": "scared",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect meaning; 'afraid' here is idiomatic, not literal fear.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-167",
+    "prompt": "I don't ______ much coffee.",
+    "categories": ["Grammar", "Present Simple", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "drink",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard verb for liquids.",
+        "status": "active"
+      },
+      {
+        "option_text": "have",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Used for both food and drink.",
+        "status": "active"
+      },
+      {
+        "option_text": "eat",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You don't eat coffee.",
+        "status": "active"
+      },
+      {
+        "option_text": "take",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Often used for sugar/milk in coffee, but less common for the drink itself.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-168",
+    "prompt": "She is the ______ girl in my class.",
+    "categories": ["Grammar", "Superlatives", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "smartest",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Correct superlative for a short adjective.",
+        "status": "active"
+      },
+      {
+        "option_text": "most smart",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect superlative form.",
+        "status": "active"
+      },
+      {
+        "option_text": "smarter",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Comparative form; needs 'than'.",
+        "status": "active"
+      },
+      {
+        "option_text": "best",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct superlative, though 'smartest' is more descriptive.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-169",
+    "prompt": "I'll see you ______ Friday.",
+    "categories": ["Grammar", "Prepositions", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "on",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Preposition for days of the week.",
+        "status": "active"
+      },
+      {
+        "option_text": "at",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for times.",
+        "status": "active"
+      },
+      {
+        "option_text": "in",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for months/years.",
+        "status": "active"
+      },
+      {
+        "option_text": "next",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, though it wouldn't take the preposition 'on' if 'next' is used.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-170",
+    "prompt": "The soup is too salty. I ______ put so much salt in it.",
+    "categories": ["Grammar", "Modals", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "shouldn't have",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used for past regrets/criticism.",
+        "status": "active"
+      },
+      {
+        "option_text": "didn't",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Doesn't express the regret/error as well as 'shouldn't have'.",
+        "status": "active"
+      },
+      {
+        "option_text": "mustn't",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Present prohibition; doesn't fit the past action.",
+        "status": "active"
+      },
+      {
+        "option_text": "couldn't",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Implies lack of ability.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-171",
+    "prompt": "I'm looking for a new ______ . I want to work in an office.",
+    "categories": ["Vocabulary", "Jobs", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "job",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "The most common word for a position of employment.",
+        "status": "active"
+      },
+      {
+        "option_text": "work",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Uncountable; usually used as 'I'm looking for work'.",
+        "status": "active"
+      },
+      {
+        "option_text": "career",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, though more long-term than 'job'.",
+        "status": "active"
+      },
+      {
+        "option_text": "boss",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You look for a job, not a new boss (usually).",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-172",
+    "prompt": "We ______ a great time at the party last night.",
+    "categories": ["Vocabulary", "Collocations", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "had",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "We always 'have/had a time' (good/bad).",
+        "status": "active"
+      },
+      {
+        "option_text": "did",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect collocation.",
+        "status": "active"
+      },
+      {
+        "option_text": "made",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect collocation.",
+        "status": "active"
+      },
+      {
+        "option_text": "spent",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually 'spent time' without the 'a'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-173",
+    "prompt": "Can you ______ the TV? I want to watch the news.",
+    "categories": ["Vocabulary", "Phrasal Verbs", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "turn on",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard phrasal verb for electronics.",
+        "status": "active"
+      },
+      {
+        "option_text": "switch on",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Common synonym for turn on.",
+        "status": "active"
+      },
+      {
+        "option_text": "open",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You don't 'open' electronics in English.",
+        "status": "active"
+      },
+      {
+        "option_text": "start",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Understood, but 'turn on' is more natural.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-174",
+    "prompt": "I don't have ______ money to buy that car.",
+    "categories": ["Grammar", "Quantifiers", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "enough",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used to indicate sufficiency.",
+        "status": "active"
+      },
+      {
+        "option_text": "much",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct for uncountable nouns in negatives.",
+        "status": "active"
+      },
+      {
+        "option_text": "many",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Money is uncountable.",
+        "status": "active"
+      },
+      {
+        "option_text": "no",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Double negative ('don't have no').",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-175",
+    "prompt": "She ______ to the gym every morning.",
+    "categories": ["Grammar", "Present Simple", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "goes",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Third person singular habitual action.",
+        "status": "active"
+      },
+      {
+        "option_text": "go",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Subject-verb agreement error.",
+        "status": "active"
+      },
+      {
+        "option_text": "is going",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct for temporary habits or future plans.",
+        "status": "active"
+      },
+      {
+        "option_text": "went",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct past tense.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-176",
+    "prompt": "My brother is ______ than me.",
+    "categories": ["Grammar", "Comparatives", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "older",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard comparative form.",
+        "status": "active"
+      },
+      {
+        "option_text": "more old",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Short adjectives use -er.",
+        "status": "active"
+      },
+      {
+        "option_text": "elder",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Used for family, but usually before a noun (my elder brother).",
+        "status": "active"
+      },
+      {
+        "option_text": "oldest",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Superlative form; needs 'the' and more than two people.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-177",
+    "prompt": "I'll call you when I ______ home.",
+    "categories": ["Grammar", "Time Clauses", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "get",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Present simple is used in future time clauses.",
+        "status": "active"
+      },
+      {
+        "option_text": "will get",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "We don't use 'will' after 'when' in time clauses.",
+        "status": "active"
+      },
+      {
+        "option_text": "arrive",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct and slightly more formal than 'get'.",
+        "status": "active"
+      },
+      {
+        "option_text": "am getting",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Grammatically possible but less common.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-178",
+    "prompt": "Do you want a ______ of cake?",
+    "categories": ["Vocabulary", "Food", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "piece",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard partition for cake.",
+        "status": "active"
+      },
+      {
+        "option_text": "slice",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Also very common and correct.",
+        "status": "active"
+      },
+      {
+        "option_text": "bit",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Very informal.",
+        "status": "active"
+      },
+      {
+        "option_text": "loaf",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "A loaf is for bread.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-179",
+    "prompt": "I'm sorry, I'm ______ late.",
+    "categories": ["Vocabulary", "Social Expressions", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "running",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Idiomatic expression for being behind schedule.",
+        "status": "active"
+      },
+      {
+        "option_text": "going",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Understood, but not the standard idiom.",
+        "status": "active"
+      },
+      {
+        "option_text": "getting",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Commonly used to show the process of becoming late.",
+        "status": "active"
+      },
+      {
+        "option_text": "walking",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Too literal.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-180",
+    "prompt": "That's the restaurant ______ we had dinner last week.",
+    "categories": ["Grammar", "Relative Clauses", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "where",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Relative pronoun for places.",
+        "status": "active"
+      },
+      {
+        "option_text": "which",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Requires a preposition (which we had dinner *at*).",
+        "status": "active"
+      },
+      {
+        "option_text": "that",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Similar to 'which'.",
+        "status": "active"
+      },
+      {
+        "option_text": "when",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Relative pronoun for time.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-181",
+    "prompt": "I haven't ______ my homework yet.",
+    "categories": ["Grammar", "Present Perfect", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "done",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Past participle of 'do'; standard collocation with homework.",
+        "status": "active"
+      },
+      {
+        "option_text": "finished",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct and common.",
+        "status": "active"
+      },
+      {
+        "option_text": "made",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "We 'do' homework, not 'make' it.",
+        "status": "active"
+      },
+      {
+        "option_text": "did",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires the past participle 'done'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-182",
+    "prompt": "Could you ______ the bill, please?",
+    "categories": ["Vocabulary", "Social Expressions", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "bring",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard request in a restaurant.",
+        "status": "active"
+      },
+      {
+        "option_text": "get",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Common informal request.",
+        "status": "active"
+      },
+      {
+        "option_text": "give",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Less polite than 'bring'.",
+        "status": "active"
+      },
+      {
+        "option_text": "pay",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You pay the bill, you don't ask the waiter to pay it.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-183",
+    "prompt": "The test was ______ more difficult than I thought.",
+    "categories": ["Grammar", "Comparatives", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "much",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used to intensify a comparative.",
+        "status": "active"
+      },
+      {
+        "option_text": "very",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Cannot be used with comparatives.",
+        "status": "active"
+      },
+      {
+        "option_text": "even",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Adds emphasis to the comparison.",
+        "status": "active"
+      },
+      {
+        "option_text": "lot",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires 'a' (a lot more).",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-184",
+    "prompt": "I'm ______ . Can I have a glass of water?",
+    "categories": ["Vocabulary", "Adjectives", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "thirsty",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Need for a drink.",
+        "status": "active"
+      },
+      {
+        "option_text": "hungry",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Need for food.",
+        "status": "active"
+      },
+      {
+        "option_text": "tired",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Possible, but doesn't directly lead to wanting water.",
+        "status": "active"
+      },
+      {
+        "option_text": "hot",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Common reason to want water.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-185",
+    "prompt": "She ______ the bus to work every day.",
+    "categories": ["Vocabulary", "Transport", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "takes",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Third person singular; most common verb for transport.",
+        "status": "active"
+      },
+      {
+        "option_text": "catches",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Very common and correct.",
+        "status": "active"
+      },
+      {
+        "option_text": "gets",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Requires 'on' (gets on the bus).",
+        "status": "active"
+      },
+      {
+        "option_text": "goes",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Requires 'by' (goes by bus).",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-186",
+    "prompt": "I ______ my friend in town tomorrow.",
+    "categories": ["Grammar", "Future Plans", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "am meeting",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Present continuous for fixed arrangements.",
+        "status": "active"
+      },
+      {
+        "option_text": "will meet",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct for future intent.",
+        "status": "active"
+      },
+      {
+        "option_text": "meet",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Present simple is not usually used for personal social plans.",
+        "status": "active"
+      },
+      {
+        "option_text": "am going to meet",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct for future intentions.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-187",
+    "prompt": "The shop is ______ to the pharmacy.",
+    "categories": ["Grammar", "Prepositions", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "next",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Followed by 'to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "close",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Followed by 'to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "beside",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Does not take 'to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "opposite",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Does not take 'to'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-188",
+    "prompt": "Could you ______ the door? It's open.",
+    "categories": ["Vocabulary", "Verbs", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "close",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard action.",
+        "status": "active"
+      },
+      {
+        "option_text": "shut",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Common synonym.",
+        "status": "active"
+      },
+      {
+        "option_text": "lock",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Requires closing it first.",
+        "status": "active"
+      },
+      {
+        "option_text": "open",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "It is already open.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-189",
+    "prompt": "I don't ______ with you. I think you're wrong.",
+    "categories": ["Vocabulary", "Social Expressions", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "agree",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Standard verb for shared opinions.",
+        "status": "active"
+      },
+      {
+        "option_text": "think",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Does not fit with the preposition 'with'.",
+        "status": "active"
+      },
+      {
+        "option_text": "believe",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually 'believe in' or 'believe someone'.",
+        "status": "active"
+      },
+      {
+        "option_text": "know",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect meaning.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-190",
+    "prompt": "He ______ his bike to work when the weather is nice.",
+    "categories": ["Vocabulary", "Verbs", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "rides",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Correct verb for a bicycle.",
+        "status": "active"
+      },
+      {
+        "option_text": "drives",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You drive a car.",
+        "status": "active"
+      },
+      {
+        "option_text": "cycles",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct, though 'rides his bike' is more common.",
+        "status": "active"
+      },
+      {
+        "option_text": "goes",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Would be 'goes to work by bike'.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-191",
+    "prompt": "The news ______ very depressing today.",
+    "categories": ["Grammar", "Subject-Verb Agreement", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "is",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'News' is always uncountable and singular.",
+        "status": "active"
+      },
+      {
+        "option_text": "are",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Common mistake for learners.",
+        "status": "active"
+      },
+      {
+        "option_text": "was",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct past tense.",
+        "status": "active"
+      },
+      {
+        "option_text": "were",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Plural past tense.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-192",
+    "prompt": "You look tired. You ______ go to bed early.",
+    "categories": ["Grammar", "Modals", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "should",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Modal for giving advice.",
+        "status": "active"
+      },
+      {
+        "option_text": "must",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Strong advice/obligation.",
+        "status": "active"
+      },
+      {
+        "option_text": "can",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Possibility, but not a recommendation.",
+        "status": "active"
+      },
+      {
+        "option_text": "have",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Requires 'to' (have to).",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-193",
+    "prompt": "It's ______ today than it was yesterday.",
+    "categories": ["Grammar", "Comparatives", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "colder",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Correct comparative form.",
+        "status": "active"
+      },
+      {
+        "option_text": "more cold",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect comparative form.",
+        "status": "active"
+      },
+      {
+        "option_text": "cold",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Requires comparative form due to 'than'.",
+        "status": "active"
+      },
+      {
+        "option_text": "cloudier",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Grammatically correct and logical.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-194",
+    "prompt": "I ______ to music while I'm working.",
+    "categories": ["Grammar", "Present Simple", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "listen",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Followed by 'to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "hear",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually passive; doesn't take 'to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "am listening",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Correct for a current action.",
+        "status": "active"
+      },
+      {
+        "option_text": "watch",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "You watch videos, not music.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-195",
+    "prompt": "I'm sorry, I forgot ______ your book back.",
+    "categories": ["Grammar", "Verb Patterns", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "to bring",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Forget to' is for an action you failed to do.",
+        "status": "active"
+      },
+      {
+        "option_text": "bringing",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "'Forget bringing' means you don't remember the memory of the action.",
+        "status": "active"
+      },
+      {
+        "option_text": "bring",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Needs 'to'.",
+        "status": "active"
+      },
+      {
+        "option_text": "to take",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Depends on direction, but grammatically correct.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-196",
+    "prompt": "He ______ his breakfast quickly and left for work.",
+    "categories": ["Vocabulary", "Verbs", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "ate",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Past simple of eat.",
+        "status": "active"
+      },
+      {
+        "option_text": "had",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Very common and correct for meals.",
+        "status": "active"
+      },
+      {
+        "option_text": "took",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Usually 'took his breakfast with him'.",
+        "status": "active"
+      },
+      {
+        "option_text": "did",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect verb for eating.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-197",
+    "prompt": "I've been working here ______ three years.",
+    "categories": ["Grammar", "Time Markers", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "for",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Used for a duration of time.",
+        "status": "active"
+      },
+      {
+        "option_text": "since",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used for a point in time.",
+        "status": "active"
+      },
+      {
+        "option_text": "during",
+        "answer_type": "ok",
+        "answer_point": 4,
+        "explanation": "Not usually used with present perfect continuous for duration.",
+        "status": "active"
+      },
+      {
+        "option_text": "ago",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Used with past simple.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-198",
+    "prompt": "The movie was ______ better than the book.",
+    "categories": ["Grammar", "Comparatives", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "much",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Common intensifier.",
+        "status": "active"
+      },
+      {
+        "option_text": "far",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Common intensifier.",
+        "status": "active"
+      },
+      {
+        "option_text": "very",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect with comparatives.",
+        "status": "active"
+      },
+      {
+        "option_text": "more",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "'Better' is already comparative.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-199",
+    "prompt": "I'm going to ______ the table for dinner.",
+    "categories": ["Vocabulary", "Collocations", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "set",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Idiomatic for preparing the table (plates, cutlery).",
+        "status": "active"
+      },
+      {
+        "option_text": "lay",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "Commonly used in British English.",
+        "status": "active"
+      },
+      {
+        "option_text": "make",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Incorrect collocation.",
+        "status": "active"
+      },
+      {
+        "option_text": "clean",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Logical, but 'set/lay' is more specific to preparation.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  },
+  {
+    "id": "easy-200",
+    "prompt": "She doesn't like ______ early in the morning.",
+    "categories": ["Grammar", "Verb Patterns", "A2-Elementary"],
+    "answers": [
+      {
+        "option_text": "getting up",
+        "answer_type": "best",
+        "answer_point": 10,
+        "explanation": "'Like' is usually followed by -ing.",
+        "status": "active"
+      },
+      {
+        "option_text": "to get up",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Also grammatically correct.",
+        "status": "active"
+      },
+      {
+        "option_text": "get up",
+        "answer_type": "wrong",
+        "answer_point": 0,
+        "explanation": "Missing -ing or to.",
+        "status": "active"
+      },
+      {
+        "option_text": "waking up",
+        "answer_type": "acceptable",
+        "answer_point": 7,
+        "explanation": "Similar meaning and correct pattern.",
+        "status": "active"
+      }
+    ],
+    "default_popularity": "EASY"
+  }
+]
