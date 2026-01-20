@@ -40,3 +40,13 @@ export function pointsToNextLevel(cs) {
   if (cs < 900) return 900 - cs;
   return 0;
 }
+
+export function leveragedDelta(cs, delta) {
+  if (delta <= 0) return delta;
+  let boost = 1;
+  if (cs < 200) boost = 1.4;
+  else if (cs < 4000) boost = 1.25;
+  else if (cs < 700) boost = 1.1;
+  else boost = 1;
+  return delta * boost;
+}

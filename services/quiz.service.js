@@ -191,8 +191,8 @@ class QuizService {
       }
 
       const quizRatio = totalEarned / totalPossiblePoints;
-      const difficultyPressure =
-        difficulties.reduce((a, b) => a + b, 0) / difficulties.length;
+      const difficultyPressure = difficulties.length > 0 ?
+        difficulties.reduce((a, b) => a + b, 0) / difficulties.length : 0;
       await pgPool.query("COMMIT");
       return { quizRatio, difficultyPressure };
     } catch (e) {

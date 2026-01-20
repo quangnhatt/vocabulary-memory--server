@@ -1,7 +1,7 @@
 import { pgPool } from "../db/index.js";
 import { calculateDeltaCS } from "../utils/quiz.scoring.js";
 import {
-  resolveLevel,
+  resolveLevel, leveragedDelta
 } from "../utils/progress.js";
 
 class ProgressService {
@@ -14,11 +14,13 @@ class ProgressService {
     const currentCS = +(rows[0].confidence_score);
     const currentLevel = rows[0].current_level;
 
-    const delta = calculateDeltaCS({
+    let delta = calculateDeltaCS({
       quizRatio,
       difficultyPressure,
       currentCS,
     });
+
+    delta = leveragedDelta(currentCS, delta);
 
     const newCS = Math.min(Math.max(currentCS + delta, 0), 1000);
     const newLevel = resolveLevel(newCS);
@@ -35,6 +37,8 @@ class ProgressService {
   `,
       [+newCS.toFixed(2), newLevel, userId]
     );
+
+    console.log(`OLD ${currentCS} -> NEW ${newCS} | DELTA: ${delta}`);
 
     return {
       oldCS: currentCS,
