@@ -253,10 +253,7 @@ class BattleService {
       player.score += gain;
 
       // REMOVE matched vocab from activeVocab
-      console.log("BEFORE REMOVE" + room.activeVocab.length);
-      //room.activeVocab = room.activeVocab.filter((pair) => pair.id !== wordId);
       room.activeVocab.splice(activeIdx, 1);
-      console.log("AFTER REMOVE" + room.activeVocab.length);
     } else {
       player.combo = 0;
     }
@@ -292,7 +289,7 @@ class BattleService {
         combo: player.combo,
       });
     }
-    
+
     this._trySendNextVocab(io, room, battleId);
 
     if (this.isAllVocabMatched(room)) {
@@ -304,8 +301,6 @@ class BattleService {
   }
 
   _trySendNextVocab(io, room, battleId) {
-    console.log("REMAINING " + room.remainingVocab.length);
-    console.log("ACTIVE " + room.activeVocab.length);
     const remaining = room.remainingVocab.length;
     if (remaining === 0) return;
 
@@ -326,8 +321,6 @@ class BattleService {
     if (countToSend === 0) return;
 
     const nextPairs = room.remainingVocab.splice(0, countToSend);
-    console.log("NEXT PAIRS");
-    console.log(nextPairs);
     // update active vocab
     room.activeVocab.push(...nextPairs);
 
