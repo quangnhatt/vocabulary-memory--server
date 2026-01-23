@@ -1,5 +1,5 @@
 import { pgPool } from "../db/index.js";
-import { clamp, inverseSkillMultiplier } from "../utils/quiz.scoring.js";
+import { clamp, inverseSkillMultiplier } from "../utils/scoring.js";
 
 class QuizService {
   async startQuiz(userId) {

@@ -5,7 +5,7 @@ class UserSettingsController {
     const settings = await UserSettingsService.getByUserId(req.userId);
     res.json({
       success: true,
-      user_id: settings.user_id,
+      user_id: req.user_id,
       words_per_day: settings.words_per_day,
       learning_speed: settings.learning_speed,
       native_language_code: settings.native_lang,

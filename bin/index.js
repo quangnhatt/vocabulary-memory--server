@@ -1,19 +1,19 @@
-
-import http from 'http';
-import app from '../app.js';
+import http from "http";
+import app from "../app.js";
+import { initSocket } from "./socket.js";
 
 const port = process.env.PORT || 3000;
 
 (async () => {
-    try {
-        
-        const server = http.createServer(app);
-        server.timeout = 5 * 60 * 1000;
+  try {
+    const server = http.createServer(app);
+    initSocket(server);
+    server.timeout = 5 * 60 * 1000;
 
-        server.listen(port, () => console.log(`Server is listening on port ${port}!`));
-
-    } catch (error) {
-        console.log(error);
-    }
+    server.listen(port, () =>
+      console.log(`Server is listening on port ${port}!`),
+    );
+  } catch (error) {
+    console.log(error);
+  }
 })();
-

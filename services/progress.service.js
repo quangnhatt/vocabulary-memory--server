@@ -1,5 +1,5 @@
 import { pgPool } from "../db/index.js";
-import { calculateDeltaCS } from "../utils/quiz.scoring.js";
+import { calculateDeltaCS } from "../utils/scoring.js";
 import {
   resolveLevel, leveragedDelta
 } from "../utils/progress.js";

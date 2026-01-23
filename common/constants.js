@@ -30,3 +30,18 @@ export const POPULARITY_LABELS = {
   HARD: "HARD",
   VERY_HARD: "VERY_HARD",
 };
+
+export const DEFAULT_USER_SETTINGS = {
+  words_per_day: 20,
+  learning_speed: 1,
+  native_lang: "vi",
+  learning_lang: "en",
+};
+
+export const BATTLE_ROOM_STATUS = {
+  WAITING: "WAITING",
+  ACTIVE: "ACTIVE",
+  ENDING: "ENDING",
+  FINISHED: "FINISHED",
+  CANCELLED: "CANCELLED",
+};
