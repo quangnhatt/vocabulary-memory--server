@@ -1,5 +1,5 @@
 import puppeteer from "puppeteer";
-import CONSTANTS from "../common/constants.js";
+import CONSTANTS, { DICTIONARY_SOURCES } from "../common/constants.js";
 
 export async function doCrawlCambridgeWithPuppeteer(source_language, word) {
   if (source_language !== "en") {
@@ -10,7 +10,7 @@ export async function doCrawlCambridgeWithPuppeteer(source_language, word) {
   }
 
   const url = `https://dictionary.cambridge.org/dictionary/english/${encodeURIComponent(
-    word
+    word,
   )}`;
   let browser;
 
@@ -51,7 +51,7 @@ export async function doCrawlCambridgeWithPuppeteer(source_language, word) {
     const page = await browser.newPage();
 
     await page.setUserAgent(
-      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
     );
 
     await page.setExtraHTTPHeaders({
@@ -70,7 +70,7 @@ export async function doCrawlCambridgeWithPuppeteer(source_language, word) {
 
     //1. Detect block / challenge
     let isBlocked = await page.$(
-      "body > pre, .captcha, #cf-wrapper, iframe[src*='captcha']"
+      "body > pre, .captcha, #cf-wrapper, iframe[src*='captcha']",
     );
 
     if (isBlocked) {
@@ -178,7 +178,7 @@ export async function doCrawlCambridgeWithPuppeteer(source_language, word) {
       word,
       ipa: result.ipa,
       entries: result.entries,
-      source: CONSTANTS.DICTIONARY_SOURCES.CAMBRIDGE,
+      source: DICTIONARY_SOURCES.CAMBRIDGE,
     };
   } catch (error) {
     console.log(error);
@@ -202,7 +202,7 @@ export async function doCrawlGoogleTranslateWithPuppeteer({
   }
 
   const url = `https://translate.google.com/details?sl=${sl}&tl=${tl}&text=${encodeURIComponent(
-    text
+    text,
   )}&op=translate`;
 
   let browser;
@@ -216,7 +216,7 @@ export async function doCrawlGoogleTranslateWithPuppeteer({
     const page = await browser.newPage();
 
     await page.setUserAgent(
-      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
     );
 
     await page.setExtraHTTPHeaders({
@@ -233,7 +233,7 @@ export async function doCrawlGoogleTranslateWithPuppeteer({
       () => {
         return document.body.innerText.length > 0;
       },
-      { timeout: 10000 }
+      { timeout: 10000 },
     );
 
     const result = await page.evaluate(() => {

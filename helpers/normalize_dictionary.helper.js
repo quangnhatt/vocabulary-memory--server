@@ -1,9 +1,9 @@
-import CONSTANTS from "../common/constants.js";
+import { DICTIONARY_SOURCES } from "../common/constants.js";
 
 export function normalizeDictionary({
   word,
   data,
-  source = CONSTANTS.DICTIONARY_SOURCES.CHATGPT,
+  source = DICTIONARY_SOURCES.CHATGPT,
 }) {
   if (!data) return null;
 

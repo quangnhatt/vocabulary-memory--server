@@ -1,6 +1,6 @@
 import { redis } from "../cache/redis.js";
 import crypto from "crypto";
-import CONSTANTS from "../common/constants.js";
+import { PROMPT_TYPES, DICTIONARY_SOURCES } from "../common/constants.js";
 import OpenAI from "openai";
 import { mapLanguageCode } from "./language.helper.js";
 
@@ -22,18 +22,30 @@ export async function askGPT({
       success: false,
       message: "Prompt is required or has 500 characters at maximum.",
     };
-  if (type == CONSTANTS.PROMPT_TYPES.DICTIONARY) {
+  if (type == PROMPT_TYPES.DICTIONARY) {
     prompt = buildDictionaryPrompt({
       phrase: prompt,
       source_language,
       target_language,
+    });
+  }
+  else if (type == PROMPT_TYPES.ADVANCED_LEARNING){
+     prompt = buildStukWordExercisePrompt({
+      source_language,
+      phrase: prompt,
     });
   } else {
     prompt = buildNormalPrompt({ message: prompt });
   }
 
   // 1. Check cache
-  const key = buildCacheKey({ model, type, prompt, source_language, target_language });
+  const key = buildCacheKey({
+    model,
+    type,
+    prompt,
+    source_language,
+    target_language,
+  });
   const cached = await redis.get(key);
 
   if (cached) {
@@ -41,7 +53,7 @@ export async function askGPT({
       success: true,
       cached: true,
       text: cached,
-      source: CONSTANTS.DICTIONARY_SOURCES.CHATGPT,
+      source: DICTIONARY_SOURCES.CHATGPT,
     };
   }
 
@@ -49,7 +61,7 @@ export async function askGPT({
     const response = await client.chat.completions.create({
       model: model,
       temperature: 0.4,
-      max_tokens: 150,
+      max_tokens: 300,
       messages: [{ role: "user", content: prompt }],
     });
 
@@ -63,7 +75,7 @@ export async function askGPT({
       success: true,
       cached: false,
       text: content,
-      source: CONSTANTS.DICTIONARY_SOURCES.CHATGPT,
+      source: DICTIONARY_SOURCES.CHATGPT,
     };
   } catch (err) {
     console.error("Get GPT failed:", err.message);
@@ -87,9 +99,28 @@ Generate data using this phrase:
           - Translation in ${target_language}
           - Example in simple, neutral ${source_language}
           - No explanation
+          - If the phrase does not exist or is meaningless, return {"success": false, "reason": ""}
           
 Format:
 { "ipa": "", "translation": "", "pos": "", "example": "..." }
+`.trim();
+}
+
+function buildStukWordExercisePrompt({ source_language = "en", phrase }) {
+  source_language = mapLanguageCode(source_language);
+  return `
+You are a ${source_language} vocabulary-learning content generator for a language-learning app.
+Generate data using this phrase:
+          "${phrase}"
+          Rules:
+          - JSON format only
+          - Use natural, real-life English.
+          - No explanation, no markdown
+          - At least 1 item for each question_type in learning_modes
+          - If the phrase does not exist or is meaningless, return {"success": false, "reason": ""}
+          
+Format:
+{ "term": "", "learning_modes": [ { "mode": "", "question_type": "fill_the_gap | single_choice | free_input", "prompt": "", // include based on question_type // fill_the_gap → "answer" // single_choice → "options" (string[]), "correct_index" (number) // free_input → "suggested_answer" } ] }
 `.trim();
 }
 
@@ -122,7 +153,7 @@ function buildCacheKey({
   return crypto
     .createHash("sha256")
     .update(
-      `gpt:${model}:${type}:${target_language}:${source_language}:${normalizedKey}`
+      `gpt:${model}:${type}:${target_language}:${source_language}:${normalizedKey}`,
     )
     .digest("hex");
 }

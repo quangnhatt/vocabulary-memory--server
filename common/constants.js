@@ -7,21 +7,22 @@ export default Object.freeze({
 
   REGEX_OBJECT_ID: /^(?=[a-f\d]{24}$)(\d+[a-f]|[a-f]+\d)/i,
 
-  PROMPT_TYPES: {
-    DICTIONARY: "dictionary",
-    NORMAL: "normal",
-  },
-
-  DICTIONARY_SOURCES: {
-    CHATGPT: "chatgpt",
-    CAMBRIDGE: "cambridge",
-  },
-
   ACTIVITY_TYPES: {
     IMPORT_CATEGORY: "import_category",
     LEARN_VOCABULARY: "learn_vocabulary",
   },
 });
+
+export const DICTIONARY_SOURCES = {
+  CHATGPT: "chatgpt",
+  CAMBRIDGE: "cambridge",
+};
+
+export const PROMPT_TYPES = {
+  DICTIONARY: "dictionary",
+  ADVANCED_LEARNING: "advanced_learning",
+  NORMAL: "normal",
+};
 
 export const POPULARITY_LABELS = {
   VERY_EASY: "VERY_EASY",

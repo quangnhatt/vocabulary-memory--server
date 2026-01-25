@@ -1,5 +1,5 @@
 import { pgPool } from "../db/index.js";
-import CONSTANTS from "../common/constants.js";
+import { PROMPT_TYPES, DICTIONARY_SOURCES }  from "../common/constants.js";
 import { doCrawlCambridgeWithPuppeteer } from "../helpers/crawl.helper.js";
 import { normalizeDictionary } from "../helpers/normalize_dictionary.helper.js";
 import { askGPT } from "../helpers/gpt.helper.js";
@@ -13,7 +13,7 @@ class DictionaryService {
     let result = await doCrawlCambridgeWithPuppeteer(source_language, word);
     if (!result.success) {
       const gptResponse = await askGPT({
-        type: CONSTANTS.PROMPT_TYPES.DICTIONARY,
+        type: PROMPT_TYPES.DICTIONARY,
         prompt: word,
         source_language: source_language,
         target_language: target_language,
@@ -22,7 +22,7 @@ class DictionaryService {
         result = normalizeDictionary({
           word: word,
           data: JSON.parse(gptResponse.text),
-          source: CONSTANTS.DICTIONARY_SOURCES.CHATGPT,
+          source: DICTIONARY_SOURCES.CHATGPT,
         });
       }
     }

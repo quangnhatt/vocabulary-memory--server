@@ -109,7 +109,7 @@ class BattleService {
       this.endBattle(io, battle.id, {
         reason: "TIME_UP",
       });
-    }, 600000);
+    }, 180000);
   }
 
   _initPlayer(user) {
