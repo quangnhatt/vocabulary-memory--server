@@ -94,7 +94,9 @@ class LearningModeRepository {
     const modes = rows.map((row) => ({
         id: row.id,
         mode: row.mode,
+        language: row.language,
         question_type: row.question_type,
+        term: term,
         prompt: row.prompt,
         answer: row.answer,
         options: row.options,

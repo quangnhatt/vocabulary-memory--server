@@ -61,8 +61,7 @@ CREATE TABLE battle_matches (
   word_id UUID REFERENCES vocab_pairs(id),
   meaning_id UUID REFERENCES vocab_pairs(id),
   is_correct BOOLEAN NOT NULL,
-  created_at TIMESTAMP DEFAULT NOW(),
-  UNIQUE (battle_id, user_id, vocab_pair_id)
+  created_at TIMESTAMP DEFAULT NOW()
 );
 
 
