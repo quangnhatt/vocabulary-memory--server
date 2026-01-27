@@ -13,6 +13,7 @@ class LearningModeRepository {
       options = null,
       correct_index = null,
       suggested_answer = null,
+      status,
     } = data;
 
     try {
@@ -27,11 +28,12 @@ class LearningModeRepository {
         answer,
         options,
         correct_index,
-        suggested_answer
+        suggested_answer,
+        status
       )
       VALUES (
         COALESCE($1, gen_random_uuid()),
-        $2, $3, $4, $5, $6, $7, $8, $9, $10
+        $2, $3, $4, $5, $6, $7, $8, $9, $10, $11
       )
       ON CONFLICT (id)
       DO UPDATE SET
@@ -44,7 +46,8 @@ class LearningModeRepository {
         options = EXCLUDED.options,
         correct_index = EXCLUDED.correct_index,
         suggested_answer = EXCLUDED.suggested_answer,
-        created_at = now()
+        created_at = now(),
+        status = EXCLUDED.status
       RETURNING *;
     `;
 
@@ -59,6 +62,7 @@ class LearningModeRepository {
         options,
         correct_index,
         suggested_answer,
+        status,
       ];
 
       const { rows } = await pgPool.query(query, values);
@@ -71,7 +75,7 @@ class LearningModeRepository {
     }
   }
 
-  async getLearningModesByTerm(term, source_language){
+  async getLearningModesByTerm(term, source_language) {
     const query = `
     SELECT
       id,
@@ -83,31 +87,29 @@ class LearningModeRepository {
       options,
       correct_index,
       suggested_answer,
-      created_at
+      created_at,
+      status
     FROM learning_modes
-    WHERE lower(term) = lower($1) and language = $2
+    WHERE lower(term) = lower($1) and language = $2 
     ORDER BY created_at ASC;
   `;
 
     const { rows } = await pgPool.query(query, [term, source_language]);
     await pgPool.query("COMMIT");
-    const modes = rows.map((row) => ({
-        id: row.id,
-        mode: row.mode,
-        language: row.language,
-        question_type: row.question_type,
-        term: term,
-        prompt: row.prompt,
-        answer: row.answer,
-        options: row.options,
-        correct_index: row.correct_index,
-        suggested_answer: row.suggested_answer,
-      }));
-    return {
-      source_language, 
-      term,
-      learning_modes: modes,
-    };
+    const questions = rows.map((row) => ({
+      id: row.id,
+      mode: row.mode,
+      language: row.language,
+      question_type: row.question_type,
+      term: term,
+      prompt: row.prompt,
+      answer: row.answer,
+      options: row.options,
+      correct_index: row.correct_index,
+      suggested_answer: row.suggested_answer,
+      status: row.status
+    }));
+    return questions;
   }
 }
 

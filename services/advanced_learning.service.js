@@ -37,12 +37,14 @@ class LearningModeService {
       const {
         id,
         mode,
+        term,
         question_type,
         prompt,
         answer,
         options,
         correct_index,
         suggested_answer,
+        status,
       } = item;
 
       // Basic validation
@@ -64,6 +66,7 @@ class LearningModeService {
         options: options ?? null,
         correct_index: correct_index ?? null,
         suggested_answer: suggested_answer ?? null,
+        status,
       });
 
       results.push(record);
@@ -94,6 +97,47 @@ class LearningModeService {
     return {
       success: true,
       ...record,
+    };
+  }
+
+  async logRequestingAdvancedLearning(questions) {
+    if (!questions) {
+      return {
+        success: false,
+        message: "Questions are required.",
+      };
+    }
+    const results = [];
+    for (const item of questions) {
+      const { term, language, status } = item;
+
+      // Basic validation
+      if (!term || !language) {
+        continue;
+      }
+
+      let questions = await LearningModeRepository.getLearningModesByTerm(
+        term,
+        language,
+      );
+
+      if (questions != null && questions.length > 0) {
+        // skip existing requesting records.
+        questions = questions.filter((x) => x.status == 'active');
+        results.push(...questions);
+      } else {
+        // Insert into db ff requesting term doesn't exist
+        await LearningModeRepository.upsertLearningMode({
+          source_language: language,
+          term,
+          status,
+        });
+      }
+    }
+
+    return {
+      success: true,
+      results,
     };
   }
 }
