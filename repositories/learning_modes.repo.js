@@ -17,6 +17,25 @@ class LearningModeRepository {
     } = data;
 
     try {
+      // No need to insert pending twice
+      if (status == "pending") {
+        const pendingCheckQuery = `
+          SELECT
+            id
+          FROM learning_modes
+          WHERE lower(term) = lower($1) and language = $2 and status = $3
+          ORDER BY created_at ASC;
+        `;
+
+        const pendingRecord = await pgPool.query(pendingCheckQuery, [
+          term,
+          source_language,
+          status,
+        ]);
+
+        if (pendingRecord.rows.length > 0) return null;
+      }
+
       const query = `
       INSERT INTO learning_modes (
         id,
@@ -107,7 +126,7 @@ class LearningModeRepository {
       options: row.options,
       correct_index: row.correct_index,
       suggested_answer: row.suggested_answer,
-      status: row.status
+      status: row.status,
     }));
     return questions;
   }

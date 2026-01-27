@@ -68,8 +68,9 @@ class LearningModeService {
         suggested_answer: suggested_answer ?? null,
         status,
       });
-
-      results.push(record);
+      if (record != null) {
+        results.push(record);
+      }
     }
 
     return {
@@ -123,7 +124,7 @@ class LearningModeService {
 
       if (questions != null && questions.length > 0) {
         // skip existing requesting records.
-        questions = questions.filter((x) => x.status == 'active');
+        questions = questions.filter((x) => x.status == "active");
         results.push(...questions);
       } else {
         // Insert into db ff requesting term doesn't exist
