@@ -12,13 +12,25 @@ class ReviewService {
         INSERT INTO review_actions (
           user_id,
           word_id,
+          previous_difficulty,
           difficulty,
+          previous_state,
+          state,
           reviewed_at,
           turn_id
         )
-        VALUES ($1,$2,$3,$4,$5)
+        VALUES ($1,$2,$3,$4,$5, $6, $7, $8)
         `,
-          [userId, a.word_id, a.difficulty, a.reviewed_at, a.turn_id]
+          [
+            userId,
+            a.word_id,
+            a.previous_difficulty,
+            a.difficulty,
+            a.previous_state,
+            a.state,
+            a.reviewed_at,
+            a.turn_id,
+          ],
         );
       }
 
@@ -63,13 +75,13 @@ class ReviewService {
     GROUP BY d.day
     ORDER BY d.day ASC
     `,
-      [userId]
+      [userId],
     );
 
     let totalReviewed = 0;
 
     const resultDays = rows.map((r) => {
-      const dayTotal = +(r.forget) + +(r.good) + +(r.easy);
+      const dayTotal = +r.forget + +r.good + +r.easy;
       totalReviewed += dayTotal;
 
       return {
@@ -90,6 +102,61 @@ class ReviewService {
         active_days: resultDays.filter((d) => d.total > 0).length,
       },
     };
+  }
+
+  async getTodayReviewActionStats(userId) {
+    const query = `
+    WITH latest_actions AS (
+      SELECT DISTINCT ON (user_id, word_id)
+        user_id,
+        word_id,
+        previous_difficulty,
+        difficulty,
+        previous_state,
+        state,
+        reviewed_at
+      FROM review_actions
+      WHERE reviewed_at >= CURRENT_DATE
+        AND reviewed_at < CURRENT_DATE + INTERVAL '1 day'
+        AND user_id = $1
+      ORDER BY user_id, word_id, reviewed_at DESC
+    )
+
+    SELECT
+      COUNT(*) AS total_words,
+      COUNT(CASE
+        WHEN (previous_difficulty = 'easy'
+             AND difficulty <> 'easy') or (difficulty = 'forget')
+        THEN 1
+      END) AS forgotten,
+
+      COUNT(CASE
+        WHEN previous_difficulty IN ('forget', 'good')
+             AND difficulty IN ('good', 'easy')
+        THEN 1
+      END) AS remembered,
+
+      COUNT(CASE
+        WHEN previous_difficulty = 'easy'
+             AND difficulty = 'easy'
+             AND previous_state = 'review'
+             AND state = 'mastered'
+        THEN 1
+      END) AS mastered,
+
+      COUNT(CASE
+        WHEN previous_difficulty = 'easy'
+             AND difficulty = 'easy'
+             AND previous_state IN ('mastered', 'fluent')
+             AND state = 'fluent'
+        THEN 1
+      END) AS fluent
+
+    FROM latest_actions;
+  `;
+
+    const { rows } = await pgPool.query(query, [userId]);
+    return rows[0];
   }
 }
 

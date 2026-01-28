@@ -140,6 +140,9 @@ CREATE TABLE review_actions (
   difficulty TEXT NOT NULL CHECK (
     difficulty IN ('forget', 'good', 'easy')
   ),
+  previous_difficulty TEXT,
+  previous_state TEXT,
+  state TEXT,
   reviewed_at TIMESTAMPTZ NOT NULL,
   turn_id TEXT NOT NULL,
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
