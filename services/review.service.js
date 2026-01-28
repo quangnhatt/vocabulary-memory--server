@@ -32,6 +32,8 @@ class ReviewService {
             a.turn_id,
           ],
         );
+        console.log(a.review_at);
+        console.log(Date.now());
       }
 
       await pgPool.query("COMMIT");
