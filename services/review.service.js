@@ -5,7 +5,7 @@ class ReviewService {
     if (!actions.length) return;
     try {
       await pgPool.query("BEGIN");
-
+      const now = Date.now();
       for (const a of actions) {
         await pgPool.query(
           `
@@ -28,7 +28,7 @@ class ReviewService {
             a.difficulty,
             a.previous_state,
             a.state,
-            a.reviewed_at,
+            now,
             a.turn_id,
           ],
         );
