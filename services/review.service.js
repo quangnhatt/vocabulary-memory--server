@@ -32,8 +32,6 @@ class ReviewService {
             a.turn_id,
           ],
         );
-        console.log(a.review_at);
-        console.log(now);
       }
 
       await pgPool.query("COMMIT");
@@ -120,6 +118,7 @@ class ReviewService {
       FROM review_actions
       WHERE reviewed_at >= CURRENT_DATE
         AND reviewed_at < CURRENT_DATE + INTERVAL '1 day'
+        AND state is not null
         AND user_id = $1
       ORDER BY user_id, word_id, reviewed_at DESC
     )
@@ -127,14 +126,13 @@ class ReviewService {
     SELECT
       COUNT(*) AS total_words,
       COUNT(CASE
-        WHEN (previous_difficulty = 'easy'
-             AND difficulty <> 'easy') or (difficulty = 'forget')
+        WHEN difficulty = 'forget'
         THEN 1
       END) AS forgotten,
 
       COUNT(CASE
-        WHEN previous_difficulty IN ('forget', 'good')
-             AND difficulty IN ('good', 'easy')
+        WHEN difficulty IN ('good', 'easy')
+            AND state IN ('learning', 'reviewing')
         THEN 1
       END) AS remembered,
 
