@@ -5,7 +5,7 @@ class ReviewService {
     if (!actions.length) return;
     try {
       await pgPool.query("BEGIN");
-      const now = Date.now();
+      const now = new Date();
       for (const a of actions) {
         await pgPool.query(
           `
@@ -33,7 +33,7 @@ class ReviewService {
           ],
         );
         console.log(a.review_at);
-        console.log(Date.now());
+        console.log(now);
       }
 
       await pgPool.query("COMMIT");
