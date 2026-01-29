@@ -21,7 +21,7 @@ CREATE TABLE user_settings (
 CREATE TABLE device_tokens (
   id UUID PRIMARY KEY,
   user_id UUID REFERENCES users(id),
-  token TEXT NOT NULL,
+  token TEXT NOT NULL UNIQUE,
   platform TEXT CHECK (platform IN ('ios', 'android', 'web')),
   created_at TIMESTAMP DEFAULT now()
 );

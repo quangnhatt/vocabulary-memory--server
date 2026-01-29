@@ -3,6 +3,7 @@ import { generateUniqueUserCode } from "../utils/userCode.js";
 import { signAuthToken } from "../utils/jwt.js";
 import bcrypt from "bcrypt";
 import appleSigninAuth from "apple-signin-auth";
+import { v4 as uuidv4 } from "uuid";
 
 const SALT_ROUNDS = 12;
 
@@ -64,16 +65,16 @@ export async function signInWithGoogle({
 
 export async function saveDeviceToken(userId, { token, platform }) {
   try {
-    await pool.query(
+    await pgPool.query(
       `
-    INSERT INTO device_tokens (user_id, token, platform)
-    VALUES ($1, $2, $3)
+    INSERT INTO device_tokens (id, user_id, token, platform)
+    VALUES ($1, $2, $3, $4)
     ON CONFLICT (token)
     DO UPDATE SET
       user_id = EXCLUDED.user_id,
       platform = EXCLUDED.platform
     `,
-      [userId, token, platform],
+      [uuidv4(), userId, token, platform],
     );
 
     return { success: true };
@@ -219,10 +220,10 @@ export async function loginWithEmail(email, password) {
   }
 
   // Find existing user
-  const {rows} = await pgPool.query("SELECT * FROM users WHERE email = $1", [
+  const { rows } = await pgPool.query("SELECT * FROM users WHERE email = $1", [
     email.toLowerCase(),
   ]);
-  
+
   const user = rows[0];
 
   if (!user || !user.password_hash) {
