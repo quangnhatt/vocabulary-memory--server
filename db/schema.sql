@@ -2,7 +2,11 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 CREATE TABLE users (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-  firebase_uid TEXT UNIQUE NOT NULL,
+  firebase_uid TEXT UNIQUE,  -- alter nullable
+  apple_user_id TEXT UNIQUE,
+  facebook_user_id TEXT UNIQUE,
+  password_hash text,
+
   username TEXT,
   email TEXT UNIQUE,
   confidence_score NUMERIC(6,2)

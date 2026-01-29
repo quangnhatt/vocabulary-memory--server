@@ -6,7 +6,9 @@
   "type": "module",
   "dependencies": {
     "abort-controller": "^3.0.0",
+    "apple-signin-auth": "^2.0.0",
     "axios": "^0.24.0",
+    "bcrypt": "^6.0.0",
     "cheerio": "^1.1.2",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
