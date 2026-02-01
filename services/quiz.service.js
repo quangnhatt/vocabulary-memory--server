@@ -27,10 +27,10 @@ class QuizService {
       await pgPool.query(
         `
       INSERT INTO quiz_attempt_questions
-        (attempt_id, question_id, prompt, popularity_score)
-      VALUES ($1, $2, $3, $4)
+        (attempt_id, question_id, prompt, popularity_score, user_id)
+      VALUES ($1, $2, $3, $4, $5)
       `,
-        [attemptId, q.id, q.prompt, q.popularity_score]
+        [attemptId, q.id, q.prompt, q.popularity_score, userId]
       );
     }
 
@@ -178,14 +178,15 @@ class QuizService {
         await pgPool.query(
           `
         INSERT INTO quiz_attempt_answers
-          (attempt_question_id, answer_id, answer_text, earned_point)
-        VALUES ($1, $2, $3, $4)
+          (attempt_question_id, answer_id, answer_text, earned_point, user_id)
+        VALUES ($1, $2, $3, $4, $5)
         `,
           [
             ans.attemptQuestionId,
             ans.selectedAnswer.id,
             ans.selectedAnswer.text,
             earned,
+            userId
           ]
         );
       }

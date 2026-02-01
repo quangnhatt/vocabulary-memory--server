@@ -5,6 +5,7 @@ import {
   loginWithEmail,
   registerWithEmail,
   saveDeviceToken,
+  deleteAccount
 } from "../services/auth.service.js";
 
 class AuthController {
@@ -75,6 +76,19 @@ class AuthController {
         user: result.user,
         token: result.token,
       });
+    } catch (err) {
+      console.error("Auth error:", err);
+      res.status(400).json({ error: err.message });
+    }
+  }
+
+  async deleteAccount(req, res) {
+    try {
+
+      const { userId } = req;
+      const result = await deleteAccount(userId);
+
+      res.json(result);
     } catch (err) {
       console.error("Auth error:", err);
       res.status(400).json({ error: err.message });

@@ -47,6 +47,7 @@ CREATE TABLE quiz_attempts (
 
 CREATE TABLE quiz_attempt_questions (
   id SERIAL PRIMARY KEY,
+   user_id UUID REFERENCES users(id),
   attempt_id UUID NOT NULL
     REFERENCES quiz_attempts(id)
     ON DELETE CASCADE,
@@ -59,6 +60,7 @@ CREATE TABLE quiz_attempt_questions (
 
 CREATE TABLE quiz_attempt_answers (
   id SERIAL PRIMARY KEY,
+   user_id UUID REFERENCES users(id),
   attempt_question_id INTEGER NOT NULL
     REFERENCES quiz_attempt_questions(id)
     ON DELETE CASCADE,

@@ -20,5 +20,9 @@ export function load(app) {
     AuthController.emailSignIn(req, res, next)
   );
 
+   app.delete("/api/v1/account/delete", (req, res, next) =>
+    AuthController.deleteAccount(req, res, next)
+  );
+
    app.post("/api/v1/auth/device-token", AuthController.saveDeviceToken);
 }

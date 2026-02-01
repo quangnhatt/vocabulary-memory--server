@@ -84,6 +84,125 @@ export async function saveDeviceToken(userId, { token, platform }) {
   }
 }
 
+export async function deleteAccount(userId) {
+  try {
+    await pgPool.query("BEGIN");
+    //
+
+    await pgPool.query(
+      `
+    DELETE FROM battle_matches
+    WHERE user_id = $1
+    `,
+      [userId],
+    );
+
+    await pgPool.query(
+      `
+    DELETE FROM battle_players
+    WHERE user_id = $1
+    `,
+      [userId],
+    );
+
+    await pgPool.query(
+      `
+    DELETE FROM review_actions
+    WHERE user_id = $1
+    `,
+      [userId],
+    );
+
+    await pgPool.query(
+      `
+    DELETE FROM user_activities
+    WHERE user_id = $1
+    `,
+      [userId],
+    );
+
+    await pgPool.query(
+      `
+    DELETE FROM user_settings
+    WHERE user_id = $1
+    `,
+      [userId],
+    );
+
+    await pgPool.query(
+      `
+    DELETE FROM tags
+    WHERE user_id = $1
+    `,
+      [userId],
+    );
+
+    await pgPool.query(
+      `
+    DELETE FROM words
+    WHERE user_id = $1
+    `,
+      [userId],
+    );
+
+    await pgPool.query(
+      `
+    DELETE FROM device_tokens
+    WHERE user_id = $1
+    `,
+      [userId],
+    );
+
+    await pgPool.query(
+      `
+    DELETE FROM quiz_question_reports
+    WHERE user_id = $1
+    `,
+      [userId],
+    );
+
+    await pgPool.query(
+      `
+    DELETE FROM quiz_attempt_answers
+    WHERE user_id = $1
+    `,
+      [userId],
+    );
+
+    await pgPool.query(
+      `
+    DELETE FROM quiz_attempt_questions
+    WHERE user_id = $1
+    `,
+      [userId],
+    );
+
+    await pgPool.query(
+      `
+    DELETE FROM quiz_attempts
+    WHERE user_id = $1
+    `,
+      [userId],
+    );
+
+    await pgPool.query(
+      `
+    DELETE FROM users
+    WHERE id = $1
+    `,
+      [userId],
+    );
+
+    await pgPool.query("COMMIT");
+
+    return { success: true };
+  } catch (e) {
+    console.log(e);
+    await pgPool.query("ROLLBACK");
+    return { success: false };
+  }
+}
+
 export async function loginWithApple(identityToken, authorizationCode) {
   if (!identityToken || !authorizationCode) {
     return null;
