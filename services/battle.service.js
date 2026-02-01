@@ -1,6 +1,10 @@
 import BattleRepository from "../repositories/battle.repo.js";
 import UserRepository from "../repositories/user.repo.js";
-import { calculateScore } from "../utils/scoring.js";
+import {
+  calculateGainStar,
+  calculateScore,
+  calculateExp,
+} from "../utils/scoring.js";
 import { BATTLE_ROOM_STATUS } from "../common/constants.js";
 
 /**
@@ -46,31 +50,43 @@ class BattleService {
     const p1 = matchmakingQueue.shift();
     const p2 = matchmakingQueue.shift();
 
-    const battle = await BattleRepository.createBattle(
-      p1.socket.userId,
-      p2.socket.userId,
-      difficulty,
-    );
+    const battleId = crypto.randomUUID();
 
-    const users = await UserRepository.getByUsers([
-      p1.socket.userId,
-      p2.socket.userId,
+    p1.socket.join(battleId);
+    p2.socket.join(battleId);
+
+    io.to(battleId).emit("matchmaking:matched", {
+      battleId: battleId,
+      status: BATTLE_ROOM_STATUS.PREPARING,
+    });
+
+    const player1Id = p1.socket.userId;
+    const player2Id = p2.socket.userId;
+
+    const [battle, battleQuestions, users] = await Promise.all([
+      BattleRepository.createBattle(battleId, player1Id, player2Id),
+      BattleRepository.loadBattleQuestions(difficulty),
+      UserRepository.getByUsers([player1Id, player2Id]),
     ]);
 
-    const vocab = battle.vocab;
+    const now = Date.now();
+    const battleDuration = 15;
+    const delayDurationMs = 3000;
+    const vocab = battleQuestions.vocab;
     const activeVocab = vocab.slice(0, 5);
     const remainingVocab = vocab.slice(5);
 
     const room = {
       id: battle.id,
-      vocabMap: battle.vocabMap, // wordId -> meaningId
-      vocab: battle.vocab,
+      vocabMap: battleQuestions.vocabMap, // wordId -> meaningId
+      vocab: battleQuestions.vocab,
       activeVocab,
       remainingVocab,
       matchedVocab: new Set(),
       difficulty,
-      startAt: Date.now() + 3000,
-      duration: 60,
+      startAt: now + delayDurationMs,
+      endAt: now + delayDurationMs + battleDuration * 1000,
+      duration: battleDuration,
       status: BATTLE_ROOM_STATUS.ACTIVE,
       players: {
         [users[0]["id"]]: this._initPlayer(users[0]),
@@ -80,18 +96,20 @@ class BattleService {
 
     rooms.set(battle.id, room);
 
-    p1.socket.join(battle.id);
-    p2.socket.join(battle.id);
-
-    io.to(battle.id).emit("matchmaking:matched", {
+    io.to(battle.id).emit("matchmaking:ready", {
       battleId: battle.id,
       startAt: room.startAt,
+      endAt: room.endAt,
+      duration: room.duration,
+      countdownDuration: delayDurationMs / 1000,
     });
 
     setTimeout(() => {
       io.to(battle.id).emit("battle:start", {
         battleId: battle.id,
-        duration: 60,
+        duration: room.duration,
+        startAt: room.startAt,
+        endAt: room.endAt,
         vocab: room.vocab,
         pairs: activeVocab, //
         players: room.players,
@@ -100,7 +118,7 @@ class BattleService {
       io.to(battle.id).emit("battle:vocab_init", {
         pairs: activeVocab,
       });
-    }, 3000);
+    }, delayDurationMs);
 
     setTimeout(() => {
       const room = rooms.get(battle.id);
@@ -109,13 +127,16 @@ class BattleService {
       this.endBattle(io, battle.id, {
         reason: "TIME_UP",
       });
-    }, 180000);
+    }, room.endAt - now);
   }
 
   _initPlayer(user) {
     return {
       score: 0,
       combo: 0,
+      maxCombo: 0,
+      star: 0,
+      earnedExp: 0,
       matched: new Set(),
       lastActionAt: 0,
       username: user.username,
@@ -157,7 +178,13 @@ class BattleService {
     room.status = BATTLE_ROOM_STATUS.FINISHED;
 
     const playerIds = Object.keys(room.players);
+    let playerA = room.players[playerIds[0]];
+    let playerB = room.players[playerIds[1]];
 
+    playerA.earnedExp = calculateExp(playerA, playerB);
+    console.log(playerA.earnedExp);
+    playerB.earnedExp = calculateExp(playerB, playerA);
+    console.log(playerB.earnedExp);
     // Determine winner
     let winnerId = null;
 
@@ -165,9 +192,14 @@ class BattleService {
       winnerId = playerIds.find((id) => id !== leaverId);
     } else {
       // Highest score wins
-      winnerId = playerIds.reduce((a, b) =>
-        room.players[a].score >= room.players[b].score ? a : b,
-      );
+      winnerId = playerIds.reduce((a, b) => {
+        if (room.players[a].score > room.players[b].score) {
+          return a;
+        } else if (room.players[a].score < room.players[b].score) {
+          return b;
+        }
+        return null;
+      });
     }
 
     try {
@@ -243,14 +275,22 @@ class BattleService {
       player.matched.add(pairKey);
       room.matchedVocab.add(wordId);
       player.combo += 1;
-
-      const gain = calculateScore({
+      if (player.combo > player.maxCombo) {
+        player.maxCombo = player.combo;
+      }
+      const gainStar = calculateGainStar({
         combo: player.combo,
-        // timeLeft: Math.max(0, Math.floor((room.startAt + 60000 - now) / 1000)),
+        correct: isCorrect,
+      });
+      player.star += gainStar;
+      const gainScore = calculateScore({
+        combo: player.combo,
+        star: gainStar,
         difficulty: room.difficulty,
+        correct: isCorrect,
       });
 
-      player.score += gain;
+      player.score += gainScore;
 
       // REMOVE matched vocab from activeVocab
       room.activeVocab.splice(activeIdx, 1);
@@ -276,6 +316,8 @@ class BattleService {
         isCorrect,
         score: player.score,
         combo: player.combo,
+        maxCombo: player.maxCombo,
+        star: player.star,
       });
     } else {
       // Incorrect → only sender sees it
@@ -287,6 +329,8 @@ class BattleService {
         isCorrect: false,
         score: player.score,
         combo: player.combo,
+        maxCombo: player.maxCombo,
+        star: player.star,
       });
     }
 

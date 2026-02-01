@@ -2,27 +2,40 @@ import { pgPool } from "../db/index.js";
 import { BATTLE_ROOM_STATUS } from "../common/constants.js";
 
 class BattleRepository {
-  async createBattle(userA, userB, difficulty) {
-    // Create battle
-    const battleResult = await pgPool.query(
-      `
-      INSERT INTO battles (status)
-      VALUES ('ACTIVE')
+  async createBattle(battleId, userA, userB) {
+    try {
+      await pgPool.query("BEGIN");
+      // Create battle
+      await pgPool.query(
+        `
+      INSERT INTO battles (id, status)
+      VALUES ($1, 'ACTIVE')
       RETURNING id
       `,
-    );
+        [battleId],
+      );
 
-    const battleId = battleResult.rows[0].id;
-
-    // Insert players
-    await pgPool.query(
-      `
+      // Insert players
+      await pgPool.query(
+        `
       INSERT INTO battle_players (battle_id, user_id)
       VALUES ($1, $2), ($1, $3)
       `,
-      [battleId, userA, userB],
-    );
+        [battleId, userA, userB],
+      );
 
+      await pgPool.query("COMMIT");
+
+      return {
+        id: battleId,
+      };
+    } catch (e) {
+      await pgPool.query("ROLLBACK");
+      throw new Error(`Cannot create battle`);
+    }
+  }
+
+  async loadBattleQuestions(difficulty) {
     // Load vocab for battle
     const vocabResult = await pgPool.query(
       `
@@ -54,7 +67,6 @@ class BattleRepository {
     });
 
     return {
-      id: battleId,
       vocabMap,
       vocab: vocabResult.rows,
     };
