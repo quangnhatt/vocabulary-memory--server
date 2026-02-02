@@ -14,9 +14,9 @@ export const pgPool = new Pool({
 });
 
 pgPool.on("connect", () => {
-  console.log("✅ PostgreSQL connected");
+  console.log("PostgreSQL connected");
 });
 
 pgPool.on("error", (err) => {
-  console.error("❌ PostgreSQL error:", err);
+  console.error("PostgreSQL error:", err);
 });

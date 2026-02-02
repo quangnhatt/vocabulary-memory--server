@@ -239,13 +239,13 @@ export async function doCrawlGoogleTranslateWithPuppeteer({
     const result = await page.evaluate(() => {
       const bodyText = document.body.innerText;
 
-      // 1️⃣ Main translation (top)
+      // Main translation (top)
       const translation =
         document.querySelector("span[jsname='W297wb']")?.innerText ||
         document.querySelector("[data-language-for-alternatives]")?.innerText ||
         null;
 
-      // 2️⃣ Meanings (dictionary section)
+      // Meanings (dictionary section)
       const meanings = [];
 
       document.querySelectorAll("section").forEach((section) => {
@@ -261,7 +261,7 @@ export async function doCrawlGoogleTranslateWithPuppeteer({
         }
       });
 
-      // 3️⃣ Examples
+      // Examples
       const examples = [];
 
       document.querySelectorAll("div").forEach((div) => {

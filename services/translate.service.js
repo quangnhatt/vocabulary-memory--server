@@ -5,9 +5,7 @@ import { askGPT } from "../helpers/gpt.helper.js";
 const TTL = 60 * 60 * 24 * 30;
 
 class TranslateService {
-  //---------------------------------------------------------------------------
   // GOOGLE TRANSLATE (UNOFFICIAL) — ALSO USED FOR LANGUAGE DETECTION
-  //---------------------------------------------------------------------------
   async googleTranslateAndDetect(text, source, target) {
     // If source != auto → do NOT use auto detection
     const sl = source === "auto" ? "auto" : source;
@@ -36,9 +34,7 @@ class TranslateService {
     }
   }
 
-  //---------------------------------------------------------------------------
-  // MYMEMORY TRANSLATE (requires valid ISO source)
-  //---------------------------------------------------------------------------
+  // MYMEMORY TRANSLATE
   async myMemoryTranslate(text, source, target) {
     try {
       // If source = auto and we couldn't detect, default to "en"
@@ -57,17 +53,14 @@ class TranslateService {
     }
   }
 
-  //---------------------------------------------------------------------------
   // GPT FINAL FALLBACK
-  //---------------------------------------------------------------------------
   async gptFallback(text, target) {
     const prompt = `Translate this into ${target}:\n${text}`;
     return await askGPT(prompt);
   }
 
-  //---------------------------------------------------------------------------
+
   // MAIN PIPELINE (UPDATED: includes source parameter)
-  //---------------------------------------------------------------------------
   async translateText(text, source = "auto", target = "en") {
     let langpair = `${source}_${target}`;
     const cacheKey = `translate:${langpair}:${text}`;

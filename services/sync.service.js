@@ -212,9 +212,7 @@ class SyncService {
     return normalized.length > 0 ? normalized : [];
   }
 
-  /**
-   * Save ONE word using user_code
-   */
+  // Save ONE word using user_code
   async saveWordByUserCode(payload) {
     const {
       user_code,

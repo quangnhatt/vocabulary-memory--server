@@ -40,7 +40,7 @@ export async function importSystemVocabulary(userId, systemVocabId) {
       throw new Error("Word already exists in your vocabulary");
     }
 
-    // 3️⃣ Insert into words
+    // Insert into words
     const now = new Date();
 
     await pgPool.query(

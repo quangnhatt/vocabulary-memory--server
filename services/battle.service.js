@@ -39,9 +39,7 @@ class BattleService {
     });
   }
 
-  // -------------------------
   // MATCHMAKING
-  // -------------------------
   async joinMatchmaking(io, socket, { difficulty }) {
     matchmakingQueue.push({ socket, difficulty });
 

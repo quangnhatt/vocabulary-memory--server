@@ -114,9 +114,7 @@ class DictionaryService {
 
       const { word, entries, source, ipa } = crawlResult;
 
-      /* ─────────────────────────────
-       1. WORD
-    ───────────────────────────── */
+      // WORD
       const wordRes = await pgPool.query(
         `
       INSERT INTO dictionary_word (word, source, ipa_uk, ipa_us)
@@ -130,9 +128,7 @@ class DictionaryService {
 
       const wordId = wordRes.rows[0].id;
 
-      /* ─────────────────────────────
-       2. PARTS OF SPEECH
-    ───────────────────────────── */
+      // PARTS OF SPEECH
       for (const entry of entries) {
         const entryRes = await pgPool.query(
           `
@@ -147,9 +143,7 @@ class DictionaryService {
 
         const entryId = entryRes.rows[0].id;
 
-        /* ─────────────────────────────
-         3. MEANINGS
-      ───────────────────────────── */
+        // MEANINGS
         for (let i = 0; i < entry.meanings.length; i++) {
           const m = entry.meanings[i];
 
@@ -164,9 +158,7 @@ class DictionaryService {
 
           const meaningId = meaningRes.rows[0].id;
 
-          /* ─────────────────────────────
-           4. EXAMPLES
-        ───────────────────────────── */
+          // EXAMPLES
           for (let j = 0; j < m.examples.length; j++) {
             const ex = m.examples[j];
 

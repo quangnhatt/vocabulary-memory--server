@@ -94,10 +94,10 @@ async function run(categoryId, fileName) {
     }
 
     await pgPool.query("COMMIT");
-    console.log(`✅ Imported ${data.length} records`);
+    console.log(`Imported ${data.length} records`);
   } catch (err) {
     await pgPool.query("ROLLBACK");
-    console.error("❌ Import failed:", err);
+    console.error("Import failed:", err);
   } finally {
     // pgPool.release();
     // await pool.end();

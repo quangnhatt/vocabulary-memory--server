@@ -17,7 +17,7 @@ class TagService {
   //   return res.rows[0].id;
   // }
 
-  // 🔥 NEW: tag suggestion
+  // NEW: tag suggestion
   async suggestTags(userId, query = "", limit = 10) {
     const res = await pgPool.query(
       `

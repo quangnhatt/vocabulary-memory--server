@@ -40,20 +40,17 @@ export function calculateScore({
   correct = true,
 }) {
   let score = 0;
-  // -----------------------
-  // Base score by difficulty
-  // -----------------------
 
+  // Base score by difficulty
   const base = baseScoreMap[difficulty] ?? 10;
   if (!correct) {
     // penalty
     score = -(base / 5);
     return score;
   }
-  // -----------------------
+
   // Combo multiplier
   // (caps to prevent abuse)
-  // -----------------------
   const comboMultiplier = Math.min(1 + combo, 5); // max x3
 
   // Speed will be adjusted later
@@ -62,9 +59,7 @@ export function calculateScore({
   // Star points
   const starScore = star * 5;
 
-  // -----------------------
   // Final score
-  // -----------------------
   score = Math.round(base * comboMultiplier * speedMultiplier);
 
   return score;
@@ -72,10 +67,8 @@ export function calculateScore({
 
 export function calculateGainStar({ combo = 1, correct = true }) {
   let star = 0;
-  // -----------------------
-  // Base score by difficulty
-  // -----------------------
 
+  // Base score by difficulty
   if (!correct) {
     // penalty
     return 0;

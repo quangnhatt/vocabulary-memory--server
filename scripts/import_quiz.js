@@ -56,7 +56,7 @@ async function run(fileName) {
 
   try {
     await pgPool.query("BEGIN");
-    console.log("🚀 Starting quiz import...");
+    console.log("Starting quiz import...");
     for (const question of data) {
       // 1. Insert question
       const popularityScore = DEFAULT_POPULARITY_SCORE[question.default_popularity];
@@ -107,10 +107,10 @@ async function run(fileName) {
     }
 
     await pgPool.query("COMMIT");
-    console.log(`✅ Imported ${data.length} quiz questions`);
+    console.log(`Imported ${data.length} quiz questions`);
   } catch (err) {
     await pgPool.query("ROLLBACK");
-    console.error("❌ Quiz import failed:", err.message);
+    console.error("Quiz import failed:", err.message);
   }
 }
 

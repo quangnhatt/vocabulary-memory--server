@@ -11,7 +11,7 @@ const PUBLIC_PATHS = [
 ];
 
 export function requireUser(req, res, next) {
-  // ✅ Skip public routes
+  // Skip public routes
   if (PUBLIC_PATHS.includes(req.path)) {
     return next();
   }

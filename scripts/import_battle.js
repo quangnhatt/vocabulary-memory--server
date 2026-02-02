@@ -28,7 +28,7 @@ async function run(fileName) {
   for (const difficulty of difficulties) {
     try {
       await pgPool.query("BEGIN");
-      console.log(`🚀 Importing vocab set: ${difficulty}`);
+      console.log(`Importing vocab set: ${difficulty}`);
 
       // 1. Create vocab_set
       const vocabSetRes = await pgPool.query(
@@ -57,10 +57,10 @@ async function run(fileName) {
       }
 
       await pgPool.query("COMMIT");
-      console.log(`✅ Imported ${items.length} vocab items`);
+      console.log(`Imported ${items.length} vocab items`);
     } catch (err) {
       await pgPool.query("ROLLBACK");
-      console.error("❌ Vocab import failed:", err.message);
+      console.error("Vocab import failed:", err.message);
     }
   }
 }
