@@ -118,6 +118,10 @@ CREATE TABLE IF NOT EXISTS tags (
   created_at TIMESTAMP NOT NULL DEFAULT now(),
   updated_at TIMESTAMP DEFAULT NOW(),
   user_id UUID REFERENCES users(id),
+  shared_code TEXT UNIQUE,
+  enabled_shared_code BOOLEAN,
+  deleted_at TIMESTAMP,
+  is_deleted BOOLEAN,
   UNIQUE (name, user_id)
 );
 

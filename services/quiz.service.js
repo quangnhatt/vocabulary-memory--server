@@ -233,9 +233,8 @@ function calculateEarnedPoint(answerType, answerPoint, relativeDifficulty) {
   const earned_point = Math.ceil(relativeDifficulty * (answerPoint ?? weight));
   return earned_point;
 }
-// ================================
+
 // Quiz generation (adaptive)
-// ================================
 async function generateQuiz(inverse_skill_multiplier, questionCount = 20) {
   // 1. Load active questions
   const q = await pgPool.query(
