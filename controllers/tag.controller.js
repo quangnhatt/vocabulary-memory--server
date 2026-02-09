@@ -12,14 +12,14 @@ class TagController {
   }
 
   async createOrRegenerateSharedCode(req, res) {
-    const { tagId, tagName, sharedCode, sharedURL } =
+    const { success, tagId, tagName, sharedCode, sharedURL } =
       await TagService.createOrRegenerateSharedCode(
         req.userId,
         req.query.tag || "",
         req.query.regenerated == 'true',
       );
     res.json({
-      success: true,
+      success,
       tagId,
       tagName,
       sharedCode,

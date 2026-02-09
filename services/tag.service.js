@@ -70,7 +70,9 @@ class TagService {
     `,
       [tagName, userId],
     );
-    if (tags.rowCount == 0) return null;
+    if (tags.rowCount == 0) return {
+      success: false
+    };
 
     if (
       !regenerated &&
@@ -78,6 +80,7 @@ class TagService {
       tags.rows[0].enabled_shared_code
     ) {
       return {
+        success: true,
         tagId: tags.rows[0].id,
         tagName: tags.rows[0].name,
         sharedCode: tags.rows[0].shared_code,
@@ -103,13 +106,16 @@ class TagService {
         );
 
         return {
+          success: true,
           tagId: result.rows[0].id,
           tagName: result.rows[0].name,
           sharedCode: result.rows[0].shared_code,
           sharedURL: generateSharedURL(result.rows[0].shared_code),
         };
       } catch (err) {
-        throw err;
+        return {
+          success: false
+        }
       }
     }
 
