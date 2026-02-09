@@ -1,5 +1,6 @@
 import { pgPool } from "../db/index.js";
 import { v4 as uuidv4 } from "uuid";
+import TagRepository from "../repositories/tag.repo.js";
 
 class SyncService {
   async syncWords({ userId, lastSyncAt, items = [] }) {
@@ -13,9 +14,9 @@ class SyncService {
 
       // Update tags
       const tags = this.extractTags(items);
-      await this.upsertTags(userId, tags);
-      await this.recalcTagUsage(userId);
-      await this.cleanupUnusedTags(userId);
+      await TagRepository.upsertTags(userId, tags);
+      await TagRepository.recalcTagUsage(userId);
+      await TagRepository.cleanupUnusedTags(userId);
       const userSettings = await this.updateLastSyncAt(userId, new Date());
 
       // Fetch server → client changes
@@ -26,7 +27,7 @@ class SyncService {
         SELECT forced_to_reload_vocabulary 
         FROM users 
         WHERE id = $1`,
-        [userId]
+        [userId],
       );
 
       const forcedToReload = rows[0]?.forced_to_reload_vocabulary;
@@ -56,7 +57,7 @@ class SyncService {
       AND is_deleted = false
     ORDER BY updated_at ASC
     `,
-        forcedToReload ? [userId] : [userId, lastSyncAt ?? new Date(0)]
+        forcedToReload ? [userId] : [userId, lastSyncAt ?? new Date(0)],
       );
 
       await pgPool.query("COMMIT");
@@ -85,7 +86,7 @@ class SyncService {
       totalReviews,
       isDeleted,
       updatedAt,
-      ipa
+      ipa,
     } = word;
 
     await pgPool.query(
@@ -139,8 +140,8 @@ class SyncService {
         word.lastResult ?? null,
         word.easyStreak ?? 0,
         word.lastReviewedAt ?? null,
-        ipa
-      ]
+        ipa,
+      ],
     );
   }
 
@@ -157,51 +158,6 @@ class SyncService {
     }
 
     return [...set];
-  }
-
-  async upsertTags(userId, tags) {
-    for (const tag of tags) {
-      await pgPool.query(
-        `
-      INSERT INTO tags (user_id, name)
-      VALUES ($1, $2)
-      ON CONFLICT (user_id, name) DO NOTHING
-      `,
-        [userId, tag]
-      );
-    }
-  }
-
-  async recalcTagUsage(userId) {
-    await pgPool.query(
-      `
-    UPDATE tags t
-    SET usage_count = sub.count,
-        updated_at = NOW()
-    FROM (
-      SELECT unnest(tags) AS tag, COUNT(*) AS count
-      FROM words
-      WHERE user_id = $1
-        AND is_deleted = false
-        AND tags IS NOT NULL
-      GROUP BY tag
-    ) sub
-    WHERE t.user_id = $1
-      AND t.name = sub.tag
-    `,
-      [userId]
-    );
-  }
-
-  async cleanupUnusedTags(userId) {
-    await pgPool.query(
-      `
-    DELETE FROM tags
-    WHERE user_id = $1
-      AND usage_count = 0
-    `,
-      [userId]
-    );
   }
 
   normalizeTags(tags) {
@@ -222,7 +178,7 @@ class SyncService {
       tags,
       source_lang = "en",
       target_lang = "vi",
-      ipa
+      ipa,
     } = payload;
 
     if (!user_code || !term || !translation) {
@@ -235,7 +191,7 @@ class SyncService {
       // Resolve user
       const userRes = await pgPool.query(
         `SELECT id FROM users WHERE user_code = $1`,
-        [user_code]
+        [user_code],
       );
 
       if (userRes.rowCount === 0) {
@@ -252,7 +208,7 @@ class SyncService {
               AND is_deleted = false
             LIMIT 1
             `,
-        [userId, term]
+        [userId, term],
       );
 
       if (existingRes.rowCount > 0) {
@@ -276,7 +232,7 @@ class SyncService {
             this.normalizeTags(tags),
             source_lang,
             target_lang,
-          ]
+          ],
         );
 
         await pgPool.query("COMMIT");
@@ -338,13 +294,13 @@ class SyncService {
           nextReviewAt,
           now,
           now,
-          ipa
-        ]
+          ipa,
+        ],
       );
 
       // Update tags table
-      await this.upsertTags(userId, this.normalizeTags(tags));
-      await this.recalcTagUsage(userId);
+      await TagRepository.upsertTags(userId, this.normalizeTags(tags));
+      await TagRepository.recalcTagUsage(userId);
 
       await pgPool.query("COMMIT");
 
@@ -365,7 +321,7 @@ class SyncService {
       WHERE user_id = $2
       RETURNING user_id, last_sync_at
       `,
-      [lastSyncAt, userId]
+      [lastSyncAt, userId],
     );
 
     return rows[0];

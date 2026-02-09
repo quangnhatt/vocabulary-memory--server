@@ -1,6 +1,8 @@
 import { pgPool } from "../db/index.js";
 import { v4 as uuidv4 } from "uuid";
 import CONSTANTS from "../common/constants.js";
+import TagRepository from "../repositories/tag.repo.js";
+
 class SystemCategoryService {
   async importCategories(userId, categoryId) {
     try {
@@ -15,11 +17,15 @@ class SystemCategoryService {
           AND activity_type = 'import_category'
         LIMIT 1
         `,
-        [userId, categoryId]
+        [userId, categoryId],
       );
       if (existed.length > 0) {
         await pgPool.query("ROLLBACK");
-        return { success: false, imported: 0, message: "Category already imported" };
+        return {
+          success: false,
+          imported: 0,
+          message: "Category already imported",
+        };
       }
 
       // Load vocabularies in selected categories
@@ -35,15 +41,20 @@ class SystemCategoryService {
           AND v.deleted_at IS NULL
           AND c.deleted_at IS NULL
         `,
-        [categoryId]
+        [categoryId],
       );
 
       if (vocabularies.length === 0) {
         await pgPool.query("ROLLBACK");
-        return { success: false, imported: 0, message: "No vocabularies found in category" };
+        return {
+          success: false,
+          imported: 0,
+          message: "No vocabularies found in category",
+        };
       }
 
       let importedCount = 0;
+      let categoryTags = [];
 
       for (const vocab of vocabularies) {
         // Insert into words
@@ -70,10 +81,19 @@ class SystemCategoryService {
             vocab.tags,
             vocab.source_lang,
             vocab.target_lang,
-          ]
+          ],
         );
 
         importedCount++;
+        //
+        if (vocab.tags != null) {
+          categoryTags = [...new Set([...categoryTags, ...vocab.tags])];
+        }
+      }
+
+      // Import tags
+      if (categoryTags.length > 0) {
+        await TagRepository.upsertTags(userId, categoryTags);
       }
 
       // Log user activity (IMPORT ONCE GUARANTEE)
@@ -96,7 +116,7 @@ class SystemCategoryService {
           {
             imported_words: importedCount,
           },
-        ]
+        ],
       );
 
       // Increase popularity
@@ -107,7 +127,7 @@ class SystemCategoryService {
           updated_at = NOW()
       WHERE id = $1
       `,
-        [categoryId]
+        [categoryId],
       );
 
       await pgPool.query("COMMIT");
@@ -116,7 +136,7 @@ class SystemCategoryService {
     } catch (e) {
       await pgPool.query("ROLLBACK");
       return { success: false, imported: 0, message: e.message };
-    } 
+    }
   }
 
   async getSystemCategories() {
@@ -140,7 +160,7 @@ class SystemCategoryService {
       ON c.id = v.category_id
     GROUP BY c.id;
 
-    `
+    `,
     );
 
     const result = rows
