@@ -68,7 +68,7 @@ class BattleService {
     ]);
 
     const now = Date.now();
-    const battleDuration = 120;
+    const battleDuration = 90;
     const delayDurationMs = 3000;
     const vocab = battleQuestions.vocab;
     const activeVocab = vocab.slice(0, 5);
