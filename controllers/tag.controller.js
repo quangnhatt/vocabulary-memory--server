@@ -16,7 +16,7 @@ class TagController {
       await TagService.createOrRegenerateSharedCode(
         req.userId,
         req.query.tag || "",
-        req.query.regenerated == 'true',
+        req.query.regenerated == "true",
       );
     res.json({
       success,
@@ -43,6 +43,30 @@ class TagController {
       req.query.sharedTagCode || "",
     );
     res.json(result);
+  }
+
+  async executeShareEndpoint(req, res) {
+    const code = req.query.code;
+
+    const iosUniversalLink = `https://bluefenix.io/share/${code}`;
+    const androidAppLink = `https://bluefenix.io/share/${code}`;
+
+    const iosStore = "https://apps.apple.com/app/idYOUR_APP_ID";
+    const androidStore =
+      "https://play.google.com/store/apps/details?id=com.yourcompany.yourapp&referrer=code%3D" +
+      encodeURIComponent(code);
+
+    const userAgent = req.headers["user-agent"] || "";
+
+    // Basic UA routing
+    if (/iphone|ipad|ipod/i.test(userAgent)) {
+      res.redirect(iosUniversalLink);
+    } else if (/android/i.test(userAgent)) {
+      res.redirect(androidAppLink);
+    } else {
+      // Desktop → landing page
+      res.redirect(`https://bluefenix.io/install?code=${code}`);
+    }
   }
 }
 

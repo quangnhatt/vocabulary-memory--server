@@ -16,4 +16,10 @@ export const load = (app) => {
     "/api/v1/tags/import-shared-code",
     TagController.importWordsBySharedCode,
   );
+
+  // Share API
+  app.get(
+    "/vocabulary?",
+    TagController.executeShareEndpoint,
+  );
 };

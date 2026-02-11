@@ -9,7 +9,6 @@ export function initSocket(server) {
     },
   });
 
-
   // Auth middleware (JWT)
   io.use((socket, next) => {
     try {
@@ -19,7 +18,7 @@ export function initSocket(server) {
         return next(new Error("UNAUTHORIZED"));
       }
 
-      const {userId} = verifyAuthToken(token);
+      const { userId } = verifyAuthToken(token);
       socket.userId = userId;
 
       next();
@@ -27,7 +26,6 @@ export function initSocket(server) {
       next(new Error("UNAUTHORIZED"));
     }
   });
-
 
   // Connection handler
   io.on("connection", (socket) => {

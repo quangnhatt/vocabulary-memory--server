@@ -72,15 +72,27 @@ class BattleRepository {
     };
   }
 
-  async logMatch(battleId, userId, wordId, meaningId, isCorrect) {
-    await pgPool.query(
-      `
+  async logMatch(battleId, userId, wordId, meaningId, isCorrect, isCustom) {
+    if (!isCustom) {
+      await pgPool.query(
+        `
       INSERT INTO battle_matches
       (battle_id, user_id, word_id, meaning_id, is_correct)
       VALUES ($1, $2, $3, $4, $5)
       `,
-      [battleId, userId, wordId, meaningId, isCorrect],
-    );
+        [battleId, userId, wordId, meaningId, isCorrect],
+      );
+    }
+    else {
+      await pgPool.query(
+        `
+      INSERT INTO battle_matches
+      (battle_id, user_id, custom_word_id, custom_meaning_id, is_correct)
+      VALUES ($1, $2, $3, $4, $5)
+      `,
+        [battleId, userId, wordId, meaningId, isCorrect],
+      );
+    }
   }
 
   /**
@@ -153,6 +165,65 @@ class BattleRepository {
       console.error("finishBattle error:", err);
       throw err;
     }
+  }
+
+  async loadCustomBattleQuestions(vocabTag, limit) {
+    let res;
+    if (vocabTag) {
+      res = await pgPool.query(
+        `
+      SELECT *
+      FROM (
+        SELECT DISTINCT
+          w.id,
+          w.term as word,
+          w.translation as meaning
+        FROM words w
+        JOIN tags t
+          ON t.name = ANY(w.tags)
+        AND t.user_id = w.user_id
+        WHERE
+          t.shared_code = $1
+          AND t.enabled_shared_code = TRUE
+          AND w.is_deleted IS NOT TRUE
+          AND t.is_deleted IS NOT TRUE
+      ) x
+      ORDER BY random()
+      LIMIT $2;
+
+    `,
+        [vocabTag, limit * 2],
+      );
+    } else {
+      res = await pgPool.query(
+        `
+        SELECT
+          vp.id,
+          vp.word,
+          vp.meaning
+        FROM vocab_pairs vp
+        JOIN vocab_sets vs
+          ON vp.vocab_set_id = vs.id
+        ORDER BY random()
+        LIMIT $1
+    `,
+        [limit * 2],
+      );
+    }
+
+    if (res.rows.length < limit * 2) {
+      throw new Error("NOT_ENOUGH_VOCAB");
+    }
+
+    const vocabMap = {};
+    res.rows.forEach((v) => {
+      vocabMap[v.id] = v.id;
+    });
+
+    return {
+      vocabMap,
+      vocab: res.rows,
+    };
   }
 }
 

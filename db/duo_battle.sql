@@ -60,6 +60,8 @@ CREATE TABLE battle_matches (
   user_id UUID REFERENCES users(id),
   word_id UUID REFERENCES vocab_pairs(id),
   meaning_id UUID REFERENCES vocab_pairs(id),
+  custom_word_id UUID REFERENCES words(id),
+  custom_meaning_id UUID REFERENCES words(id),
   is_correct BOOLEAN NOT NULL,
   created_at TIMESTAMP DEFAULT NOW()
 );

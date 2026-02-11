@@ -14,6 +14,12 @@ import { BATTLE_ROOM_STATUS } from "../common/constants.js";
 const rooms = new Map();
 
 /**
+ * Custom (private) rooms
+ * Key: roomCode
+ */
+const customRooms = new Map();
+
+/**
  * Simple matchmaking queue
  */
 const matchmakingQueue = [];
@@ -37,6 +43,14 @@ class BattleService {
     socket.on("battle:leave", (payload) => {
       this.leaveBattle(socket, payload);
     });
+
+    socket.on("custom:create", (payload) =>
+      this.createCustomMatch(io, socket, payload),
+    );
+
+    socket.on("custom:join", (payload) =>
+      this.joinCustomMatch(io, socket, payload),
+    );
   }
 
   // MATCHMAKING
@@ -68,7 +82,7 @@ class BattleService {
     ]);
 
     const now = Date.now();
-    const battleDuration = 90;
+    const battleDuration = +process.env.BATTLE_DURATION || 90;
     const delayDurationMs = 3000;
     const vocab = battleQuestions.vocab;
     const activeVocab = vocab.slice(0, 5);
@@ -180,9 +194,7 @@ class BattleService {
     let playerB = room.players[playerIds[1]];
 
     playerA.earnedExp = calculateExp(playerA, playerB);
-    console.log(playerA.earnedExp);
     playerB.earnedExp = calculateExp(playerB, playerA);
-    console.log(playerB.earnedExp);
     // Determine winner
     let winnerId = null;
 
@@ -296,6 +308,7 @@ class BattleService {
       player.combo = 0;
     }
 
+    const isCustom = room.type == "custom";
     // no need to await
     BattleRepository.logMatch(
       battleId,
@@ -303,6 +316,7 @@ class BattleService {
       wordId,
       meaningId,
       isCorrect,
+      isCustom
     );
 
     if (isCorrect) {
@@ -386,6 +400,112 @@ class BattleService {
 
       break;
     }
+  }
+
+  // Custom
+  async createCustomMatch(io, socket, { duration, sharedCode, pairs }) {
+    const roomCode = Math.random().toString(36).substring(2, 8).toUpperCase();
+
+    customRooms.set(roomCode, {
+      hostSocket: socket,
+      hostUserId: socket.userId,
+      duration,
+      sharedCode,
+      pairs,
+    });
+
+    socket.emit("custom:created", {
+      roomCode,
+    });
+  }
+
+  async joinCustomMatch(io, socket, { roomCode }) {
+    const customRoom = customRooms.get(roomCode);
+    if (!customRoom) {
+      return socket.emit("custom:error", {
+        reason: "ROOM_NOT_FOUND",
+      });
+    }
+
+    const battleId = crypto.randomUUID();
+    const player1Id = customRoom.hostUserId;
+    const player2Id = socket.userId;
+
+    // Join socket room
+    customRoom.hostSocket.join(battleId);
+    socket.join(battleId);
+
+    // Load vocab using tag + pairs
+    const battleQuestions = await BattleRepository.loadCustomBattleQuestions(
+      customRoom.sharedCode,
+      customRoom.pairs,
+    );
+
+    const users = await UserRepository.getByUsers([player1Id, player2Id]);
+
+    await BattleRepository.createBattle(battleId, player1Id, player2Id);
+
+    const now = Date.now();
+    const delayDurationMs = 3000;
+
+    const vocab = battleQuestions.vocab;
+    const activeVocab = vocab.slice(0, customRoom.pairs);
+    const remainingVocab = vocab.slice(customRoom.pairs);
+
+    const room = {
+      id: battleId,
+      vocabMap: battleQuestions.vocabMap,
+      vocab,
+      activeVocab,
+      remainingVocab,
+      matchedVocab: new Set(),
+      difficulty: "custom",
+      type: "custom",
+      startAt: now + delayDurationMs,
+      endAt: now + delayDurationMs + customRoom.duration * 1000,
+      duration: customRoom.duration,
+      status: BATTLE_ROOM_STATUS.ACTIVE,
+      players: {
+        [users[0].id]: this._initPlayer(users[0]),
+        [users[1].id]: this._initPlayer(users[1]),
+      },
+    };
+
+    rooms.set(battleId, room);
+    customRooms.delete(roomCode);
+
+    io.to(battleId).emit("matchmaking:ready", {
+      battleId,
+      startAt: room.startAt,
+      endAt: room.endAt,
+      duration: room.duration,
+      countdownDuration: delayDurationMs / 1000,
+    });
+
+    setTimeout(() => {
+      io.to(battleId).emit("battle:start", {
+        battleId,
+        duration: room.duration,
+        startAt: room.startAt,
+        endAt: room.endAt,
+        vocab: room.vocab,
+        pairs: activeVocab,
+        players: room.players,
+      });
+
+      io.to(battleId).emit("battle:vocab_init", {
+        pairs: activeVocab,
+      });
+    }, delayDurationMs);
+
+    setTimeout(() => {
+      const room = rooms.get(battleId);
+      if (!room || room.status !== BATTLE_ROOM_STATUS.ACTIVE) return;
+
+      this.endBattle(io, battleId, {
+        reason: "TIME_UP",
+      });
+    }, room.endAt - now);
   }
 }
 
