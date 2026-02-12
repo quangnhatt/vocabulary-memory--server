@@ -114,6 +114,7 @@ class BattleService {
       endAt: room.endAt,
       duration: room.duration,
       countdownDuration: delayDurationMs / 1000,
+      players: room.players,
     });
 
     setTimeout(() => {
@@ -316,7 +317,7 @@ class BattleService {
       wordId,
       meaningId,
       isCorrect,
-      isCustom
+      isCustom,
     );
 
     if (isCorrect) {
@@ -426,6 +427,8 @@ class BattleService {
         reason: "ROOM_NOT_FOUND",
       });
     }
+
+    socket.emit("custom:joined");
 
     const battleId = crypto.randomUUID();
     const player1Id = customRoom.hostUserId;
